@@ -12,7 +12,7 @@ $args=@('-S',(Join-Path $root 'source/yosys'),'-B',$build,'-G','Ninja',
  ('-DFLEX_EXECUTABLE='+(Join-Path $root 'tools/winflexbison/win_flex.exe')),
  ('-DBISON_EXECUTABLE='+(Join-Path $root 'tools/winflexbison/win_bison.exe')),
  '-DYOSYS_ABC_EXECUTABLE=', '-DYOSYS_SKIP_ABC_SUBMODULE_CHECK=ON',
- '-DYOSYS_CHECKOUT_INFO=9f75ca1f9-V53H-NoPost',('-DCMAKE_INSTALL_PREFIX='+(Join-Path $build 'install')))
+ '-DYOSYS_CHECKOUT_INFO=9f75ca1f9-pmux-sharing-lut-decomposition',('-DCMAKE_INSTALL_PREFIX='+(Join-Path $build 'install')))
 & cmake.exe @args
 if($LASTEXITCODE -ne 0){throw 'CMake configuration failed.'}
 & cmake.exe --build $build --parallel $Jobs
