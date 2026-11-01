@@ -1,0 +1,36 @@
+{
+  "key": "pmux_case04_feedback_baseline_rtl_boundary",
+  "case": "pmux_case04_feedback",
+  "kind": "rtl_to_boundary",
+  "expected": "PASS",
+  "input_sha256": {
+    "inputs/pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f",
+    "evidence/current/capture_full/pmux_case04_feedback/baseline.boundary.formal.il": "df6d413467769d217e96a876e8cb884375f29bcb86593ed79da06f1e391646ec",
+    "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+  },
+  "config": "proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/pair.eqy",
+  "config_sha256": "552b17fe533613c9496951d84add22930db27a2d55e2810c2ec125461c349e57",
+  "command": [
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+    "--yosys",
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+    "-j",
+    "1",
+    "-d",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/run",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/pair.eqy"
+  ],
+  "status": "PASS",
+  "passed": true,
+  "timeout": false,
+  "exit": 0,
+  "coverage": {
+    "all_outputs_covered": true,
+    "proof_dependencies_closed": true,
+    "missing_output_bits": {},
+    "unclosed_cutpoint_bits": {},
+    "non_primary_partition_inputs": {}
+  },
+  "ignored_boxed_modules": false,
+  "seconds": 0.9172853290001513
+}

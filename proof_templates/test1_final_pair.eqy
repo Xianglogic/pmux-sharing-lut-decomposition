@@ -1,0 +1,61 @@
+[gold]
+read_rtlil "evidence/current/capture_full/test1/baseline.final.formal.il"
+delete =A:blackbox
+delete =A:whitebox
+read_verilog -overwrite "evidence/formal_primitives.v"
+delete t:$print
+prep -top test1 -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+
+[gate]
+read_rtlil "evidence/current/capture_full/test1/candidate.final.formal.il"
+delete =A:blackbox
+delete =A:whitebox
+read_verilog -overwrite "evidence/formal_primitives.v"
+delete t:$print
+prep -top test1 -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+
+[match *]
+nodefault
+gold-match clock
+gold-match reset
+gold-match valid
+gold-match I0
+gold-match I1
+gold-match I2
+gold-match I3
+gold-match I4
+gold-match I5
+gold-match I6
+gold-match I7
+gold-match Q0
+gold-match Q1
+gold-match Q2
+gold-match Q3
+gold-match Q4
+gold-match Q5
+gold-match Q6
+gold-match Q7
+gold-match por6_out
+gold-match inter0007_out
+gold-match inter0008_out
+gold-match inter0009_out
+
+[collect *]
+group /^(?:por6_out|inter0007_out|inter0008_out|inter0009_out)(?:\[\d+\])?$/
+
+[strategy pdr]
+use sby
+engine abc pdr
+timeout 300

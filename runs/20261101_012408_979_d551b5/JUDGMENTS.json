@@ -1,0 +1,812 @@
+[
+  {
+    "group": 1,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9847780641964592,
+    "worst_memory_ratio": 0.9401858304297329,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.9987069647282121,
+    "worst_memory_ratio": 1.0025582717453099,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "test3",
+    "review": true,
+    "time_ratio": 1.0065075459761645,
+    "worst_memory_ratio": 1.014929424538545,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9296932917067918,
+    "worst_memory_ratio": 0.9734399174832388,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8603562755974494,
+    "worst_memory_ratio": 0.9041805401405846,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8656571773401774,
+    "worst_memory_ratio": 0.9077478096546985,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8851163115931998,
+    "worst_memory_ratio": 0.9327654947444727,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8755151764763601,
+    "worst_memory_ratio": 0.9288687097994703,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 1,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9139210899718405,
+    "worst_memory_ratio": 0.8926829268292683,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9600001086141914,
+    "worst_memory_ratio": 0.9625658023006434,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 1.0136837143130986,
+    "worst_memory_ratio": 1.0065695515566981,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 1.0166231315476355,
+    "worst_memory_ratio": 1.0056864337936637,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.8668590532402619,
+    "worst_memory_ratio": 0.9681479578731056,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.9015427297355132,
+    "worst_memory_ratio": 0.911710380495013,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8821160793958256,
+    "worst_memory_ratio": 0.9141370338248048,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.9032714268017966,
+    "worst_memory_ratio": 0.9296818510484454,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8781628855654591,
+    "worst_memory_ratio": 0.9214758751182592,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 2,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9136499009206747,
+    "worst_memory_ratio": 0.9096844396082698,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9660837005057391,
+    "worst_memory_ratio": 0.9364005412719891,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 1.015335151922943,
+    "worst_memory_ratio": 1.009137635636779,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 0.9794193856972642,
+    "worst_memory_ratio": 1.009500542888165,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.960618433113139,
+    "worst_memory_ratio": 0.9803108808290155,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8655434497027317,
+    "worst_memory_ratio": 0.9069295982307409,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8923700868603299,
+    "worst_memory_ratio": 0.9323621227887617,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8360009090576792,
+    "worst_memory_ratio": 0.9513850669601908,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8772195812534505,
+    "worst_memory_ratio": 0.9258273107645493,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 3,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9039544499848572,
+    "worst_memory_ratio": 0.9096188747731397,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9466285443618004,
+    "worst_memory_ratio": 0.9510625852992786,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.9756906405893817,
+    "worst_memory_ratio": 1.0088622069754145,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 1.0080919799183325,
+    "worst_memory_ratio": 1.0182312925170067,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9172327108703912,
+    "worst_memory_ratio": 0.9755280783101494,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8511235955056181,
+    "worst_memory_ratio": 0.8981042654028436,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8775602380325811,
+    "worst_memory_ratio": 0.9070485336991939,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.9040988271283663,
+    "worst_memory_ratio": 0.9419155134741443,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8900522965486297,
+    "worst_memory_ratio": 0.9296254256526674,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 4,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.832939897859293,
+    "worst_memory_ratio": 0.9046331350279431,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.963037484775946,
+    "worst_memory_ratio": 0.9409494403705133,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.9771026895736978,
+    "worst_memory_ratio": 1.006861063464837,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 0.9411845072189208,
+    "worst_memory_ratio": 1.0315818132316907,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9309563422145538,
+    "worst_memory_ratio": 0.9832431038927558,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8709085517746712,
+    "worst_memory_ratio": 0.8997981280968985,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8774835048377159,
+    "worst_memory_ratio": 0.9276190476190476,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8995080494214137,
+    "worst_memory_ratio": 0.938678381841479,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8914356714049346,
+    "worst_memory_ratio": 0.9261278195488721,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 5,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9350070270996,
+    "worst_memory_ratio": 0.9050218340611353,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9437688238782104,
+    "worst_memory_ratio": 0.9393821643675928,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.943734604603086,
+    "worst_memory_ratio": 1.0074264495858327,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 1.0311945873360686,
+    "worst_memory_ratio": 1.011434794445957,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.8982933038647763,
+    "worst_memory_ratio": 0.9747292418772563,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.9042978853815509,
+    "worst_memory_ratio": 0.9243573145921953,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8892255368872999,
+    "worst_memory_ratio": 0.9320167773505768,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.9081378693923888,
+    "worst_memory_ratio": 0.9209443748882132,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8845693598180879,
+    "worst_memory_ratio": 0.9316877152698049,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 6,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.896304816480174,
+    "worst_memory_ratio": 0.9161079905780033,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9487367801576526,
+    "worst_memory_ratio": 0.9403536040411891,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.9917734041445382,
+    "worst_memory_ratio": 1.007997714938589,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 0.9460168817704345,
+    "worst_memory_ratio": 1.013598041881969,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9288561147048654,
+    "worst_memory_ratio": 0.9734945959855893,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8930445128431976,
+    "worst_memory_ratio": 0.9047794117647059,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8919751446665626,
+    "worst_memory_ratio": 0.9205599300087489,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8976940104039697,
+    "worst_memory_ratio": 0.9262987596620529,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8953343338609916,
+    "worst_memory_ratio": 0.9310410334346505,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 7,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9077094470508805,
+    "worst_memory_ratio": 0.9046934004675418,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9140695705926335,
+    "worst_memory_ratio": 0.943034295679132,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.9926619280478964,
+    "worst_memory_ratio": 1.0045532157085941,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "test3",
+    "review": true,
+    "time_ratio": 0.9957128905552065,
+    "worst_memory_ratio": 1.0136017410228508,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9268089725873614,
+    "worst_memory_ratio": 0.979296066252588,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8678610726030548,
+    "worst_memory_ratio": 0.9128347183748846,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8958860647897434,
+    "worst_memory_ratio": 0.9238587424633936,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8774352536777618,
+    "worst_memory_ratio": 0.9156562054208274,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.9000985943906327,
+    "worst_memory_ratio": 0.9158772262220538,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 8,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9120458143876347,
+    "worst_memory_ratio": 0.9022542831379621,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.940814018680115,
+    "worst_memory_ratio": 0.9370109546165885,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 0.8611594331023763,
+    "worst_memory_ratio": 1.0054115636570777,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 1.0170213594110296,
+    "worst_memory_ratio": 1.0059411288144748,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.9175666388354036,
+    "worst_memory_ratio": 0.9674108288426995,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8625939209521872,
+    "worst_memory_ratio": 0.9139944392956442,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.7937038743136654,
+    "worst_memory_ratio": 0.9353937489086782,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8948172724641569,
+    "worst_memory_ratio": 0.9162181557229997,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.8943421093223005,
+    "worst_memory_ratio": 0.9381541389153187,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 9,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9397831598444337,
+    "worst_memory_ratio": 0.9068921622113112,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "test1",
+    "review": false,
+    "time_ratio": 0.9658566109140998,
+    "worst_memory_ratio": 0.9291642540050183,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "test2",
+    "review": false,
+    "time_ratio": 1.033017381955204,
+    "worst_memory_ratio": 1.0014212620807277,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "test3",
+    "review": false,
+    "time_ratio": 0.9777690525786188,
+    "worst_memory_ratio": 1.0119305856832972,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "test4",
+    "review": false,
+    "time_ratio": 0.8920865919760632,
+    "worst_memory_ratio": 0.9675523760858457,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "pmux_case01_balanced",
+    "review": false,
+    "time_ratio": 0.8632078360464686,
+    "worst_memory_ratio": 0.8938948142699522,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "pmux_case02_pipeline",
+    "review": false,
+    "time_ratio": 0.8864338786795433,
+    "worst_memory_ratio": 0.9222280609563847,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "pmux_case03_crossbar",
+    "review": false,
+    "time_ratio": 0.8956003811670398,
+    "worst_memory_ratio": 0.9472430848140685,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "pmux_case04_feedback",
+    "review": false,
+    "time_ratio": 0.885592159387631,
+    "worst_memory_ratio": 0.9373219373219374,
+    "time_pass": true,
+    "memory_pass": true
+  },
+  {
+    "group": 10,
+    "case": "pmux_case05_nested",
+    "review": false,
+    "time_ratio": 0.9125603638525995,
+    "worst_memory_ratio": 0.9233709501274118,
+    "time_pass": true,
+    "memory_pass": true
+  }
+]

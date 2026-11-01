@@ -1,0 +1,299 @@
+{
+    "mode":  "portable packaging smoke, not efficiency scoring",
+    "cases":  9,
+    "records":  [
+                    {
+                        "case":  "test1",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  288,
+                                       "lut":  286,
+                                       "not_count":  2,
+                                       "ff":  222,
+                                       "cells":  510,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  286,
+                                                     "$not":  2,
+                                                     "dffeas":  222
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test1",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  156,
+                                       "lut":  153,
+                                       "not_count":  3,
+                                       "ff":  210,
+                                       "cells":  366,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  153,
+                                                     "$not":  3,
+                                                     "dffeas":  210
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test2",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  25,
+                                       "lut":  25,
+                                       "not_count":  0,
+                                       "ff":  0,
+                                       "cells":  25,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  25
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test2",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  13,
+                                       "lut":  13,
+                                       "not_count":  0,
+                                       "ff":  0,
+                                       "cells":  13,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  13
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test3",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  13,
+                                       "lut":  12,
+                                       "not_count":  1,
+                                       "ff":  17,
+                                       "cells":  30,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  12,
+                                                     "$not":  1,
+                                                     "dffeas":  17
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test3",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  8,
+                                       "lut":  8,
+                                       "not_count":  0,
+                                       "ff":  14,
+                                       "cells":  22,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  8,
+                                                     "dffeas":  14
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test4",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  34,
+                                       "lut":  33,
+                                       "not_count":  1,
+                                       "ff":  10,
+                                       "cells":  44,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  33,
+                                                     "$not":  1,
+                                                     "dffeas":  10
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "test4",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  26,
+                                       "lut":  26,
+                                       "not_count":  0,
+                                       "ff":  10,
+                                       "cells":  36,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  26,
+                                                     "dffeas":  10
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case01_balanced",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  406,
+                                       "lut":  406,
+                                       "not_count":  0,
+                                       "ff":  12,
+                                       "cells":  418,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  406,
+                                                     "dffeas":  12
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case01_balanced",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  291,
+                                       "lut":  291,
+                                       "not_count":  0,
+                                       "ff":  12,
+                                       "cells":  303,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  291,
+                                                     "dffeas":  12
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case02_pipeline",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  445,
+                                       "lut":  445,
+                                       "not_count":  0,
+                                       "ff":  24,
+                                       "cells":  469,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  445,
+                                                     "dffeas":  24
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case02_pipeline",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  317,
+                                       "lut":  317,
+                                       "not_count":  0,
+                                       "ff":  24,
+                                       "cells":  341,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  317,
+                                                     "dffeas":  24
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case03_crossbar",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  409,
+                                       "lut":  409,
+                                       "not_count":  0,
+                                       "ff":  10,
+                                       "cells":  419,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  409,
+                                                     "dffeas":  10
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case03_crossbar",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  303,
+                                       "lut":  303,
+                                       "not_count":  0,
+                                       "ff":  10,
+                                       "cells":  313,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  303,
+                                                     "dffeas":  10
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case04_feedback",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  367,
+                                       "lut":  366,
+                                       "not_count":  1,
+                                       "ff":  16,
+                                       "cells":  383,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  366,
+                                                     "$not":  1,
+                                                     "dffeas":  16
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case04_feedback",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  281,
+                                       "lut":  280,
+                                       "not_count":  1,
+                                       "ff":  16,
+                                       "cells":  297,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  280,
+                                                     "$not":  1,
+                                                     "dffeas":  16
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case05_nested",
+                        "arm":  "baseline",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  415,
+                                       "lut":  415,
+                                       "not_count":  0,
+                                       "ff":  12,
+                                       "cells":  427,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  415,
+                                                     "dffeas":  12
+                                                 }
+                                   }
+                    },
+                    {
+                        "case":  "pmux_case05_nested",
+                        "arm":  "candidate",
+                        "status":  "PASS",
+                        "mapped":  {
+                                       "logic":  317,
+                                       "lut":  317,
+                                       "not_count":  0,
+                                       "ff":  12,
+                                       "cells":  329,
+                                       "types":  {
+                                                     "cycloneiv_lcell_comb":  317,
+                                                     "dffeas":  12
+                                                 }
+                                   }
+                    }
+                ],
+    "all_resource_dicts_equal_frozen":  true
+}

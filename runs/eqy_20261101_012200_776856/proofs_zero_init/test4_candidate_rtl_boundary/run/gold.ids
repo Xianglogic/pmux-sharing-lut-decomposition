@@ -1,0 +1,10 @@
+test4 . A:src="inputs/test4/test4/test4.v:1.1-85.10" A:top=1
+test4 reset_n w=0:0 A:src="inputs/test4/test4/test4.v:15.8-15.15" P=I
+test4 only_5b w=0:0 A:keep=1 A:src="inputs/test4/test4/test4.v:19.9-19.16" P=O
+test4 ena w=0:0 A:src="inputs/test4/test4/test4.v:16.8-16.11" P=I
+test4 dataout w=5:0 A:keep=1 A:src="inputs/test4/test4/test4.v:18.13-18.20" P=O
+test4 datain_5bis7 w=0:0 A:keep=1 A:src="inputs/test4/test4/test4.v:20.9-20.21" P=O
+test4 datain w=4:0 A:src="inputs/test4/test4/test4.v:17.12-17.18" P=I
+test4 data_dp w=0:0 A:keep=1 A:src="inputs/test4/test4/test4.v:21.9-21.16" P=O
+test4 data_dn w=0:0 A:keep=1 A:src="inputs/test4/test4/test4.v:22.9-22.16" P=O
+test4 clk w=0:0 A:src="inputs/test4/test4/test4.v:14.8-14.11" P=I

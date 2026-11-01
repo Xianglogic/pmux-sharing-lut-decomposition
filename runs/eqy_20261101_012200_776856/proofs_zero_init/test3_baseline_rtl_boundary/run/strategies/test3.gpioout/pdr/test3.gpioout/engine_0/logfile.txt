@@ -1,0 +1,38 @@
+======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw"
+Warning: The last output is interpreted as a constraint.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 139. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Time
+1 : 0 36                                                                1    36      0.00 sec  T/O =  0  PRV =  0
+2 : 0 25 43                                                             5    48      0.01 sec  T/O =  0  PRV =  0
+3 : 0 10 13 41                                                          3    49      0.01 sec  T/O =  0  PRV =  0
+4 : 0 4 4 3 38                                                          0    49      0.01 sec  T/O =  0  PRV =  0
+5 : 0 4 3 3 20 36                                                       1    49      0.01 sec  T/O =  0  PRV =  0
+6 : 0 22 15 22 39 45 68                                                17    69      0.02 sec  T/O =  0  PRV =  0
+7 : 0 4 2 4 2 4 3 56 ~17                                                 0    69      0.03 sec  T/O =  0  PRV =  0
+8 : 0 4 2 4 2 4 3 3 45 ~17                                               0    69      0.03 sec  T/O =  0  PRV =  0
+9 : 0 4 2 4 2 4 3 3 4 41 ~17                                             0    69      0.03 sec  T/O =  0  PRV =  0
+10 : 0 4 2 4 2 4 3 3 4 4 37 ~17                                           0    69      0.03 sec  T/O =  0  PRV =  0
+11 : 0 4 2 4 2 4 3 3 4 4 4 33 ~17                                         0    69      0.03 sec  T/O =  0  PRV =  0
+12 : 0 4 2 4 2 4 3 3 4 4 4 20 31 ~17                                      1    69      0.03 sec  T/O =  0  PRV =  0
+13 : 0 4 2 4 2 4 4 5 8 12 14 32 32 49 ~12                                11    69      0.04 sec  T/O =  0  PRV =  0
+14 : 0 4 2 4 2 4 2 4 2 4 2 4 6 5 36 ~24                                   0    69      0.04 sec  T/O =  0  PRV =  0
+15 : 0 4 2 4 2 4 2 4 2 4 2 4 6 5 21 31 ~24                                1    69      0.04 sec  T/O =  0  PRV =  0
+16 : 0 4 2 4 2 4 2 4 2 4 2 4 7 7 26 28 43 ~24                             5    69      0.05 sec  T/O =  0  PRV =  0
+17 : 0 4 2 4 2 4 2 4 2 4 2 4 3 5 3 21 17 28 ~36                           1    69      0.05 sec  T/O =  0  PRV =  0
+18 : 0 4 2 4 2 4 2 4 2 4 2 4 2 4 2 20 17 18 26 ~33                        1    69      0.06 sec  T/O =  0  PRV =  0
+Proved output 0 in frame 18.
+Proved output 1 in frame 18.
+19 : 0 4 2 4 2 4 2 4 2 4 2 4 2 4 2 20 17 18 0 -10 ~68              0    69      0.06 sec  T/O =  0  PRV =  2
+Block =  206  Oblig =   548  Clause =   449  Call =  3678 (sat=52.7%)  Cex =   0  Start =   3
+SAT solving =     0.02 sec ( 36.17 %)
+unsat     =     0.00 sec (  4.80 %)
+sat       =     0.02 sec ( 31.37 %)
+Generalize  =     0.01 sec ( 15.64 %)
+Push clause =     0.01 sec ( 17.32 %)
+Ternary sim =     0.00 sec (  1.59 %)
+Containment =     0.00 sec (  0.15 %)
+CNF compute =     0.00 sec (  1.93 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.07 sec (100.00 %)
+Property proved.  Time =     0.07 sec
+Counter-example is not available.

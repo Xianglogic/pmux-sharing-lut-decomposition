@@ -1,0 +1,41 @@
+{
+  "version": "Yosys Witness Aiger map",
+  "gennerator": "Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "latch_count": 0,
+  "input_count": 24,
+  "clocks": [],
+  "inputs": [
+    {"input": 0, "offset": 0, "path": ["\\__pi_datad"]},
+    {"input": 1, "offset": 1, "path": ["\\__pi_datad"]},
+    {"input": 2, "offset": 2, "path": ["\\__pi_datad"]},
+    {"input": 3, "offset": 3, "path": ["\\__pi_datad"]},
+    {"input": 4, "offset": 4, "path": ["\\__pi_datad"]},
+    {"input": 5, "offset": 0, "path": ["\\__pi_datac"]},
+    {"input": 6, "offset": 1, "path": ["\\__pi_datac"]},
+    {"input": 7, "offset": 2, "path": ["\\__pi_datac"]},
+    {"input": 8, "offset": 3, "path": ["\\__pi_datac"]},
+    {"input": 9, "offset": 4, "path": ["\\__pi_datac"]},
+    {"input": 10, "offset": 0, "path": ["\\__pi_datab"]},
+    {"input": 11, "offset": 1, "path": ["\\__pi_datab"]},
+    {"input": 12, "offset": 2, "path": ["\\__pi_datab"]},
+    {"input": 13, "offset": 3, "path": ["\\__pi_datab"]},
+    {"input": 14, "offset": 4, "path": ["\\__pi_datab"]},
+    {"input": 15, "offset": 0, "path": ["\\__pi_dataa"]},
+    {"input": 16, "offset": 1, "path": ["\\__pi_dataa"]},
+    {"input": 17, "offset": 2, "path": ["\\__pi_dataa"]},
+    {"input": 18, "offset": 3, "path": ["\\__pi_dataa"]},
+    {"input": 19, "offset": 4, "path": ["\\__pi_dataa"]},
+    {"input": 20, "offset": 0, "path": ["\\__pi_d"]},
+    {"input": 21, "offset": 0, "path": ["\\__pi_c"]},
+    {"input": 22, "offset": 0, "path": ["\\__pi_b"]},
+    {"input": 23, "offset": 0, "path": ["\\__pi_a"]}
+  ],
+  "seqs": [],
+  "inits": [],
+  "asserts": [
+    ["\\_witness_", "\\assert_flatten___po_out__assert__assert________________partitions_test2_out_sv_86_2494"]
+  ],
+  "assumes": [
+    ["\\_witness_", "\\assume_auto_xprop_cc_1237_execute_2503"]
+  ]
+}

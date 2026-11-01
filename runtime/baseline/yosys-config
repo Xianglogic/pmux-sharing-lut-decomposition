@@ -1,0 +1,112 @@
+#!/usr/bin/env bash
+
+help() {
+	{
+		echo ""
+		echo "Usage: $0 [--exec] [--prefix pf] args.."
+		echo "       $0 --build modname.so cppsources.."
+		echo ""
+		echo "Replacement args:"
+		echo "    --cxx         D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe"
+		echo "    --cxxflags    $( echo '-std=c++20 /DWIN32 /D_WINDOWS /EHsc -D_YOSYS_ -DYOSYS_VER="0.69" -DYOSYS_MAJOR=0 -DYOSYS_MINOR=69 -DYOSYS_COMMIT=0 -ID:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/share/yosys/include' | fmt -w60 | sed ':a;N;$!ba;s/\n/ \\\n                      /g' )"
+		echo "    --linkflags   "
+		echo "    --ldflags     (alias of --linkflags)"
+		echo "    --libs        "
+		echo "    --ldlibs      (alias of --libs)"
+		echo "    --bindir      D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/bin"
+		echo "    --datdir      D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/share/yosys"
+		echo ""
+		echo "All other args are passed through as they are."
+		echo ""
+		echo "Use --exec to call a command instead of generating output. Example usage:"
+		echo ""
+		echo "  $0 --exec --cxx --cxxflags --ldflags -o plugin.so -shared plugin.cc --libs"
+		echo ""
+		echo "The above command can be abbreviated as:"
+		echo ""
+		echo "  $0 --build plugin.so plugin.cc"
+		echo ""
+		echo "Use --prefix to change the prefix for the special args from '--' to"
+		echo "something else. Example:"
+		echo ""
+		echo "  $0 --prefix @ bindir: @bindir"
+		echo ""
+		echo "The args --bindir and --datdir can be directly followed by a slash and"
+		echo "additional text. Example:"
+		echo ""
+		echo "  $0 --datdir/simlib.v"
+		echo ""
+	} >&$(( $1 + 1))
+	exit $1
+}
+
+if [ $# -eq 0 ]; then
+	help 1
+fi
+
+if [ "$1" = "--build" ]; then
+	modname="$2"; shift 2
+	set -- --exec --cxx --cxxflags --ldflags -o "$modname" -shared "$@" --libs
+fi
+
+prefix="--"
+get_prefix=false
+exec_mode=false
+declare -a tokens=()
+
+for opt; do
+	if $get_prefix; then
+		prefix="$opt"
+		get_prefix=false
+		continue
+	fi
+	case "$opt" in
+		"$prefix"cxx)
+			tokens=( "${tokens[@]}"  D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe       ) ;;
+		"$prefix"cxxflags)
+			tokens=( "${tokens[@]}"  -std=c++20 /DWIN32 /D_WINDOWS /EHsc -D_YOSYS_ -DYOSYS_VER="0.69" -DYOSYS_MAJOR=0 -DYOSYS_MINOR=69 -DYOSYS_COMMIT=0 -ID:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/share/yosys/include  ) ;;
+		"$prefix"linkflags)
+			tokens=( "${tokens[@]}"     ) ;;
+		"$prefix"libs)
+			tokens=( "${tokens[@]}"      ) ;;
+		"$prefix"ldflags)
+			tokens=( "${tokens[@]}"     ) ;;
+		"$prefix"ldlibs)
+			tokens=( "${tokens[@]}"      ) ;;
+		"$prefix"bindir)
+			tokens=( "${tokens[@]}" 'D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/bin'   ) ;;
+		"$prefix"datdir)
+			tokens=( "${tokens[@]}" 'D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/share/yosys'   ) ;;
+		"$prefix"bindir/*)
+			tokens=( "${tokens[@]}" 'D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/bin'"${opt#${prefix}bindir}" ) ;;
+		"$prefix"datdir/*)
+			tokens=( "${tokens[@]}" 'D:/FPGA/demo/v35_area_efficiency_20261012/retest_20261013/native/package/baseline/share/yosys'"${opt#${prefix}datdir}" ) ;;
+		--help|-\?|-h)
+			if [ ${#tokens[@]} -eq 0 ]; then
+				help 0
+			else
+				tokens=( "${tokens[@]}" "$opt" )
+			fi ;;
+		--exec)
+			if [ ${#tokens[@]} -eq 0 ]; then
+				exec_mode=true
+			else
+				tokens=( "${tokens[@]}" "$opt" )
+			fi ;;
+		--prefix)
+			if [ ${#tokens[@]} -eq 0 ]; then
+				get_prefix=true
+			else
+				tokens=( "${tokens[@]}" "$opt" )
+			fi ;;
+		*)
+			tokens=( "${tokens[@]}" "$opt" )
+	esac
+done
+
+if $exec_mode; then
+	exec "${tokens[@]}"
+fi
+
+echo "${tokens[@]}"
+exit 0

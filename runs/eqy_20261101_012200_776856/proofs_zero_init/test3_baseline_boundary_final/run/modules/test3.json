@@ -1,0 +1,632 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "test3",
+    "inbits": {
+      "clk": [
+        0
+      ],
+      "cs": [
+        0
+      ],
+      "sr_in": [
+        0
+      ]
+    },
+    "outbits": {
+      "gpioout": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_out": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test3",
+    "internal": {
+      "gpioout_dffeas_q.clk": [
+        0
+      ],
+      "gpioout_dffeas_q.d": [
+        0
+      ],
+      "gpioout_dffeas_q.ena": [
+        0
+      ],
+      "gpioout_dffeas_q.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_1.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_1.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1_d": [
+        0,
+        1
+      ],
+      "gpioout_dffeas_q_2.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_2.d": [
+        0
+      ],
+      "gpioout_dffeas_q_2.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_2.q": [
+        0
+      ],
+      "gpioout_dffeas_q_3.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_3.d": [
+        0
+      ],
+      "gpioout_dffeas_q_3.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3.q": [
+        0
+      ],
+      "gpioout_dffeas_q_4.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_4.d": [
+        0
+      ],
+      "gpioout_dffeas_q_4.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_4.q": [
+        0
+      ],
+      "gpioout_dffeas_q_5.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_5.d": [
+        0
+      ],
+      "gpioout_dffeas_q_5.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_5.q": [
+        0
+      ],
+      "gpioout_dffeas_q_6.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_6.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_6.q": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_7.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_7.d": [
+        0
+      ],
+      "gpioout_dffeas_q_7.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_7.q": [
+        0
+      ],
+      "rw": [
+        0
+      ],
+      "rw_dffeas_q.clk": [
+        0
+      ],
+      "rw_dffeas_q.d": [
+        0
+      ],
+      "rw_dffeas_q.q": [
+        0
+      ],
+      "sr": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_dffeas_q.clk": [
+        0
+      ],
+      "sr_dffeas_q.d": [
+        0
+      ],
+      "sr_dffeas_q.q": [
+        0
+      ],
+      "sr_dffeas_q_1.clk": [
+        0
+      ],
+      "sr_dffeas_q_1.d": [
+        0
+      ],
+      "sr_dffeas_q_1.q": [
+        0
+      ],
+      "sr_dffeas_q_2.clk": [
+        0
+      ],
+      "sr_dffeas_q_2.d": [
+        0
+      ],
+      "sr_dffeas_q_2.q": [
+        0
+      ],
+      "sr_dffeas_q_3.clk": [
+        0
+      ],
+      "sr_dffeas_q_3.d": [
+        0
+      ],
+      "sr_dffeas_q_3.q": [
+        0
+      ],
+      "sr_dffeas_q_4.clk": [
+        0
+      ],
+      "sr_dffeas_q_4.d": [
+        0
+      ],
+      "sr_dffeas_q_4.q": [
+        0
+      ],
+      "sr_dffeas_q_5.clk": [
+        0
+      ],
+      "sr_dffeas_q_5.d": [
+        0
+      ],
+      "sr_dffeas_q_5.q": [
+        0
+      ],
+      "sr_dffeas_q_6.clk": [
+        0
+      ],
+      "sr_dffeas_q_6.d": [
+        0
+      ],
+      "sr_dffeas_q_6.q": [
+        0
+      ],
+      "sr_out_dffeas_q.clk": [
+        0
+      ],
+      "sr_out_dffeas_q.d": [
+        0
+      ],
+      "sr_out_dffeas_q.q": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 199,
+    "bitcount": 202
+  },
+  "gate_module": {
+    "name": "gold.test3",
+    "internal": {
+      "gpioout_dffeas_q.clk": [
+        0
+      ],
+      "gpioout_dffeas_q.d": [
+        0
+      ],
+      "gpioout_dffeas_q.ena": [
+        0
+      ],
+      "gpioout_dffeas_q.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_1.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_1.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1_d": [
+        0,
+        1
+      ],
+      "gpioout_dffeas_q_1_d_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_1_d_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_2.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_2.d": [
+        0
+      ],
+      "gpioout_dffeas_q_2.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_2.q": [
+        0
+      ],
+      "gpioout_dffeas_q_3.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_3.d": [
+        0
+      ],
+      "gpioout_dffeas_q_3.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3.q": [
+        0
+      ],
+      "gpioout_dffeas_q_4.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_4.d": [
+        0
+      ],
+      "gpioout_dffeas_q_4.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_4.q": [
+        0
+      ],
+      "gpioout_dffeas_q_5.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_5.d": [
+        0
+      ],
+      "gpioout_dffeas_q_5.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_5.q": [
+        0
+      ],
+      "gpioout_dffeas_q_6.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_6.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_6.q": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_A.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_A.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_A.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_A": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_A_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_A_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_A_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_2_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_A_Y": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_3_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_6_ena_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_7.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_7.d": [
+        0
+      ],
+      "gpioout_dffeas_q_7.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_7.q": [
+        0
+      ],
+      "rw": [
+        0
+      ],
+      "rw_dffeas_q.clk": [
+        0
+      ],
+      "rw_dffeas_q.d": [
+        0
+      ],
+      "rw_dffeas_q.q": [
+        0
+      ],
+      "sr": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_dffeas_q.clk": [
+        0
+      ],
+      "sr_dffeas_q.d": [
+        0
+      ],
+      "sr_dffeas_q.q": [
+        0
+      ],
+      "sr_dffeas_q_1.clk": [
+        0
+      ],
+      "sr_dffeas_q_1.d": [
+        0
+      ],
+      "sr_dffeas_q_1.q": [
+        0
+      ],
+      "sr_dffeas_q_2.clk": [
+        0
+      ],
+      "sr_dffeas_q_2.d": [
+        0
+      ],
+      "sr_dffeas_q_2.q": [
+        0
+      ],
+      "sr_dffeas_q_3.clk": [
+        0
+      ],
+      "sr_dffeas_q_3.d": [
+        0
+      ],
+      "sr_dffeas_q_3.q": [
+        0
+      ],
+      "sr_dffeas_q_4.clk": [
+        0
+      ],
+      "sr_dffeas_q_4.d": [
+        0
+      ],
+      "sr_dffeas_q_4.q": [
+        0
+      ],
+      "sr_dffeas_q_5.clk": [
+        0
+      ],
+      "sr_dffeas_q_5.d": [
+        0
+      ],
+      "sr_dffeas_q_5.q": [
+        0
+      ],
+      "sr_dffeas_q_6.clk": [
+        0
+      ],
+      "sr_dffeas_q_6.d": [
+        0
+      ],
+      "sr_dffeas_q_6.q": [
+        0
+      ],
+      "sr_out_dffeas_q.clk": [
+        0
+      ],
+      "sr_out_dffeas_q.d": [
+        0
+      ],
+      "sr_out_dffeas_q.q": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 257,
+    "bitcount": 260
+  }
+}

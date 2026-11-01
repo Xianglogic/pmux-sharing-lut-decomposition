@@ -1,0 +1,60 @@
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/gold.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/gold.ys"
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_4.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_1.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_2_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_3_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_2.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_2_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_A_3_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_3_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_2_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_3_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_3.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_2_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_3_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y_A_2_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: Warning: Wire test2.\out_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/gate.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/gate.ys"
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gold: finished (returncode=0)
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_4.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\a_$lut_A.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\a_$lut_A_1.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\a_$lut_A_2.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_1.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_2.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y_3.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: Warning: Wire test2.\out_$lut_Y.cin is used but has no driver.
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] read_gate: finished (returncode=0)
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] combine: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/combine.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/combine.ys"
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] combine: finished (returncode=0)
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] partition: starting process "cd /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run; /tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql partition.log partition.ys"
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] partition: finished (returncode=0)
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: starting process "make -j1 -C /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run -f strategies.mk"
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: make: Entering directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run'
+EQY  1:22:14 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: Running strategy 'pdr' on 'test2.out'..
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: Proved equivalence of partition 'test2.out' using strategy 'pdr'
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: make -f strategies.mk summary
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: make[1]: Entering directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run'
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: make[1]: Leaving directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run'
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: make: Leaving directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run'
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] run: finished (returncode=0)
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] Successfully proved equivalence of partition test2.out
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] Successfully proved designs equivalent
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+EQY  1:22:15 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run] DONE (PASS, rc=0)

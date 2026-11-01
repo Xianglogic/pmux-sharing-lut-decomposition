@@ -1,0 +1,880 @@
+{
+  "tag": "full",
+  "cases": {
+    "test1": {
+      "case": "test1",
+      "top": "test1",
+      "manifest": {
+        "case_id": "test1",
+        "top": "test1",
+        "sources": [
+          "test1/test1/test1.v"
+        ],
+        "sha256": {
+          "test1/test1/test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+        },
+        "include_dirs": [],
+        "parameters": {},
+        "size_scope": "bounded",
+        "group": "original4"
+      },
+      "source_sha256": {
+        "test1/test1/test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+      },
+      "folder": "capture_full/test1",
+      "initialized_il_sha256": "4332ce5847b87605163ac9fb976d4919aae1489a057048e42dbfbbf738f34e0d",
+      "initialized_json_sha256": "c886596d264845151ca507c372ebec664bd92b9d334bf45172423c992b6973e3",
+      "logical_ff_bits_initialized": 222,
+      "explicit_old_init_bits_preserved": 6,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 288,
+            "lut": 286,
+            "not_count": 2,
+            "ff": 222,
+            "cells": 510,
+            "types": {
+              "$not": 2,
+              "cycloneiv_lcell_comb": 286,
+              "dffeas": 222
+            }
+          },
+          "final_il_sha256": "597cd6610df65a7495992d1aaf88955242a7e2f8ca2bb509286bee9ac8e3189e",
+          "final_json_sha256": "eae310c057491208de4409d6976c8c6b7922350648c42e2fab712abd5b058280",
+          "boundary_il_sha256": "2d245eb9b5b9a95cf8e3dcc577267a3e9f47a18a1ffec12a1071e8279b89b854",
+          "boundary_json_sha256": "ebb0dad3b56b9d036e44d5f27bba6707099c2164735ed0fa4f71441efc342c8d",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 222
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 2,
+              "cycloneiv_lcell_comb": 286,
+              "dffeas": 222
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 156,
+            "lut": 153,
+            "not_count": 3,
+            "ff": 210,
+            "cells": 366,
+            "types": {
+              "$not": 3,
+              "cycloneiv_lcell_comb": 153,
+              "dffeas": 210
+            }
+          },
+          "final_il_sha256": "c60152332f9471dfa593b20eb2d0830d655be39399001763b5ab7c4ed20ed39d",
+          "final_json_sha256": "9be0aeea6e4ce5bbe43e5e52e3311df0689a24ed4eace0ebb64cd090b041790c",
+          "boundary_il_sha256": "c00f6057af9c510e0aeed0fac7f8a3696f2494e3444824dbca8afbe5f8bd0f7e",
+          "boundary_json_sha256": "2950644066d014fa995b446ab8cbd79fbe13fe180f9237afc1be3be4003bf7ec",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 210
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 3,
+              "cycloneiv_lcell_comb": 153,
+              "dffeas": 210
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "test2": {
+      "case": "test2",
+      "top": "test2",
+      "manifest": {
+        "case_id": "test2",
+        "top": "test2",
+        "sources": [
+          "test2/test2/test2.v"
+        ],
+        "sha256": {
+          "test2/test2/test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+        },
+        "include_dirs": [],
+        "parameters": {},
+        "size_scope": "bounded",
+        "group": "original4"
+      },
+      "source_sha256": {
+        "test2/test2/test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+      },
+      "folder": "capture_full/test2",
+      "initialized_il_sha256": "60791bb70ab7cfe9e09f8beb12668c643b557e9ac8e6209882c62bce1d07d180",
+      "initialized_json_sha256": "a62f70ea86bd51823c37347da2d1b213e1a06f543133072ae40e21b9b224159a",
+      "logical_ff_bits_initialized": 0,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 25,
+            "lut": 25,
+            "not_count": 0,
+            "ff": 0,
+            "cells": 25,
+            "types": {
+              "cycloneiv_lcell_comb": 25
+            }
+          },
+          "final_il_sha256": "5a6e66b6be4aa215be443b046d2fb1e25794f244902a9a49827f11fa2f1669fd",
+          "final_json_sha256": "8c2b16abb9a4818ae5614bfa7b1e333ad0ab77664e24d4e521c2124133e80be1",
+          "boundary_il_sha256": "d51963d246c559b44861900fe155b1b05ca3eb0095e47d42ba989007d5b3f637",
+          "boundary_json_sha256": "35060551cc78c4d2a0cd3ed53f93f10e9af986bf193c4face11e8920f85617dc",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {},
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "cycloneiv_lcell_comb": 25
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 13,
+            "lut": 13,
+            "not_count": 0,
+            "ff": 0,
+            "cells": 13,
+            "types": {
+              "cycloneiv_lcell_comb": 13
+            }
+          },
+          "final_il_sha256": "7b4f5339748baca6d6d462208c065ca1c6accbfb7fcbf7ad6c18f3046a77d623",
+          "final_json_sha256": "1f0ffde11fd6a2ca91e89b712a0347773a83c94259adbabf73f775c5d4597e50",
+          "boundary_il_sha256": "36d657b2f98c0f0aa7e71fd16f77c1c702dd5cc760710e83ce7bf75d5b8c297d",
+          "boundary_json_sha256": "84781c93d91ecf39ced350d7ae3efd43369149126a17961857efcaaa695111be",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {},
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "cycloneiv_lcell_comb": 13
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "test3": {
+      "case": "test3",
+      "top": "test3",
+      "manifest": {
+        "case_id": "test3",
+        "top": "test3",
+        "sources": [
+          "test3/test3/test3.v"
+        ],
+        "sha256": {
+          "test3/test3/test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+        },
+        "include_dirs": [],
+        "parameters": {},
+        "size_scope": "bounded",
+        "group": "original4"
+      },
+      "source_sha256": {
+        "test3/test3/test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+      },
+      "folder": "capture_full/test3",
+      "initialized_il_sha256": "e42cf4b1cf852644065932f25dd937e6109dfbb5b1bd0d6737da288968a5da79",
+      "initialized_json_sha256": "89dad71945702737618d1c8016ea7a2fb9d8ad0b24eaffc63faa48749dca600d",
+      "logical_ff_bits_initialized": 17,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 13,
+            "lut": 12,
+            "not_count": 1,
+            "ff": 17,
+            "cells": 30,
+            "types": {
+              "$not": 1,
+              "cycloneiv_lcell_comb": 12,
+              "dffeas": 17
+            }
+          },
+          "final_il_sha256": "366581b3463fe63e0a756c51046fa204e880c706743e8507d20aa1853fb4b90b",
+          "final_json_sha256": "bd7b22f3b6a7ff43cfb6c26b79a3f305dd7ea26339531f476d5e06abdfc0c8c6",
+          "boundary_il_sha256": "d037930db2edb4b1ef6903ca7e28c21c168ae2c6dac0c0958962c9e337ee96e1",
+          "boundary_json_sha256": "b50b5023fc3ed0156698a53896413c307e7a0cc48a3987cafcf8553260cebf18",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 17
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 1,
+              "dffeas": 17,
+              "cycloneiv_lcell_comb": 12
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 8,
+            "lut": 8,
+            "not_count": 0,
+            "ff": 14,
+            "cells": 22,
+            "types": {
+              "cycloneiv_lcell_comb": 8,
+              "dffeas": 14
+            }
+          },
+          "final_il_sha256": "1a92b626cc79c5a819844b59960594aff6632c4d84d25fa74970e7d24f3d989b",
+          "final_json_sha256": "aaa36862e62e394bee179468b78ddd343d76d8c75981b05f38aca11b11fd4079",
+          "boundary_il_sha256": "5f90ee76bf5b3a90ca58b1e01a00bfcd5c61e1e27049385c613f435f79e832d7",
+          "boundary_json_sha256": "b7f28b38b7f0cfa4662352f85af2147f778954c2b54b426f95fc6909689e4416",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 14,
+              "cycloneiv_lcell_comb": 3
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "cycloneiv_lcell_comb": 8,
+              "dffeas": 14
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "test4": {
+      "case": "test4",
+      "top": "test4",
+      "manifest": {
+        "case_id": "test4",
+        "top": "test4",
+        "sources": [
+          "test4/test4/test4.v"
+        ],
+        "sha256": {
+          "test4/test4/test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+        },
+        "include_dirs": [],
+        "parameters": {},
+        "size_scope": "bounded",
+        "group": "original4"
+      },
+      "source_sha256": {
+        "test4/test4/test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+      },
+      "folder": "capture_full/test4",
+      "initialized_il_sha256": "251be0defaf743c1886bccde713ed6f0e5ebecf0227bf456dcd38a65ed2da03d",
+      "initialized_json_sha256": "5e1fca231fd0bb720dc0994a3bc4b57ca1d83f63e49ee75ddb5a05bee25329e6",
+      "logical_ff_bits_initialized": 10,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 34,
+            "lut": 33,
+            "not_count": 1,
+            "ff": 10,
+            "cells": 44,
+            "types": {
+              "$not": 1,
+              "cycloneiv_lcell_comb": 33,
+              "dffeas": 10
+            }
+          },
+          "final_il_sha256": "9b91fac4ee4994c1f29ba148e4ee060d6e3b52e583925420e4c05486d14d9bc0",
+          "final_json_sha256": "91a1e6873ac8c8593809bc45c076fc32f68dd8a465130bed360271e821ea1618",
+          "boundary_il_sha256": "ba4c91c427e436544efb85c4c039cb729751450b7cba5ad21e3a8156692560ac",
+          "boundary_json_sha256": "b29fb2b498d7ee52078656dace68019987cf291523471ec8a31143f06c8833fa",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 1,
+              "dffeas": 10,
+              "cycloneiv_lcell_comb": 33
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 26,
+            "lut": 26,
+            "not_count": 0,
+            "ff": 10,
+            "cells": 36,
+            "types": {
+              "cycloneiv_lcell_comb": 26,
+              "dffeas": 10
+            }
+          },
+          "final_il_sha256": "e6e8b5a9b9668c8703374afa649096da25a03c2cc6dbdc7462feae8054d3e96b",
+          "final_json_sha256": "8d29f7fdeb0f4f38f26863077ffcefa7a522cf9fce3a7b484ce54d40093863d4",
+          "boundary_il_sha256": "94c0f23a24e79abdaec1675919f20aeacd4f26fa96ab0c82758261d1ab41ec5d",
+          "boundary_json_sha256": "bbe55e947242412c779f4768882736f808d0db85c123dd9853bc2e094b4b4973",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10,
+              "cycloneiv_lcell_comb": 26
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "pmux_case01_balanced": {
+      "case": "pmux_case01_balanced",
+      "top": "pmux_case01_balanced",
+      "manifest": {
+        "case_id": "pmux_case01_balanced",
+        "top": "pmux_case01_balanced",
+        "sources": [
+          "pmux_case01_balanced/pmux_case01_balanced.v"
+        ],
+        "sha256": {
+          "pmux_case01_balanced/pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+        },
+        "parameters": {},
+        "rtl_default_parameters": {
+          "LANES": 1,
+          "WIDTH": 12
+        },
+        "group": "added5",
+        "include_dirs": []
+      },
+      "source_sha256": {
+        "pmux_case01_balanced/pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+      },
+      "folder": "capture_full/pmux_case01_balanced",
+      "initialized_il_sha256": "f4d729f65a871a77594721048bbf75dad4fad53afbbe7ef456394d5ffd5ea96f",
+      "initialized_json_sha256": "eaf2cbfbc0d9a2c109e97787c3b7fa6af547372a807d5651806aedeb70d823f5",
+      "logical_ff_bits_initialized": 12,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 406,
+            "lut": 406,
+            "not_count": 0,
+            "ff": 12,
+            "cells": 418,
+            "types": {
+              "cycloneiv_lcell_comb": 406,
+              "dffeas": 12
+            }
+          },
+          "final_il_sha256": "5f18556bb4aa113f30236fe7d18637f059dad964dc33f27a1defaa67b414d588",
+          "final_json_sha256": "09d79ff9189f8b9d63a2efb6e740bbb1d1e31ea23f1a0e89dddedd6153ea64b3",
+          "boundary_il_sha256": "b0c5a64c12b1d57a5075086d6b852559f3281c65cbef2ccb8fba19560959dcc8",
+          "boundary_json_sha256": "509e4b6b4c06af5291129fd2dd25e1297ceec1b6682d4ba5759f3de36cdaaf3b",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12,
+              "cycloneiv_lcell_comb": 406
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 291,
+            "lut": 291,
+            "not_count": 0,
+            "ff": 12,
+            "cells": 303,
+            "types": {
+              "cycloneiv_lcell_comb": 291,
+              "dffeas": 12
+            }
+          },
+          "final_il_sha256": "227608e2b1407dba746a621a6c97a4e2cd5f2d51cf7f9e1ce26cfa2359cb47f3",
+          "final_json_sha256": "c17d2e31061f67c2aa54cbc5ed8260bfad03634fbec9a68f37695f15e26e9fbe",
+          "boundary_il_sha256": "a685e523f89a6c9ab92abfff5d3fa1e17d917b4809c8f3a526116fa96a430ba3",
+          "boundary_json_sha256": "8be89ee1eadcc8a438e8454b10d2533c2475fc25f3d4df4cd6f2a485c11a2f06",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12,
+              "cycloneiv_lcell_comb": 291
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "pmux_case02_pipeline": {
+      "case": "pmux_case02_pipeline",
+      "top": "pmux_case02_pipeline",
+      "manifest": {
+        "case_id": "pmux_case02_pipeline",
+        "top": "pmux_case02_pipeline",
+        "sources": [
+          "pmux_case02_pipeline/pmux_case02_pipeline.v"
+        ],
+        "sha256": {
+          "pmux_case02_pipeline/pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+        },
+        "parameters": {},
+        "rtl_default_parameters": {
+          "LANES": 4,
+          "WIDTH": 3
+        },
+        "group": "added5",
+        "include_dirs": []
+      },
+      "source_sha256": {
+        "pmux_case02_pipeline/pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+      },
+      "folder": "capture_full/pmux_case02_pipeline",
+      "initialized_il_sha256": "d6472e7b3083e1b360c0d141d4aeda81f60b399664bcd9d1b8bbf78e72c3321a",
+      "initialized_json_sha256": "420d6dc37142be846a9a9f3709e5b4ab53251953ddd9fe3467bf57d6a2ce5aec",
+      "logical_ff_bits_initialized": 24,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 445,
+            "lut": 445,
+            "not_count": 0,
+            "ff": 24,
+            "cells": 469,
+            "types": {
+              "cycloneiv_lcell_comb": 445,
+              "dffeas": 24
+            }
+          },
+          "final_il_sha256": "d2f688113d32d3ce40ccff3e9cd8153ae1420b63c9ca21649eda6650570cb76d",
+          "final_json_sha256": "ebc3c3b4c92b114f5d28ed9cf4cdc7e8d6cf810264cc07c3e02e5d97c67e3c74",
+          "boundary_il_sha256": "617f334ba5b3ca5ca6942b98aa42b87cb5c62851ea04501d49de74f3595ff5ba",
+          "boundary_json_sha256": "496db85b1a6e945601f4b6723dc6294c301bc2e7aac2766ee898c3c54a4ce8de",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 24
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 24,
+              "cycloneiv_lcell_comb": 445
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 317,
+            "lut": 317,
+            "not_count": 0,
+            "ff": 24,
+            "cells": 341,
+            "types": {
+              "cycloneiv_lcell_comb": 317,
+              "dffeas": 24
+            }
+          },
+          "final_il_sha256": "1f0dd19c9f2a6b461b036ea3d49a018297daf0d02dcfc5783351ee8033b8c346",
+          "final_json_sha256": "8b1e70c91d57ed7ec7743744601e496ed03d353bb554c15616712a738450fbd5",
+          "boundary_il_sha256": "dbe4871839381300f68dbbc83d2c6e25eed129d51cdcba800e7a51a7927c3f0a",
+          "boundary_json_sha256": "2191683fafa2b61a779a4f6e63141a2f196876a19754d53247592035f7a989f0",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 24
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 24,
+              "cycloneiv_lcell_comb": 317
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "pmux_case03_crossbar": {
+      "case": "pmux_case03_crossbar",
+      "top": "pmux_case03_crossbar",
+      "manifest": {
+        "case_id": "pmux_case03_crossbar",
+        "top": "pmux_case03_crossbar",
+        "sources": [
+          "pmux_case03_crossbar/pmux_case03_crossbar.v"
+        ],
+        "sha256": {
+          "pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+        },
+        "parameters": {},
+        "rtl_default_parameters": {
+          "LANES": 2,
+          "WIDTH": 5
+        },
+        "group": "added5",
+        "include_dirs": []
+      },
+      "source_sha256": {
+        "pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+      },
+      "folder": "capture_full/pmux_case03_crossbar",
+      "initialized_il_sha256": "34ffb1c76f4b8e708de12b1285a0ba12f698e7952f7364ade45fa6695db123f7",
+      "initialized_json_sha256": "f699c2a850953760c3ed275f89fa2d559c19cabbcb60461aef5c0a70d3e25774",
+      "logical_ff_bits_initialized": 10,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 409,
+            "lut": 409,
+            "not_count": 0,
+            "ff": 10,
+            "cells": 419,
+            "types": {
+              "cycloneiv_lcell_comb": 409,
+              "dffeas": 10
+            }
+          },
+          "final_il_sha256": "c1ac6c82954e00648c9f56095b1a2934a19759265489c732f4adc910c8ac7fcb",
+          "final_json_sha256": "80a3b1d9524b2bee033fe72b16e3ac78194fc3d1474ccaaa23bdbe68dedf5db8",
+          "boundary_il_sha256": "bb1569a8b021ff3ca5a5e8982ead3290e7c245fccdf71597e703f4a99cde5569",
+          "boundary_json_sha256": "0c2ff93ccac802548cf221cf545c39ac21a09ee172cc87c6ab59ca3291a3bfc9",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10,
+              "cycloneiv_lcell_comb": 409
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 303,
+            "lut": 303,
+            "not_count": 0,
+            "ff": 10,
+            "cells": 313,
+            "types": {
+              "cycloneiv_lcell_comb": 303,
+              "dffeas": 10
+            }
+          },
+          "final_il_sha256": "e8c33959620d24483e744cfeab46922fc8f5a2ff9f94ba704c67212c372a557b",
+          "final_json_sha256": "620be92719027565d1aad52c197c037650be18e3b1137603c3bef0a340d1cfd0",
+          "boundary_il_sha256": "750c651ade22f788e31aa4c99b92c491f4e72c36770f2d7b830565bf7df93ddb",
+          "boundary_json_sha256": "604625cd8a97eed431418f71d151e3f76ea966edfed6326ce6647212cfd87736",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 10,
+              "cycloneiv_lcell_comb": 303
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "pmux_case04_feedback": {
+      "case": "pmux_case04_feedback",
+      "top": "pmux_case04_feedback",
+      "manifest": {
+        "case_id": "pmux_case04_feedback",
+        "top": "pmux_case04_feedback",
+        "sources": [
+          "pmux_case04_feedback/pmux_case04_feedback.v"
+        ],
+        "sha256": {
+          "pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+        },
+        "parameters": {},
+        "rtl_default_parameters": {
+          "LANES": 2,
+          "WIDTH": 8
+        },
+        "group": "added5",
+        "include_dirs": []
+      },
+      "source_sha256": {
+        "pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+      },
+      "folder": "capture_full/pmux_case04_feedback",
+      "initialized_il_sha256": "8ad8e4da7cc5da46be269eee0767c8d9735f5708179f976798e3df2c05cf0dae",
+      "initialized_json_sha256": "6e161c5d66197acc87e98d5a963910d4e4c8eca84afa27933c6686a1c739f6fe",
+      "logical_ff_bits_initialized": 16,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 367,
+            "lut": 366,
+            "not_count": 1,
+            "ff": 16,
+            "cells": 383,
+            "types": {
+              "$not": 1,
+              "cycloneiv_lcell_comb": 366,
+              "dffeas": 16
+            }
+          },
+          "final_il_sha256": "27cd766b7e8f3c39e971dcdeaa5211f7d1002e6b0bdc94fc17e3d9db822e38c2",
+          "final_json_sha256": "a90d9df49d6fa03b5900346f3e4c832672f67e92a328811f9e441e04a77012ac",
+          "boundary_il_sha256": "ca2755495acc8b239a992791f5cfc7837d01af595a20f09e62d48c48562eff98",
+          "boundary_json_sha256": "d8a65f31e5bd78c4591a076f9c3ca8de9e0b7396c324a7abefb353f8343301ce",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 16
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 1,
+              "dffeas": 16,
+              "cycloneiv_lcell_comb": 366
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 281,
+            "lut": 280,
+            "not_count": 1,
+            "ff": 16,
+            "cells": 297,
+            "types": {
+              "$not": 1,
+              "cycloneiv_lcell_comb": 280,
+              "dffeas": 16
+            }
+          },
+          "final_il_sha256": "d116ba7f18e4b3840a32e6a5c9d171895edef737965eb140717916412470a1e4",
+          "final_json_sha256": "320bb4b4ca3d039d7a12b1a1b1cd79a62f710f956f94fe62c0268dd935fa1d29",
+          "boundary_il_sha256": "9b974aa0dd272a747f9c46a0abf7a26c2615c4595e4ba3c58417130817f36463",
+          "boundary_json_sha256": "b34607988454fb99c5f74e9a35dcfeb88f6ea213b27a5852b5ef60944045068f",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 16
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "$not": 1,
+              "dffeas": 16,
+              "cycloneiv_lcell_comb": 280
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    },
+    "pmux_case05_nested": {
+      "case": "pmux_case05_nested",
+      "top": "pmux_case05_nested",
+      "manifest": {
+        "case_id": "pmux_case05_nested",
+        "top": "pmux_case05_nested",
+        "sources": [
+          "pmux_case05_nested/pmux_case05_nested.v"
+        ],
+        "sha256": {
+          "pmux_case05_nested/pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+        },
+        "parameters": {},
+        "rtl_default_parameters": {
+          "LANES": 1,
+          "WIDTH": 12
+        },
+        "group": "added5",
+        "include_dirs": []
+      },
+      "source_sha256": {
+        "pmux_case05_nested/pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+      },
+      "folder": "capture_full/pmux_case05_nested",
+      "initialized_il_sha256": "cba94278183f844b74042e214f31ddb5d0b3afb8d9e40cf219803b481e69e42b",
+      "initialized_json_sha256": "72f5352372634c21ccb0d1d7ce185f9f43a277c60ccf62afb399f1723d7ff9b0",
+      "logical_ff_bits_initialized": 12,
+      "explicit_old_init_bits_preserved": 0,
+      "arms": {
+        "baseline": {
+          "resources": {
+            "logic": 415,
+            "lut": 415,
+            "not_count": 0,
+            "ff": 12,
+            "cells": 427,
+            "types": {
+              "cycloneiv_lcell_comb": 415,
+              "dffeas": 12
+            }
+          },
+          "final_il_sha256": "fce8f606713573c76fa3c156903cc53ab8075126450e0e78c041631bd51bcb3d",
+          "final_json_sha256": "98fd6dee995043c91e3c6960f0f8c243dd20d191fd60a1baff5fe34ba2190bd3",
+          "boundary_il_sha256": "da88ab5928eb3723b6661f77d4a56ec076ceb5099f331c6eb19ad240ecd8c9de",
+          "boundary_json_sha256": "db91ddc86d4d1c2769b4f282848ef89def06adda3fc3dab8b6af6830a7a5f632",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12,
+              "cycloneiv_lcell_comb": 415
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        },
+        "candidate": {
+          "resources": {
+            "logic": 317,
+            "lut": 317,
+            "not_count": 0,
+            "ff": 12,
+            "cells": 329,
+            "types": {
+              "cycloneiv_lcell_comb": 317,
+              "dffeas": 12
+            }
+          },
+          "final_il_sha256": "8c1a53d6c662d10b379adbb28f0c803f8662d38e656fbb19767e9bd5d39d4617",
+          "final_json_sha256": "1ad00a58757ccc81510218849b26ddfef58fe4c6820199301c9eeb593eb1b7a9",
+          "boundary_il_sha256": "2b0863fab56fd0640de79ef1ec0383849a3e8617c881451ffeab208e27f91683",
+          "boundary_json_sha256": "56fa6f556dd3c55c1c5c19e8d253f55ce437ab3828d0d1d835a6df409002d9e4",
+          "split_final_graph_equal_monolithic": true,
+          "boundary_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          },
+          "final_primitive_audit": {
+            "pass": true,
+            "cell_counts": {
+              "dffeas": 12,
+              "cycloneiv_lcell_comb": 317
+            },
+            "boundary": "LUT datac mode, unused carry; DFF positive clock, asynchronous active-low clear, enable before synchronous clear, declared power_up"
+          }
+        }
+      }
+    }
+  },
+  "initialization_command": "setundef -init -params -zero",
+  "source_contract": "Unknown logical RTL state and x parameter/connection bits set to zero before state recoding; explicitly defined init bits retained.",
+  "synthesis_timing_excluded": true,
+  "frozen_exe_sha256": {
+    "baseline": "4096266b5ad31531c67a1c81f88066c0a3cdf31008fe111a38c0443c2b04dec7",
+    "candidate": "6cdc900d916fa0093dbf8e0f4196712ae626e9fbb64bc137c26b28da4380abd3"
+  },
+  "not_the_archived_submission_netlists": true,
+  "complete": true
+}

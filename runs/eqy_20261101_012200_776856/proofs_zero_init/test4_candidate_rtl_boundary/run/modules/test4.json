@@ -1,0 +1,244 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "test4",
+    "inbits": {
+      "clk": [
+        0
+      ],
+      "datain": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ena": [
+        0
+      ],
+      "reset_n": [
+        0
+      ]
+    },
+    "outbits": {
+      "data_dn": [
+        0
+      ],
+      "data_dp": [
+        0
+      ],
+      "datain_5bis7": [
+        0
+      ],
+      "dataout": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "only_5b": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test4",
+    "internal": {},
+    "unused": {},
+    "cellcount": 181,
+    "bitcount": 189
+  },
+  "gate_module": {
+    "name": "gold.test4",
+    "internal": {
+      "data_dn_dffeas_q.clk": [
+        0
+      ],
+      "data_dn_dffeas_q.clrn": [
+        0
+      ],
+      "data_dn_dffeas_q.d": [
+        0
+      ],
+      "data_dn_dffeas_q.q": [
+        0
+      ],
+      "data_dn_dffeas_q_d": [
+        0
+      ],
+      "data_dn_dffeas_q_d_$lut_Y_A": [
+        0
+      ],
+      "data_dp_dffeas_q.clk": [
+        0
+      ],
+      "data_dp_dffeas_q.clrn": [
+        0
+      ],
+      "data_dp_dffeas_q.d": [
+        0
+      ],
+      "data_dp_dffeas_q.q": [
+        0
+      ],
+      "data_dp_dffeas_q_d": [
+        0
+      ],
+      "data_dp_dffeas_q_d_$lut_Y_A": [
+        0
+      ],
+      "datain_5bis7_dffeas_q.clk": [
+        0
+      ],
+      "datain_5bis7_dffeas_q.ena": [
+        0
+      ],
+      "datain_5bis7_dffeas_q.q": [
+        0
+      ],
+      "datain_5bis7_dffeas_q_d_$lut_Y_A": [
+        0
+      ],
+      "datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "dataout_dffeas_q.clk": [
+        0
+      ],
+      "dataout_dffeas_q.clrn": [
+        0
+      ],
+      "dataout_dffeas_q.d": [
+        0
+      ],
+      "dataout_dffeas_q.q": [
+        0
+      ],
+      "dataout_dffeas_q_1.clk": [
+        0
+      ],
+      "dataout_dffeas_q_1.clrn": [
+        0
+      ],
+      "dataout_dffeas_q_1.d": [
+        0
+      ],
+      "dataout_dffeas_q_1.q": [
+        0
+      ],
+      "dataout_dffeas_q_2.clk": [
+        0
+      ],
+      "dataout_dffeas_q_2.clrn": [
+        0
+      ],
+      "dataout_dffeas_q_2.d": [
+        0
+      ],
+      "dataout_dffeas_q_2.q": [
+        0
+      ],
+      "dataout_dffeas_q_3.clk": [
+        0
+      ],
+      "dataout_dffeas_q_3.clrn": [
+        0
+      ],
+      "dataout_dffeas_q_3.d": [
+        0
+      ],
+      "dataout_dffeas_q_3.q": [
+        0
+      ],
+      "dataout_dffeas_q_4.clk": [
+        0
+      ],
+      "dataout_dffeas_q_4.clrn": [
+        0
+      ],
+      "dataout_dffeas_q_4.d": [
+        0
+      ],
+      "dataout_dffeas_q_4.q": [
+        0
+      ],
+      "dataout_dffeas_q_5.clk": [
+        0
+      ],
+      "dataout_dffeas_q_5.clrn": [
+        0
+      ],
+      "dataout_dffeas_q_5.d": [
+        0
+      ],
+      "dataout_dffeas_q_5.q": [
+        0
+      ],
+      "ena_$lut_A_A": [
+        0
+      ],
+      "ena_$lut_A_A_1": [
+        0
+      ],
+      "ena_$lut_A_Y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ena_$lut_A_Y_$lut_Y_1_A": [
+        0
+      ],
+      "ena_$lut_A_Y_$lut_Y_1_A_1": [
+        0
+      ],
+      "ena_$lut_A_Y_$lut_Y_2_A": [
+        0
+      ],
+      "ena_$lut_A_Y_$lut_Y_3_A": [
+        0
+      ],
+      "ena_$lut_A_Y_$lut_Y_4_A": [
+        0
+      ],
+      "ena_$lut_A_Y_$lut_Y_A": [
+        0
+      ],
+      "only_5b_$lut_Y_A": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q.clk": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q.clrn": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q.d": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q.q": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q_d": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 251,
+    "bitcount": 259
+  }
+}

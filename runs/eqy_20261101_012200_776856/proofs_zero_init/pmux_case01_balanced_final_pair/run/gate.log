@@ -1,0 +1,2769 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_final_pair/run/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: evidence/current/capture_full/pmux_case01_balanced/candidate.final.formal.il
+
+2. Executing Verilog-2005 frontend: evidence/formal_primitives.v
+Parsing Verilog input from `evidence/formal_primitives.v' to AST representation.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \pmux_case01_balanced
+Used module:     \cycloneiv_lcell_comb
+Used module:     \dffeas
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.6. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.7. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.8. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.9. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.10. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110000011110110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.11. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110000011110110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.12. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000100110011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.13. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000100110011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000100110011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011100110001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.14. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011100110001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.15. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.16. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011100110001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.17. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110000011110110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010011100100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.18. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010011100100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110010110101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.19. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110010110101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111011101110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.20. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111011101110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.21. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010110010001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.22. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010110010001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000111010001110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.23. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000111010001110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110000011110110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000011101111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.24. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000011101111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011001101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100110010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.25. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100110010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001011010010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111011001100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101010011010100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110100011101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100011011000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.26. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.27. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.28. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+
+3.1.29. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110111011101110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+3.1.30. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110111011101110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011000100100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111110000001010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100101101001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111100000111000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb'.
+
+3.1.31. Analyzing design hierarchy..
+Top module:  \pmux_case01_balanced
+Used module:     $paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb
+Used module:     $paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb
+Used module:     $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb
+Used module:     $paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb
+Used module:     $paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb
+Used module:     $paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb
+Used module:     $paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb
+Used module:     $paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb
+Used module:     $paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb
+Used module:     $paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb
+Used module:     $paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb
+Used module:     $paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb
+Used module:     $paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb
+Used module:     $paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb
+Used module:     $paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb
+Used module:     $paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb
+Used module:     $paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb
+Used module:     $paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb
+Used module:     $paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb
+Used module:     $paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb
+Used module:     $paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb
+Used module:     $paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb
+Used module:     $paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb
+Used module:     $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb
+Used module:     $paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb
+Used module:     $paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb
+Used module:     $paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb
+
+3.1.32. Analyzing design hierarchy..
+Top module:  \pmux_case01_balanced
+Used module:     $paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb
+Used module:     $paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb
+Used module:     $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb
+Used module:     $paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb
+Used module:     $paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb
+Used module:     $paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb
+Used module:     $paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb
+Used module:     $paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb
+Used module:     $paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb
+Used module:     $paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb
+Used module:     $paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb
+Used module:     $paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb
+Used module:     $paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb
+Used module:     $paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb
+Used module:     $paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb
+Used module:     $paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb
+Used module:     $paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb
+Used module:     $paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb
+Used module:     $paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb
+Used module:     $paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb
+Used module:     $paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb
+Used module:     $paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb
+Used module:     $paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb
+Used module:     $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb
+Used module:     $paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb
+Used module:     $paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb
+Used module:     $paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb
+Removing unused module `\dffeas'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removed 2 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$5550'.
+Cleaned up 2 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$evidence/formal_primitives.v:11$5548 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$5550'.
+  Set init value: \q = 1'0
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$5548'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$5550'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$5548'.
+     1/1: $0\q[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$5548'.
+  created $adff cell `$procdff$5565' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$5550'.
+Found and cleaned up 3 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$5548'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$5548'.
+Cleaned up 3 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb.
+Optimizing module $paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb.
+Optimizing module $paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb.
+Optimizing module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.
+Optimizing module $paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb.
+Optimizing module $paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb.
+Optimizing module $paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb.
+Optimizing module $paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb.
+Optimizing module $paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb.
+Optimizing module $paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb.
+Optimizing module $paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb.
+Optimizing module $paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb.
+Optimizing module $paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb.
+Optimizing module $paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb.
+Optimizing module $paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb.
+Optimizing module $paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb.
+Optimizing module $paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb.
+Optimizing module $paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb.
+Optimizing module $paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb.
+Optimizing module $paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb.
+Optimizing module $paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb.
+Optimizing module $paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb.
+Optimizing module $paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb.
+Optimizing module $paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb.
+Optimizing module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.
+Optimizing module $paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb.
+Optimizing module $paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb.
+Optimizing module $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb.
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module pmux_case01_balanced.
+
+3.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb...
+Checking module $paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb...
+Checking module $paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb...
+Checking module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb...
+Checking module $paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb...
+Checking module $paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb...
+Checking module $paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb...
+Checking module $paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb...
+Checking module $paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb...
+Checking module $paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb...
+Checking module $paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb...
+Checking module $paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb...
+Checking module $paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb...
+Checking module $paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb...
+Checking module $paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb...
+Checking module $paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb...
+Checking module $paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb...
+Checking module $paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb...
+Checking module $paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb...
+Checking module $paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb...
+Checking module $paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb...
+Checking module $paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb...
+Checking module $paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb...
+Checking module $paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb...
+Checking module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb...
+Checking module $paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb...
+Checking module $paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb...
+Checking module $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb...
+Checking module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas...
+Checking module pmux_case01_balanced...
+Found and reported 0 problems.
+
+3.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$2c7f4162598a15324d926ea9f660d68f8383f1ac\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$d258dda31719ca5542c7e6da445766df567437e0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c0f00815f77137a3efaab3e3caab214cfa3ce389\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$7ec116143436bdace98d92fbf57303a7762c7eb0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$298611778f25439b4a63906cca676acbaee416e0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$4773ec4292d5c91ac3b94f5c2c844c65b6e5e4ec\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$83f3836d11d65bf5ce201d516d430bd2f8af7b4e\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$829d6503b8c642c247160c50339dde3064ef135d\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$b7546741d9b2ef5413a17d58877c927d36314573\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$7614ea17a5a052b8c172ac05f63583ff4a71a696\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$cc82c6982c019b619eea124376e17ef6be448e9b\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$db55dfc1cd2bd4a66faa8889749cc169ce6a83c0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$cd3538f1dc7f37de205cad2e3c53ce52ad7f7cef\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$ef0a44d10c7ec5578aa71f0c424ec8dcdbc5809f\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$0ebcc71d1bcfa9dd448c3a96ab92c063da9cd33f\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c1333a2c34071f27fd2ecda9c156298b8fbc4409\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c9b8dad0f01836c7a7c6a196e303d7533600e467\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$75428e40b7d15d30e57b9f1e13a13a68af4194c9\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$b4876a19bb45b53f94a949145fd46f2248b74c7a\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$1fd63411abedcabf1ac9c61c4027c804e5a6ff01\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$91241974e2e4ab32f789418d47056a3aa9eb13e2\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$cf0887090b40aa89f579f09d46f73c2e07e2a6dd\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$4fba236fa712036f1441d6bd141e1f2b587d348f\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$15ed7d2607206d026b4c0d31760f7c86ae3f9507\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c32aa0189b3889cbe98e218a264e63a1cad7de83\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$98f7a07e108bb36e11e869a12c577c1e576fcd7c\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~303 debug messages>
+
+3.5. Executing FUTURE pass.
+
+3.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+<suppressed ~24 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case01_balanced...
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_1_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_11_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_1_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\en_$lut_A.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_5_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_10_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_11_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_2_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_3_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_4_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_5_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_6_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_7_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_8_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_9_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_10_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_11_asdata_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_11_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_11_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_2_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_3_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_4_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_9_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_6_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_7_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_8_asdata_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_9_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_11_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_3_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_5_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_6_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\data_out_dffeas_q_sload_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_8_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_4.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_5.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_10_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_2.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_6.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_1.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_7.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_11_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x0_$lut_Y_A_1_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_7_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_3.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_2_$lut_Y_9.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_1_$lut_Y_8.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_2_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x3_$lut_Y_A_1_$lut_Y_10.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_A_1_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x2_$lut_Y_A_2_$lut_Y_11.cin is used but has no driver.
+Warning: Wire pmux_case01_balanced.\lane[0].x1_$lut_Y_1.cin is used but has no driver.
+Found and reported 291 problems.
+
+3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+Removed 291 unused cells and 1284 unused wires.
+<suppressed ~874 debug messages>
+
+3.9. Executing OPT pass (performing simple optimizations).
+
+3.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+
+3.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 642 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Removed a total of 0 cells.
+
+3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case01_balanced..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~48 debug messages>
+
+3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case01_balanced.
+Performed a total of 0 changes.
+
+3.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 642 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Removed a total of 0 cells.
+
+3.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+
+3.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+
+3.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+3.10. Executing WREDUCE pass (reducing word size of cells).
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+
+3.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 642 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+
+3.13.4. Finished fast OPT passes.
+
+3.14. Executing SORT pass.
+
+3.15. Printing statistics.
+
+=== pmux_case01_balanced ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1767 wires
+     1983 wire bits
+     1731 public wires
+     1947 public wire bits
+        6 ports
+       79 port bits
+      642 cells
+       12   $adff
+       36   $mux
+      303   $scopeinfo
+      291   $shiftx
+
+3.16. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case01_balanced...
+Found and reported 0 problems.
+
+4. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5. Executing TECHMAP pass (map to technology primitives).
+
+5.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.2. Continuing TECHMAP pass.
+Using template $paramod$constmap:c75949055e4a16901a9065fac6357b900f018594$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx for cells of type $shiftx.
+Using template $paramod$constmap:37deba93345a2cbd67dcd430f24fde28009dc2a5$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:f3cde1702c3df29934018aee48860af9395acbec$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.13. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:f3cde1702c3df29934018aee48860af9395acbec$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~494 debug messages>
+
+5.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:f3cde1702c3df29934018aee48860af9395acbec$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:f3cde1702c3df29934018aee48860af9395acbec$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Using template $paramod$constmap:43c1c902e3c585d4abd1a2f3457cfe1d07bcdcac$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:662b2e6b447fc3865fc8aecf2a1b7b0df2dc9b79$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.20. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:662b2e6b447fc3865fc8aecf2a1b7b0df2dc9b79$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~229 debug messages>
+
+5.21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:662b2e6b447fc3865fc8aecf2a1b7b0df2dc9b79$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:662b2e6b447fc3865fc8aecf2a1b7b0df2dc9b79$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:c84ea2682f0416b20113a355db8c2ce7e83d5d2d$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.22. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:c84ea2682f0416b20113a355db8c2ce7e83d5d2d$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~46 debug messages>
+
+5.23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:c84ea2682f0416b20113a355db8c2ce7e83d5d2d$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:c84ea2682f0416b20113a355db8c2ce7e83d5d2d$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:f478468ad6ea3369941c15b3a3d8f6259c67624b$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.24. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:f478468ad6ea3369941c15b3a3d8f6259c67624b$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~64 debug messages>
+
+5.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:f478468ad6ea3369941c15b3a3d8f6259c67624b$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:f478468ad6ea3369941c15b3a3d8f6259c67624b$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:24999d46f51638579d45c8b41a0da4cca29a0437$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:24999d46f51638579d45c8b41a0da4cca29a0437$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~61 debug messages>
+
+5.27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:24999d46f51638579d45c8b41a0da4cca29a0437$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:24999d46f51638579d45c8b41a0da4cca29a0437$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:533dd4bf0bf037e7ab9e1c19f80bbae681a87599$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.28. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:533dd4bf0bf037e7ab9e1c19f80bbae681a87599$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~68 debug messages>
+
+5.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:533dd4bf0bf037e7ab9e1c19f80bbae681a87599$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:533dd4bf0bf037e7ab9e1c19f80bbae681a87599$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:1913756ce1717ecb4f402a5460bf5a4dca3440aa$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.30. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:1913756ce1717ecb4f402a5460bf5a4dca3440aa$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~62 debug messages>
+
+5.31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:1913756ce1717ecb4f402a5460bf5a4dca3440aa$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:1913756ce1717ecb4f402a5460bf5a4dca3440aa$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:a8ce658af4f30d126aef43338664b8edf2a9031e$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.32. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:a8ce658af4f30d126aef43338664b8edf2a9031e$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~60 debug messages>
+
+5.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:a8ce658af4f30d126aef43338664b8edf2a9031e$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:a8ce658af4f30d126aef43338664b8edf2a9031e$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:395522a2926c4af6cc96cbb4c0331f20dc99cf18$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.34. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:395522a2926c4af6cc96cbb4c0331f20dc99cf18$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~46 debug messages>
+
+5.35. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:395522a2926c4af6cc96cbb4c0331f20dc99cf18$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:395522a2926c4af6cc96cbb4c0331f20dc99cf18$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:d350df1a9a485fc8e4e243368a91a336ad86e703$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.36. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:d350df1a9a485fc8e4e243368a91a336ad86e703$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~46 debug messages>
+
+5.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:d350df1a9a485fc8e4e243368a91a336ad86e703$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:d350df1a9a485fc8e4e243368a91a336ad86e703$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:9392f3668c738067bac7cbb95c93b500a795855b$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.38. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:9392f3668c738067bac7cbb95c93b500a795855b$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~50 debug messages>
+
+5.39. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:9392f3668c738067bac7cbb95c93b500a795855b$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:9392f3668c738067bac7cbb95c93b500a795855b$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $mux.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:3fb5438b16a8f93e4b418e9a9311a608ffa18206$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.40. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:3fb5438b16a8f93e4b418e9a9311a608ffa18206$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~81 debug messages>
+
+5.41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:3fb5438b16a8f93e4b418e9a9311a608ffa18206$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:3fb5438b16a8f93e4b418e9a9311a608ffa18206$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:bcb182e03917f415ac37838f5596e593646f945c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.42. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:bcb182e03917f415ac37838f5596e593646f945c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~67 debug messages>
+
+5.43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:bcb182e03917f415ac37838f5596e593646f945c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:bcb182e03917f415ac37838f5596e593646f945c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:6b1e155bb14fe95c3ff7d1a1d6991f9046c2e805$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.44. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:6b1e155bb14fe95c3ff7d1a1d6991f9046c2e805$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~61 debug messages>
+
+5.45. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:6b1e155bb14fe95c3ff7d1a1d6991f9046c2e805$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:6b1e155bb14fe95c3ff7d1a1d6991f9046c2e805$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:55749beeb60f3912c17efb02e03e257fbc781882$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.46. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:55749beeb60f3912c17efb02e03e257fbc781882$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~62 debug messages>
+
+5.47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:55749beeb60f3912c17efb02e03e257fbc781882$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:55749beeb60f3912c17efb02e03e257fbc781882$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:47db75562c6e8f2038883cf6c7962796ff2bc5a6$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.48. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:47db75562c6e8f2038883cf6c7962796ff2bc5a6$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~63 debug messages>
+
+5.49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:47db75562c6e8f2038883cf6c7962796ff2bc5a6$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:47db75562c6e8f2038883cf6c7962796ff2bc5a6$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:cc55e05668ee3bf9da0c2a424596ed8a7b5558d2$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.50. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:cc55e05668ee3bf9da0c2a424596ed8a7b5558d2$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~62 debug messages>
+
+5.51. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:cc55e05668ee3bf9da0c2a424596ed8a7b5558d2$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:cc55e05668ee3bf9da0c2a424596ed8a7b5558d2$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:8f5600c7bfafb8199ddaf146e6eddbec8c503ee1$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx'.
+
+5.52. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:8f5600c7bfafb8199ddaf146e6eddbec8c503ee1$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$6007.
+    dead port 2/2 on $mux $procmux$6010.
+    dead port 2/2 on $mux $procmux$6013.
+    dead port 2/2 on $mux $procmux$6019.
+    dead port 2/2 on $mux $procmux$6025.
+Removed 5 multiplexer ports.
+<suppressed ~46 debug messages>
+
+5.53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:8f5600c7bfafb8199ddaf146e6eddbec8c503ee1$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:8f5600c7bfafb8199ddaf146e6eddbec8c503ee1$paramod$1e8f9de42a7274b3fb4093d822d1d5b2433ca2dd\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:7f5eca5953d306beb25e03c34e7ba127743372e9$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.54. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:7f5eca5953d306beb25e03c34e7ba127743372e9$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~60 debug messages>
+
+5.55. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:7f5eca5953d306beb25e03c34e7ba127743372e9$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:7f5eca5953d306beb25e03c34e7ba127743372e9$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:403b452c493e223705b4039c7e79bbb7537de061$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.56. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:403b452c493e223705b4039c7e79bbb7537de061$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~60 debug messages>
+
+5.57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:403b452c493e223705b4039c7e79bbb7537de061$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:403b452c493e223705b4039c7e79bbb7537de061$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:a2c825a56f2c2fcfba5694c2dabf2adae73e8c49$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.58. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:a2c825a56f2c2fcfba5694c2dabf2adae73e8c49$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~64 debug messages>
+
+5.59. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:a2c825a56f2c2fcfba5694c2dabf2adae73e8c49$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:a2c825a56f2c2fcfba5694c2dabf2adae73e8c49$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:95ac67fe401f189a4f7f884eb5ebd75884e42cc0$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.60. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:95ac67fe401f189a4f7f884eb5ebd75884e42cc0$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~63 debug messages>
+
+5.61. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:95ac67fe401f189a4f7f884eb5ebd75884e42cc0$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:95ac67fe401f189a4f7f884eb5ebd75884e42cc0$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'1
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'1
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+  Constant input on bit 2 of port B: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:25176aae0e95f7397253594dbc9cb3be0c0595ec$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx'.
+
+5.62. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:25176aae0e95f7397253594dbc9cb3be0c0595ec$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5943.
+    dead port 2/2 on $mux $procmux$5946.
+    dead port 2/2 on $mux $procmux$5949.
+    dead port 2/2 on $mux $procmux$5952.
+    dead port 2/2 on $mux $procmux$5955.
+    dead port 2/2 on $mux $procmux$5961.
+Removed 6 multiplexer ports.
+<suppressed ~95 debug messages>
+
+5.63. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:25176aae0e95f7397253594dbc9cb3be0c0595ec$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 12 unused wires.
+Using template $paramod$constmap:25176aae0e95f7397253594dbc9cb3be0c0595ec$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:faf47041d58a576a7f4a0eb09656bc60097585cc$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx'.
+
+5.64. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:faf47041d58a576a7f4a0eb09656bc60097585cc$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5974.
+    dead port 2/2 on $mux $procmux$5980.
+    dead port 2/2 on $mux $procmux$5986.
+    dead port 2/2 on $mux $procmux$5992.
+Removed 4 multiplexer ports.
+<suppressed ~104 debug messages>
+
+5.65. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:faf47041d58a576a7f4a0eb09656bc60097585cc$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:faf47041d58a576a7f4a0eb09656bc60097585cc$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'1
+  Constant input on bit 5 of port A: 1'1
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'1
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'1
+  Constant input on bit 13 of port A: 1'1
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'0
+  Constant input on bit 2 of port B: 1'1
+  Constant input on bit 3 of port B: 1'1
+Creating constmapped module `$paramod$constmap:f8da9d4f39dde76a7b2703206f7bb7a0277a6660$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx'.
+
+5.66. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:f8da9d4f39dde76a7b2703206f7bb7a0277a6660$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$5943.
+    dead port 2/2 on $mux $procmux$5946.
+    dead port 2/2 on $mux $procmux$5949.
+    dead port 2/2 on $mux $procmux$5952.
+    dead port 2/2 on $mux $procmux$5955.
+    dead port 2/2 on $mux $procmux$5961.
+Removed 6 multiplexer ports.
+<suppressed ~157 debug messages>
+
+5.67. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:f8da9d4f39dde76a7b2703206f7bb7a0277a6660$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 12 unused wires.
+Using template $paramod$constmap:f8da9d4f39dde76a7b2703206f7bb7a0277a6660$paramod$a20618b6ecd000f34ae5f14d04e2b68665a3cc5c\_90_shift_shiftx for cells of type $shiftx.
+No more expansions possible.
+<suppressed ~992 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+<suppressed ~4765 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 11410 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Computing hashes of 9691 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Computing hashes of 8696 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Computing hashes of 8615 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Computing hashes of 8605 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+<suppressed ~8415 debug messages>
+Removed a total of 2805 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case01_balanced..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case01_balanced.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 8605 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active ARST on $auto$ff.cc:337:slice$6117 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6117 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_9.$procmux$5557_Y, Q = \data_out_dffeas_q_9.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21955 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_9.$procmux$5554_Y, Q = \data_out_dffeas_q_9.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6113 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6113 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_8.$procmux$5557_Y, Q = \data_out_dffeas_q_8.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21957 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_8.$procmux$5554_Y, Q = \data_out_dffeas_q_8.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6109 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6109 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_7.$procmux$5557_Y, Q = \data_out_dffeas_q_7.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21959 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_7.$procmux$5554_Y, Q = \data_out_dffeas_q_7.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6105 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6105 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_6.$procmux$5557_Y, Q = \data_out_dffeas_q_6.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21961 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_6.$procmux$5554_Y, Q = \data_out_dffeas_q_6.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6101 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6101 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_5.$procmux$5557_Y, Q = \data_out_dffeas_q_5.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21963 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_5.$procmux$5554_Y, Q = \data_out_dffeas_q_5.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6097 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6097 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_4.$procmux$5557_Y, Q = \data_out_dffeas_q_4.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21965 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_4.$procmux$5554_Y, Q = \data_out_dffeas_q_4.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6093 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6093 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_3.$procmux$5557_Y, Q = \data_out_dffeas_q_3.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21967 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_3.$procmux$5554_Y, Q = \data_out_dffeas_q_3.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6089 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6089 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_2.$procmux$5557_Y, Q = \data_out_dffeas_q_2.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21969 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_2.$procmux$5554_Y, Q = \data_out_dffeas_q_2.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6125 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6125 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_11.$procmux$5557_Y, Q = \data_out_dffeas_q_11.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21971 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_11.$procmux$5554_Y, Q = \data_out_dffeas_q_11.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6121 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6121 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_10.$procmux$5557_Y, Q = \data_out_dffeas_q_10.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21973 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_10.$procmux$5554_Y, Q = \data_out_dffeas_q_10.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6085 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6085 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_1.$procmux$5557_Y, Q = \data_out_dffeas_q_1.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21975 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q_1.$procmux$5554_Y, Q = \data_out_dffeas_q_1.q, rval = 1'0).
+Removing never-active ARST on $auto$ff.cc:337:slice$6055 ($_DFF_PN0_) from module pmux_case01_balanced.
+Adding EN signal on $auto$ff.cc:337:slice$6055 ($_DFF_PN0_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q.$procmux$5557_Y, Q = \data_out_dffeas_q.q).
+Adding SRST signal on $auto$ff.cc:337:slice$21977 ($_DFFE_PP_) from module pmux_case01_balanced (D = $flatten\data_out_dffeas_q.$procmux$5554_Y, Q = \data_out_dffeas_q.q, rval = 1'0).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+Removed 7370 unused cells and 2266 unused wires.
+<suppressed ~7371 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+<suppressed ~4 debug messages>
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case01_balanced..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case01_balanced.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case01_balanced'.
+Computing hashes of 1231 cells of `\pmux_case01_balanced'.
+Finding duplicate cells in `\pmux_case01_balanced'.
+Removed a total of 0 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case01_balanced.
+
+6.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+7.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21978 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q.$procmux$5554_Y, Q=\data_out_dffeas_q.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21976 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_1.$procmux$5554_Y, Q=\data_out_dffeas_q_1.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21974 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_10.$procmux$5554_Y, Q=\data_out_dffeas_q_10.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21972 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_11.$procmux$5554_Y, Q=\data_out_dffeas_q_11.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21970 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_2.$procmux$5554_Y, Q=\data_out_dffeas_q_2.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21968 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_3.$procmux$5554_Y, Q=\data_out_dffeas_q_3.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21966 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_4.$procmux$5554_Y, Q=\data_out_dffeas_q_4.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21964 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_5.$procmux$5554_Y, Q=\data_out_dffeas_q_5.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21962 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_6.$procmux$5554_Y, Q=\data_out_dffeas_q_6.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21960 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_7.$procmux$5554_Y, Q=\data_out_dffeas_q_7.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21958 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_8.$procmux$5554_Y, Q=\data_out_dffeas_q_8.q
+Replacing pmux_case01_balanced.$auto$ff.cc:337:slice$21956 ($_SDFFCE_PP0P_): CLK=\clk, D=$flatten\data_out_dffeas_q_9.$procmux$5554_Y, Q=\data_out_dffeas_q_9.q
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case01_balanced...
+Found and reported 0 problems.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case01_balanced..
+
+11. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case01_balanced...
+Found and reported 0 problems.
+
+12. Executing SETUNDEF pass (replace undef values with defined constants).
+
+13. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_final_pair/run/gate.il
+
+Warnings: 291 unique messages, 291 total
+End of script. Logfile hash: 837c70fff3, time: 0.59s, user: 0.53s, system: 0.09s, MEM: 133.68 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 30% 39x opt_expr (0 sec), 22% 1x techmap (0 sec), ...

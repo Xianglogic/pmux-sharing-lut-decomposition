@@ -1,0 +1,1 @@
+read_verilog -sv "inputs/test4/test4/test4.v"; hierarchy -check -top test4; proc; setundef -init -params -zero; synth_intel -family cycloneiv -top test4; check -assert; write_rtlil "D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/test4/full.il"; write_json "D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/test4/full.json"

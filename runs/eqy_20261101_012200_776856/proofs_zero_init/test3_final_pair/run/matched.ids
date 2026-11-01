@@ -1,0 +1,10 @@
+# [*] gold-match clk
+test3 clk clk
+# [*] gold-match cs
+test3 cs cs
+# [*] gold-match sr_in
+test3 sr_in sr_in
+# [*] gold-match gpioout
+test3 gpioout gpioout
+# [*] gold-match sr_out
+test3 sr_out sr_out

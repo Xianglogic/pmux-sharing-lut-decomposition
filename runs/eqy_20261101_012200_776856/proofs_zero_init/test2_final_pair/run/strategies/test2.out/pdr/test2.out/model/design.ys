@@ -1,0 +1,16 @@
+# running in test2.out/src/
+verilog_defaults -add -D CHECK_OUTPUTS
+read_verilog -sv ../../../../../partitions/test2.out.sv
+read_rtlil ../../../../../partitions/test2.out.il
+hierarchy -top miter; proc
+
+async2sync
+formalff -clk2ff -ff2anyinit gate.test2.out
+setundef -anyseq gate.test2.out
+flatten -wb; dffunmap; opt_expr -keepdc -undriven; opt_clean
+xprop -formal -split-ports -assume-def-inputs miter
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

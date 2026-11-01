@@ -1,0 +1,14 @@
+--- frozen/synth_intel.cc
++++ NoPost/synth_intel.cc
+@@ -415,10 +415,7 @@
+ 
+ 		if (check_label("check")) {
+             reset_custom_changes();
+-			if ((family_opt == "cycloneiv" || family_opt == "cycloneive") &&
+-                (help_mode||!active_design->scratchpad_get_bool("v52.observable_selector")))
+-				run("lut4_cone_fold");
+-            if(!help_mode&&active_design->scratchpad_get_bool("v49.windows")&&!active_design->scratchpad_get_bool("pmux_v48.legacy_flow"))run("lut4_window_rewrite");
++            // Conservative QA147 candidate: no custom post-ABC9 LUT rewriting.
+             // Optional exhaustive resubstitution is excluded from this release.
+             clean_custom_changes();
+ 			run("hierarchy -check");

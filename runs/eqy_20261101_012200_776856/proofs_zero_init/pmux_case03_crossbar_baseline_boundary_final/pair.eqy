@@ -1,0 +1,44 @@
+[gold]
+read_rtlil "evidence/current/capture_full/pmux_case03_crossbar/baseline.boundary.formal.il"
+delete =A:blackbox
+delete =A:whitebox
+read_verilog -overwrite "evidence/formal_primitives.v"
+delete t:$print
+prep -top pmux_case03_crossbar -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+
+[gate]
+read_rtlil "evidence/current/capture_full/pmux_case03_crossbar/baseline.final.formal.il"
+delete =A:blackbox
+delete =A:whitebox
+read_verilog -overwrite "evidence/formal_primitives.v"
+delete t:$print
+prep -top pmux_case03_crossbar -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+
+[match *]
+nodefault
+gold-match clk
+gold-match rst
+gold-match en
+gold-match data_in
+gold-match ctrl_in
+gold-match data_out
+
+[collect *]
+group /^(?:data_out)(?:\[\d+\])?$/
+
+[strategy pdr]
+use sby
+engine abc pdr
+timeout 300

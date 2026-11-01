@@ -1,0 +1,22 @@
+[options]
+mode prove
+depth 5
+expect pass,fail,unknown,timeout
+
+timeout 300
+
+[engines]
+abc pdr
+
+[script]
+verilog_defaults -add -D CHECK_OUTPUTS
+read_verilog -sv ../../../../../partitions/pmux_case03_crossbar.data_out.sv
+read_rtlil ../../../../../partitions/pmux_case03_crossbar.data_out.il
+hierarchy -top miter; proc
+
+async2sync
+formalff -clk2ff -ff2anyinit gate.pmux_case03_crossbar.data_out
+setundef -anyseq gate.pmux_case03_crossbar.data_out
+flatten -wb; dffunmap; opt_expr -keepdc -undriven; opt_clean
+xprop -formal -split-ports -assume-def-inputs miter
+

@@ -1,0 +1,51 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/run/combine.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/run/gold.il
+
+2. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pmux_case02_pipeline'. Setting top module to pmux_case02_pipeline.
+
+3.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+3.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+4. Executing RTLIL frontend.
+Input filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/run/gate_recoded.il
+
+5. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pmux_case02_pipeline'. Setting top module to pmux_case02_pipeline.
+
+6.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+6.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+7. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold.pmux_case02_pipeline" and gate cell "gate.pmux_case02_pipeline".
+
+8. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/run/combined.il
+
+End of script. Logfile hash: 788bd6d6de, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 32.34 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 32% 4x read_rtlil (0 sec), 26% 2x write_rtlil (0 sec), ...

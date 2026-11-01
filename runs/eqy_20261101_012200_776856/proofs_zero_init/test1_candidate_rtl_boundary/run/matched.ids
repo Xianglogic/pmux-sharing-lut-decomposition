@@ -1,0 +1,46 @@
+# [*] gold-match clock
+test1 clock clock
+# [*] gold-match reset
+test1 reset reset
+# [*] gold-match valid
+test1 valid valid
+# [*] gold-match I0
+test1 I0 I0
+# [*] gold-match I1
+test1 I1 I1
+# [*] gold-match I2
+test1 I2 I2
+# [*] gold-match I3
+test1 I3 I3
+# [*] gold-match I4
+test1 I4 I4
+# [*] gold-match I5
+test1 I5 I5
+# [*] gold-match I6
+test1 I6 I6
+# [*] gold-match I7
+test1 I7 I7
+# [*] gold-match Q0
+test1 Q0 Q0
+# [*] gold-match Q1
+test1 Q1 Q1
+# [*] gold-match Q2
+test1 Q2 Q2
+# [*] gold-match Q3
+test1 Q3 Q3
+# [*] gold-match Q4
+test1 Q4 Q4
+# [*] gold-match Q5
+test1 Q5 Q5
+# [*] gold-match Q6
+test1 Q6 Q6
+# [*] gold-match Q7
+test1 Q7 Q7
+# [*] gold-match por6_out
+test1 por6_out por6_out
+# [*] gold-match inter0007_out
+test1 inter0007_out inter0007_out
+# [*] gold-match inter0008_out
+test1 inter0008_out inter0008_out
+# [*] gold-match inter0009_out
+test1 inter0009_out inter0009_out

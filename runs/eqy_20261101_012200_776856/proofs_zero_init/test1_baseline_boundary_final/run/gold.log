@@ -1,0 +1,1749 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_boundary_final/run/gold.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: evidence/current/capture_full/test1/baseline.boundary.formal.il
+
+2. Executing Verilog-2005 frontend: evidence/formal_primitives.v
+Parsing Verilog input from `evidence/formal_primitives.v' to AST representation.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     \dffeas
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+
+3.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+
+3.1.3. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+
+3.1.4. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Removing unused module `\dffeas'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removed 2 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$6470'.
+Cleaned up 2 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$evidence/formal_primitives.v:11$6468 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$6470'.
+  Set init value: \q = 1'0
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$6468'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$6470'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$6468'.
+     1/1: $0\q[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$6468'.
+  created $adff cell `$procdff$6483' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:10$6470'.
+Found and cleaned up 3 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$6468'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$evidence/formal_primitives.v:11$6468'.
+Cleaned up 3 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module test1.
+
+3.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas...
+Checking module test1...
+Found and reported 0 problems.
+
+3.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~222 debug messages>
+
+3.5. Executing FUTURE pass.
+
+3.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~883 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 10 unused cells and 2669 unused wires.
+<suppressed ~11 debug messages>
+
+3.9. Executing OPT pass (performing simple optimizations).
+
+3.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+3.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 949 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~434 debug messages>
+
+3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+3.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 949 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+3.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+3.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+3.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+3.10. Executing WREDUCE pass (reducing word size of cells).
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+3.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 949 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+3.13.4. Finished fast OPT passes.
+
+3.14. Executing SORT pass.
+
+3.15. Printing statistics.
+
+=== test1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2740 wires
+     3206 wire bits
+     2523 public wires
+     2989 public wire bits
+       23 ports
+      285 port bits
+      949 cells
+      222   $adff
+      288   $lut
+      217   $mux
+      222   $scopeinfo
+
+3.16. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+4. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5. Executing TECHMAP pass (map to technology primitives).
+
+5.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $lut.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~804 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~1990 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 2656 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 2089 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1911 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1907 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~2247 debug messages>
+Removed a total of 749 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1907 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active ARST on $auto$ff.cc:337:slice$12052 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12052 ($_DFF_PN0_) from module test1 (D = \Q7 [13], Q = \q7_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12050 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12050 ($_DFF_PN0_) from module test1 (D = \Q7 [12], Q = \q7_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12048 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12048 ($_DFF_PN0_) from module test1 (D = \Q7 [11], Q = \q7_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12046 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12046 ($_DFF_PN0_) from module test1 (D = \Q7 [10], Q = \q7_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12044 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12044 ($_DFF_PN0_) from module test1 (D = \Q7 [9], Q = \q7_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12042 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12042 ($_DFF_PN0_) from module test1 (D = \Q7 [8], Q = \q7_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12040 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12040 ($_DFF_PN0_) from module test1 (D = \Q7 [7], Q = \q7_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12038 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12038 ($_DFF_PN0_) from module test1 (D = \Q7 [6], Q = \q7_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12056 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12056 ($_DFF_PN0_) from module test1 (D = \Q7 [15], Q = \q7_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12054 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12054 ($_DFF_PN0_) from module test1 (D = \Q7 [14], Q = \q7_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12036 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12036 ($_DFF_PN0_) from module test1 (D = \Q7 [5], Q = \q7_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11898 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11898 ($_DFF_PN0_) from module test1 (D = \Q7 [4], Q = \q7_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12162 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12162 ($_DFF_PN0_) from module test1 (D = \Q6 [13], Q = \q6_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12160 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12160 ($_DFF_PN0_) from module test1 (D = \Q6 [12], Q = \q6_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12158 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12158 ($_DFF_PN0_) from module test1 (D = \Q6 [11], Q = \q6_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12156 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12156 ($_DFF_PN0_) from module test1 (D = \Q6 [10], Q = \q6_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12154 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12154 ($_DFF_PN0_) from module test1 (D = \Q6 [9], Q = \q6_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12152 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12152 ($_DFF_PN0_) from module test1 (D = \Q6 [8], Q = \q6_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12150 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12150 ($_DFF_PN0_) from module test1 (D = \Q6 [7], Q = \q6_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12148 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12148 ($_DFF_PN0_) from module test1 (D = \Q6 [6], Q = \q6_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12166 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12166 ($_DFF_PN0_) from module test1 (D = \Q6 [15], Q = \q6_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12164 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12164 ($_DFF_PN0_) from module test1 (D = \Q6 [14], Q = \q6_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12146 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12146 ($_DFF_PN0_) from module test1 (D = \Q6 [5], Q = \q6_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11968 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11968 ($_DFF_PN0_) from module test1 (D = \Q6 [4], Q = \q6_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12008 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12008 ($_DFF_PN0_) from module test1 (D = \Q5 [13], Q = \q5_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12006 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12006 ($_DFF_PN0_) from module test1 (D = \Q5 [12], Q = \q5_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12004 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12004 ($_DFF_PN0_) from module test1 (D = \Q5 [11], Q = \q5_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12002 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12002 ($_DFF_PN0_) from module test1 (D = \Q5 [10], Q = \q5_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12000 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12000 ($_DFF_PN0_) from module test1 (D = \Q5 [9], Q = \q5_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11998 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11998 ($_DFF_PN0_) from module test1 (D = \Q5 [8], Q = \q5_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11996 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11996 ($_DFF_PN0_) from module test1 (D = \Q5 [7], Q = \q5_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11994 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11994 ($_DFF_PN0_) from module test1 (D = \Q5 [6], Q = \q5_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12012 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12012 ($_DFF_PN0_) from module test1 (D = \Q5 [15], Q = \q5_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12010 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12010 ($_DFF_PN0_) from module test1 (D = \Q5 [14], Q = \q5_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11992 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11992 ($_DFF_PN0_) from module test1 (D = \Q5 [5], Q = \q5_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11858 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11858 ($_DFF_PN0_) from module test1 (D = \Q5 [4], Q = \q5_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12096 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12096 ($_DFF_PN0_) from module test1 (D = \Q4 [13], Q = \q4_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12094 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12094 ($_DFF_PN0_) from module test1 (D = \Q4 [12], Q = \q4_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12092 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12092 ($_DFF_PN0_) from module test1 (D = \Q4 [11], Q = \q4_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12090 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12090 ($_DFF_PN0_) from module test1 (D = \Q4 [10], Q = \q4_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12088 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12088 ($_DFF_PN0_) from module test1 (D = \Q4 [9], Q = \q4_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12086 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12086 ($_DFF_PN0_) from module test1 (D = \Q4 [8], Q = \q4_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12084 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12084 ($_DFF_PN0_) from module test1 (D = \Q4 [7], Q = \q4_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12082 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12082 ($_DFF_PN0_) from module test1 (D = \Q4 [6], Q = \q4_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12100 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12100 ($_DFF_PN0_) from module test1 (D = \Q4 [15], Q = \q4_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12098 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12098 ($_DFF_PN0_) from module test1 (D = \Q4 [14], Q = \q4_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12080 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12080 ($_DFF_PN0_) from module test1 (D = \Q4 [5], Q = \q4_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11873 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11873 ($_DFF_PN0_) from module test1 (D = \Q4 [4], Q = \q4_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12206 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12206 ($_DFF_PN0_) from module test1 (D = \Q3 [13], Q = \q3_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12204 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12204 ($_DFF_PN0_) from module test1 (D = \Q3 [12], Q = \q3_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12202 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12202 ($_DFF_PN0_) from module test1 (D = \Q3 [11], Q = \q3_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12200 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12200 ($_DFF_PN0_) from module test1 (D = \Q3 [10], Q = \q3_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12198 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12198 ($_DFF_PN0_) from module test1 (D = \Q3 [9], Q = \q3_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12196 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12196 ($_DFF_PN0_) from module test1 (D = \Q3 [8], Q = \q3_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12194 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12194 ($_DFF_PN0_) from module test1 (D = \Q3 [7], Q = \q3_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12192 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12192 ($_DFF_PN0_) from module test1 (D = \Q3 [6], Q = \q3_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12210 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12210 ($_DFF_PN0_) from module test1 (D = \Q3 [15], Q = \q3_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12208 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12208 ($_DFF_PN0_) from module test1 (D = \Q3 [14], Q = \q3_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12190 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12190 ($_DFF_PN0_) from module test1 (D = \Q3 [5], Q = \q3_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11854 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11854 ($_DFF_PN0_) from module test1 (D = \Q3 [4], Q = \q3_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11964 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11964 ($_DFF_PN0_) from module test1 (D = \Q2 [15], Q = \q2_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11922 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11922 ($_DFF_PN0_) from module test1 (D = \Q2 [14], Q = \q2_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11920 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11920 ($_DFF_PN0_) from module test1 (D = \Q2 [13], Q = \q2_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11918 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11918 ($_DFF_PN0_) from module test1 (D = \Q2 [12], Q = \q2_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11916 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11916 ($_DFF_PN0_) from module test1 (D = \Q2 [11], Q = \q2_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11914 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11914 ($_DFF_PN0_) from module test1 (D = \Q2 [10], Q = \q2_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11912 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11912 ($_DFF_PN0_) from module test1 (D = \Q2 [9], Q = \q2_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11910 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11910 ($_DFF_PN0_) from module test1 (D = \Q2 [8], Q = \q2_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11970 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11970 ($_DFF_PN0_) from module test1 (D = \Q2 [4], Q = \q2_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11966 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11966 ($_DFF_PN0_) from module test1 (D = \Q2 [5], Q = \q2_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11908 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11908 ($_DFF_PN0_) from module test1 (D = \Q2 [7], Q = \q2_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11906 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11906 ($_DFF_PN0_) from module test1 (D = \Q2 [6], Q = \q2_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11986 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11986 ($_DFF_PN0_) from module test1 (D = \Q1 [13], Q = \q1_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11984 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11984 ($_DFF_PN0_) from module test1 (D = \Q1 [12], Q = \q1_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11982 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11982 ($_DFF_PN0_) from module test1 (D = \Q1 [11], Q = \q1_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11980 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11980 ($_DFF_PN0_) from module test1 (D = \Q1 [10], Q = \q1_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11978 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11978 ($_DFF_PN0_) from module test1 (D = \Q1 [9], Q = \q1_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11976 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11976 ($_DFF_PN0_) from module test1 (D = \Q1 [8], Q = \q1_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11974 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11974 ($_DFF_PN0_) from module test1 (D = \Q1 [7], Q = \q1_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11972 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11972 ($_DFF_PN0_) from module test1 (D = \Q1 [6], Q = \q1_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11990 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11990 ($_DFF_PN0_) from module test1 (D = \Q1 [15], Q = \q1_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11988 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11988 ($_DFF_PN0_) from module test1 (D = \Q1 [14], Q = \q1_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11904 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11904 ($_DFF_PN0_) from module test1 (D = \Q1 [5], Q = \q1_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11877 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11877 ($_DFF_PN0_) from module test1 (D = \Q1 [4], Q = \q1_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11887 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11887 ($_DFF_PN0_) from module test1 (D = \Q0 [13], Q = \q0_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11885 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11885 ($_DFF_PN0_) from module test1 (D = \Q0 [12], Q = \q0_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11883 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11883 ($_DFF_PN0_) from module test1 (D = \Q0 [11], Q = \q0_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11881 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11881 ($_DFF_PN0_) from module test1 (D = \Q0 [10], Q = \q0_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11868 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11868 ($_DFF_PN0_) from module test1 (D = \Q0 [9], Q = \q0_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11866 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11866 ($_DFF_PN0_) from module test1 (D = \Q0 [8], Q = \q0_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11862 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11862 ($_DFF_PN0_) from module test1 (D = \Q0 [7], Q = \q0_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11860 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11860 ($_DFF_PN0_) from module test1 (D = \Q0 [6], Q = \q0_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11894 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11894 ($_DFF_PN0_) from module test1 (D = \Q0 [15], Q = \q0_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11889 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11889 ($_DFF_PN0_) from module test1 (D = \Q0 [14], Q = \q0_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11852 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11852 ($_DFF_PN0_) from module test1 (D = \Q0 [5], Q = \q0_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11828 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11828 ($_DFF_PN0_) from module test1 (D = \Q0 [4], Q = \q0_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12265 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12265 ($_DFF_PN0_) from module test1 (D = \Q0_$lut_A_A_1, Q = \por6_out_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11960 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11960 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_9.d, Q = \inter0009_out_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11958 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11958 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_8.d, Q = \inter0009_out_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11956 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11956 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_7.d, Q = \inter0009_out_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11954 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11954 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_6.d, Q = \inter0009_out_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11952 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11952 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_5.d, Q = \inter0009_out_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11950 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11950 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_4.d, Q = \inter0009_out_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11948 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11948 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_3.d, Q = \inter0009_out_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11946 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11946 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_2.d, Q = \inter0009_out_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12263 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12263 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_11.d, Q = \inter0009_out_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11962 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11962 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_10.d, Q = \inter0009_out_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11926 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11926 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q_1.d, Q = \inter0009_out_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11879 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11879 ($_DFF_PN0_) from module test1 (D = \inter0009_out_dffeas_q.d, Q = \inter0009_out_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11940 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11940 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_9.d, Q = \inter0008_out_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11938 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11938 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_8.d, Q = \inter0008_out_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11936 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11936 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_7.d, Q = \inter0008_out_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11934 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11934 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_6.d, Q = \inter0008_out_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11932 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11932 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_5.d, Q = \inter0008_out_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11930 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11930 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_4.d, Q = \inter0008_out_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11928 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11928 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_3.d, Q = \inter0008_out_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11924 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11924 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_2.d, Q = \inter0008_out_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11944 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11944 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_11.d, Q = \inter0008_out_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11942 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11942 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_10.d, Q = \inter0008_out_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11902 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11902 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q_1.d, Q = \inter0008_out_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11900 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11900 ($_DFF_PN0_) from module test1 (D = \inter0008_out_dffeas_q.d, Q = \inter0008_out_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12030 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12030 ($_DFF_PN0_) from module test1 (D = \I7 [13], Q = \i7_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12028 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12028 ($_DFF_PN0_) from module test1 (D = \I7 [12], Q = \i7_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12026 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12026 ($_DFF_PN0_) from module test1 (D = \I7 [11], Q = \i7_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12024 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12024 ($_DFF_PN0_) from module test1 (D = \I7 [10], Q = \i7_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12022 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12022 ($_DFF_PN0_) from module test1 (D = \I7 [9], Q = \i7_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12020 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12020 ($_DFF_PN0_) from module test1 (D = \I7 [8], Q = \i7_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12018 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12018 ($_DFF_PN0_) from module test1 (D = \I7 [7], Q = \i7_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12016 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12016 ($_DFF_PN0_) from module test1 (D = \I7 [6], Q = \i7_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12034 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12034 ($_DFF_PN0_) from module test1 (D = \I7 [15], Q = \i7_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12032 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12032 ($_DFF_PN0_) from module test1 (D = \I7 [14], Q = \i7_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12014 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12014 ($_DFF_PN0_) from module test1 (D = \I7 [5], Q = \i7_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11850 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11850 ($_DFF_PN0_) from module test1 (D = \I7 [4], Q = \i7_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12074 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12074 ($_DFF_PN0_) from module test1 (D = \I6 [13], Q = \i6_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12072 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12072 ($_DFF_PN0_) from module test1 (D = \I6 [12], Q = \i6_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12070 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12070 ($_DFF_PN0_) from module test1 (D = \I6 [11], Q = \i6_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12068 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12068 ($_DFF_PN0_) from module test1 (D = \I6 [10], Q = \i6_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12066 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12066 ($_DFF_PN0_) from module test1 (D = \I6 [9], Q = \i6_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12064 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12064 ($_DFF_PN0_) from module test1 (D = \I6 [8], Q = \i6_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12062 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12062 ($_DFF_PN0_) from module test1 (D = \I6 [7], Q = \i6_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12060 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12060 ($_DFF_PN0_) from module test1 (D = \I6 [6], Q = \i6_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12078 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12078 ($_DFF_PN0_) from module test1 (D = \I6 [15], Q = \i6_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12076 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12076 ($_DFF_PN0_) from module test1 (D = \I6 [14], Q = \i6_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12058 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12058 ($_DFF_PN0_) from module test1 (D = \I6 [5], Q = \i6_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11875 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11875 ($_DFF_PN0_) from module test1 (D = \I6 [4], Q = \i6_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12118 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12118 ($_DFF_PN0_) from module test1 (D = \I5 [13], Q = \i5_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12116 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12116 ($_DFF_PN0_) from module test1 (D = \I5 [12], Q = \i5_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12114 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12114 ($_DFF_PN0_) from module test1 (D = \I5 [11], Q = \i5_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12112 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12112 ($_DFF_PN0_) from module test1 (D = \I5 [10], Q = \i5_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12110 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12110 ($_DFF_PN0_) from module test1 (D = \I5 [9], Q = \i5_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12108 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12108 ($_DFF_PN0_) from module test1 (D = \I5 [8], Q = \i5_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12106 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12106 ($_DFF_PN0_) from module test1 (D = \I5 [7], Q = \i5_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12104 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12104 ($_DFF_PN0_) from module test1 (D = \I5 [6], Q = \i5_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12122 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12122 ($_DFF_PN0_) from module test1 (D = \I5 [15], Q = \i5_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12120 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12120 ($_DFF_PN0_) from module test1 (D = \I5 [14], Q = \i5_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12102 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12102 ($_DFF_PN0_) from module test1 (D = \I5 [5], Q = \i5_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11871 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11871 ($_DFF_PN0_) from module test1 (D = \I5 [4], Q = \i5_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12140 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12140 ($_DFF_PN0_) from module test1 (D = \I4 [13], Q = \i4_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12138 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12138 ($_DFF_PN0_) from module test1 (D = \I4 [12], Q = \i4_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12136 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12136 ($_DFF_PN0_) from module test1 (D = \I4 [11], Q = \i4_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12134 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12134 ($_DFF_PN0_) from module test1 (D = \I4 [10], Q = \i4_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12132 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12132 ($_DFF_PN0_) from module test1 (D = \I4 [9], Q = \i4_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12130 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12130 ($_DFF_PN0_) from module test1 (D = \I4 [8], Q = \i4_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12128 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12128 ($_DFF_PN0_) from module test1 (D = \I4 [7], Q = \i4_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12126 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12126 ($_DFF_PN0_) from module test1 (D = \I4 [6], Q = \i4_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12144 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12144 ($_DFF_PN0_) from module test1 (D = \I4 [15], Q = \i4_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12142 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12142 ($_DFF_PN0_) from module test1 (D = \I4 [14], Q = \i4_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12124 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12124 ($_DFF_PN0_) from module test1 (D = \I4 [5], Q = \i4_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11864 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11864 ($_DFF_PN0_) from module test1 (D = \I4 [4], Q = \i4_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12184 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12184 ($_DFF_PN0_) from module test1 (D = \I3 [13], Q = \i3_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12182 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12182 ($_DFF_PN0_) from module test1 (D = \I3 [12], Q = \i3_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12180 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12180 ($_DFF_PN0_) from module test1 (D = \I3 [11], Q = \i3_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12178 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12178 ($_DFF_PN0_) from module test1 (D = \I3 [10], Q = \i3_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12176 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12176 ($_DFF_PN0_) from module test1 (D = \I3 [9], Q = \i3_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12174 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12174 ($_DFF_PN0_) from module test1 (D = \I3 [8], Q = \i3_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12172 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12172 ($_DFF_PN0_) from module test1 (D = \I3 [7], Q = \i3_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12170 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12170 ($_DFF_PN0_) from module test1 (D = \I3 [6], Q = \i3_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12188 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12188 ($_DFF_PN0_) from module test1 (D = \I3 [15], Q = \i3_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12186 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12186 ($_DFF_PN0_) from module test1 (D = \I3 [14], Q = \i3_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12168 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12168 ($_DFF_PN0_) from module test1 (D = \I3 [5], Q = \i3_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11856 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11856 ($_DFF_PN0_) from module test1 (D = \I3 [4], Q = \i3_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12228 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12228 ($_DFF_PN0_) from module test1 (D = \I2 [13], Q = \i2_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12226 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12226 ($_DFF_PN0_) from module test1 (D = \I2 [12], Q = \i2_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12224 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12224 ($_DFF_PN0_) from module test1 (D = \I2 [11], Q = \i2_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12222 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12222 ($_DFF_PN0_) from module test1 (D = \I2 [10], Q = \i2_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12220 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12220 ($_DFF_PN0_) from module test1 (D = \I2 [9], Q = \i2_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12218 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12218 ($_DFF_PN0_) from module test1 (D = \I2 [8], Q = \i2_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12216 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12216 ($_DFF_PN0_) from module test1 (D = \I2 [7], Q = \i2_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12214 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12214 ($_DFF_PN0_) from module test1 (D = \I2 [6], Q = \i2_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12232 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12232 ($_DFF_PN0_) from module test1 (D = \I2 [15], Q = \i2_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12230 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12230 ($_DFF_PN0_) from module test1 (D = \I2 [14], Q = \i2_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12212 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12212 ($_DFF_PN0_) from module test1 (D = \I2 [5], Q = \i2_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11848 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11848 ($_DFF_PN0_) from module test1 (D = \I2 [4], Q = \i2_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12250 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12250 ($_DFF_PN0_) from module test1 (D = \I1 [13], Q = \i1_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12248 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12248 ($_DFF_PN0_) from module test1 (D = \I1 [12], Q = \i1_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12246 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12246 ($_DFF_PN0_) from module test1 (D = \I1 [11], Q = \i1_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12244 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12244 ($_DFF_PN0_) from module test1 (D = \I1 [10], Q = \i1_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12242 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12242 ($_DFF_PN0_) from module test1 (D = \I1 [9], Q = \i1_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12240 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12240 ($_DFF_PN0_) from module test1 (D = \I1 [8], Q = \i1_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12238 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12238 ($_DFF_PN0_) from module test1 (D = \I1 [7], Q = \i1_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12236 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12236 ($_DFF_PN0_) from module test1 (D = \I1 [6], Q = \i1_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12254 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12254 ($_DFF_PN0_) from module test1 (D = \I1 [15], Q = \i1_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12252 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12252 ($_DFF_PN0_) from module test1 (D = \I1 [14], Q = \i1_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12234 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12234 ($_DFF_PN0_) from module test1 (D = \I1 [5], Q = \i1_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11842 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11842 ($_DFF_PN0_) from module test1 (D = \I1 [4], Q = \i1_dffeas_q.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12258 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12258 ($_DFF_PN0_) from module test1 (D = \I0 [6], Q = \i0_dffeas_q_9.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12256 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12256 ($_DFF_PN0_) from module test1 (D = \I0 [5], Q = \i0_dffeas_q_8.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11846 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11846 ($_DFF_PN0_) from module test1 (D = \I0 [15], Q = \i0_dffeas_q_7.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11844 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11844 ($_DFF_PN0_) from module test1 (D = \I0 [14], Q = \i0_dffeas_q_6.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11840 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11840 ($_DFF_PN0_) from module test1 (D = \I0 [13], Q = \i0_dffeas_q_5.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11838 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11838 ($_DFF_PN0_) from module test1 (D = \I0 [12], Q = \i0_dffeas_q_4.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11836 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11836 ($_DFF_PN0_) from module test1 (D = \I0 [4], Q = \i0_dffeas_q_3.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11834 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11834 ($_DFF_PN0_) from module test1 (D = \I0 [11], Q = \i0_dffeas_q_2.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11891 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11891 ($_DFF_PN0_) from module test1 (D = \I0 [8], Q = \i0_dffeas_q_11.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$12260 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$12260 ($_DFF_PN0_) from module test1 (D = \I0 [7], Q = \i0_dffeas_q_10.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11832 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11832 ($_DFF_PN0_) from module test1 (D = \I0 [10], Q = \i0_dffeas_q_1.q).
+Removing never-active ARST on $auto$ff.cc:337:slice$11830 ($_DFF_PN0_) from module test1.
+Adding EN signal on $auto$ff.cc:337:slice$11830 ($_DFF_PN0_) from module test1 (D = \I0 [9], Q = \i0_dffeas_q.q).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 217 unused cells and 758 unused wires.
+<suppressed ~218 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~108 debug messages>
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1582 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $auto$ff.cc:337:slice$11870 ($_DFF_PN0_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$8511 [1], Q = \state_dffeas_q_3.q).
+Adding EN signal on $auto$ff.cc:337:slice$11897 ($_DFF_PN0_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$6784 [3], Q = \state_dffeas_q_2.q).
+Adding EN signal on $auto$ff.cc:337:slice$11893 ($_DFF_PN0_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$10373 [7], Q = \state_dffeas_q.q).
+Adding SRST signal on $auto$ff.cc:337:slice$12364 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$8221 [1], Q = \inter0009_out_dffeas_q_9.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12365 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$7541 [1], Q = \inter0009_out_dffeas_q_8.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12366 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$7303 [1], Q = \inter0009_out_dffeas_q_7.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12367 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$6818 [1], Q = \inter0009_out_dffeas_q_6.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12368 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$10996 [1], Q = \inter0009_out_dffeas_q_5.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12369 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$11120 [1], Q = \inter0009_out_dffeas_q_4.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12370 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$10896 [1], Q = \inter0009_out_dffeas_q_3.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12371 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9950 [1], Q = \inter0009_out_dffeas_q_2.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12372 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9217 [1], Q = \inter0009_out_dffeas_q_11.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12373 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$8592 [1], Q = \inter0009_out_dffeas_q_10.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12374 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9322 [1], Q = \inter0009_out_dffeas_q_1.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12375 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9655 [1], Q = \inter0009_out_dffeas_q.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12376 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$8654 [1], Q = \inter0008_out_dffeas_q_9.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12377 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$7793 [1], Q = \inter0008_out_dffeas_q_8.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12378 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$7536 [1], Q = \inter0008_out_dffeas_q_7.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12379 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$6937 [1], Q = \inter0008_out_dffeas_q_6.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12380 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$6794 [1], Q = \inter0008_out_dffeas_q_5.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12381 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9441 [1], Q = \inter0008_out_dffeas_q_4.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12382 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$11077 [1], Q = \inter0008_out_dffeas_q_3.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12383 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$10815 [1], Q = \inter0008_out_dffeas_q_2.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12384 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9317 [1], Q = \inter0008_out_dffeas_q_11.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12385 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9174 [1], Q = \inter0008_out_dffeas_q_10.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12386 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$10772 [1], Q = \inter0008_out_dffeas_q_1.q, rval = 1'1).
+Adding SRST signal on $auto$ff.cc:337:slice$12387 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:370:simplemap_lut$9831 [1], Q = \inter0008_out_dffeas_q.q, rval = 1'1).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 30 unused cells and 35 unused wires.
+<suppressed ~60 debug messages>
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1555 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1554 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+6.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+6.23. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.24. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.25. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+6.26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1554 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+6.27. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+6.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+6.30. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+7.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing test1.$auto$ff.cc:337:slice$12483 ($_DFFE_PP_): CLK=\clock, D=\I0 [9], Q=\i0_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12482 ($_DFFE_PP_): CLK=\clock, D=\I0 [10], Q=\i0_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12481 ($_DFFE_PP_): CLK=\clock, D=\I0 [7], Q=\i0_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12480 ($_DFFE_PP_): CLK=\clock, D=\I0 [8], Q=\i0_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12479 ($_DFFE_PP_): CLK=\clock, D=\I0 [11], Q=\i0_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12478 ($_DFFE_PP_): CLK=\clock, D=\I0 [4], Q=\i0_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12477 ($_DFFE_PP_): CLK=\clock, D=\I0 [12], Q=\i0_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12476 ($_DFFE_PP_): CLK=\clock, D=\I0 [13], Q=\i0_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12475 ($_DFFE_PP_): CLK=\clock, D=\I0 [14], Q=\i0_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12474 ($_DFFE_PP_): CLK=\clock, D=\I0 [15], Q=\i0_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12473 ($_DFFE_PP_): CLK=\clock, D=\I0 [5], Q=\i0_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12472 ($_DFFE_PP_): CLK=\clock, D=\I0 [6], Q=\i0_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12471 ($_DFFE_PP_): CLK=\clock, D=\I1 [4], Q=\i1_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12470 ($_DFFE_PP_): CLK=\clock, D=\I1 [5], Q=\i1_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12469 ($_DFFE_PP_): CLK=\clock, D=\I1 [14], Q=\i1_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12468 ($_DFFE_PP_): CLK=\clock, D=\I1 [15], Q=\i1_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12467 ($_DFFE_PP_): CLK=\clock, D=\I1 [6], Q=\i1_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12466 ($_DFFE_PP_): CLK=\clock, D=\I1 [7], Q=\i1_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12465 ($_DFFE_PP_): CLK=\clock, D=\I1 [8], Q=\i1_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12464 ($_DFFE_PP_): CLK=\clock, D=\I1 [9], Q=\i1_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12463 ($_DFFE_PP_): CLK=\clock, D=\I1 [10], Q=\i1_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12462 ($_DFFE_PP_): CLK=\clock, D=\I1 [11], Q=\i1_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12461 ($_DFFE_PP_): CLK=\clock, D=\I1 [12], Q=\i1_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12460 ($_DFFE_PP_): CLK=\clock, D=\I1 [13], Q=\i1_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12459 ($_DFFE_PP_): CLK=\clock, D=\I2 [4], Q=\i2_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12458 ($_DFFE_PP_): CLK=\clock, D=\I2 [5], Q=\i2_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12457 ($_DFFE_PP_): CLK=\clock, D=\I2 [14], Q=\i2_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12456 ($_DFFE_PP_): CLK=\clock, D=\I2 [15], Q=\i2_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12455 ($_DFFE_PP_): CLK=\clock, D=\I2 [6], Q=\i2_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12454 ($_DFFE_PP_): CLK=\clock, D=\I2 [7], Q=\i2_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12453 ($_DFFE_PP_): CLK=\clock, D=\I2 [8], Q=\i2_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12452 ($_DFFE_PP_): CLK=\clock, D=\I2 [9], Q=\i2_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12451 ($_DFFE_PP_): CLK=\clock, D=\I2 [10], Q=\i2_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12450 ($_DFFE_PP_): CLK=\clock, D=\I2 [11], Q=\i2_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12449 ($_DFFE_PP_): CLK=\clock, D=\I2 [12], Q=\i2_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12448 ($_DFFE_PP_): CLK=\clock, D=\I2 [13], Q=\i2_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12447 ($_DFFE_PP_): CLK=\clock, D=\I3 [4], Q=\i3_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12446 ($_DFFE_PP_): CLK=\clock, D=\I3 [5], Q=\i3_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12445 ($_DFFE_PP_): CLK=\clock, D=\I3 [14], Q=\i3_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12444 ($_DFFE_PP_): CLK=\clock, D=\I3 [15], Q=\i3_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12443 ($_DFFE_PP_): CLK=\clock, D=\I3 [6], Q=\i3_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12442 ($_DFFE_PP_): CLK=\clock, D=\I3 [7], Q=\i3_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12441 ($_DFFE_PP_): CLK=\clock, D=\I3 [8], Q=\i3_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12440 ($_DFFE_PP_): CLK=\clock, D=\I3 [9], Q=\i3_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12439 ($_DFFE_PP_): CLK=\clock, D=\I3 [10], Q=\i3_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12438 ($_DFFE_PP_): CLK=\clock, D=\I3 [11], Q=\i3_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12437 ($_DFFE_PP_): CLK=\clock, D=\I3 [12], Q=\i3_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12436 ($_DFFE_PP_): CLK=\clock, D=\I3 [13], Q=\i3_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12435 ($_DFFE_PP_): CLK=\clock, D=\I4 [4], Q=\i4_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12434 ($_DFFE_PP_): CLK=\clock, D=\I4 [5], Q=\i4_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12433 ($_DFFE_PP_): CLK=\clock, D=\I4 [14], Q=\i4_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12432 ($_DFFE_PP_): CLK=\clock, D=\I4 [15], Q=\i4_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12431 ($_DFFE_PP_): CLK=\clock, D=\I4 [6], Q=\i4_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12430 ($_DFFE_PP_): CLK=\clock, D=\I4 [7], Q=\i4_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12429 ($_DFFE_PP_): CLK=\clock, D=\I4 [8], Q=\i4_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12428 ($_DFFE_PP_): CLK=\clock, D=\I4 [9], Q=\i4_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12427 ($_DFFE_PP_): CLK=\clock, D=\I4 [10], Q=\i4_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12426 ($_DFFE_PP_): CLK=\clock, D=\I4 [11], Q=\i4_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12425 ($_DFFE_PP_): CLK=\clock, D=\I4 [12], Q=\i4_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12424 ($_DFFE_PP_): CLK=\clock, D=\I4 [13], Q=\i4_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12423 ($_DFFE_PP_): CLK=\clock, D=\I5 [4], Q=\i5_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12422 ($_DFFE_PP_): CLK=\clock, D=\I5 [5], Q=\i5_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12421 ($_DFFE_PP_): CLK=\clock, D=\I5 [14], Q=\i5_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12420 ($_DFFE_PP_): CLK=\clock, D=\I5 [15], Q=\i5_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12419 ($_DFFE_PP_): CLK=\clock, D=\I5 [6], Q=\i5_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12418 ($_DFFE_PP_): CLK=\clock, D=\I5 [7], Q=\i5_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12417 ($_DFFE_PP_): CLK=\clock, D=\I5 [8], Q=\i5_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12416 ($_DFFE_PP_): CLK=\clock, D=\I5 [9], Q=\i5_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12415 ($_DFFE_PP_): CLK=\clock, D=\I5 [10], Q=\i5_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12414 ($_DFFE_PP_): CLK=\clock, D=\I5 [11], Q=\i5_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12413 ($_DFFE_PP_): CLK=\clock, D=\I5 [12], Q=\i5_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12412 ($_DFFE_PP_): CLK=\clock, D=\I5 [13], Q=\i5_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12411 ($_DFFE_PP_): CLK=\clock, D=\I6 [4], Q=\i6_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12410 ($_DFFE_PP_): CLK=\clock, D=\I6 [5], Q=\i6_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12409 ($_DFFE_PP_): CLK=\clock, D=\I6 [14], Q=\i6_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12408 ($_DFFE_PP_): CLK=\clock, D=\I6 [15], Q=\i6_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12407 ($_DFFE_PP_): CLK=\clock, D=\I6 [6], Q=\i6_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12406 ($_DFFE_PP_): CLK=\clock, D=\I6 [7], Q=\i6_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12405 ($_DFFE_PP_): CLK=\clock, D=\I6 [8], Q=\i6_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12404 ($_DFFE_PP_): CLK=\clock, D=\I6 [9], Q=\i6_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12403 ($_DFFE_PP_): CLK=\clock, D=\I6 [10], Q=\i6_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12402 ($_DFFE_PP_): CLK=\clock, D=\I6 [11], Q=\i6_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12401 ($_DFFE_PP_): CLK=\clock, D=\I6 [12], Q=\i6_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12400 ($_DFFE_PP_): CLK=\clock, D=\I6 [13], Q=\i6_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12399 ($_DFFE_PP_): CLK=\clock, D=\I7 [4], Q=\i7_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12398 ($_DFFE_PP_): CLK=\clock, D=\I7 [5], Q=\i7_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12397 ($_DFFE_PP_): CLK=\clock, D=\I7 [14], Q=\i7_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12396 ($_DFFE_PP_): CLK=\clock, D=\I7 [15], Q=\i7_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12395 ($_DFFE_PP_): CLK=\clock, D=\I7 [6], Q=\i7_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12394 ($_DFFE_PP_): CLK=\clock, D=\I7 [7], Q=\i7_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12393 ($_DFFE_PP_): CLK=\clock, D=\I7 [8], Q=\i7_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12392 ($_DFFE_PP_): CLK=\clock, D=\I7 [9], Q=\i7_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12391 ($_DFFE_PP_): CLK=\clock, D=\I7 [10], Q=\i7_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12390 ($_DFFE_PP_): CLK=\clock, D=\I7 [11], Q=\i7_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12389 ($_DFFE_PP_): CLK=\clock, D=\I7 [12], Q=\i7_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12388 ($_DFFE_PP_): CLK=\clock, D=\I7 [13], Q=\i7_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12262 ($_DFF_PN0_): CLK=\clock, D=\state_dffeas_q_1.q, Q=\inter0007_out_$lut_Y_A_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12520 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9831 [1], Q=\inter0008_out_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12519 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$10772 [1], Q=\inter0008_out_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12518 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9174 [1], Q=\inter0008_out_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12517 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9317 [1], Q=\inter0008_out_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12516 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$10815 [1], Q=\inter0008_out_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12515 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$11077 [1], Q=\inter0008_out_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12514 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9441 [1], Q=\inter0008_out_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12513 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$6794 [1], Q=\inter0008_out_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12512 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$6937 [1], Q=\inter0008_out_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12511 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$7536 [1], Q=\inter0008_out_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12510 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$7793 [1], Q=\inter0008_out_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12509 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$8654 [1], Q=\inter0008_out_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12508 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9655 [1], Q=\inter0009_out_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12507 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9322 [1], Q=\inter0009_out_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12506 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$8592 [1], Q=\inter0009_out_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12505 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9217 [1], Q=\inter0009_out_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12504 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$9950 [1], Q=\inter0009_out_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12503 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$10896 [1], Q=\inter0009_out_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12502 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$11120 [1], Q=\inter0009_out_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12501 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$10996 [1], Q=\inter0009_out_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12500 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$6818 [1], Q=\inter0009_out_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12499 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$7303 [1], Q=\inter0009_out_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12498 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$7541 [1], Q=\inter0009_out_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12497 ($_SDFFCE_PN1N_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$8221 [1], Q=\inter0009_out_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12363 ($_DFFE_PN_): CLK=\clock, D=\Q0_$lut_A_A_1, Q=\por6_out_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12362 ($_DFFE_PP_): CLK=\clock, D=\Q0 [4], Q=\q0_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12361 ($_DFFE_PP_): CLK=\clock, D=\Q0 [5], Q=\q0_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12360 ($_DFFE_PP_): CLK=\clock, D=\Q0 [14], Q=\q0_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12359 ($_DFFE_PP_): CLK=\clock, D=\Q0 [15], Q=\q0_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12358 ($_DFFE_PP_): CLK=\clock, D=\Q0 [6], Q=\q0_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12357 ($_DFFE_PP_): CLK=\clock, D=\Q0 [7], Q=\q0_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12356 ($_DFFE_PP_): CLK=\clock, D=\Q0 [8], Q=\q0_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12355 ($_DFFE_PP_): CLK=\clock, D=\Q0 [9], Q=\q0_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12354 ($_DFFE_PP_): CLK=\clock, D=\Q0 [10], Q=\q0_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12353 ($_DFFE_PP_): CLK=\clock, D=\Q0 [11], Q=\q0_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12352 ($_DFFE_PP_): CLK=\clock, D=\Q0 [12], Q=\q0_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12351 ($_DFFE_PP_): CLK=\clock, D=\Q0 [13], Q=\q0_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12350 ($_DFFE_PP_): CLK=\clock, D=\Q1 [4], Q=\q1_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12349 ($_DFFE_PP_): CLK=\clock, D=\Q1 [5], Q=\q1_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12348 ($_DFFE_PP_): CLK=\clock, D=\Q1 [14], Q=\q1_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12347 ($_DFFE_PP_): CLK=\clock, D=\Q1 [15], Q=\q1_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12346 ($_DFFE_PP_): CLK=\clock, D=\Q1 [6], Q=\q1_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12345 ($_DFFE_PP_): CLK=\clock, D=\Q1 [7], Q=\q1_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12344 ($_DFFE_PP_): CLK=\clock, D=\Q1 [8], Q=\q1_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12343 ($_DFFE_PP_): CLK=\clock, D=\Q1 [9], Q=\q1_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12342 ($_DFFE_PP_): CLK=\clock, D=\Q1 [10], Q=\q1_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12341 ($_DFFE_PP_): CLK=\clock, D=\Q1 [11], Q=\q1_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12340 ($_DFFE_PP_): CLK=\clock, D=\Q1 [12], Q=\q1_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12339 ($_DFFE_PP_): CLK=\clock, D=\Q1 [13], Q=\q1_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12338 ($_DFFE_PP_): CLK=\clock, D=\Q2 [6], Q=\q2_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12337 ($_DFFE_PP_): CLK=\clock, D=\Q2 [7], Q=\q2_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12336 ($_DFFE_PP_): CLK=\clock, D=\Q2 [5], Q=\q2_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12335 ($_DFFE_PP_): CLK=\clock, D=\Q2 [4], Q=\q2_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12334 ($_DFFE_PP_): CLK=\clock, D=\Q2 [8], Q=\q2_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12333 ($_DFFE_PP_): CLK=\clock, D=\Q2 [9], Q=\q2_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12332 ($_DFFE_PP_): CLK=\clock, D=\Q2 [10], Q=\q2_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12331 ($_DFFE_PP_): CLK=\clock, D=\Q2 [11], Q=\q2_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12330 ($_DFFE_PP_): CLK=\clock, D=\Q2 [12], Q=\q2_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12329 ($_DFFE_PP_): CLK=\clock, D=\Q2 [13], Q=\q2_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12328 ($_DFFE_PP_): CLK=\clock, D=\Q2 [14], Q=\q2_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12327 ($_DFFE_PP_): CLK=\clock, D=\Q2 [15], Q=\q2_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12326 ($_DFFE_PP_): CLK=\clock, D=\Q3 [4], Q=\q3_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12325 ($_DFFE_PP_): CLK=\clock, D=\Q3 [5], Q=\q3_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12324 ($_DFFE_PP_): CLK=\clock, D=\Q3 [14], Q=\q3_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12323 ($_DFFE_PP_): CLK=\clock, D=\Q3 [15], Q=\q3_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12322 ($_DFFE_PP_): CLK=\clock, D=\Q3 [6], Q=\q3_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12321 ($_DFFE_PP_): CLK=\clock, D=\Q3 [7], Q=\q3_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12320 ($_DFFE_PP_): CLK=\clock, D=\Q3 [8], Q=\q3_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12319 ($_DFFE_PP_): CLK=\clock, D=\Q3 [9], Q=\q3_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12318 ($_DFFE_PP_): CLK=\clock, D=\Q3 [10], Q=\q3_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12317 ($_DFFE_PP_): CLK=\clock, D=\Q3 [11], Q=\q3_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12316 ($_DFFE_PP_): CLK=\clock, D=\Q3 [12], Q=\q3_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12315 ($_DFFE_PP_): CLK=\clock, D=\Q3 [13], Q=\q3_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12314 ($_DFFE_PP_): CLK=\clock, D=\Q4 [4], Q=\q4_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12313 ($_DFFE_PP_): CLK=\clock, D=\Q4 [5], Q=\q4_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12312 ($_DFFE_PP_): CLK=\clock, D=\Q4 [14], Q=\q4_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12311 ($_DFFE_PP_): CLK=\clock, D=\Q4 [15], Q=\q4_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12310 ($_DFFE_PP_): CLK=\clock, D=\Q4 [6], Q=\q4_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12309 ($_DFFE_PP_): CLK=\clock, D=\Q4 [7], Q=\q4_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12308 ($_DFFE_PP_): CLK=\clock, D=\Q4 [8], Q=\q4_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12307 ($_DFFE_PP_): CLK=\clock, D=\Q4 [9], Q=\q4_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12306 ($_DFFE_PP_): CLK=\clock, D=\Q4 [10], Q=\q4_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12305 ($_DFFE_PP_): CLK=\clock, D=\Q4 [11], Q=\q4_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12304 ($_DFFE_PP_): CLK=\clock, D=\Q4 [12], Q=\q4_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12303 ($_DFFE_PP_): CLK=\clock, D=\Q4 [13], Q=\q4_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12302 ($_DFFE_PP_): CLK=\clock, D=\Q5 [4], Q=\q5_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12301 ($_DFFE_PP_): CLK=\clock, D=\Q5 [5], Q=\q5_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12300 ($_DFFE_PP_): CLK=\clock, D=\Q5 [14], Q=\q5_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12299 ($_DFFE_PP_): CLK=\clock, D=\Q5 [15], Q=\q5_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12298 ($_DFFE_PP_): CLK=\clock, D=\Q5 [6], Q=\q5_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12297 ($_DFFE_PP_): CLK=\clock, D=\Q5 [7], Q=\q5_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12296 ($_DFFE_PP_): CLK=\clock, D=\Q5 [8], Q=\q5_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12295 ($_DFFE_PP_): CLK=\clock, D=\Q5 [9], Q=\q5_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12294 ($_DFFE_PP_): CLK=\clock, D=\Q5 [10], Q=\q5_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12293 ($_DFFE_PP_): CLK=\clock, D=\Q5 [11], Q=\q5_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12292 ($_DFFE_PP_): CLK=\clock, D=\Q5 [12], Q=\q5_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12291 ($_DFFE_PP_): CLK=\clock, D=\Q5 [13], Q=\q5_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12290 ($_DFFE_PP_): CLK=\clock, D=\Q6 [4], Q=\q6_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12289 ($_DFFE_PP_): CLK=\clock, D=\Q6 [5], Q=\q6_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12288 ($_DFFE_PP_): CLK=\clock, D=\Q6 [14], Q=\q6_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12287 ($_DFFE_PP_): CLK=\clock, D=\Q6 [15], Q=\q6_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12286 ($_DFFE_PP_): CLK=\clock, D=\Q6 [6], Q=\q6_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12285 ($_DFFE_PP_): CLK=\clock, D=\Q6 [7], Q=\q6_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12284 ($_DFFE_PP_): CLK=\clock, D=\Q6 [8], Q=\q6_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12283 ($_DFFE_PP_): CLK=\clock, D=\Q6 [9], Q=\q6_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12282 ($_DFFE_PP_): CLK=\clock, D=\Q6 [10], Q=\q6_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12281 ($_DFFE_PP_): CLK=\clock, D=\Q6 [11], Q=\q6_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12280 ($_DFFE_PP_): CLK=\clock, D=\Q6 [12], Q=\q6_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12279 ($_DFFE_PP_): CLK=\clock, D=\Q6 [13], Q=\q6_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12278 ($_DFFE_PP_): CLK=\clock, D=\Q7 [4], Q=\q7_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$12277 ($_DFFE_PP_): CLK=\clock, D=\Q7 [5], Q=\q7_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12276 ($_DFFE_PP_): CLK=\clock, D=\Q7 [14], Q=\q7_dffeas_q_10.q
+Replacing test1.$auto$ff.cc:337:slice$12275 ($_DFFE_PP_): CLK=\clock, D=\Q7 [15], Q=\q7_dffeas_q_11.q
+Replacing test1.$auto$ff.cc:337:slice$12274 ($_DFFE_PP_): CLK=\clock, D=\Q7 [6], Q=\q7_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12273 ($_DFFE_PP_): CLK=\clock, D=\Q7 [7], Q=\q7_dffeas_q_3.q
+Replacing test1.$auto$ff.cc:337:slice$12272 ($_DFFE_PP_): CLK=\clock, D=\Q7 [8], Q=\q7_dffeas_q_4.q
+Replacing test1.$auto$ff.cc:337:slice$12271 ($_DFFE_PP_): CLK=\clock, D=\Q7 [9], Q=\q7_dffeas_q_5.q
+Replacing test1.$auto$ff.cc:337:slice$12270 ($_DFFE_PP_): CLK=\clock, D=\Q7 [10], Q=\q7_dffeas_q_6.q
+Replacing test1.$auto$ff.cc:337:slice$12269 ($_DFFE_PP_): CLK=\clock, D=\Q7 [11], Q=\q7_dffeas_q_7.q
+Replacing test1.$auto$ff.cc:337:slice$12268 ($_DFFE_PP_): CLK=\clock, D=\Q7 [12], Q=\q7_dffeas_q_8.q
+Replacing test1.$auto$ff.cc:337:slice$12267 ($_DFFE_PP_): CLK=\clock, D=\Q7 [13], Q=\q7_dffeas_q_9.q
+Replacing test1.$auto$ff.cc:337:slice$12490 ($_DFFE_PN0P_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$10373 [7], Q=\state_dffeas_q.q
+Replacing test1.$auto$ff.cc:337:slice$11896 ($_DFF_PN0_): CLK=\clock, D=\state_dffeas_q_1.d, Q=\state_dffeas_q_1.q
+Replacing test1.$auto$ff.cc:337:slice$12485 ($_DFFE_PN0P_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$6784 [3], Q=\state_dffeas_q_2.q
+Replacing test1.$auto$ff.cc:337:slice$12484 ($_DFFE_PN0P_): CLK=\clock, D=$auto$simplemap.cc:370:simplemap_lut$8511 [1], Q=\state_dffeas_q_3.q
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 222 unused wires.
+<suppressed ~1 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+11. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+12. Executing SETUNDEF pass (replace undef values with defined constants).
+
+13. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_boundary_final/run/gold.il
+
+End of script. Logfile hash: e54ae7783e, time: 0.15s, user: 0.12s, system: 0.02s, MEM: 27.38 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 33% 10x opt_clean (0 sec), 19% 10x opt_expr (0 sec), ...

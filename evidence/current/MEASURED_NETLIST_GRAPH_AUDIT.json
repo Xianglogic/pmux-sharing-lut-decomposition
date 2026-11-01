@@ -1,0 +1,1742 @@
+[
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_1_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_2_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_3_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_4_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_5_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_6_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_7_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_8_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\warmup_9_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_1_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_2_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_3_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_4_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_5_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_6_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_7_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_8_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\warmup_9_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_1_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_2_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_3_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_4_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_5_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_6_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_7_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_8_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\warmup_9_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_1_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_2_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_3_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_4_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_5_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_6_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_7_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_8_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\warmup_9_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_1_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_2_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_3_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_4_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_5_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_6_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_7_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_8_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\warmup_9_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_1_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_2_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_3_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_4_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_5_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_6_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_7_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_8_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\warmup_9_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_1_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_2_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_3_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_4_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_5_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_6_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_7_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_8_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\warmup_9_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_1_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_2_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_3_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_4_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_5_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_6_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_7_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_8_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\warmup_9_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_1_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_2_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_3_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_4_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_5_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_6_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_7_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_8_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\warmup_9_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_1_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_1_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_2_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_2_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_3_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_3_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_4_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\review_4_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_1_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_1_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_2_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_2_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_3_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_3_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_4_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\review_4_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test1\\initial_0_baseline.json",
+    "case": "test1",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test1\\initial_0_candidate.json",
+    "case": "test1",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test2\\initial_0_baseline.json",
+    "case": "test2",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test2\\initial_0_candidate.json",
+    "case": "test2",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test3\\initial_0_baseline.json",
+    "case": "test3",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test3\\initial_0_candidate.json",
+    "case": "test3",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test4\\initial_0_baseline.json",
+    "case": "test4",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test4\\initial_0_candidate.json",
+    "case": "test4",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case01_balanced\\initial_0_baseline.json",
+    "case": "pmux_case01_balanced",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case01_balanced\\initial_0_candidate.json",
+    "case": "pmux_case01_balanced",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case02_pipeline\\initial_0_baseline.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case02_pipeline\\initial_0_candidate.json",
+    "case": "pmux_case02_pipeline",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case03_crossbar\\initial_0_baseline.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case03_crossbar\\initial_0_candidate.json",
+    "case": "pmux_case03_crossbar",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case04_feedback\\initial_0_baseline.json",
+    "case": "pmux_case04_feedback",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case04_feedback\\initial_0_candidate.json",
+    "case": "pmux_case04_feedback",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case05_nested\\initial_0_baseline.json",
+    "case": "pmux_case05_nested",
+    "arm": "baseline",
+    "matches_proven_capture": true
+  },
+  {
+    "file": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case05_nested\\initial_0_candidate.json",
+    "case": "pmux_case05_nested",
+    "arm": "candidate",
+    "matches_proven_capture": true
+  }
+]

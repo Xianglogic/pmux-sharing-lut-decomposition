@@ -1,0 +1,102 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module miter.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 833 unused cells and 1770 unused wires.
+<suppressed ~909 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module miter...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~422 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 3562 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 3259 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 3049 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2938 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2863 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2799 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2733 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2687 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2656 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2635 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2623 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2611 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2602 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2599 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2597 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2596 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2595 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~2899 debug messages>
+Removed a total of 967 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 14 unused cells and 980 unused wires.
+<suppressed ~15 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 4738bf1ff6, time: 0.10s, user: 0.11s, system: 0.01s, MEM: 27.46 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 38% 4x opt_clean (0 sec), 14% 1x opt_merge (0 sec), ...

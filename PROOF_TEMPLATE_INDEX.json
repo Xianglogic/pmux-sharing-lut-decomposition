@@ -1,0 +1,274 @@
+{
+  "jobs": [
+    {
+      "key": "test1_baseline_rtl_boundary",
+      "case": "test1",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "ddf6b33823096c1d8bfb0825b0fe9c456781cb39326506e0985e9b30ddf3709e"
+    },
+    {
+      "key": "test1_baseline_boundary_final",
+      "case": "test1",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "350975181bfab2abf88685285830509d79ca75cd31281caeafbc637975bd7e6b"
+    },
+    {
+      "key": "test1_candidate_boundary_final",
+      "case": "test1",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "8200f191aed8824509f6da9ae46fddbb83bf9592a7e78664030237992198dbcf"
+    },
+    {
+      "key": "test1_candidate_rtl_boundary",
+      "case": "test1",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "90d8cb6018b9d24d6113d9b5813df7a2a2881699b68d54134f40ccf2d2865e49"
+    },
+    {
+      "key": "test2_baseline_rtl_boundary",
+      "case": "test2",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "262708069ae002f1eed4afe59cae8e4c3f7af9cd7b45cc715a3e912ecbea4687"
+    },
+    {
+      "key": "test2_baseline_boundary_final",
+      "case": "test2",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "02a2fb22790f6e06940baf9fb035cf12af5a952031e3382cebe554a788774310"
+    },
+    {
+      "key": "test2_candidate_rtl_boundary",
+      "case": "test2",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "b21739ac2fbc338d23f49c02308006a8cc1f48e5eda485862631be9a9e17b324"
+    },
+    {
+      "key": "test2_candidate_boundary_final",
+      "case": "test2",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "1353028a4f463ea3b3971698a1c73ea0b9e436580b2d179e0b8ac89dae139375"
+    },
+    {
+      "key": "test2_final_pair",
+      "case": "test2",
+      "kind": "final_pair",
+      "original_config_sha256": "e7a3e5110fc7ee4192f33ba0deb906b59250f055ceea8fe96ae8e842d9a1a861"
+    },
+    {
+      "key": "test3_baseline_rtl_boundary",
+      "case": "test3",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "84279a2d2f26bc609e772ae5c58c68a044f69cb8c5dd010b7522165667314e2b"
+    },
+    {
+      "key": "test3_baseline_boundary_final",
+      "case": "test3",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "043a39181cd86c51561db113b424141cfdee639d8acbfe953a636ff653df1193"
+    },
+    {
+      "key": "test3_candidate_rtl_boundary",
+      "case": "test3",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "9e4eba7e6112a34d72a85fba5c38e4417265fe93c044e51723c83f0ee284862f"
+    },
+    {
+      "key": "test3_candidate_boundary_final",
+      "case": "test3",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "228ccbe443f570f17a30cc4dc79615271425834616f61eb70b3e6b15004d5592"
+    },
+    {
+      "key": "test3_final_pair",
+      "case": "test3",
+      "kind": "final_pair",
+      "original_config_sha256": "6bd437aa421a3b8c9a2913ab35b79314def6cb479cbf9cf63a3f37bce71d461c"
+    },
+    {
+      "key": "test4_baseline_rtl_boundary",
+      "case": "test4",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "56e1b7e94b130cb856076da2d08a66027a1292200544eed63cde595b5a3fcf63"
+    },
+    {
+      "key": "test4_baseline_boundary_final",
+      "case": "test4",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "95ac1ddcf3665752e0376538fc5c2dae5e722bd314db6405ebe335822ecb8b25"
+    },
+    {
+      "key": "test4_candidate_rtl_boundary",
+      "case": "test4",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "c89f520b7bb91b02eb0daf3373f76969737186aa76b87f1405ec54838847cca0"
+    },
+    {
+      "key": "test4_candidate_boundary_final",
+      "case": "test4",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "d0ad4a1f297d4873e900eb6ffa488550de634c455910861c92691513bd93bac3"
+    },
+    {
+      "key": "test4_final_pair",
+      "case": "test4",
+      "kind": "final_pair",
+      "original_config_sha256": "0b411971fb318e539fde3f948f2d902ee0111feb2d0b01274d21be3f0225baff"
+    },
+    {
+      "key": "pmux_case01_balanced_baseline_rtl_boundary",
+      "case": "pmux_case01_balanced",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "8f48a2f7e92db9f51665c21cfd05b0b72f4e1436eeeb58f8ab51fd94b3097b26"
+    },
+    {
+      "key": "pmux_case01_balanced_baseline_boundary_final",
+      "case": "pmux_case01_balanced",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "e135784f51ca82b91716d9774d2b9fdb4a9a71177315e638a0e98c99ffbbfe70"
+    },
+    {
+      "key": "pmux_case01_balanced_candidate_rtl_boundary",
+      "case": "pmux_case01_balanced",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "d3a5af9068a07402cadd95c77650c59d442fe2210cad78906246eb8dfc5f5437"
+    },
+    {
+      "key": "pmux_case01_balanced_candidate_boundary_final",
+      "case": "pmux_case01_balanced",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "9261f87bdf5421078d9e589d23ffb51e7310614a54ff0b0f1bbb488279187448"
+    },
+    {
+      "key": "pmux_case01_balanced_final_pair",
+      "case": "pmux_case01_balanced",
+      "kind": "final_pair",
+      "original_config_sha256": "9bf3938bcd213086df93575b48262524fe7776976bb0293b5cc768bade35f40f"
+    },
+    {
+      "key": "test1_final_pair",
+      "case": "test1",
+      "kind": "final_pair",
+      "original_config_sha256": "5ce907effd81ffeb198a559119f14bbe7678b5b0fa88e7c311b189e5ce5cf470"
+    },
+    {
+      "key": "pmux_case02_pipeline_baseline_rtl_boundary",
+      "case": "pmux_case02_pipeline",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "e6286e2fb6bb51753b5818041ac5f02168bee357dc069608bd44a9a385d08782"
+    },
+    {
+      "key": "pmux_case02_pipeline_baseline_boundary_final",
+      "case": "pmux_case02_pipeline",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "8d24807d60193c96c791cb99d51d3616f24875c83665b9bd6bf8b027632d86ee"
+    },
+    {
+      "key": "pmux_case02_pipeline_candidate_rtl_boundary",
+      "case": "pmux_case02_pipeline",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "8410a6e91d7f46ed3b9dfb1e3d93faed1cbfafacfc1efdf8b0af39d181012df3"
+    },
+    {
+      "key": "pmux_case02_pipeline_candidate_boundary_final",
+      "case": "pmux_case02_pipeline",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "70eaddd7182a20ebac31f5517679a85082540b9c6d6ddc53fea69ed2c7b3a34a"
+    },
+    {
+      "key": "pmux_case03_crossbar_baseline_rtl_boundary",
+      "case": "pmux_case03_crossbar",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "8387dc104cc2b23526f8ee5966a55231ce810ccbafff665eff5e81c24a0829b8"
+    },
+    {
+      "key": "pmux_case02_pipeline_final_pair",
+      "case": "pmux_case02_pipeline",
+      "kind": "final_pair",
+      "original_config_sha256": "6c54b25c7efdf7434e8868da7270944037b49896a6fa2a64c035bc47c3f97f72"
+    },
+    {
+      "key": "pmux_case03_crossbar_baseline_boundary_final",
+      "case": "pmux_case03_crossbar",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "7a06a9cbf635fcad74a9f7088467b2fd752232941bbde44efdebd850ab02d255"
+    },
+    {
+      "key": "pmux_case03_crossbar_candidate_rtl_boundary",
+      "case": "pmux_case03_crossbar",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "f753430a5dcba976b169139b5b5de491cbdd084137d0c199add236a5bb8f1277"
+    },
+    {
+      "key": "pmux_case03_crossbar_candidate_boundary_final",
+      "case": "pmux_case03_crossbar",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "881c9d9e393409243cb358bdfca2345bc504d09f73fadbe3a8844fb73e4bc026"
+    },
+    {
+      "key": "pmux_case04_feedback_baseline_rtl_boundary",
+      "case": "pmux_case04_feedback",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "bb07c9cf29f68589f55c19f73c97f4fe119f6051d24c5ea8b706c4e1a5995754"
+    },
+    {
+      "key": "pmux_case03_crossbar_final_pair",
+      "case": "pmux_case03_crossbar",
+      "kind": "final_pair",
+      "original_config_sha256": "57dd237d3296162e3152e7d6361bfaad6c273d5d0999a4135708c5fd211f8208"
+    },
+    {
+      "key": "pmux_case04_feedback_baseline_boundary_final",
+      "case": "pmux_case04_feedback",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "2de8a019aed7df6e802821b9a52fdf8946b06d56b664c91a4076ae8018f80140"
+    },
+    {
+      "key": "pmux_case04_feedback_candidate_rtl_boundary",
+      "case": "pmux_case04_feedback",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "5a7338dadd8ed04e62cc0d59d2d66fa0a145bce6be37932c760a412072658824"
+    },
+    {
+      "key": "pmux_case04_feedback_candidate_boundary_final",
+      "case": "pmux_case04_feedback",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "095fe0ef0379a92cc1944661a15c3de4392aea46c1ba65cef84b2aeaee597dc8"
+    },
+    {
+      "key": "pmux_case04_feedback_final_pair",
+      "case": "pmux_case04_feedback",
+      "kind": "final_pair",
+      "original_config_sha256": "fcd6f3f7b8ac1565751e48b722c8b2691a6070489a3b2d0aef0d69e7662f2b8d"
+    },
+    {
+      "key": "pmux_case05_nested_baseline_rtl_boundary",
+      "case": "pmux_case05_nested",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "645cb975ce6383948bbffafd209ffa9f2e77ed7c0b8dc57d9a15da81da17e907"
+    },
+    {
+      "key": "pmux_case05_nested_candidate_rtl_boundary",
+      "case": "pmux_case05_nested",
+      "kind": "rtl_to_boundary",
+      "original_config_sha256": "0a28f0b638b601c4b9fec694f036440b62e5d3d7880bfdad7f1510caace58fef"
+    },
+    {
+      "key": "pmux_case05_nested_baseline_boundary_final",
+      "case": "pmux_case05_nested",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "8b94ba62948cee6a426390be6cbfb52577773201e3f7f29ce0d0106284a63e7a"
+    },
+    {
+      "key": "pmux_case05_nested_candidate_boundary_final",
+      "case": "pmux_case05_nested",
+      "kind": "boundary_to_final",
+      "original_config_sha256": "303ad0db40df5226adcb8cb833a03db13717c57421155a27f6011affeb82a56d"
+    },
+    {
+      "key": "pmux_case05_nested_final_pair",
+      "case": "pmux_case05_nested",
+      "kind": "final_pair",
+      "original_config_sha256": "78503c7ace8c665b41c93a1b06522cf027ddc24f30f9013849ce50e0e5e43307"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+read_verilog -sv  "inputs/pmux_case04_feedback/pmux_case04_feedback.v"; hierarchy -check -top pmux_case04_feedback; proc; setundef -init -params -zero; synth_intel -family cycloneiv -top pmux_case04_feedback; check -assert; write_rtlil "runs/20261101_012723_862_828485/pmux_case04_feedback/output.il"; write_json "runs/20261101_012723_862_828485/pmux_case04_feedback/output.json"

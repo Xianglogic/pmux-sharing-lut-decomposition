@@ -1,0 +1,18 @@
+pmux_case01_balanced . A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:2.1-69.10" A:top=1 A:dynports=1
+pmux_case01_balanced rst w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:7.16-7.19" P=I
+pmux_case01_balanced lane[0].x3 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.37-23.39"
+pmux_case01_balanced lane[0].x2 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.33-23.35"
+pmux_case01_balanced lane[0].x1 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.29-23.31"
+pmux_case01_balanced lane[0].x0 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.25-23.27"
+pmux_case01_balanced lane[0].s w=15:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:20.21-20.22"
+pmux_case01_balanced lane[0].q w=11:0 A:keep=1 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:21.25-21.26"
+pmux_case01_balanced lane[0].next_q w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.41-23.47"
+pmux_case01_balanced lane[0].d w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:19.26-19.27"
+pmux_case01_balanced lane[0].c w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:18.26-18.27"
+pmux_case01_balanced lane[0].b w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:17.26-17.27"
+pmux_case01_balanced lane[0].a w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:16.26-16.27"
+pmux_case01_balanced en w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:8.16-8.18" P=I
+pmux_case01_balanced data_out w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:11.35-11.43" P=O
+pmux_case01_balanced data_in w=47:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:9.36-9.43" P=I
+pmux_case01_balanced ctrl_in w=15:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:10.31-10.38" P=I
+pmux_case01_balanced clk w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:6.16-6.19" P=I

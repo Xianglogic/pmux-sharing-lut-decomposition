@@ -1,0 +1,16 @@
+read_verilog -sv "inputs/test2/test2/test2.v"
+hierarchy -check -top test2
+proc
+setundef -init -params -zero
+delete t:$print
+prep -top test2 -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_rtl_boundary/run/gold.il

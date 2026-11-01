@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-11-01T01:22:19" hostname="LAPTOP-3QQKRJRA" package="test4.data_dn" id="0" name="default" tests="1" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS, FAIL, UNKNOWN, TIMEOUT"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+</testcase>
+<system-out>SBY  1:22:19 [test4.data_dn] Removing directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_final_pair/run/strategies/test4.data_dn/pdr/test4.data_dn'.
+SBY  1:22:19 [test4.data_dn] engine_0: abc pdr
+SBY  1:22:19 [test4.data_dn] base: starting process &quot;cd test4.data_dn/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  1:22:19 [test4.data_dn] base: finished (returncode=0)
+SBY  1:22:19 [test4.data_dn] prep: starting process &quot;cd test4.data_dn/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  1:22:19 [test4.data_dn] prep: finished (returncode=0)
+SBY  1:22:19 [test4.data_dn] aig: starting process &quot;cd test4.data_dn/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_reset_n like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_ena like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_datain [0] like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_datain [1] like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_datain [2] like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_datain [3] like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_datain [4] like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating undriven bit miter.\__pi_clk like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: Warning: Treating a total of 8 undriven bits in miter like $anyseq.
+SBY  1:22:19 [test4.data_dn] aig: finished (returncode=0)
+SBY  1:22:19 [test4.data_dn] engine_0: starting process &quot;cd test4.data_dn; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw'&quot;
+SBY  1:22:19 [test4.data_dn] engine_0: ======== ABC command line &quot;read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw&quot;
+SBY  1:22:19 [test4.data_dn] engine_0: Warning: The last output is interpreted as a constraint.
+SBY  1:22:19 [test4.data_dn] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 199. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY  1:22:19 [test4.data_dn] engine_0: Frame Clauses                                                     Max Queue Flops Time
+SBY  1:22:19 [test4.data_dn] engine_0: 1 : 0 40                                                                1    41      0.00 sec  T/O =  0  PRV =  0
+SBY  1:22:19 [test4.data_dn] engine_0: 2 : 0 20 22 ~18                                                          1    41      0.01 sec  T/O =  0  PRV =  0
+SBY  1:22:19 [test4.data_dn] engine_0: Proved output 0 in frame 2.
+SBY  1:22:19 [test4.data_dn] engine_0: Proved output 1 in frame 2.
+SBY  1:22:19 [test4.data_dn] engine_0: Proved output 2 in frame 2.
+SBY  1:22:19 [test4.data_dn] engine_0: Proved output 3 in frame 2.
+SBY  1:22:19 [test4.data_dn] engine_0: Proved output 4 in frame 2.
+SBY  1:22:19 [test4.data_dn] engine_0: 3 : 0 20 0 0 ~40                                                         0    41      0.01 sec  T/O =  0  PRV =  5
+SBY  1:22:19 [test4.data_dn] engine_0: Block =   60  Oblig =    60  Clause =    60  Call =   239 (sat=61.5%)  Cex =   0  Start =   0
+SBY  1:22:19 [test4.data_dn] engine_0: SAT solving =     0.00 sec ( 12.83 %)
+SBY  1:22:19 [test4.data_dn] engine_0: unsat     =     0.00 sec (  3.25 %)
+SBY  1:22:19 [test4.data_dn] engine_0: sat       =     0.00 sec (  9.58 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Generalize  =     0.00 sec (  5.26 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Push clause =     0.00 sec (  2.51 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Ternary sim =     0.00 sec (  1.23 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Containment =     0.00 sec (  0.01 %)
+SBY  1:22:19 [test4.data_dn] engine_0: CNF compute =     0.00 sec (  0.88 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY  1:22:19 [test4.data_dn] engine_0: TOTAL       =     0.01 sec (100.00 %)
+SBY  1:22:19 [test4.data_dn] engine_0: Property proved.  Time =     0.01 sec
+SBY  1:22:19 [test4.data_dn] engine_0: Counter-example is not available.
+SBY  1:22:19 [test4.data_dn] engine_0: finished (returncode=0)
+SBY  1:22:19 [test4.data_dn] engine_0: Status returned by engine: PASS
+SBY  1:22:19 [test4.data_dn] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:19 [test4.data_dn] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:19 [test4.data_dn] summary: engine_0 (abc pdr) returned PASS
+SBY  1:22:19 [test4.data_dn] summary: engine_0 did not produce any traces
+SBY  1:22:19 [test4.data_dn] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,1 @@
++&sweep; &dc2; &dc2; &if -a -C 8 -F 2 -A 4 {W} {D} {R}; &put; lutpack -s -N 3 -Q 1 -S 2 -L 1; &get -m

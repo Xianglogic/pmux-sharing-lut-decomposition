@@ -1,0 +1,128 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\evidence\current\capture_full\pmux_case04_feedback\initialize.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/pmux_case04_feedback/pmux_case04_feedback.v
+Parsing SystemVerilog input from `inputs/pmux_case04_feedback/pmux_case04_feedback.v' to AST representation.
+Generating RTLIL representation for module `\pmux_case04_feedback'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1 in module pmux_case04_feedback.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 8 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Found async reset \rst in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+     1/1: $0\lane[1].q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+     1/1: $1\lane[1].next_q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+     1/1: $1\lane[1].x2[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+     1/1: $1\lane[1].x1[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+     1/1: $1\lane[1].x0[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+     1/1: $0\lane[0].q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+     1/1: $1\lane[0].next_q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+     1/1: $1\lane[0].x2[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+     1/1: $1\lane[0].x1[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+     1/1: $1\lane[0].x0[7:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].next_q' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x2' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x1' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x0' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].next_q' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x2' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x1' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x0' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmux_case04_feedback.\lane[1].q' using process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+  created $adff cell `$procdff$75' with positive edge clock and positive level reset.
+Creating register for signal `\pmux_case04_feedback.\lane[0].q' using process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+  created $adff cell `$procdff$78' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+Cleaned up 10 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+<suppressed ~10 debug messages>
+
+4. Executing JSON backend.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case04_feedback...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/pmux_case04_feedback/initialized.il
+
+8. Executing JSON backend.

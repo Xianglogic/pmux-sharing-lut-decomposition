@@ -1,0 +1,5 @@
+*.v linguist-language=Verilog
+/.gitcommit export-subst
+
+# Preserve archived project bytes in Git checkouts.
+* -text -eol -filter -ident -export-subst

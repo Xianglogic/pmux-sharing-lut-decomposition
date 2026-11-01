@@ -1,0 +1,3 @@
+input 0 0 __pi_sr_in
+input 1 0 __pi_cs
+input 2 0 __pi_clk

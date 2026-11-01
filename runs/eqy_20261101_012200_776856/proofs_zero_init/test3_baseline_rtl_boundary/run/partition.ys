@@ -1,0 +1,4 @@
+plugin -i /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/libexec/../share/yosys/plugins/eqy_partition.so
+read_rtlil combined.il
+insbuf -chain
+eqy_partition -matched_ids matched.ids -partition_ids partition.ids

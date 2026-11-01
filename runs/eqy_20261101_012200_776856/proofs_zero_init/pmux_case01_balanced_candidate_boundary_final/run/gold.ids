@@ -1,0 +1,290 @@
+pmux_case01_balanced . A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:2.1-69.10" A:top=1 A:dynports=1
+pmux_case01_balanced data_out_dffeas_q_9 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_8 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_7 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_6 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_5 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_4 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_3 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_2 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_11 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_10 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q_1 c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced data_out_dffeas_q c=$scopeinfo A:cell_src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:64.9-67.12" A:module="$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas" A:module_hdlname="dffeas" A:module_src="evidence/formal_primitives.v:8.1-12.10"
+pmux_case01_balanced rst w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:7.16-7.19" P=I
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_11_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A_2 w=11:0 A:force_downto=1 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:52.28-52.33|D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:270.26-270.27"
+pmux_case01_balanced lane[0].x3_$lut_Y_A_1 w=11:0
+pmux_case01_balanced lane[0].x3_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_11_A w=0:0
+pmux_case01_balanced lane[0].x3_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x3 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.37-23.39"
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_9_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_8_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_7_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_6_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_5_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_4_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_3_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_2_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_1_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_10_A_1 w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2_$lut_A_Y w=11:0 A:force_downto=1 A:src="D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:270.26-270.27"
+pmux_case01_balanced lane[0].x2_$lut_Y_A_2 w=11:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_A_1 w=11:0 A:force_downto=1 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:44.28-44.33|D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:270.26-270.27"
+pmux_case01_balanced lane[0].x2_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_1_A_1 w=11:0 A:force_downto=1 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:51.28-51.33|D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:287.21-287.22"
+pmux_case01_balanced lane[0].x2_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_11_A w=0:0
+pmux_case01_balanced lane[0].x2_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x2 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.33-23.35"
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_2 w=11:0 A:force_downto=1 A:src="D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:270.26-270.27"
+pmux_case01_balanced lane[0].x1_$lut_Y_A_1 w=11:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_A_$lut_Y_A w=11:0 A:force_downto=1 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:51.28-51.33|D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v:270.26-270.27"
+pmux_case01_balanced lane[0].x1_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_11_A w=0:0
+pmux_case01_balanced lane[0].x1_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x1 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.29-23.31"
+pmux_case01_balanced lane[0].x0_$lut_Y_A_1 w=11:0
+pmux_case01_balanced lane[0].x0_$lut_Y_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_9_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_8_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_7_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_6_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_5_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_4_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_3_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_2_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_1_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_11_A w=0:0
+pmux_case01_balanced lane[0].x0_$lut_Y_10_A w=0:0
+pmux_case01_balanced lane[0].x0 w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:23.25-23.27"
+pmux_case01_balanced en_$lut_A_Y w=0:0
+pmux_case01_balanced en w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:8.16-8.18" P=I
+pmux_case01_balanced data_out_dffeas_q_sload w=0:0
+pmux_case01_balanced data_out_dffeas_q_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_9_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_9_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_9.sload w=0:0 N=data_out_dffeas_q_9 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_9.sclr w=0:0 N=data_out_dffeas_q_9 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_9.q w=0:0 N=data_out_dffeas_q_9 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_9.prn w=0:0 N=data_out_dffeas_q_9 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_9.ena w=0:0 N=data_out_dffeas_q_9 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_9.d w=0:0 N=data_out_dffeas_q_9 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_9.clrn w=0:0 N=data_out_dffeas_q_9 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_9.clk w=0:0 N=data_out_dffeas_q_9 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_9.asdata w=0:0 N=data_out_dffeas_q_9 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_9.aload w=0:0 N=data_out_dffeas_q_9 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_8_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_8_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_8.sload w=0:0 N=data_out_dffeas_q_8 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_8.sclr w=0:0 N=data_out_dffeas_q_8 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_8.q w=0:0 N=data_out_dffeas_q_8 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_8.prn w=0:0 N=data_out_dffeas_q_8 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_8.ena w=0:0 N=data_out_dffeas_q_8 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_8.d w=0:0 N=data_out_dffeas_q_8 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_8.clrn w=0:0 N=data_out_dffeas_q_8 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_8.clk w=0:0 N=data_out_dffeas_q_8 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_8.asdata w=0:0 N=data_out_dffeas_q_8 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_8.aload w=0:0 N=data_out_dffeas_q_8 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_7_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_7_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_7.sload w=0:0 N=data_out_dffeas_q_7 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_7.sclr w=0:0 N=data_out_dffeas_q_7 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_7.q w=0:0 N=data_out_dffeas_q_7 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_7.prn w=0:0 N=data_out_dffeas_q_7 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_7.ena w=0:0 N=data_out_dffeas_q_7 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_7.d w=0:0 N=data_out_dffeas_q_7 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_7.clrn w=0:0 N=data_out_dffeas_q_7 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_7.clk w=0:0 N=data_out_dffeas_q_7 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_7.asdata w=0:0 N=data_out_dffeas_q_7 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_7.aload w=0:0 N=data_out_dffeas_q_7 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_6_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_6_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_6.sload w=0:0 N=data_out_dffeas_q_6 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_6.sclr w=0:0 N=data_out_dffeas_q_6 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_6.q w=0:0 N=data_out_dffeas_q_6 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_6.prn w=0:0 N=data_out_dffeas_q_6 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_6.ena w=0:0 N=data_out_dffeas_q_6 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_6.d w=0:0 N=data_out_dffeas_q_6 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_6.clrn w=0:0 N=data_out_dffeas_q_6 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_6.clk w=0:0 N=data_out_dffeas_q_6 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_6.asdata w=0:0 N=data_out_dffeas_q_6 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_6.aload w=0:0 N=data_out_dffeas_q_6 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_5_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_5_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_5.sload w=0:0 N=data_out_dffeas_q_5 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_5.sclr w=0:0 N=data_out_dffeas_q_5 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_5.q w=0:0 N=data_out_dffeas_q_5 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_5.prn w=0:0 N=data_out_dffeas_q_5 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_5.ena w=0:0 N=data_out_dffeas_q_5 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_5.d w=0:0 N=data_out_dffeas_q_5 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_5.clrn w=0:0 N=data_out_dffeas_q_5 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_5.clk w=0:0 N=data_out_dffeas_q_5 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_5.asdata w=0:0 N=data_out_dffeas_q_5 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_5.aload w=0:0 N=data_out_dffeas_q_5 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_4_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_4_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_4.sload w=0:0 N=data_out_dffeas_q_4 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_4.sclr w=0:0 N=data_out_dffeas_q_4 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_4.q w=0:0 N=data_out_dffeas_q_4 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_4.prn w=0:0 N=data_out_dffeas_q_4 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_4.ena w=0:0 N=data_out_dffeas_q_4 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_4.d w=0:0 N=data_out_dffeas_q_4 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_4.clrn w=0:0 N=data_out_dffeas_q_4 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_4.clk w=0:0 N=data_out_dffeas_q_4 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_4.asdata w=0:0 N=data_out_dffeas_q_4 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_4.aload w=0:0 N=data_out_dffeas_q_4 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_3_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_3_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_3.sload w=0:0 N=data_out_dffeas_q_3 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_3.sclr w=0:0 N=data_out_dffeas_q_3 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_3.q w=0:0 N=data_out_dffeas_q_3 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_3.prn w=0:0 N=data_out_dffeas_q_3 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_3.ena w=0:0 N=data_out_dffeas_q_3 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_3.d w=0:0 N=data_out_dffeas_q_3 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_3.clrn w=0:0 N=data_out_dffeas_q_3 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_3.clk w=0:0 N=data_out_dffeas_q_3 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_3.asdata w=0:0 N=data_out_dffeas_q_3 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_3.aload w=0:0 N=data_out_dffeas_q_3 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_2_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_2_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_2.sload w=0:0 N=data_out_dffeas_q_2 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_2.sclr w=0:0 N=data_out_dffeas_q_2 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_2.q w=0:0 N=data_out_dffeas_q_2 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_2.prn w=0:0 N=data_out_dffeas_q_2 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_2.ena w=0:0 N=data_out_dffeas_q_2 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_2.d w=0:0 N=data_out_dffeas_q_2 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_2.clrn w=0:0 N=data_out_dffeas_q_2 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_2.clk w=0:0 N=data_out_dffeas_q_2 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_2.asdata w=0:0 N=data_out_dffeas_q_2 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_2.aload w=0:0 N=data_out_dffeas_q_2 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_1_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_1_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_11_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_11_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_11.sload w=0:0 N=data_out_dffeas_q_11 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_11.sclr w=0:0 N=data_out_dffeas_q_11 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_11.q w=0:0 N=data_out_dffeas_q_11 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_11.prn w=0:0 N=data_out_dffeas_q_11 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_11.ena w=0:0 N=data_out_dffeas_q_11 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_11.d w=0:0 N=data_out_dffeas_q_11 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_11.clrn w=0:0 N=data_out_dffeas_q_11 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_11.clk w=0:0 N=data_out_dffeas_q_11 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_11.asdata w=0:0 N=data_out_dffeas_q_11 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_11.aload w=0:0 N=data_out_dffeas_q_11 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_10_asdata_$lut_Y_A w=0:0
+pmux_case01_balanced data_out_dffeas_q_10_asdata w=0:0
+pmux_case01_balanced data_out_dffeas_q_10.sload w=0:0 N=data_out_dffeas_q_10 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_10.sclr w=0:0 N=data_out_dffeas_q_10 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_10.q w=0:0 N=data_out_dffeas_q_10 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_10.prn w=0:0 N=data_out_dffeas_q_10 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_10.ena w=0:0 N=data_out_dffeas_q_10 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_10.d w=0:0 N=data_out_dffeas_q_10 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_10.clrn w=0:0 N=data_out_dffeas_q_10 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_10.clk w=0:0 N=data_out_dffeas_q_10 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_10.asdata w=0:0 N=data_out_dffeas_q_10 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_10.aload w=0:0 N=data_out_dffeas_q_10 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q_1.sload w=0:0 N=data_out_dffeas_q_1 N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q_1.sclr w=0:0 N=data_out_dffeas_q_1 N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q_1.q w=0:0 N=data_out_dffeas_q_1 N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q_1.prn w=0:0 N=data_out_dffeas_q_1 N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q_1.ena w=0:0 N=data_out_dffeas_q_1 N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q_1.d w=0:0 N=data_out_dffeas_q_1 N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q_1.clrn w=0:0 N=data_out_dffeas_q_1 N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q_1.clk w=0:0 N=data_out_dffeas_q_1 N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q_1.asdata w=0:0 N=data_out_dffeas_q_1 N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q_1.aload w=0:0 N=data_out_dffeas_q_1 N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out_dffeas_q.sload w=0:0 N=data_out_dffeas_q N=sload A:src="evidence/formal_primitives.v:8.58-8.63"
+pmux_case01_balanced data_out_dffeas_q.sclr w=0:0 N=data_out_dffeas_q N=sclr A:src="evidence/formal_primitives.v:8.53-8.57"
+pmux_case01_balanced data_out_dffeas_q.q w=0:0 N=data_out_dffeas_q N=q A:keep=1 A:src="evidence/formal_primitives.v:8.75-8.76"
+pmux_case01_balanced data_out_dffeas_q.prn w=0:0 N=data_out_dffeas_q N=prn A:src="evidence/formal_primitives.v:8.32-8.35"
+pmux_case01_balanced data_out_dffeas_q.ena w=0:0 N=data_out_dffeas_q N=ena A:src="evidence/formal_primitives.v:8.36-8.39"
+pmux_case01_balanced data_out_dffeas_q.d w=0:0 N=data_out_dffeas_q N=d A:src="evidence/formal_primitives.v:8.21-8.22"
+pmux_case01_balanced data_out_dffeas_q.clrn w=0:0 N=data_out_dffeas_q N=clrn A:src="evidence/formal_primitives.v:8.27-8.31"
+pmux_case01_balanced data_out_dffeas_q.clk w=0:0 N=data_out_dffeas_q N=clk A:src="evidence/formal_primitives.v:8.23-8.26"
+pmux_case01_balanced data_out_dffeas_q.asdata w=0:0 N=data_out_dffeas_q N=asdata A:src="evidence/formal_primitives.v:8.40-8.46"
+pmux_case01_balanced data_out_dffeas_q.aload w=0:0 N=data_out_dffeas_q N=aload A:src="evidence/formal_primitives.v:8.47-8.52"
+pmux_case01_balanced data_out w=11:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:11.35-11.43" P=O
+pmux_case01_balanced data_in w=47:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:9.36-9.43" P=I
+pmux_case01_balanced ctrl_in w=15:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:10.31-10.38" P=I
+pmux_case01_balanced clk w=0:0 A:src="inputs/pmux_case01_balanced/pmux_case01_balanced.v:6.16-6.19" P=I

@@ -1,0 +1,82 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\evidence\current\capture_full\test4\initialize.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test4/test4/test4.v
+Parsing SystemVerilog input from `inputs/test4/test4/test4.v' to AST representation.
+Generating RTLIL representation for module `\test4'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test4
+
+2.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$inputs/test4/test4/test4.v:30$1 in module test4.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 1 switch.
+<suppressed ~1 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+     1/3: { $0\dataout[5:0] $0\only_5b[0:0] }
+     2/3: { $0\data_dp[0:0] $0\data_dn[0:0] }
+     3/3: $0\datain_5bis7[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test4.\dataout' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$24' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\only_5b' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$29' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\datain_5bis7' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $dff cell `$procdff$36' with positive edge clock.
+Creating register for signal `\test4.\data_dp' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$41' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\data_dn' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$46' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+Removing empty process `test4.$proc$inputs/test4/test4/test4.v:30$1'.
+Cleaned up 2 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~13 debug messages>
+
+4. Executing JSON backend.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/test4/initialized.il
+
+8. Executing JSON backend.

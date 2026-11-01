@@ -1,0 +1,14 @@
+{
+  "started": "2026-11-01T01:24:10.0618095+08:00",
+  "antivirus_changed": false,
+  "formal_finished": true,
+  "formal_passed": 45,
+  "windows": "Microsoft Windows NT 10.0.26200.0",
+  "pwsh": "7.6.5",
+  "defender_query": "unavailable",
+  "running_word_processes": [
+    26108,
+    41000
+  ],
+  "defender_error": "拒绝访问 "
+}

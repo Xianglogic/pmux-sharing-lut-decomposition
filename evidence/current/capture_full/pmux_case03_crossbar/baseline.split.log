@@ -1,0 +1,1086 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\evidence\current\capture_full\pmux_case03_crossbar\split.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/pmux_case03_crossbar/pmux_case03_crossbar.v
+Parsing SystemVerilog input from `inputs/pmux_case03_crossbar/pmux_case03_crossbar.v' to AST representation.
+Generating RTLIL representation for module `\pmux_case03_crossbar'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$44 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$39 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$34 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$29 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$24 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$23 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$22 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$17 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$12 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$7 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$2 in module pmux_case03_crossbar.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$1 in module pmux_case03_crossbar.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 10 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~14 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$44'.
+     1/1: $0\lane[1].q[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$39'.
+     1/1: $1\lane[1].next_q[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$34'.
+     1/1: $1\lane[1].x3[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$29'.
+     1/1: $1\lane[1].x2[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$24'.
+     1/1: $1\lane[1].x1[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$23'.
+     1/1: $1\lane[1].x0[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$22'.
+     1/1: $0\lane[0].q[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$17'.
+     1/1: $1\lane[0].next_q[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$12'.
+     1/1: $1\lane[0].x3[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$7'.
+     1/1: $1\lane[0].x2[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$2'.
+     1/1: $1\lane[0].x1[4:0]
+Creating decoders for process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$1'.
+     1/1: $1\lane[0].x0[4:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmux_case03_crossbar.\lane[1].next_q' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$39'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[1].x3' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$34'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[1].x2' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$29'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[1].x1' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$24'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[1].x0' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$23'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[0].next_q' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$17'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[0].x3' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$12'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[0].x2' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$7'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[0].x1' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$2'.
+No latch inferred for signal `\pmux_case03_crossbar.\lane[0].x0' from process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmux_case03_crossbar.\lane[1].q' using process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$44'.
+  created $dff cell `$procdff$113' with positive edge clock.
+Creating register for signal `\pmux_case03_crossbar.\lane[0].q' using process `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$22'.
+  created $dff cell `$procdff$114' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$44'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$44'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$39'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$39'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$34'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$34'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$29'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$29'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$24'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$24'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$23'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$23'.
+Found and cleaned up 2 empty switches in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$22'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:68$22'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$17'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:56$17'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$12'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:48$12'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$7'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:40$7'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$2'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:32$2'.
+Found and cleaned up 1 empty switch in `\pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$1'.
+Removing empty process `pmux_case03_crossbar.$proc$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:24$1'.
+Cleaned up 14 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+<suppressed ~10 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+Warning: Feature 'synth_intel' is experimental.
+
+5. Executing SYNTH_INTEL pass.
+
+5.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+5.2. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/m9k_bb.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/m9k_bb.v' to AST representation.
+Generating RTLIL representation for module `\altsyncram'.
+Successfully finished Verilog frontend.
+
+5.3. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/altpll_bb.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.4. Executing HIERARCHY pass (managing design hierarchy).
+
+5.4.1. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+
+5.4.2. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+Removed 0 unused modules.
+
+5.5. Executing PROC pass (convert processes to netlists).
+
+5.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+5.7. Executing FLATTEN pass (flatten design).
+
+5.8. Executing TRIBUF pass.
+
+5.9. Executing DEMINOUT pass (demote inout ports to input or output).
+
+5.10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+Removed 0 unused cells and 36 unused wires.
+<suppressed ~1 debug messages>
+
+5.12. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 86 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+5.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 86 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.14. Executing FSM pass (extract and optimize FSM).
+
+5.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.14.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.14.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+5.15. Executing OPT pass (performing simple optimizations).
+
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 86 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 86 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$113 ($dff) from module pmux_case03_crossbar (D = $procmux$45_Y, Q = \lane[1].q, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$118 ($sdff) from module pmux_case03_crossbar (D = \lane[1].next_q, Q = \lane[1].q).
+Adding SRST signal on $procdff$114 ($dff) from module pmux_case03_crossbar (D = $procmux$79_Y, Q = \lane[0].q, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:337:slice$120 ($sdff) from module pmux_case03_crossbar (D = \lane[0].next_q, Q = \lane[0].q).
+
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~5 debug messages>
+
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+5.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.15.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5.16. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$55_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$56_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$57_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$62_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$67_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$72_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$77_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$89_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$90_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell pmux_case03_crossbar.$procmux$91_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$96_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$101_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$106_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case03_crossbar.$procmux$111_CMP0 ($eq).
+
+5.17. Executing PEEPOPT pass (run peephole optimizers).
+
+5.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.19. Executing TECHMAP pass (map to technology primitives).
+
+5.19.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\cmp2lut.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+5.19.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+5.20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.22. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module pmux_case03_crossbar:
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$43 ($sub).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$42 ($add).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$38 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$37 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$36 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$35 ($sub).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$33 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$32 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$31 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$30 ($add).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$21 ($sub).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$20 ($add).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$16 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$15 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$14 ($sub).
+  creating $macc model for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$13 ($sub).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$11 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$10 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$9 ($add).
+  creating $macc model for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$8 ($add).
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$8.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$9.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$10.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$11.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$13.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$14.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$15.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$16.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$20.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$21.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$30.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$31.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$32.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$33.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$35.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$36.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$37.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$38.
+  creating $alu model for $macc $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$42.
+  creating $alu model for $macc $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$43.
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$43: $auto$alumacc.cc:548:replace_alu$123
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$42: $auto$alumacc.cc:548:replace_alu$126
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$38: $auto$alumacc.cc:548:replace_alu$129
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$37: $auto$alumacc.cc:548:replace_alu$132
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$36: $auto$alumacc.cc:548:replace_alu$135
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$35: $auto$alumacc.cc:548:replace_alu$138
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$33: $auto$alumacc.cc:548:replace_alu$141
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$32: $auto$alumacc.cc:548:replace_alu$144
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$31: $auto$alumacc.cc:548:replace_alu$147
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$30: $auto$alumacc.cc:548:replace_alu$150
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:65$21: $auto$alumacc.cc:548:replace_alu$153
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:64$20: $auto$alumacc.cc:548:replace_alu$156
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:53$16: $auto$alumacc.cc:548:replace_alu$159
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:52$15: $auto$alumacc.cc:548:replace_alu$162
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:51$14: $auto$alumacc.cc:548:replace_alu$165
+  creating $alu cell for $sub$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:50$13: $auto$alumacc.cc:548:replace_alu$168
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:45$11: $auto$alumacc.cc:548:replace_alu$171
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:44$10: $auto$alumacc.cc:548:replace_alu$174
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:43$9: $auto$alumacc.cc:548:replace_alu$177
+  creating $alu cell for $add$inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:42$8: $auto$alumacc.cc:548:replace_alu$180
+  created 20 $alu and 0 $macc cells.
+
+5.23. Executing OPT pass (performing simple optimizations).
+
+5.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+5.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.23.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.24. Executing MEMORY pass.
+
+5.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.26. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+5.27. Executing TECHMAP pass (map to technology primitives).
+
+5.27.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/brams_map_m9k.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/brams_map_m9k.v' to AST representation.
+Generating RTLIL representation for module `$__M9K_ALTSYNCRAM_SINGLEPORT_FULL'.
+Successfully finished Verilog frontend.
+
+5.27.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+5.28. Executing OPT pass (performing simple optimizations).
+
+5.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.28.5. Finished fast OPT passes.
+
+5.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5.30. Executing OPT pass (performing simple optimizations).
+
+5.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+5.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 82 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.30.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.31. Executing TECHMAP pass (map to technology primitives).
+
+5.31.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\techmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.31.2. Continuing TECHMAP pass.
+Using template $paramod$b18e16801adf491a64caa0542270798e5d4ac6b6\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_not.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000101 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~776 debug messages>
+
+5.32. Executing OPT pass (performing simple optimizations).
+
+5.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+<suppressed ~538 debug messages>
+
+5.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 1222 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Computing hashes of 1148 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Computing hashes of 1144 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+<suppressed ~234 debug messages>
+Removed a total of 78 cells.
+
+5.32.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.32.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 1144 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.32.6. Executing OPT_SHARE pass.
+
+5.32.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.32.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+Removed 60 unused cells and 876 unused wires.
+<suppressed ~61 debug messages>
+
+5.32.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.32.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.32.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case03_crossbar..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.32.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case03_crossbar.
+Performed a total of 0 changes.
+
+5.32.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 1084 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.32.14. Executing OPT_SHARE pass.
+
+5.32.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.32.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.32.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.32.18. Finished fast OPT passes. (There is nothing left to do.)
+Removed 0 unused cells and 12 unused wires.
+
+5.33. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5.34. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+5.35. Executing TECHMAP pass (map to technology primitives).
+
+5.35.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/ff_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/common/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_PN0P_'.
+Successfully finished Verilog frontend.
+
+5.35.2. Continuing TECHMAP pass.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~22 debug messages>
+
+5.36. Executing ABC9 pass.
+
+5.36.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.36.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.36.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module pmux_case03_crossbar.
+Found 0 SCCs.
+
+5.36.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.36.5. Executing TECHMAP pass (map to technology primitives).
+
+5.36.5.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\techmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.36.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~86 debug messages>
+
+5.36.6. Executing OPT pass (performing simple optimizations).
+
+5.36.6.1. Executing OPT_EXPR pass (perform const folding).
+
+5.36.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.36.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+5.36.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+5.36.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.36.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.36.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+5.36.6.8. Executing OPT_EXPR pass (perform const folding).
+
+5.36.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.36.7. Executing TECHMAP pass (map to technology primitives).
+
+5.36.7.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.36.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+5.36.8. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_model.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+5.36.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.36.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+5.36.11. Executing AIGMAP pass (map logic to AIG).
+Module pmux_case03_crossbar: replaced 594 cells with 3216 new cells, skipped 510 cells.
+  replaced 3 cell types:
+      70 $_MUX_
+     314 $_OR_
+     210 $_XOR_
+  not replaced 3 cell types:
+     380 $_AND_
+     120 $_NOT_
+      10 dffeas
+
+5.36.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.36.11.2. Executing XAIGER backend.
+<suppressed ~5 debug messages>
+Extracted 1534 AND gates and 3813 wires from module `pmux_case03_crossbar' to a netlist network with 85 inputs and 20 outputs.
+
+5.36.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+5.36.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     85/     20  and =    1374  lev =   23 (  10.20)  mem = 0.02 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     85/     20  and =    1775  lev =   17 (   6.60)  mem = 0.02 MB  ch =  262  box = 0  bb = 0
+ABC: cst =       0  cls =    205  lit =     262  unused =    1393  proof =     0
+ABC: + &if -W 300 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =    1775.  Ch =   205.  Total mem =    0.29 MB. Peak cut mem =    0.09 MB.
+ABC: P:  Del = 1806.00.  Ar =     491.0.  Edge =     1539.  Cut =    14109.  T =     0.00 sec
+ABC: P:  Del = 1806.00.  Ar =     444.0.  Edge =     1509.  Cut =    12848.  T =     0.00 sec
+ABC: P:  Del = 1806.00.  Ar =     451.0.  Edge =     1519.  Cut =    13398.  T =     0.00 sec
+ABC: F:  Del = 1806.00.  Ar =     427.0.  Edge =     1469.  Cut =    12426.  T =     0.00 sec
+ABC: A:  Del = 1806.00.  Ar =     409.0.  Edge =     1390.  Cut =    11174.  T =     0.00 sec
+ABC: A:  Del = 1806.00.  Ar =     409.0.  Edge =     1386.  Cut =    11678.  T =     0.00 sec
+ABC: Total time =     0.01 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =     85/     20  and =    1608  lev =   17 (   6.70)  mem = 0.02 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =    409  edge =    1386  lev =    6 (3.00)  mem = 0.01 MB
+ABC: LUT = 409 : 2=71 17.4 %  3=108 26.4 %  4=230 56.2 %  Ave = 3.39
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.02 sec
+ABC: + time 
+ABC: elapse: 0.07 seconds, total: 0.07 seconds
+
+5.36.11.5. Executing AIGER frontend.
+<suppressed ~8 debug messages>
+Removed 2443 unused cells and 2538 unused wires.
+
+5.36.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:      409
+ABC RESULTS:           input signals:        5
+ABC RESULTS:          output signals:       11
+<suppressed ~210 debug messages>
+Removing temp directory.
+
+5.36.12. Executing TECHMAP pass (map to technology primitives).
+
+5.36.12.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_unmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+5.36.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+Removed 0 unused cells and 4052 unused wires.
+
+5.37. Executing OPT pass (performing simple optimizations).
+
+5.37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case03_crossbar.
+
+5.37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case03_crossbar'.
+Computing hashes of 419 cells of `\pmux_case03_crossbar'.
+Finding duplicate cells in `\pmux_case03_crossbar'.
+Removed a total of 0 cells.
+
+5.37.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.37.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+
+5.37.5. Finished fast OPT passes.
+
+5.38. Executing AUTONAME pass.
+Renamed 828 objects in module pmux_case03_crossbar.
+<suppressed ~828 debug messages>
+
+6. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/pmux_case03_crossbar/boundary.il
+
+7. Executing JSON backend.
+
+8. Executing SYNTH_INTEL pass.
+
+8.1. Executing TECHMAP pass (map to technology primitives).
+
+8.1.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/cycloneiv/cells_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\baseline\share\intel/cycloneiv/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__inpad'.
+Generating RTLIL representation for module `$__outpad'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+8.1.2. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
+Using template $paramod$15942ac7be0dd725beac7480dcc74ee28533af66$lut for cells of type $lut.
+Using template $paramod$5e7bd6288e5b7407feff45c6e90557a411d3560a$lut for cells of type $lut.
+Using template $paramod$8722d7b6fcc1b120cb8ba9bf94b1b3aaa116eac4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$ec48a966498c043d93f34c3316787ddea9cedda3$lut for cells of type $lut.
+Using template $paramod$929df4559ac3f8d989adb1b6de8b44988603934c$lut for cells of type $lut.
+Using template $paramod$4c3441b69c955b9dc81501dc0432ef048c815b84$lut for cells of type $lut.
+Using template $paramod$331774cb4b407c256a3045ac2e9819cded39bc4c$lut for cells of type $lut.
+Using template $paramod$07620d52cb536ce2865a3d1bba2ad2f7a88140f9$lut for cells of type $lut.
+Using template $paramod$c958b3a888f937f082b94811ff62d71e32a2b4eb$lut for cells of type $lut.
+Using template $paramod$5321e04f7ce32c091123c3570ab562efb1c81402$lut for cells of type $lut.
+Using template $paramod$d11f22ba2cf503b6cb541175373625cc717fad0d$lut for cells of type $lut.
+Using template $paramod$62b9cc19760df4f05d0c7360b790a1fb852ac400$lut for cells of type $lut.
+Using template $paramod$212392ff71aa095d09e645f54784106bc48af82a$lut for cells of type $lut.
+Using template $paramod$f1029f646005abda698426a043a7c8fe4e2bd078$lut for cells of type $lut.
+Using template $paramod$d0fe7556ef6223c467da0bfe5c6e9cca5c3fc0e5$lut for cells of type $lut.
+Using template $paramod$8d7e631403a80aa650e318c82a10887417c8ada0$lut for cells of type $lut.
+Using template $paramod$dbd6bfc0079f30bdbd8251243755394b48ae1fbb$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01100000 for cells of type $lut.
+Using template $paramod$956157c0497c969d2ee7549e519f18a7bb88f829$lut for cells of type $lut.
+Using template $paramod$a63d84c9dd26caf4e75c7cc2f6f70f64a5b14aa1$lut for cells of type $lut.
+Using template $paramod$7996097aa7e74872f48a5ea7d10d2b685895e6b4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$24ea8efa1d7c1a80e54e4521af3a6ed66ec981b1$lut for cells of type $lut.
+Using template $paramod$e5f3577946f60d63352a885a0122ac782d653d41$lut for cells of type $lut.
+Using template $paramod$379969b5c5451c8200511ed3fefbbdebf93c6fef$lut for cells of type $lut.
+Using template $paramod$e9c77024ca501b890c641f9c0b10e27242db8730$lut for cells of type $lut.
+Using template $paramod$fc2cec173020719b9d64d63f4377930ce71bbe56$lut for cells of type $lut.
+Using template $paramod$7c03b26c73478ecb1b7fb0017db3d8ee4c9a9376$lut for cells of type $lut.
+Using template $paramod$c217e185eb8e6463ca272982ba8c5940fa90d81f$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101001 for cells of type $lut.
+Using template $paramod$6ab1af087b7cdbbe9fe0b2c8de0775ec05f2311f$lut for cells of type $lut.
+Using template $paramod$6b0849254d6c87461fb93e37cc18f089f61eb912$lut for cells of type $lut.
+Using template $paramod$69f20e0703606f2ffd2ee27cd26f815bd5eeb6e9$lut for cells of type $lut.
+Using template $paramod$dc8eb389b2fc3ec6a78d93ff9b548b7fd27b6950$lut for cells of type $lut.
+Using template $paramod$acf49cb7bd2805dee4b4ebb218aa5924b1be7704$lut for cells of type $lut.
+Using template $paramod$7c5af9f666cf38ac789ff4dbbb553e78a6e32f63$lut for cells of type $lut.
+Using template $paramod$037be5c00d8a02858cdb1ab049b58a0133287ff1$lut for cells of type $lut.
+Using template $paramod$01734a040eb16923b440e1aa4f993245bc709d8b$lut for cells of type $lut.
+Using template $paramod$d694f6fa04b60863352bd48e12e5ddc82ca8e4ac$lut for cells of type $lut.
+Using template $paramod$cb0a1a8ee337868349f9ebaf54c3a0d4f7e81aaa$lut for cells of type $lut.
+Using template $paramod$ce3fc22bfce5a632ce0c9661803f849e9311a539$lut for cells of type $lut.
+Using template $paramod$a7321abe7c7bb74c0c17f6fa8124016ad24828a9$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001110 for cells of type $lut.
+Using template $paramod$97d557a7f72e7e1dcbb4fec18824d6fa7972f70a$lut for cells of type $lut.
+Using template $paramod$a20d493743c6e762e93052351143ea302aa9a813$lut for cells of type $lut.
+Using template $paramod$10a6d42c84663fca6c1622800fdec61acbd34667$lut for cells of type $lut.
+Using template $paramod$12879138d1e376f344e47ea40be66b776233be75$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101101 for cells of type $lut.
+Using template $paramod$332a399730bfc61adea04021a76b1c4e4030f37d$lut for cells of type $lut.
+Using template $paramod$a670b08a47dd8a34f954c50cd06e9996d77e8467$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000111 for cells of type $lut.
+Using template $paramod$31355df6e553d8cd6fcd0bf57a837c84b61d1970$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000010 for cells of type $lut.
+Using template $paramod$f5c5b56521a6811444a94cf8aec11258bf0a108d$lut for cells of type $lut.
+Using template $paramod$f85f1073c412d406200a6a72283f918c8b751314$lut for cells of type $lut.
+Using template $paramod$413d040dcd860cd74ca61a70644516a95d328ae7$lut for cells of type $lut.
+Using template $paramod$c4a4cf1f67c598049dd5cb5cdb183838e000e772$lut for cells of type $lut.
+Using template $paramod$101238f3d8d49ab12a9b49a2f01cd503b26e9c61$lut for cells of type $lut.
+Using template $paramod$9fc14cb0ba5120a1da0c687a9fb19472f206fdfe$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001010 for cells of type $lut.
+Using template $paramod$e51a8a571bee774247b38f52d6e85fd62ae52cea$lut for cells of type $lut.
+Using template $paramod$620586420e818d3afa7e5b51fcf19f5c6ea83ad4$lut for cells of type $lut.
+Using template $paramod$643d7607725f72f3e83c6e0ed654f5f60adce0ba$lut for cells of type $lut.
+Using template $paramod$179512a187da069f3b79ef6612a41e494e7d54b6$lut for cells of type $lut.
+Using template $paramod$d647306462df260c2c5d5720aec11bfaf0ec7270$lut for cells of type $lut.
+Using template $paramod$d2e6b54c89dd4589dbda0c8ae00aff45c46acc75$lut for cells of type $lut.
+Using template $paramod$486e9253c65fbb8e04c0c19bc627fa9f3113c6b6$lut for cells of type $lut.
+Using template $paramod$81d8a60fd95b1a9f9ef71c12a774ae6988cb9fd5$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001110 for cells of type $lut.
+Using template $paramod$5e9374f44a27c3f8a1c38af244ec43ceb4fb8d4f$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101010 for cells of type $lut.
+Using template $paramod$066c8b79539c6cc144c5af6a60f411ebf4e1a8d9$lut for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001101 for cells of type $lut.
+Using template $paramod$8c11a155773d2e4aba9b1022fc059160b55313e8$lut for cells of type $lut.
+Using template $paramod$a5516fc31d1e552de2435200bb732b4d4ad63a9c$lut for cells of type $lut.
+Using template $paramod$29e6d4598488760861f6b73d2b7f65cb302fdcde$lut for cells of type $lut.
+Using template $paramod$82ed25b11a6a11eb861f4dd3d46f5fc9aa1eebaf$lut for cells of type $lut.
+Using template $paramod$4385b611926e5c0509dba4de58311d325da0ff0d$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~1503 debug messages>
+Removed 0 unused cells and 818 unused wires.
+
+8.2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pmux_case03_crossbar'. Setting top module to pmux_case03_crossbar.
+
+8.2.1. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+
+8.2.2. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+Removed 0 unused modules.
+
+8.3. Printing statistics.
+
+=== pmux_case03_crossbar ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      415 wires
+      494 wire bits
+      415 public wires
+      494 public wire bits
+        6 ports
+       85 port bits
+      419 cells
+      409   cycloneiv_lcell_comb
+       10   dffeas
+
+8.4. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+10. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/pmux_case03_crossbar/continued.il
+
+11. Executing JSON backend.

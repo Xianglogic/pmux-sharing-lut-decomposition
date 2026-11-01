@@ -1,0 +1,248 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\evidence\current\capture_full\pmux_case02_pipeline\initialize.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/pmux_case02_pipeline/pmux_case02_pipeline.v
+Parsing SystemVerilog input from `inputs/pmux_case02_pipeline/pmux_case02_pipeline.v' to AST representation.
+Generating RTLIL representation for module `\pmux_case02_pipeline'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$75 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$71 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$67 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$66 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$62 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$58 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$56 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$52 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$48 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$47 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$43 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$39 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$37 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$33 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$29 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$28 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$24 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$20 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$18 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$14 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$10 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$9 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$5 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$1 in module pmux_case02_pipeline.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 24 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~32 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76'.
+     1/2: $0\lane[3].mid[2:0]
+     2/2: $0\lane[3].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$75'.
+     1/1: $1\lane[3].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$71'.
+     1/1: $1\lane[3].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$67'.
+     1/1: $1\lane[3].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$66'.
+     1/1: $1\lane[3].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$62'.
+     1/1: $1\lane[3].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$58'.
+     1/1: $1\lane[3].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57'.
+     1/2: $0\lane[2].mid[2:0]
+     2/2: $0\lane[2].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$56'.
+     1/1: $1\lane[2].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$52'.
+     1/1: $1\lane[2].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$48'.
+     1/1: $1\lane[2].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$47'.
+     1/1: $1\lane[2].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$43'.
+     1/1: $1\lane[2].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$39'.
+     1/1: $1\lane[2].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38'.
+     1/2: $0\lane[1].mid[2:0]
+     2/2: $0\lane[1].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$37'.
+     1/1: $1\lane[1].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$33'.
+     1/1: $1\lane[1].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$29'.
+     1/1: $1\lane[1].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$28'.
+     1/1: $1\lane[1].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$24'.
+     1/1: $1\lane[1].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$20'.
+     1/1: $1\lane[1].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19'.
+     1/2: $0\lane[0].mid[2:0]
+     2/2: $0\lane[0].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$18'.
+     1/1: $1\lane[0].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$14'.
+     1/1: $1\lane[0].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$10'.
+     1/1: $1\lane[0].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$9'.
+     1/1: $1\lane[0].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$5'.
+     1/1: $1\lane[0].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$1'.
+     1/1: $1\lane[0].x0[2:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].next_q' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$75'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].y1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$71'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].y0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$67'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].first' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$66'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].x1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$62'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].x0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$58'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].next_q' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$56'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].y1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$52'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].y0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$48'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].first' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$47'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].x1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$43'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].x0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$39'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].next_q' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$37'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].y1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$33'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].y0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$29'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].first' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$28'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].x1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$24'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].x0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$20'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].next_q' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$18'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].y1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$14'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].y0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$10'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].first' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$9'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].x1' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$5'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].x0' from process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmux_case02_pipeline.\lane[3].q' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76'.
+  created $dff cell `$procdff$237' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[3].mid' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76'.
+  created $dff cell `$procdff$238' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[2].q' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57'.
+  created $dff cell `$procdff$239' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[2].mid' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57'.
+  created $dff cell `$procdff$240' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[1].q' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38'.
+  created $dff cell `$procdff$241' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[1].mid' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38'.
+  created $dff cell `$procdff$242' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[0].q' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19'.
+  created $dff cell `$procdff$243' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[0].mid' using process `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19'.
+  created $dff cell `$procdff$244' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$76'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$75'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$75'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$71'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$71'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$67'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$67'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$66'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$66'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$62'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$62'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$58'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$58'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$57'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$56'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$56'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$52'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$52'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$48'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$48'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$47'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$47'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$43'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$43'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$39'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$39'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$38'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$37'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$37'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$33'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$33'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$29'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$29'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$28'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$28'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$24'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$24'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$20'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$20'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:76$19'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$18'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:68$18'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$14'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:60$14'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$10'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:52$10'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$9'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:44$9'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$5'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:36$5'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$1'.
+Removing empty process `pmux_case02_pipeline.$proc$inputs/pmux_case02_pipeline/pmux_case02_pipeline.v:28$1'.
+Cleaned up 32 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+<suppressed ~24 debug messages>
+
+4. Executing JSON backend.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case02_pipeline...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/pmux_case02_pipeline/initialized.il
+
+8. Executing JSON backend.

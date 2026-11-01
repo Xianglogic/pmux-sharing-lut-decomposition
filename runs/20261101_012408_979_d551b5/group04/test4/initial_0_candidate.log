@@ -1,0 +1,817 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runs\20261101_012408_979_d551b5\group04\test4\synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test4/test4/test4.v
+Parsing SystemVerilog input from `inputs/test4/test4/test4.v' to AST representation.
+Generating RTLIL representation for module `\test4'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test4
+
+2.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$inputs/test4/test4/test4.v:30$1 in module test4.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 1 switch.
+<suppressed ~1 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+     1/3: { $0\dataout[5:0] $0\only_5b[0:0] }
+     2/3: { $0\data_dp[0:0] $0\data_dn[0:0] }
+     3/3: $0\datain_5bis7[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test4.\dataout' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$24' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\only_5b' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$29' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\datain_5bis7' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $dff cell `$procdff$36' with positive edge clock.
+Creating register for signal `\test4.\data_dp' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$41' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\data_dn' using process `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+  created $adff cell `$procdff$46' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\test4.$proc$inputs/test4/test4/test4.v:30$1'.
+Removing empty process `test4.$proc$inputs/test4/test4/test4.v:30$1'.
+Cleaned up 2 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~13 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+Warning: Feature 'synth_intel' is experimental.
+
+5. Executing SYNTH_INTEL pass.
+
+5.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+5.2. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/m9k_bb.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/m9k_bb.v' to AST representation.
+Generating RTLIL representation for module `\altsyncram'.
+Successfully finished Verilog frontend.
+
+5.3. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/altpll_bb.v
+Parsing SystemVerilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.4. Executing HIERARCHY pass (managing design hierarchy).
+
+5.4.1. Analyzing design hierarchy..
+Top module:  \test4
+
+5.4.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+5.5. Executing PROC pass (convert processes to netlists).
+
+5.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+5.7. Executing FLATTEN pass (flatten design).
+
+5.8. Executing TRIBUF pass.
+
+5.9. Executing DEMINOUT pass (demote inout ports to input or output).
+
+5.10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 7 unused cells and 18 unused wires.
+<suppressed ~8 debug messages>
+
+5.12. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+5.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.14. Executing FSM pass (extract and optimize FSM).
+
+5.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.14.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.14.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+5.15. Executing OPT pass (performing simple optimizations).
+
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$36 ($dff) from module test4 (D = $0\datain_5bis7[0:0], Q = \datain_5bis7).
+Adding SRST signal on $auto$ff.cc:337:slice$50 ($dffe) from module test4 (D = $auto$proc_rom.cc:154:do_switch$4 [2], Q = \datain_5bis7, rval = 1'0).
+
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+5.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.15.16. Finished fast OPT passes. (There is nothing left to do.)
+guarded_reg_reuse: rewrote 0 guarded register reads.
+
+5.16. Executing WREDUCE pass (reducing word size of cells).
+Removed top 27 address bits (of 32) from memory init port test4.$auto$mem.cc:351:emit$7 ($auto$proc_rom.cc:155:do_switch$5).
+
+5.17. Executing PEEPOPT pass (run peephole optimizers).
+
+5.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.19. Executing TECHMAP pass (map to technology primitives).
+
+5.19.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\cmp2lut.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+5.19.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+5.20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.22. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module test4:
+  created 0 $alu and 0 $macc cells.
+
+5.23. Executing OPT pass (performing simple optimizations).
+
+5.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+5.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.23.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.24. Executing MEMORY pass.
+
+5.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$proc_rom.cc:155:do_switch$5'[0] in module `\test4': no output FF found.
+Checking read port address `$auto$proc_rom.cc:155:do_switch$5'[0] in module `\test4': no address FF found.
+
+5.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.26. Executing ROM_COFACTOR_OPT pass.
+rom_cofactor_opt: searched output-specific cuts and XOR bases, shared cofactor LUTs=13; XOR outputs=9.
+rom_cofactor_opt: converted 1 ROMs, folded 2 zero muxes, added 23 LUTs.
+
+5.27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+5.28. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+5.29. Executing TECHMAP pass (map to technology primitives).
+
+5.29.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/brams_map_m9k.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/brams_map_m9k.v' to AST representation.
+Generating RTLIL representation for module `$__M9K_ALTSYNCRAM_SINGLEPORT_FULL'.
+Successfully finished Verilog frontend.
+
+5.29.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+5.30. Executing OPT pass (performing simple optimizations).
+
+5.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 28 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.30.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.30.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.30.5. Finished fast OPT passes.
+
+5.31. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5.32. Executing OPT pass (performing simple optimizations).
+
+5.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 28 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.32.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.32.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 28 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.32.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.32.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.32.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.32.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.33. Executing TECHMAP pass (map to technology primitives).
+
+5.33.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.33.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $sdffce.
+Using extmapper simplemap for cells of type $adff.
+No more expansions possible.
+<suppressed ~82 debug messages>
+
+5.34. Executing OPT pass (performing simple optimizations).
+
+5.34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 33 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.34.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.34.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+5.34.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 33 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.34.6. Executing OPT_SHARE pass.
+
+5.34.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.34.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.34.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.34.10. Finished fast OPT passes. (There is nothing left to do.)
+
+5.35. Executing SETUNDEF pass (replace undef values with defined constants).
+pmux_sync_clear: mapped 0 zero-reset FFs without changing FF count or reset/enable priority.
+
+5.36. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+5.37. Executing TECHMAP pass (map to technology primitives).
+
+5.37.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/ff_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/common/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_PN0P_'.
+Successfully finished Verilog frontend.
+
+5.37.2. Continuing TECHMAP pass.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN0P_.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'1 for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~31 debug messages>
+pmux_ff_input_mux: absorbed 0 unique data gates into existing FF synchronous-load muxes.
+pmux_pair_finish: emitted 0 exact LUT4 cuts.
+pmux_priority_finish: emitted 0 priority LUT planes.
+pmux_rom_finish: emitted 23 owned cofactor LUTs.
+pmux_small_cones: exactly mapped 3 scalar gates; all accepted roots have at most four boundary inputs.
+
+5.38. Executing ABC9 pass.
+
+5.38.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.38.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.38.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module test4.
+Found 0 SCCs.
+
+5.38.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.38.5. Executing TECHMAP pass (map to technology primitives).
+
+5.38.5.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.38.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~86 debug messages>
+
+5.38.6. Executing OPT pass (performing simple optimizations).
+
+5.38.6.1. Executing OPT_EXPR pass (perform const folding).
+
+5.38.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.38.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+5.38.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+5.38.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.38.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.38.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+5.38.6.8. Executing OPT_EXPR pass (perform const folding).
+
+5.38.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.38.7. Executing TECHMAP pass (map to technology primitives).
+
+5.38.7.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.38.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+5.38.8. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_model.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+5.38.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.38.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+5.38.11. Executing AIGMAP pass (map logic to AIG).
+Module test4: replaced 0 cells with 0 new cells, skipped 36 cells.
+  not replaced 2 cell types:
+      26 $lut
+      10 dffeas
+
+5.38.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.38.11.2. Executing XAIGER backend.
+<suppressed ~5 debug messages>
+Extracted 0 AND gates and 48 wires from module `test4' to a netlist network with 44 inputs and 36 outputs.
+
+5.38.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+5.38.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     44/     36  and =       0  lev =    0 (   0.00)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dc2 
+ABC: + &if -a -C 8 -F 2 -A 4 -W 300 
+ABC: + &put 
+ABC: + lutpack -s -N 3 -Q 1 -S 2 -L 1 
+ABC: + &get -m 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =     44/     36  and =       0  lev =    0 (   0.00)  mem = 0.00 MB
+ABC: Mapping (K=0)  :  lut =      0  edge =       0  lev =    0 (0.00)  mem = 0.00 MB
+ABC: LUT = 0 : Ave = 0.00
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.00 sec
+ABC: + time 
+ABC: elapse: 0.01 seconds, total: 0.01 seconds
+
+5.38.11.5. Executing AIGER frontend.
+<suppressed ~3 debug messages>
+Removed 0 unused cells and 44 unused wires.
+
+5.38.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:           input signals:        6
+ABC RESULTS:          output signals:       26
+<suppressed ~160 debug messages>
+Removing temp directory.
+
+5.38.12. Executing TECHMAP pass (map to technology primitives).
+
+5.38.12.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_unmap.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+5.38.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+Removed 0 unused cells and 147 unused wires.
+
+5.39. Executing OPT pass (performing simple optimizations).
+
+5.39.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+5.39.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 36 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+5.39.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+5.39.5. Finished fast OPT passes.
+
+5.40. Executing AUTONAME pass.
+Renamed 57 objects in module test4.
+<suppressed ~57 debug messages>
+
+5.41. Executing TECHMAP pass (map to technology primitives).
+
+5.41.1. Executing Verilog-2005 frontend: D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/cycloneiv/cells_map.v
+Parsing Verilog input from `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\runtime\candidate\share\intel/cycloneiv/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__inpad'.
+Generating RTLIL representation for module `$__outpad'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+5.41.2. Continuing TECHMAP pass.
+Using template $paramod$9eb1cc7575b5a2a0f5201c354e5a7b7c0a5f5102$lut for cells of type $lut.
+Using template $paramod$01c608da0c772a10858492e8ba4f65bc04f42266$lut for cells of type $lut.
+Using template $paramod$30ce3396a4f454a728b6261a41eaea793c92facd$lut for cells of type $lut.
+Using template $paramod$ca2d8c0cebac27997a413ef160a25488a9c6a500$lut for cells of type $lut.
+Using template $paramod$6e6286d0f3370f4bfb514d55cbc523a313376b01$lut for cells of type $lut.
+Using template $paramod$1919366062551efdc6b8bfc7e0e7cea36b8b4c34$lut for cells of type $lut.
+Using template $paramod$8366925107ec85aa40ff7ea9e8ba1ab029302f66$lut for cells of type $lut.
+Using template $paramod$950a1d9752b84bbbccb0e0b10cea571e2106062f$lut for cells of type $lut.
+Using template $paramod$33631921643a1280a00dcca5a3c4780e3104a3a3$lut for cells of type $lut.
+Using template $paramod$c49a38a017030ceae975f22d6ba333017af819d8$lut for cells of type $lut.
+Using template $paramod$9b22a1c705c95b6d76d13b5d826906777087290e$lut for cells of type $lut.
+Using template $paramod$8b24407096beec47292ddeb1567a058197a320b9$lut for cells of type $lut.
+Using template $paramod$d6ca727e39f31d51d29072e0f33aa09c65e37336$lut for cells of type $lut.
+Using template $paramod$e628c2a8d9b1fa44d10e1de24bfb8e31bf8a4ac6$lut for cells of type $lut.
+Using template $paramod$0b2a70d926420205a7fc8d44ce583ae42f6232f5$lut for cells of type $lut.
+Using template $paramod$87c5507fa6ec540c598493d91576febb37fc5de4$lut for cells of type $lut.
+Using template $paramod$3d7168c8134c4765b84a7b86d5ef7e1e65bbf4a0$lut for cells of type $lut.
+Using template $paramod$01e2d3f23cb69e35787f2505ed0af598d75e5ba7$lut for cells of type $lut.
+Using template $paramod$f1c0fe4433154d76bd413571dbe0b6d565c15da5$lut for cells of type $lut.
+Using template $paramod$52a58e6cb6267da5d985cc78a76ecce866afb3a2$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~251 debug messages>
+Removed 0 unused cells and 52 unused wires.
+
+5.42. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test4'. Setting top module to test4.
+
+5.42.1. Analyzing design hierarchy..
+Top module:  \test4
+
+5.42.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+5.43. Printing statistics.
+
+=== test4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       30 wires
+       44 wire bits
+       30 public wires
+       44 public wire bits
+        9 ports
+       18 port bits
+       36 cells
+       26   cycloneiv_lcell_comb
+       10   dffeas
+
+5.44. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: runs/20261101_012408_979_d551b5/group04/test4/output.il
+
+8. Executing JSON backend.

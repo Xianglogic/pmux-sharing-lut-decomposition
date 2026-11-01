@@ -1,0 +1,508 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.test3/$auto$insbuf.cc:97:execute$987: \gpioout_dffeas_q_3.q -> \gpioout [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$988: \gpioout_dffeas_q_4.q -> \gpioout [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$989: \gpioout_dffeas_q_2.q -> \gpioout [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$990: \gpioout [1] -> \gpioout [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$991: \gpioout_dffeas_q.q -> \gpioout [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$992: \gpioout_dffeas_q_1.q -> \gpioout [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$993: \gpioout [4] -> \gpioout [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$994: \gpioout [5] -> \gpioout [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$995: 1'0 -> \gpioout_dffeas_q.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$996: 1'0 -> \gpioout_dffeas_q.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$997: \clk -> \gpioout_dffeas_q.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$998: 1'1 -> \gpioout_dffeas_q.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$999: 1'1 -> \gpioout_dffeas_q.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1000: \gpioout_dffeas_q_ena -> \gpioout_dffeas_q.ena
+Add gate.test3/$auto$insbuf.cc:97:execute$1001: 1'1 -> \gpioout_dffeas_q.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1002: 1'0 -> \gpioout_dffeas_q.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1003: 1'0 -> \gpioout_dffeas_q.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1004: 1'0 -> \gpioout_dffeas_q_1.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1005: 1'0 -> \gpioout_dffeas_q_1.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1006: \gpioout_dffeas_q.clk -> \gpioout_dffeas_q_1.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1007: 1'1 -> \gpioout_dffeas_q_1.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1008: \sr_dffeas_q_5.q -> \gpioout_dffeas_q_1.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1009: \gpioout_dffeas_q.ena -> \gpioout_dffeas_q_1.ena
+Add gate.test3/$auto$insbuf.cc:97:execute$1010: 1'1 -> \gpioout_dffeas_q_1.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1011: 1'0 -> \gpioout_dffeas_q_1.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1012: 1'0 -> \gpioout_dffeas_q_1.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1013: 1'0 -> \gpioout_dffeas_q_2.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1014: 1'0 -> \gpioout_dffeas_q_2.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1015: \gpioout_dffeas_q_1.clk -> \gpioout_dffeas_q_2.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1016: 1'1 -> \gpioout_dffeas_q_2.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1017: 1'1 -> \gpioout_dffeas_q_2.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1018: \gpioout_dffeas_q_2_ena -> \gpioout_dffeas_q_2.ena
+Add gate.test3/$auto$insbuf.cc:97:execute$1019: 1'1 -> \gpioout_dffeas_q_2.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1020: 1'0 -> \gpioout_dffeas_q_2.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1021: 1'0 -> \gpioout_dffeas_q_2.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1022: 1'0 -> \gpioout_dffeas_q_3.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1023: 1'0 -> \gpioout_dffeas_q_3.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1024: \gpioout_dffeas_q_2.clk -> \gpioout_dffeas_q_3.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1025: 1'1 -> \gpioout_dffeas_q_3.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1026: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1027: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1028: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1029: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1030: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1031: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1032: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [8]
+Add gate.test3/$auto$insbuf.cc:97:execute$1033: \gpioout_dffeas_q_3_ena -> \gpioout_dffeas_q_3.ena
+Add gate.test3/$auto$insbuf.cc:97:execute$1034: 1'1 -> \gpioout_dffeas_q_3.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1035: 1'0 -> \gpioout_dffeas_q_3.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1036: 1'0 -> \gpioout_dffeas_q_3.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1037: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1038: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1039: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1040: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1041: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1042: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1043: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1044: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1045: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [8]
+Add gate.test3/$auto$insbuf.cc:97:execute$1046: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [9]
+Add gate.test3/$auto$insbuf.cc:97:execute$1047: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1048: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1049: 1'0 -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.cin
+Add gate.test3/$auto$insbuf.cc:97:execute$1050: \gpioout_dffeas_q_3_d_$lut_Y_A -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout
+Add gate.test3/$auto$insbuf.cc:97:execute$1051: \sr_dffeas_q.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datab
+Add gate.test3/$auto$insbuf.cc:97:execute$1052: \sr_dffeas_q_3.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datac
+Add gate.test3/$auto$insbuf.cc:97:execute$1053: \gpioout_dffeas_q_1.d -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datad
+Add gate.test3/$auto$insbuf.cc:97:execute$1054: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.dataa -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa
+Add gate.test3/$auto$insbuf.cc:97:execute$1055: 1'0 -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.cin
+Add gate.test3/$auto$insbuf.cc:97:execute$1056: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.combout
+Add gate.test3/$auto$insbuf.cc:97:execute$1057: \sr_dffeas_q_1.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.dataa
+Add gate.test3/$auto$insbuf.cc:97:execute$1058: \sr_dffeas_q_4.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datab
+Add gate.test3/$auto$insbuf.cc:97:execute$1059: \sr_dffeas_q_6.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datac
+Add gate.test3/$auto$insbuf.cc:97:execute$1060: \rw_dffeas_q.q -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datad
+Add gate.test3/$auto$insbuf.cc:97:execute$1061: 1'0 -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.cin
+Add gate.test3/$auto$insbuf.cc:97:execute$1062: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout
+Add gate.test3/$auto$insbuf.cc:97:execute$1063: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.combout -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.dataa
+Add gate.test3/$auto$insbuf.cc:97:execute$1064: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datab -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datab
+Add gate.test3/$auto$insbuf.cc:97:execute$1065: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datac -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datac
+Add gate.test3/$auto$insbuf.cc:97:execute$1066: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datad -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datad
+Add gate.test3/$auto$insbuf.cc:97:execute$1067: 1'0 -> \gpioout_dffeas_q_4.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1068: 1'0 -> \gpioout_dffeas_q_4.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1069: \gpioout_dffeas_q_3.clk -> \gpioout_dffeas_q_4.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1070: 1'1 -> \gpioout_dffeas_q_4.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1071: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datad -> \gpioout_dffeas_q_4.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1072: \gpioout_dffeas_q_2.ena -> \gpioout_dffeas_q_4.ena
+Add gate.test3/$auto$insbuf.cc:97:execute$1073: 1'1 -> \gpioout_dffeas_q_4.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1074: 1'0 -> \gpioout_dffeas_q_4.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1075: 1'0 -> \gpioout_dffeas_q_4.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1076: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datad -> \rw
+Add gate.test3/$auto$insbuf.cc:97:execute$1077: 1'0 -> \rw_dffeas_q.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1078: 1'0 -> \rw_dffeas_q.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1079: \gpioout_dffeas_q_4.clk -> \rw_dffeas_q.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1080: 1'1 -> \rw_dffeas_q.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1081: \gpioout_dffeas_q_4.d -> \rw_dffeas_q.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1082: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$493 [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1083: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$493 [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1084: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$493 [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1085: 1'1 -> \rw_dffeas_q.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1086: 1'0 -> \rw_dffeas_q.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1087: 1'0 -> \rw_dffeas_q.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1088: \sr_dffeas_q_2.q -> \sr [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1089: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.dataa -> \sr [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1090: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datab -> \sr [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1091: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datab -> \sr [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1092: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datac -> \sr [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1093: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datac -> \sr [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1094: \rw_dffeas_q.d -> \sr [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1095: \rw -> \sr [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1096: 1'0 -> \sr_dffeas_q.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1097: 1'0 -> \sr_dffeas_q.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1098: \rw_dffeas_q.clk -> \sr_dffeas_q.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1099: 1'1 -> \sr_dffeas_q.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1100: \sr [1] -> \sr_dffeas_q.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1101: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1102: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1103: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1104: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1105: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1106: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1107: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1108: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1109: 1'1 -> \sr_dffeas_q.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1110: 1'0 -> \sr_dffeas_q.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1111: 1'0 -> \sr_dffeas_q.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1112: 1'0 -> \sr_dffeas_q_1.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1113: 1'0 -> \sr_dffeas_q_1.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1114: \sr_dffeas_q.clk -> \sr_dffeas_q_1.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1115: 1'1 -> \sr_dffeas_q_1.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1116: \sr [0] -> \sr_dffeas_q_1.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1117: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1118: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1119: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1120: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1121: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1122: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$465 [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1123: 1'1 -> $auto$simplemap.cc:370:simplemap_lut$465 [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1124: 1'1 -> \sr_dffeas_q_1.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1125: 1'0 -> \sr_dffeas_q_1.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1126: 1'0 -> \sr_dffeas_q_1.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1127: 1'0 -> \sr_dffeas_q_2.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1128: 1'0 -> \sr_dffeas_q_2.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1129: \sr_dffeas_q_1.clk -> \sr_dffeas_q_2.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1130: 1'1 -> \sr_dffeas_q_2.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1131: \sr_in -> \sr_dffeas_q_2.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1132: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$474 [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1133: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$474 [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1134: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1135: 1'1 -> \sr_dffeas_q_2.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1136: 1'0 -> \sr_dffeas_q_2.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1137: 1'0 -> \sr_dffeas_q_2.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1138: 1'0 -> \sr_dffeas_q_3.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1139: 1'0 -> \sr_dffeas_q_3.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1140: \sr_dffeas_q_2.clk -> \sr_dffeas_q_3.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1141: 1'1 -> \sr_dffeas_q_3.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1142: \sr [3] -> \sr_dffeas_q_3.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1143: 1'1 -> \sr_dffeas_q_3.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1144: 1'0 -> \sr_dffeas_q_3.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1145: 1'0 -> \sr_dffeas_q_3.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1146: 1'0 -> \sr_dffeas_q_4.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1147: 1'0 -> \sr_dffeas_q_4.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1148: \sr_dffeas_q_3.clk -> \sr_dffeas_q_4.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1149: 1'1 -> \sr_dffeas_q_4.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1150: \sr [2] -> \sr_dffeas_q_4.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1151: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1152: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1153: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1154: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1155: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1156: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1157: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1158: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1159: 1'1 -> \sr_dffeas_q_4.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1160: 1'0 -> \sr_dffeas_q_4.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1161: 1'0 -> \sr_dffeas_q_4.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1162: 1'0 -> \sr_dffeas_q_5.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1163: 1'0 -> \sr_dffeas_q_5.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1164: \sr_dffeas_q_4.clk -> \sr_dffeas_q_5.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1165: 1'1 -> \sr_dffeas_q_5.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1166: \sr [5] -> \sr_dffeas_q_5.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1167: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [0]
+Add gate.test3/$auto$insbuf.cc:97:execute$1168: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1169: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1170: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1171: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1172: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1173: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1174: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1175: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [8]
+Add gate.test3/$auto$insbuf.cc:97:execute$1176: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [9]
+Add gate.test3/$auto$insbuf.cc:97:execute$1177: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1178: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1179: 1'1 -> \sr_dffeas_q_5.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1180: 1'0 -> \sr_dffeas_q_5.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1181: 1'0 -> \sr_dffeas_q_5.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1182: 1'0 -> \sr_dffeas_q_6.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1183: 1'0 -> \sr_dffeas_q_6.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1184: \sr_dffeas_q_5.clk -> \sr_dffeas_q_6.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1185: 1'1 -> \sr_dffeas_q_6.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1186: \sr [4] -> \sr_dffeas_q_6.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1187: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [2]
+Add gate.test3/$auto$insbuf.cc:97:execute$1188: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$1189: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [4]
+Add gate.test3/$auto$insbuf.cc:97:execute$1190: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [5]
+Add gate.test3/$auto$insbuf.cc:97:execute$1191: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$1192: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$1193: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [8]
+Add gate.test3/$auto$insbuf.cc:97:execute$1194: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [9]
+Add gate.test3/$auto$insbuf.cc:97:execute$1195: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1196: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1197: 1'0 -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [12]
+Add gate.test3/$auto$insbuf.cc:97:execute$1198: 1'1 -> \sr_dffeas_q_6.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1199: 1'0 -> \sr_dffeas_q_6.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1200: 1'0 -> \sr_dffeas_q_6.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1201: \sr_out_dffeas_q.q -> \sr_out
+Add gate.test3/$auto$insbuf.cc:97:execute$1202: 1'0 -> \sr_out_dffeas_q.aload
+Add gate.test3/$auto$insbuf.cc:97:execute$1203: 1'0 -> \sr_out_dffeas_q.asdata
+Add gate.test3/$auto$insbuf.cc:97:execute$1204: \sr_dffeas_q_6.clk -> \sr_out_dffeas_q.clk
+Add gate.test3/$auto$insbuf.cc:97:execute$1205: 1'1 -> \sr_out_dffeas_q.clrn
+Add gate.test3/$auto$insbuf.cc:97:execute$1206: \sr [7] -> \sr_out_dffeas_q.d
+Add gate.test3/$auto$insbuf.cc:97:execute$1207: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$498 [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1208: 1'1 -> \sr_out_dffeas_q.prn
+Add gate.test3/$auto$insbuf.cc:97:execute$1209: 1'0 -> \sr_out_dffeas_q.sclr
+Add gate.test3/$auto$insbuf.cc:97:execute$1210: 1'0 -> \sr_out_dffeas_q.sload
+Add gate.test3/$auto$insbuf.cc:97:execute$1211: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1212: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1213: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [9]
+Add gate.test3/$auto$insbuf.cc:97:execute$1214: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1215: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1216: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1217: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1218: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [12]
+Add gate.test3/$auto$insbuf.cc:97:execute$1219: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1220: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1221: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1222: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1223: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1224: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1225: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [12]
+Add gate.test3/$auto$insbuf.cc:97:execute$1226: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1227: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [12]
+Add gate.test3/$auto$insbuf.cc:97:execute$1228: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [10]
+Add gate.test3/$auto$insbuf.cc:97:execute$1229: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [9]
+Add gate.test3/$auto$insbuf.cc:97:execute$1230: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1231: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1232: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1233: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1234: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1235: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$4\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1236: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [15]
+Add gate.test3/$auto$insbuf.cc:97:execute$1237: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1238: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [1]
+Add gate.test3/$auto$insbuf.cc:97:execute$1239: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$319.$6\buffer[15:0] [13]
+Add gate.test3/$auto$insbuf.cc:97:execute$1240: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [11]
+Add gate.test3/$auto$insbuf.cc:97:execute$1241: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.$shiftx$evidence/formal_primitives.v:5$319.$4\buffer[15:0] [14]
+Add gate.test3/$auto$insbuf.cc:97:execute$1242: 1'x -> $techmap$flatten\gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.$shiftx$evidence/formal_primitives.v:5$324.$6\buffer[15:0] [9]
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$956/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$954 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$954 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$955/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$951/D: \sr_out_dffeas_q.q -> \sr_out
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$948/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$948/B: \sr_out_dffeas_q.q -> \sr_out
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$948/A: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$944/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$942 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$942 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$943/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$939/D: \sr_dffeas_q_6.q -> \sr_dffeas_q_5.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$936/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$936/B: \sr_dffeas_q_6.q -> \sr_dffeas_q_5.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$936/A: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$932/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$930 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$930 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$931/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$927/D: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$924/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$924/B: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$924/A: \sr_dffeas_q_6.q -> \sr_dffeas_q_5.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$920/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$918 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$918 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$919/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$915/D: \sr_dffeas_q_4.q -> \sr_dffeas_q_3.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$912/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$912/B: \sr_dffeas_q_4.q -> \sr_dffeas_q_3.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$912/A: \sr_dffeas_q.q -> \sr_dffeas_q_4.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$908/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$906 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$906 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$907/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$903/D: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$900/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$900/B: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$900/A: \sr_dffeas_q_4.q -> \sr_dffeas_q_3.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$896/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$894 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$894 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$895/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$891/D: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$888/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$888/B: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$888/A: \sr_in -> \sr_dffeas_q_2.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$884/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$882 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$882 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$883/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$879/D: \sr_dffeas_q_1.q -> \sr_dffeas_q.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$876/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$876/B: \sr_dffeas_q_1.q -> \sr_dffeas_q.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$876/A: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$872/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$870 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$870 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$871/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$867/D: \sr_dffeas_q.q -> \sr_dffeas_q_4.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$864/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$864/B: \sr_dffeas_q.q -> \sr_dffeas_q_4.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$864/A: \sr_dffeas_q_1.q -> \sr_dffeas_q.d
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$860/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$858 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$858 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$859/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$855/D: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$852/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$852/B: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$ff.cc:599:unmap_ce$852/A: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$848/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$846 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$846 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$847/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$843/D: \gpioout_dffeas_q_4.q -> \gpioout [3]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$840/S: \gpioout_dffeas_q_2_ena -> \gpioout_dffeas_q_4.ena
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$840/B: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$840/A: \gpioout_dffeas_q_4.q -> \gpioout [3]
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$836/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$834 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$834 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$835/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$831/D: \gpioout_dffeas_q.q -> \gpioout [6]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$828/S: \gpioout_dffeas_q_ena -> \gpioout_dffeas_q_1.ena
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$828/A: \gpioout_dffeas_q.q -> \gpioout [6]
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$824/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$822 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$822 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$823/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$819/D: \gpioout_dffeas_q_3.q -> \gpioout [0]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$816/S: \gpioout_dffeas_q_3_ena -> \gpioout_dffeas_q_3.ena
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$816/A: \gpioout_dffeas_q_3.q -> \gpioout [0]
+Rewrite gate.test3/$auto$ff.cc:617:unmap_srst$814/S: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$ff.cc:617:unmap_srst$814/A: \gpioout_dffeas_q_3_d_$lut_Y_A -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$810/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$808 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$808 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$809/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$805/D: \gpioout_dffeas_q_2.q -> \gpioout [2]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$802/S: \gpioout_dffeas_q_2_ena -> \gpioout_dffeas_q_4.ena
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$802/A: \gpioout_dffeas_q_2.q -> \gpioout [2]
+Rewrite gate.test3/$auto$clk2fflogic.cc:93:sample_control_edge$798/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$796 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$796 \sr_out_dffeas_q.clk }
+Rewrite gate.test3/$auto$clk2fflogic.cc:90:sample_control_edge$797/D: \clk -> \sr_out_dffeas_q.clk
+Rewrite gate.test3/$auto$clk2fflogic.cc:106:sample_data$793/D: \gpioout_dffeas_q_1.q -> \gpioout [7]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$790/S: \gpioout_dffeas_q_ena -> \gpioout_dffeas_q_1.ena
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$790/B: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$ff.cc:597:unmap_ce$790/A: \gpioout_dffeas_q_1.q -> \gpioout [7]
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$771/S: \sr_dffeas_q_4.q -> \sr_dffeas_q_3.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$771/B: \sr_dffeas_q_1.q -> \sr_dffeas_q.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$461/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$461/B: \gpioout_dffeas_q_3_d_$lut_Y_A -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$499/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$751/S: \sr_dffeas_q_6.q -> \sr_dffeas_q_5.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$623/S: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$643/S: \sr_dffeas_q.q -> \sr_dffeas_q_4.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$643/B: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.dataa -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.dataa
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$695/S: \sr_dffeas_q.q -> \sr_dffeas_q_4.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$695/A: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.dataa -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.dataa
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$469/A: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$647/S: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$711/S: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$462/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$462/B: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$476/S: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$481/S: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$481/B: \cs -> $auto$simplemap.cc:370:simplemap_lut$474 [3]
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$583/S: \sr_dffeas_q_5.q -> \sr [6]
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$480/S: \rw_dffeas_q.q -> \sr_out_dffeas_q.d
+Rewrite gate.test3/$auto$simplemap.cc:298:simplemap_mux$679/S: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$464/S: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$495/S: \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$495/A: \gpioout_dffeas_q_3_d_$lut_Y_A -> \gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$483/S: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Rewrite gate.test3/$auto$simplemap.cc:372:simplemap_lut$502/S: \sr_dffeas_q_2.q -> \sr_dffeas_q_1.d
+Add gold.test3/$auto$insbuf.cc:97:execute$1243: $auto$simplemap.cc:148:simplemap_reduce$193 [0] -> $auto$simplemap.cc:148:simplemap_reduce$247 [0]
+Add gold.test3/$auto$insbuf.cc:97:execute$1244: $auto$simplemap.cc:148:simplemap_reduce$172 [1] -> $auto$simplemap.cc:148:simplemap_reduce$198 [1]
+Add gold.test3/$auto$insbuf.cc:97:execute$1245: $auto$simplemap.cc:148:simplemap_reduce$167 [1] -> $auto$simplemap.cc:148:simplemap_reduce$193 [1]
+Add gold.test3/$auto$insbuf.cc:97:execute$1246: $auto$simplemap.cc:148:simplemap_reduce$167 [2] -> $auto$simplemap.cc:148:simplemap_reduce$193 [2]
+Add gold.test3/$auto$insbuf.cc:97:execute$1247: $auto$simplemap.cc:148:simplemap_reduce$167 [3] -> $auto$simplemap.cc:148:simplemap_reduce$193 [3]
+Add gold.test3/$auto$insbuf.cc:97:execute$1248: \sr [7] -> \rw
+Rewrite gold.test3/$auto$clk2fflogic.cc:106:sample_data$577/D: \sr [7] -> \rw
+Rewrite gold.test3/$auto$ff.cc:599:unmap_ce$574/B: \sr [7] -> \rw
+Rewrite gold.test3/$auto$ff.cc:599:unmap_ce$550/A: \sr [7] -> \rw
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$200/B: $auto$simplemap.cc:148:simplemap_reduce$167 [3] -> $auto$simplemap.cc:148:simplemap_reduce$193 [3]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$200/A: $auto$simplemap.cc:148:simplemap_reduce$167 [2] -> $auto$simplemap.cc:148:simplemap_reduce$193 [2]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$199/B: $auto$simplemap.cc:148:simplemap_reduce$167 [1] -> $auto$simplemap.cc:148:simplemap_reduce$193 [1]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$199/A: $auto$simplemap.cc:148:simplemap_reduce$193 [0] -> $auto$simplemap.cc:148:simplemap_reduce$247 [0]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$202/B: $auto$simplemap.cc:148:simplemap_reduce$172 [1] -> $auto$simplemap.cc:148:simplemap_reduce$198 [1]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$345/B: \sr [7] -> \rw
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$173/B: $auto$simplemap.cc:148:simplemap_reduce$167 [1] -> $auto$simplemap.cc:148:simplemap_reduce$193 [1]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$366/B: \sr [7] -> \rw
+Rewrite gold.test3/$auto$opt_expr.cc:607:replace_const_cells$293/A: \sr [7] -> \rw
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$176/B: $auto$simplemap.cc:148:simplemap_reduce$172 [1] -> $auto$simplemap.cc:148:simplemap_reduce$198 [1]
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$381/B: \sr [7] -> \rw
+Rewrite gold.test3/$auto$simplemap.cc:157:simplemap_reduce$253/A: $auto$simplemap.cc:148:simplemap_reduce$193 [0] -> $auto$simplemap.cc:148:simplemap_reduce$247 [0]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.test3 / gate.test3.
+
+3.1.1. Processing matched IDs for module test3.
+
+3.1.2. Create fragment partitions for module test3.
+Adding output bit \sr_out to partition 0.
+Adding output bit \gpioout [0] to partition 0.
+Adding output bit \gpioout [1] to partition 0.
+Adding output bit \gpioout [2] to partition 0.
+Adding output bit \gpioout [3] to partition 0.
+Adding output bit \gpioout [4] to partition 0.
+Adding output bit \gpioout [5] to partition 0.
+Adding output bit \gpioout [6] to partition 0.
+Adding output bit \gpioout [7] to partition 0.
+
+Final list of fragment partitions:
+  0 \gpioout [7] \gpioout [6] \gpioout [5] \gpioout [4] \gpioout [3] \gpioout [2] \gpioout [1] \gpioout [0] \sr_out <= \sr_in \cs \clk
+
+3.1.3. Execute partitioning commands for module test3.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'gpioout' using a PO name: gpioout
+
+Partition Summary:
+  Fragments:
+       0: \gpioout, \sr_out
+  Partitions:
+       0: gpioout
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  gpioout
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module test3.
+Adding output bit \sr_out to partition 1.
+Adding non-output bit \sr_in to partition 1.
+Adding output bit \gpioout [7] to partition 1.
+Adding output bit \gpioout [6] to partition 1.
+Adding output bit \gpioout [5] to partition 1.
+Adding output bit \gpioout [4] to partition 1.
+Adding output bit \gpioout [3] to partition 1.
+Adding output bit \gpioout [2] to partition 1.
+Adding output bit \gpioout [1] to partition 1.
+Adding output bit \gpioout [0] to partition 1.
+Adding non-output bit \cs to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as test3.gpioout.
+  partition pi bit 0: \sr_in <-> \sr_in
+  partition pi bit 1: \cs <-> \cs
+  partition pi bit 2: \clk <-> \clk
+  partition po bit 0: \gpioout [7] <-> \gpioout [7]
+  partition po bit 1: \gpioout [6] <-> \gpioout [6]
+  partition po bit 2: \gpioout [5] <-> \gpioout [5]
+  partition po bit 3: \gpioout [4] <-> \gpioout [4]
+  partition po bit 4: \gpioout [3] <-> \gpioout [3]
+  partition po bit 5: \gpioout [2] <-> \gpioout [2]
+  partition po bit 6: \gpioout [1] <-> \gpioout [1]
+  partition po bit 7: \gpioout [0] <-> \gpioout [0]
+  partition po bit 8: \sr_out <-> \sr_out
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/test3.gpioout.il
+<suppressed ~3797 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.test3.gpioout...
+Checking module gold.test3.gpioout...
+Found and reported 0 problems.
+
+Writing partition 1 as test3.
+  partition pi bit 0: \sr_in <-> \sr_in
+  partition pi bit 1: \cs <-> \cs
+  partition pi bit 2: \clk <-> \clk
+  partition po bit 0: \gpioout [0] <-> \gpioout [0]
+  partition po bit 1: \gpioout [1] <-> \gpioout [1]
+  partition po bit 2: \gpioout [2] <-> \gpioout [2]
+  partition po bit 3: \gpioout [3] <-> \gpioout [3]
+  partition po bit 4: \gpioout [4] <-> \gpioout [4]
+  partition po bit 5: \gpioout [5] <-> \gpioout [5]
+  partition po bit 6: \gpioout [6] <-> \gpioout [6]
+  partition po bit 7: \gpioout [7] <-> \gpioout [7]
+  partition po bit 8: \sr_out <-> \sr_out
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/test3.il
+<suppressed ~1905 debug messages>
+
+End of script. Logfile hash: cd636576aa, time: 0.01s, user: 0.00s, system: 0.01s, MEM: 18.75 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 59% 1x eqy_partition (0 sec), 12% 2x read_rtlil (0 sec), ...

@@ -1,0 +1,31 @@
+test2 . A:src="inputs/test2/test2/test2.v:2.1-33.10" A:top=1
+test2 out_$lut_Y_A_3 w=0:0
+test2 out_$lut_Y_A_2 w=0:0
+test2 out_$lut_Y_A_1 w=0:0
+test2 out_$lut_Y_A w=0:0
+test2 out_$lut_Y_4_A_3 w=0:0
+test2 out_$lut_Y_4_A_2 w=0:0
+test2 out_$lut_Y_4_A_1 w=0:0
+test2 out_$lut_Y_4_A w=0:0
+test2 out_$lut_Y_3_A_3 w=0:0
+test2 out_$lut_Y_3_A_2 w=0:0
+test2 out_$lut_Y_3_A_1 w=0:0
+test2 out_$lut_Y_3_A w=0:0
+test2 out_$lut_Y_2_A_3 w=0:0
+test2 out_$lut_Y_2_A_2 w=0:0
+test2 out_$lut_Y_2_A_1 w=0:0
+test2 out_$lut_Y_2_A w=0:0
+test2 out_$lut_Y_1_A_3 w=0:0
+test2 out_$lut_Y_1_A_2 w=0:0
+test2 out_$lut_Y_1_A_1 w=0:0
+test2 out_$lut_Y_1_A w=0:0
+test2 out w=4:0 A:src="inputs/test2/test2/test2.v:13.13-13.16" P=O
+test2 datad w=4:0 A:src="inputs/test2/test2/test2.v:12.14-12.19" P=I
+test2 datac w=4:0 A:src="inputs/test2/test2/test2.v:11.14-11.19" P=I
+test2 datab w=4:0 A:src="inputs/test2/test2/test2.v:10.14-10.19" P=I
+test2 dataa w=4:0 A:src="inputs/test2/test2/test2.v:9.14-9.19" P=I
+test2 d w=0:0 A:src="inputs/test2/test2/test2.v:7.7-7.8" P=I
+test2 clk w=0:0 A:src="inputs/test2/test2/test2.v:8.7-8.10" P=I
+test2 c w=0:0 A:src="inputs/test2/test2/test2.v:6.7-6.8" P=I
+test2 b w=0:0 A:src="inputs/test2/test2/test2.v:5.7-5.8" P=I
+test2 a w=0:0 A:src="inputs/test2/test2/test2.v:4.7-4.8" P=I

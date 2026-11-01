@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-01",
+  "command": "START.cmd --no-pause",
+  "exit_code": 0,
+  "cases": 9,
+  "synthesis_runs": 18,
+  "synthesis_passed": 18,
+  "resource_results_match_archived_proved_netlists": true,
+  "result": "runs/20261101_181108_165_7baff3/SMOKE_RESULTS.json",
+  "efficiency_rescored": false
+}
