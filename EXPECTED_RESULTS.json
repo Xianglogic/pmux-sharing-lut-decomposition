@@ -1,5 +1,5 @@
 {
-  "candidate": "V53H-NoPost",
+  "candidate": "PMUX多输出共享与查找表优化分解",
   "cases": {
     "test1": {
       "baseline": {

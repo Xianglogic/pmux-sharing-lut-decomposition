@@ -1,8 +1,8 @@
 {
-  "candidate": "V53H-NoPost",
+  "candidate": "PMUX多输出共享与查找表优化分解",
   "date": "2026-11-01",
-  "scope": "Local Windows, same frozen v0.69 core and ABC as V53H-IDFIX; not a certification against the organizer d0e71cfb7-dirty baseline",
-  "change": "Only removed automatic calls of lut4_cone_fold and lut4_window_rewrite after map_cells",
+  "scope": "Local Windows; common Yosys v0.69 core and ABC; nine official cases; zero initialization",
+  "change": "Multi-output sharing, mutually exclusive operator sharing and pre-ABC9 LUT decomposition",
   "changed_core_source_files": [
     "techlibs/intel/synth_intel.cc"
   ],

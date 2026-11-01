@@ -1,19 +1,21 @@
-# PMUX多输出共享与查找表优化分解 V53H-NoPost
+# PMUX多输出共享与查找表优化分解
+
+本项目面向FPGA逻辑综合中的多路选择网络，通过多输出共享、互斥运算合并和查找表优化分解，减少重复的选择与计算逻辑。优化以内建命令接入Yosys，在ABC9映射前完成结构变换。
 
 ## 运行九例综合
 
-Windows x64解压后进入V53H_NoPost目录，双击START.cmd。命令行可运行START.cmd --no-pause。普通综合支持Windows PowerShell 5.1或PowerShell 7，无需Python、编译器或WSL。保留runtime内的ABC程序、DLL及share器件库。
+Windows x64环境下，在项目根目录双击START.cmd。命令行可运行START.cmd --no-pause。普通综合支持Windows PowerShell 5.1或PowerShell 7，无需Python、编译器或WSL。保留runtime内的ABC程序、DLL及share器件库。
 
 两版使用相同RTL、顶层、参数及外部脚本：读取RTL → hierarchy → proc → setundef -init -params -zero → synth_intel -family cycloneiv → check → 输出网表。每次运行在runs下新建目录，并核对资源与已证明的参考网表一致。
 
 ```powershell
 # 指定单例
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Run9.ps1 -Case test4
-# 核对整个提交包的文件哈希
+# 核对项目文件哈希
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Verify.ps1 -Full
 ```
 
-## 工程内容与当前结果
+## 工程内容与评测结果
 
 - docs/current/九例原始截图/：九例综合结果及形式验证、效率记录的11张真实控制台截图，附原始日志和来源清单。
 - RESULTS.html、REPORT.md、PER_CASE.csv、ALL_PAIRS.csv：结果页面、评测说明和逐例逐次数据。
@@ -55,8 +57,8 @@ python3 scripts/Reprove.py --oss-root /path/to/oss-cad-suite --case test2 --jobs
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Build-Windows.ps1 -Jobs 8
 ```
 
-双方使用MSVC19.51、相同Release参数和相同ABC。核心提交为9f75ca1f9834a39a863915b5dae0c7b1e33533bc；归档源码无.git目录，构建版本显示0.69+post。构建脚本输出到独立rebuild目录。未使用的后处理命令定义保留在源码中，默认synth_intel流程不调用。
+双方使用MSVC19.51、相同Release参数和相同ABC。核心源码提交为9f75ca1f9834a39a863915b5dae0c7b1e33533bc，构建参数见BUILD_CONDITIONS.json。构建输出位于rebuild目录。
 
-## 仓库范围
+## 第三方组件
 
-本仓库基于V53H-NoPost完整提交包整理，保留源码、Windows运行依赖、九例输入、综合与形式验证及效率评测记录。设计报告及报告专属公式、配图编辑材料不纳入仓库。第三方代码与程序的原许可证保留在源码及licenses目录。
+Yosys、ABC及其他第三方组件的原许可证保留在源码和licenses目录。
