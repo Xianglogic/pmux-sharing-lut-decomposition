@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.vs/
+/rebuild/
+/build/
+Thumbs.db
+.DS_Store
+~$*
+docs/current/*.docx
+docs/current/*.pdf
+docs/current/公式源文件/
+docs/current/图片源文件/

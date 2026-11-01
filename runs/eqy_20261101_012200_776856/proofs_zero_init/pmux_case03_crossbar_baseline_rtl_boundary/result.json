@@ -1,0 +1,36 @@
+{
+  "key": "pmux_case03_crossbar_baseline_rtl_boundary",
+  "case": "pmux_case03_crossbar",
+  "kind": "rtl_to_boundary",
+  "expected": "PASS",
+  "input_sha256": {
+    "inputs/pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932",
+    "evidence/current/capture_full/pmux_case03_crossbar/baseline.boundary.formal.il": "70c7ed87bd8684c6f342011db663faf2392f6585fe924590237cd7ead8bbff68",
+    "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+  },
+  "config": "proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/pair.eqy",
+  "config_sha256": "68df4285f0388c4b246bcc915feffac6b4caffa61dab255c65ea3495f24046a5",
+  "command": [
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+    "--yosys",
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+    "-j",
+    "1",
+    "-d",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/run",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/pair.eqy"
+  ],
+  "status": "PASS",
+  "passed": true,
+  "timeout": false,
+  "exit": 0,
+  "coverage": {
+    "all_outputs_covered": true,
+    "proof_dependencies_closed": true,
+    "missing_output_bits": {},
+    "unclosed_cutpoint_bits": {},
+    "non_primary_partition_inputs": {}
+  },
+  "ignored_boxed_modules": false,
+  "seconds": 0.8664344670032733
+}

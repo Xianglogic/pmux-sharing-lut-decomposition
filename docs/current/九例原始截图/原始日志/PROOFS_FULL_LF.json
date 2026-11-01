@@ -1,0 +1,1630 @@
+{
+  "candidate": "V53H-NoPost",
+  "expected_jobs": 45,
+  "complete": true,
+  "jobs": [
+    {
+      "key": "test1_baseline_rtl_boundary",
+      "case": "test1",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test1/test1/test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13",
+        "evidence/current/capture_full/test1/baseline.boundary.formal.il": "1ae0e5a0b2c30d60247dcb463c888d9b6b397b0a3ea26cea24529546dce69802",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test1_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "d0a303c3be47281f89303ea74fdbbcee4b86a1704f6872b3c944936ec9c1f355",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 5.2823831790010445
+    },
+    {
+      "key": "test1_baseline_boundary_final",
+      "case": "test1",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test1/baseline.boundary.formal.il": "1ae0e5a0b2c30d60247dcb463c888d9b6b397b0a3ea26cea24529546dce69802",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test1/baseline.final.formal.il": "3ef1dad6e8d7f8c940e508bf2193bc65ed038858556fc53854af672ee086b946"
+      },
+      "config": "proofs_zero_init/test1_baseline_boundary_final/pair.eqy",
+      "config_sha256": "b2d9cedc9274af1461d8675600bb4c6a98d18ca490731d4757e381faca621c64",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 6.1344195819983725
+    },
+    {
+      "key": "test1_candidate_boundary_final",
+      "case": "test1",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test1/candidate.boundary.formal.il": "0731c90051804a85fd02b2e378362c41d9afa13ff39cf4ac7c895bc78a14490b",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test1/candidate.final.formal.il": "70e5c2c3d47633a88c70e5398c81814e1e04e21a07ca8e1219b241dec899a70e"
+      },
+      "config": "proofs_zero_init/test1_candidate_boundary_final/pair.eqy",
+      "config_sha256": "b31b8aa18f835fe6037d1a0f1165dba6d31541ef37a97ba63c12fcd56d3db62e",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 6.935561922000488
+    },
+    {
+      "key": "test2_baseline_rtl_boundary",
+      "case": "test2",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test2/test2/test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146",
+        "evidence/current/capture_full/test2/baseline.boundary.formal.il": "e5255307300f7fefb9cd7d6c72c1d99e026dd169a323f6247da2eb6cbbc08df5",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test2_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "dbce297ac3ed2a8660c450a8d0140b66e3b8796555b3536cd7d3765a752749ac",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.41531639599998016
+    },
+    {
+      "key": "test2_baseline_boundary_final",
+      "case": "test2",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test2/baseline.boundary.formal.il": "e5255307300f7fefb9cd7d6c72c1d99e026dd169a323f6247da2eb6cbbc08df5",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test2/baseline.final.formal.il": "e8f4bf0c57793b2381a21a3b982d830a4f5356de6489e15d950982517a9792dd"
+      },
+      "config": "proofs_zero_init/test2_baseline_boundary_final/pair.eqy",
+      "config_sha256": "012b0b564a978d65d674a0c5da2238c8d26c2fea133d084b2df2d63008dc121c",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.465525236002577
+    },
+    {
+      "key": "test2_candidate_rtl_boundary",
+      "case": "test2",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test2/test2/test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146",
+        "evidence/current/capture_full/test2/candidate.boundary.formal.il": "9a67f0b7e8ca29112843b181dd907e4e91d5ac6bafb29b90b509c78be0d0da38",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test2_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "c642eb6d322d034ba5e9a19129aacaebf14e483e83ab087902b1d943f64b32a2",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.41518957799416967
+    },
+    {
+      "key": "test2_candidate_boundary_final",
+      "case": "test2",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test2/candidate.boundary.formal.il": "9a67f0b7e8ca29112843b181dd907e4e91d5ac6bafb29b90b509c78be0d0da38",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test2/candidate.final.formal.il": "bb386e033b562037a0e0d531968ec82eb360f528fbfce0a5a9bf96509dd7b42e"
+      },
+      "config": "proofs_zero_init/test2_candidate_boundary_final/pair.eqy",
+      "config_sha256": "0dfc27198084d608e3a2e9a5f8d9334c3e3508c87640a0555ad84e787008a0b8",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.4151747760042781
+    },
+    {
+      "key": "test2_final_pair",
+      "case": "test2",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test2/baseline.final.formal.il": "e8f4bf0c57793b2381a21a3b982d830a4f5356de6489e15d950982517a9792dd",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test2/candidate.final.formal.il": "bb386e033b562037a0e0d531968ec82eb360f528fbfce0a5a9bf96509dd7b42e"
+      },
+      "config": "proofs_zero_init/test2_final_pair/pair.eqy",
+      "config_sha256": "2d22d62725a179ea9aab8198c31c31013f88364668d75f046c1e9d3274880baf",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.4652242309966823
+    },
+    {
+      "key": "test3_baseline_rtl_boundary",
+      "case": "test3",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test3/test3/test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9",
+        "evidence/current/capture_full/test3/baseline.boundary.formal.il": "46b922470b57935c3602b6eefde0ecec65503b4d034b7975a7c098751bf99e73",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test3_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "fb499724c294b8984c3d075ef0659c945d9cb09c93b4b6d07a453e6e148285ed",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.46534596900164615
+    },
+    {
+      "key": "test3_baseline_boundary_final",
+      "case": "test3",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test3/baseline.boundary.formal.il": "46b922470b57935c3602b6eefde0ecec65503b4d034b7975a7c098751bf99e73",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test3/baseline.final.formal.il": "90ea8b96d6fc9e144a293713e99bba9a144a2caedd516e9ac131f6b1ab6a91ad"
+      },
+      "config": "proofs_zero_init/test3_baseline_boundary_final/pair.eqy",
+      "config_sha256": "a5f483525b6ee9a89a623ecfc7b6406099d09d4ef7b821290ac75a0643b50c4c",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5650839919981081
+    },
+    {
+      "key": "test3_candidate_rtl_boundary",
+      "case": "test3",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test3/test3/test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9",
+        "evidence/current/capture_full/test3/candidate.boundary.formal.il": "b063e79382f58e093344fdaf0fd4635b39cd9d9ebed8436b824803a6c8e3f8f0",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test3_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "3fced4e02ea33b8f8dd2063c83ccff406827b24d6c02b2b6d12f767e53239302",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5153791960037779
+    },
+    {
+      "key": "test3_candidate_boundary_final",
+      "case": "test3",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test3/candidate.boundary.formal.il": "b063e79382f58e093344fdaf0fd4635b39cd9d9ebed8436b824803a6c8e3f8f0",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test3/candidate.final.formal.il": "ccd0d2b8793d08a3b3751af83bf2da062804947a8f792e6e4999da16b3cdcb2c"
+      },
+      "config": "proofs_zero_init/test3_candidate_boundary_final/pair.eqy",
+      "config_sha256": "4045172a692cb42b35a33d26569c9a122db4dd793b705eb3db2d17d2121789b1",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5657713300024625
+    },
+    {
+      "key": "test3_final_pair",
+      "case": "test3",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test3/baseline.final.formal.il": "90ea8b96d6fc9e144a293713e99bba9a144a2caedd516e9ac131f6b1ab6a91ad",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test3/candidate.final.formal.il": "ccd0d2b8793d08a3b3751af83bf2da062804947a8f792e6e4999da16b3cdcb2c"
+      },
+      "config": "proofs_zero_init/test3_final_pair/pair.eqy",
+      "config_sha256": "d9a0f0316162e12d390f79b111781811d6d7cd161a04d825eee3a2fe9a2ccf22",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5154555970002548
+    },
+    {
+      "key": "test1_candidate_rtl_boundary",
+      "case": "test1",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test1/test1/test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13",
+        "evidence/current/capture_full/test1/candidate.boundary.formal.il": "0731c90051804a85fd02b2e378362c41d9afa13ff39cf4ac7c895bc78a14490b",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test1_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "d7be3b85471ac079284a13729898f26c2d767a5067695712ed54f1a6943cc13c",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 11.347303390000889
+    },
+    {
+      "key": "test4_baseline_rtl_boundary",
+      "case": "test4",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test4/test4/test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7",
+        "evidence/current/capture_full/test4/baseline.boundary.formal.il": "6355fea49d85e2e008a0b8fa3e9bc7dc4942c84f2344f8746d6b27be527327d6",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test4_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "9e17da98690c0de9ccb72a076b9ccd55959bea5da831d2315ff75b3f84ddc1ea",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.46503887200378813
+    },
+    {
+      "key": "test4_candidate_rtl_boundary",
+      "case": "test4",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/test4/test4/test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7",
+        "evidence/current/capture_full/test4/candidate.boundary.formal.il": "6136454674d6ea735d346c3f8ccf7498f3ee81a1e54136a3cf081ebbed27e0ad",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/test4_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "5f4f83727b9cdc8970c42d049cb5c29c23781b948ec0046d7062313791fab188",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.41497495099611115
+    },
+    {
+      "key": "test4_baseline_boundary_final",
+      "case": "test4",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test4/baseline.boundary.formal.il": "6355fea49d85e2e008a0b8fa3e9bc7dc4942c84f2344f8746d6b27be527327d6",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test4/baseline.final.formal.il": "e3595e526dfaf5641a0314fd5ddd93b8619bc166c805f64605cc11554f0b1cac"
+      },
+      "config": "proofs_zero_init/test4_baseline_boundary_final/pair.eqy",
+      "config_sha256": "8aeecc2794e59a195601e792c6685eb7a252cd7ce35422e5b6d0121cab833df4",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5155089429972577
+    },
+    {
+      "key": "test4_candidate_boundary_final",
+      "case": "test4",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test4/candidate.boundary.formal.il": "6136454674d6ea735d346c3f8ccf7498f3ee81a1e54136a3cf081ebbed27e0ad",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test4/candidate.final.formal.il": "7c675647353db4e19bb43ff1419632a1f20781ccae27e4db61f77103c06f9628"
+      },
+      "config": "proofs_zero_init/test4_candidate_boundary_final/pair.eqy",
+      "config_sha256": "d7d693339af35ab5c1af58663e9618e3d47b6146b63a0e3cfdf958e065af893a",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5151085690013133
+    },
+    {
+      "key": "test4_final_pair",
+      "case": "test4",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test4/baseline.final.formal.il": "e3595e526dfaf5641a0314fd5ddd93b8619bc166c805f64605cc11554f0b1cac",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test4/candidate.final.formal.il": "7c675647353db4e19bb43ff1419632a1f20781ccae27e4db61f77103c06f9628"
+      },
+      "config": "proofs_zero_init/test4_final_pair/pair.eqy",
+      "config_sha256": "6d26aa905c38450163ec097e13ddcd6f1800166d00f24c2322991932d2dc50fc",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.5154248599938
+    },
+    {
+      "key": "pmux_case01_balanced_baseline_rtl_boundary",
+      "case": "pmux_case01_balanced",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case01_balanced/pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343",
+        "evidence/current/capture_full/pmux_case01_balanced/baseline.boundary.formal.il": "513586fea1cd280f8fdbf631ced76de296841cfbde744945198d8ae363cfee53",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case01_balanced_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "f9c1d95978436948a6e60bd4e112a1d6e19952054eba0fc591b157f9a2c7ec08",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.967013722001866
+    },
+    {
+      "key": "pmux_case01_balanced_candidate_rtl_boundary",
+      "case": "pmux_case01_balanced",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case01_balanced/pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343",
+        "evidence/current/capture_full/pmux_case01_balanced/candidate.boundary.formal.il": "1bc97b49947ba05e5d0f047971c56c4219baba9893da7b5f2842c1ab421bf702",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case01_balanced_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "910a6353617b5fe536dbde42d12105bd816944fc2c45c7844245b25354cd2d55",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.7161348079971503
+    },
+    {
+      "key": "pmux_case01_balanced_baseline_boundary_final",
+      "case": "pmux_case01_balanced",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case01_balanced/baseline.boundary.formal.il": "513586fea1cd280f8fdbf631ced76de296841cfbde744945198d8ae363cfee53",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case01_balanced/baseline.final.formal.il": "220c6a94f72dd973cd27c4c3c9b3fd5b8e59ed674806e695f0b4c417fe40e47f"
+      },
+      "config": "proofs_zero_init/pmux_case01_balanced_baseline_boundary_final/pair.eqy",
+      "config_sha256": "25496c01f803aa1f682742e827f7f2b0434ff35a9150fc187b259aab5b495f38",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.9699202870033332
+    },
+    {
+      "key": "pmux_case01_balanced_candidate_boundary_final",
+      "case": "pmux_case01_balanced",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case01_balanced/candidate.boundary.formal.il": "1bc97b49947ba05e5d0f047971c56c4219baba9893da7b5f2842c1ab421bf702",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case01_balanced/candidate.final.formal.il": "6cd95c65f9dd2d1bf51fc9c6d67ea645a6782dbdd579152fa95db1cc255e7bf2"
+      },
+      "config": "proofs_zero_init/pmux_case01_balanced_candidate_boundary_final/pair.eqy",
+      "config_sha256": "ad8a0d1bff64f8a298683c55e295bbd5391867dac401f5151fd436fb1b8bc223",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.518565177997516
+    },
+    {
+      "key": "pmux_case01_balanced_final_pair",
+      "case": "pmux_case01_balanced",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case01_balanced/baseline.final.formal.il": "220c6a94f72dd973cd27c4c3c9b3fd5b8e59ed674806e695f0b4c417fe40e47f",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case01_balanced/candidate.final.formal.il": "6cd95c65f9dd2d1bf51fc9c6d67ea645a6782dbdd579152fa95db1cc255e7bf2"
+      },
+      "config": "proofs_zero_init/pmux_case01_balanced_final_pair/pair.eqy",
+      "config_sha256": "57bd578d61c533f0f3ba922ff5befd22b53ed8ba3834c7314aee74114b43ce53",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.1710470910038566
+    },
+    {
+      "key": "pmux_case02_pipeline_baseline_rtl_boundary",
+      "case": "pmux_case02_pipeline",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case02_pipeline/pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea",
+        "evidence/current/capture_full/pmux_case02_pipeline/baseline.boundary.formal.il": "a3e97941ff5b59e13d312d5dbb25af4602744de66c28aa469c6dfa11360ac4d6",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case02_pipeline_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "b5167b1eeed3b6afcaf4c95fed29ad0272a625486143a52da89b9160962a98c5",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.9168151940029929
+    },
+    {
+      "key": "pmux_case02_pipeline_baseline_boundary_final",
+      "case": "pmux_case02_pipeline",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case02_pipeline/baseline.boundary.formal.il": "a3e97941ff5b59e13d312d5dbb25af4602744de66c28aa469c6dfa11360ac4d6",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case02_pipeline/baseline.final.formal.il": "8d9177038cd7503808b014e183a9782f1050f7b59b44d433b5820bede1991a35"
+      },
+      "config": "proofs_zero_init/pmux_case02_pipeline_baseline_boundary_final/pair.eqy",
+      "config_sha256": "d2f1d1b9c5847f7e4c07e7896a295185d3786086b7842c908b87688743cdb197",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.0708610709989443
+    },
+    {
+      "key": "pmux_case02_pipeline_candidate_rtl_boundary",
+      "case": "pmux_case02_pipeline",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case02_pipeline/pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea",
+        "evidence/current/capture_full/pmux_case02_pipeline/candidate.boundary.formal.il": "35f595601729e234765ea0a422cee0596099c277ad0ff610708f3286f7cb2589",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case02_pipeline_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "05f3d1f917be35b51de0b082647323107c3838d7ac61ca1be77a50b42cd7f016",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.8665191760010202
+    },
+    {
+      "key": "pmux_case02_pipeline_candidate_boundary_final",
+      "case": "pmux_case02_pipeline",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case02_pipeline/candidate.boundary.formal.il": "35f595601729e234765ea0a422cee0596099c277ad0ff610708f3286f7cb2589",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case02_pipeline/candidate.final.formal.il": "10a307c05fd8627930732aeb2530f4a52f15c7933237b188eacf4b3c4a829661"
+      },
+      "config": "proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/pair.eqy",
+      "config_sha256": "05c8e473fe6f090d79f8842883bd194623b14b92027b0a264d224a3a584f42bc",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.519519561996276
+    },
+    {
+      "key": "pmux_case03_crossbar_baseline_rtl_boundary",
+      "case": "pmux_case03_crossbar",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932",
+        "evidence/current/capture_full/pmux_case03_crossbar/baseline.boundary.formal.il": "70c7ed87bd8684c6f342011db663faf2392f6585fe924590237cd7ead8bbff68",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "68df4285f0388c4b246bcc915feffac6b4caffa61dab255c65ea3495f24046a5",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.8664344670032733
+    },
+    {
+      "key": "pmux_case02_pipeline_final_pair",
+      "case": "pmux_case02_pipeline",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case02_pipeline/baseline.final.formal.il": "8d9177038cd7503808b014e183a9782f1050f7b59b44d433b5820bede1991a35",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case02_pipeline/candidate.final.formal.il": "10a307c05fd8627930732aeb2530f4a52f15c7933237b188eacf4b3c4a829661"
+      },
+      "config": "proofs_zero_init/pmux_case02_pipeline_final_pair/pair.eqy",
+      "config_sha256": "02dd6c39c661c7379f8bb0dca1bd3046c8cb131f26ebcc1d4d6343c7b616bcb3",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.1705055109996465
+    },
+    {
+      "key": "pmux_case03_crossbar_baseline_boundary_final",
+      "case": "pmux_case03_crossbar",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case03_crossbar/baseline.boundary.formal.il": "70c7ed87bd8684c6f342011db663faf2392f6585fe924590237cd7ead8bbff68",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case03_crossbar/baseline.final.formal.il": "9962864c3ddc843944842ba1425d0c788fd7942ff1d0c74d2a4511c869abdeba"
+      },
+      "config": "proofs_zero_init/pmux_case03_crossbar_baseline_boundary_final/pair.eqy",
+      "config_sha256": "ad6643334db9b3a128971313710a51668adeba8c056bc5c17f48bd523dbbe0a0",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.8699313760007499
+    },
+    {
+      "key": "pmux_case03_crossbar_candidate_rtl_boundary",
+      "case": "pmux_case03_crossbar",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932",
+        "evidence/current/capture_full/pmux_case03_crossbar/candidate.boundary.formal.il": "a1a86bfbcbf445b9bfc51752d55b933b229892b2bc07589a99c8711794e0f6c2",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case03_crossbar_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "1cecf2ddecc89f0e88ba9cd933dec93132c5b1052a97c7f6266beff78f61fffe",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.8163335420031217
+    },
+    {
+      "key": "pmux_case03_crossbar_candidate_boundary_final",
+      "case": "pmux_case03_crossbar",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case03_crossbar/candidate.boundary.formal.il": "a1a86bfbcbf445b9bfc51752d55b933b229892b2bc07589a99c8711794e0f6c2",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case03_crossbar/candidate.final.formal.il": "2e4dead75c70b4a188fa05aefbb66758ed7b7d719bc08403d7584d2b3589e919"
+      },
+      "config": "proofs_zero_init/pmux_case03_crossbar_candidate_boundary_final/pair.eqy",
+      "config_sha256": "25348bc16e0040506be418ba88da584e8c884bce7afd0b9eadb66a679fbdcd29",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.5186276649983483
+    },
+    {
+      "key": "pmux_case04_feedback_baseline_rtl_boundary",
+      "case": "pmux_case04_feedback",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f",
+        "evidence/current/capture_full/pmux_case04_feedback/baseline.boundary.formal.il": "df6d413467769d217e96a876e8cb884375f29bcb86593ed79da06f1e391646ec",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "552b17fe533613c9496951d84add22930db27a2d55e2810c2ec125461c349e57",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.9172853290001513
+    },
+    {
+      "key": "pmux_case03_crossbar_final_pair",
+      "case": "pmux_case03_crossbar",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case03_crossbar/baseline.final.formal.il": "9962864c3ddc843944842ba1425d0c788fd7942ff1d0c74d2a4511c869abdeba",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case03_crossbar/candidate.final.formal.il": "2e4dead75c70b4a188fa05aefbb66758ed7b7d719bc08403d7584d2b3589e919"
+      },
+      "config": "proofs_zero_init/pmux_case03_crossbar_final_pair/pair.eqy",
+      "config_sha256": "2d539dbacf66d534df42f48c5a575de3a099586a717c2a2b19ed1314d00f6843",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case03_crossbar_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.3230641609989107
+    },
+    {
+      "key": "pmux_case04_feedback_baseline_boundary_final",
+      "case": "pmux_case04_feedback",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case04_feedback/baseline.boundary.formal.il": "df6d413467769d217e96a876e8cb884375f29bcb86593ed79da06f1e391646ec",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case04_feedback/baseline.final.formal.il": "fce48249b9e014a4cf729d9dcc3e1671fd297abbabb683c08bbe03deff51af9e"
+      },
+      "config": "proofs_zero_init/pmux_case04_feedback_baseline_boundary_final/pair.eqy",
+      "config_sha256": "c2f6af5cf9793ec296299670b62b75bed8e83828a46dacef73f8ed5831addd29",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.071582368000236
+    },
+    {
+      "key": "pmux_case04_feedback_candidate_rtl_boundary",
+      "case": "pmux_case04_feedback",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f",
+        "evidence/current/capture_full/pmux_case04_feedback/candidate.boundary.formal.il": "94079fc20eb108c6d9de762951348062ae3ab3f6e7351ba23335fca13e6a1974",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case04_feedback_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "207c05f2d3c290fcb874e2c9746c67b5fe1e4f811186f3f07d8eb4557188f9e5",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.9164693569982774
+    },
+    {
+      "key": "pmux_case04_feedback_candidate_boundary_final",
+      "case": "pmux_case04_feedback",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case04_feedback/candidate.boundary.formal.il": "94079fc20eb108c6d9de762951348062ae3ab3f6e7351ba23335fca13e6a1974",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case04_feedback/candidate.final.formal.il": "8bc2cf5958b60f7825fee22dbd6337d5160e6fe0d5572c83032eb8ed7e32653e"
+      },
+      "config": "proofs_zero_init/pmux_case04_feedback_candidate_boundary_final/pair.eqy",
+      "config_sha256": "e61004e193724b3c4883f464ca34d2e6c68d8a08588b98544729064bbfe87c9e",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.3681321940021007
+    },
+    {
+      "key": "pmux_case04_feedback_final_pair",
+      "case": "pmux_case04_feedback",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case04_feedback/baseline.final.formal.il": "fce48249b9e014a4cf729d9dcc3e1671fd297abbabb683c08bbe03deff51af9e",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case04_feedback/candidate.final.formal.il": "8bc2cf5958b60f7825fee22dbd6337d5160e6fe0d5572c83032eb8ed7e32653e"
+      },
+      "config": "proofs_zero_init/pmux_case04_feedback_final_pair/pair.eqy",
+      "config_sha256": "df9ac2961b1f6b134af647920dd73de13e7a1e50cc8cbb6d2b5e9c6268e48890",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.2711886249962845
+    },
+    {
+      "key": "pmux_case05_nested_baseline_rtl_boundary",
+      "case": "pmux_case05_nested",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case05_nested/pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d",
+        "evidence/current/capture_full/pmux_case05_nested/baseline.boundary.formal.il": "e2b62b3551e35daffb76a51bb87ceacf6bcf556f52fac5d672aeacdb2fd7dc32",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case05_nested_baseline_rtl_boundary/pair.eqy",
+      "config_sha256": "2d87e44fd4f869e33c24ba2ffe62eb82d784df724853e4cb99bd1f64417a7cd3",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_baseline_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_baseline_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 2.6218931159964995
+    },
+    {
+      "key": "pmux_case05_nested_candidate_rtl_boundary",
+      "case": "pmux_case05_nested",
+      "kind": "rtl_to_boundary",
+      "expected": "PASS",
+      "input_sha256": {
+        "inputs/pmux_case05_nested/pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d",
+        "evidence/current/capture_full/pmux_case05_nested/candidate.boundary.formal.il": "85a2507d51477d06a8761b9fe5724df17057df5a54814b65f8a04427886213ea",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca"
+      },
+      "config": "proofs_zero_init/pmux_case05_nested_candidate_rtl_boundary/pair.eqy",
+      "config_sha256": "71e4e01496c919d27e231df3ef4c6cdc759048ceb39d4dfef59574b9000a106e",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_candidate_rtl_boundary/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_candidate_rtl_boundary/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 0.9168903030004003
+    },
+    {
+      "key": "pmux_case05_nested_baseline_boundary_final",
+      "case": "pmux_case05_nested",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case05_nested/baseline.boundary.formal.il": "e2b62b3551e35daffb76a51bb87ceacf6bcf556f52fac5d672aeacdb2fd7dc32",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case05_nested/baseline.final.formal.il": "05d0fcb322c83beaab333378e10ed79b407feb8e4ac0e2a2648e44d61dc8b75f"
+      },
+      "config": "proofs_zero_init/pmux_case05_nested_baseline_boundary_final/pair.eqy",
+      "config_sha256": "44acc161c223b4176ccc6961e28e2aa42c960e0325cdd39ec4bda0e5a0ac9d6c",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_baseline_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_baseline_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 5.382340361997194
+    },
+    {
+      "key": "pmux_case05_nested_candidate_boundary_final",
+      "case": "pmux_case05_nested",
+      "kind": "boundary_to_final",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case05_nested/candidate.boundary.formal.il": "85a2507d51477d06a8761b9fe5724df17057df5a54814b65f8a04427886213ea",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case05_nested/candidate.final.formal.il": "66d57af9d924225987a042775bebe463e5ac0f4c8979cc80d0f1d51d43255977"
+      },
+      "config": "proofs_zero_init/pmux_case05_nested_candidate_boundary_final/pair.eqy",
+      "config_sha256": "130c17a89032c4bf05cd8916c4cfcdc03eba2663228cdedab9b822161eceed22",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_candidate_boundary_final/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_candidate_boundary_final/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 1.4683492089970969
+    },
+    {
+      "key": "pmux_case05_nested_final_pair",
+      "case": "pmux_case05_nested",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/pmux_case05_nested/baseline.final.formal.il": "05d0fcb322c83beaab333378e10ed79b407feb8e4ac0e2a2648e44d61dc8b75f",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/pmux_case05_nested/candidate.final.formal.il": "66d57af9d924225987a042775bebe463e5ac0f4c8979cc80d0f1d51d43255977"
+      },
+      "config": "proofs_zero_init/pmux_case05_nested_final_pair/pair.eqy",
+      "config_sha256": "3361da892c6aa6fca56de943504fba8d6a3535ae15903cff9935fbde0bc53435",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case05_nested_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 3.5746040450030705
+    },
+    {
+      "key": "test1_final_pair",
+      "case": "test1",
+      "kind": "final_pair",
+      "expected": "PASS",
+      "input_sha256": {
+        "evidence/current/capture_full/test1/baseline.final.formal.il": "3ef1dad6e8d7f8c940e508bf2193bc65ed038858556fc53854af672ee086b946",
+        "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+        "evidence/current/capture_full/test1/candidate.final.formal.il": "70e5c2c3d47633a88c70e5398c81814e1e04e21a07ca8e1219b241dec899a70e"
+      },
+      "config": "proofs_zero_init/test1_final_pair/pair.eqy",
+      "config_sha256": "a59a1639ca4f49d94e72bfbe4c95c2501565aa37f98a425eeb059fe6206a0ae3",
+      "command": [
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+        "--yosys",
+        "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+        "-j",
+        "1",
+        "-d",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_final_pair/run",
+        "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_final_pair/pair.eqy"
+      ],
+      "status": "PASS",
+      "passed": true,
+      "timeout": false,
+      "exit": 0,
+      "coverage": {
+        "all_outputs_covered": true,
+        "proof_dependencies_closed": true,
+        "missing_output_bits": {},
+        "unclosed_cutpoint_bits": {},
+        "non_primary_partition_inputs": {}
+      },
+      "ignored_boxed_modules": false,
+      "seconds": 42.385551227002
+    }
+  ],
+  "positive_total": 45,
+  "positive_passed": 45,
+  "all_checks_pass": true
+}

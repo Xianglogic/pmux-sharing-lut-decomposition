@@ -1,0 +1,975 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_rtl_boundary/run/gold.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test1/test1/test1.v
+Parsing SystemVerilog input from `inputs/test1/test1/test1.v' to AST representation.
+Generating RTLIL representation for module `\test1'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test1
+
+2.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$inputs/test1/test1/test1.v:79$1 in module test1.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\test1.$proc$inputs/test1/test1/test1.v:67$4'.
+  Set init value: \state = 4'0000
+  Set init value: \por6 = 1'0
+  Set init value: \inter0007 = 1'1
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test1.$proc$inputs/test1/test1/test1.v:67$4'.
+Creating decoders for process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+     1/21: $0\state[3:0]
+     2/21: $0\inter0007[0:0]
+     3/21: $0\q7[11:0]
+     4/21: $0\q6[11:0]
+     5/21: $0\q5[11:0]
+     6/21: $0\q4[11:0]
+     7/21: $0\q3[11:0]
+     8/21: $0\q2[11:0]
+     9/21: $0\q1[11:0]
+    10/21: $0\q0[11:0]
+    11/21: $0\i7[11:0]
+    12/21: $0\i6[11:0]
+    13/21: $0\i5[11:0]
+    14/21: $0\i4[11:0]
+    15/21: $0\i3[11:0]
+    16/21: $0\i2[11:0]
+    17/21: $0\i1[11:0]
+    18/21: $0\i0[11:0]
+    19/21: $0\inter0009[11:0]
+    20/21: $0\inter0008[11:0]
+    21/21: $0\por6[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test1.\state' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $adff cell `$procdff$367' with positive edge clock and positive level reset.
+Creating register for signal `\test1.\por6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$372' with positive edge clock.
+Creating register for signal `\test1.\inter0007' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $adff cell `$procdff$375' with positive edge clock and positive level reset.
+Creating register for signal `\test1.\inter0008' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$380' with positive edge clock.
+Creating register for signal `\test1.\inter0009' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$385' with positive edge clock.
+Creating register for signal `\test1.\i0' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$390' with positive edge clock.
+Creating register for signal `\test1.\i1' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$395' with positive edge clock.
+Creating register for signal `\test1.\i2' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$400' with positive edge clock.
+Creating register for signal `\test1.\i3' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$405' with positive edge clock.
+Creating register for signal `\test1.\i4' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$410' with positive edge clock.
+Creating register for signal `\test1.\i5' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$415' with positive edge clock.
+Creating register for signal `\test1.\i6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$420' with positive edge clock.
+Creating register for signal `\test1.\i7' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$425' with positive edge clock.
+Creating register for signal `\test1.\q0' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$430' with positive edge clock.
+Creating register for signal `\test1.\q1' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$435' with positive edge clock.
+Creating register for signal `\test1.\q2' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$440' with positive edge clock.
+Creating register for signal `\test1.\q3' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$445' with positive edge clock.
+Creating register for signal `\test1.\q4' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$450' with positive edge clock.
+Creating register for signal `\test1.\q5' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$455' with positive edge clock.
+Creating register for signal `\test1.\q6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$460' with positive edge clock.
+Creating register for signal `\test1.\q7' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$465' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `test1.$proc$inputs/test1/test1/test1.v:67$4'.
+Found and cleaned up 2 empty switches in `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+Removing empty process `test1.$proc$inputs/test1/test1/test1.v:79$1'.
+Cleaned up 2 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~44 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing PREP pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \test1
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.3. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+5.4. Executing FLATTEN pass (flatten design).
+
+5.5. Executing FUTURE pass.
+
+5.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.7. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+5.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 48 unused wires.
+<suppressed ~1 debug messages>
+
+5.9. Executing OPT pass (performing simple optimizations).
+
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 158 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 78 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~240 debug messages>
+Removed a total of 80 cells.
+
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~62 debug messages>
+
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+    New ctrl vector for $pmux cell $procmux$348: $procmux$364_CMP
+    New ctrl vector for $pmux cell $procmux$25: $auto$opt_reduce.cc:137:opt_pmux$467
+    New ctrl vector for $pmux cell $procmux$5: { $procmux$350_CMP $procmux$351_CMP $procmux$352_CMP $procmux$353_CMP $procmux$354_CMP $procmux$355_CMP $procmux$356_CMP $procmux$357_CMP $procmux$358_CMP $procmux$359_CMP $procmux$360_CMP $procmux$361_CMP $procmux$362_CMP $procmux$363_CMP $procmux$364_CMP }
+  Optimizing cells in module \test1.
+Performed a total of 3 changes.
+
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 79 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+5.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 80 unused wires.
+<suppressed ~1 debug messages>
+
+5.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~62 debug messages>
+
+5.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+5.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 79 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+5.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+5.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+5.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 3 bits (of 4) from mux cell test1.$procmux$22 ($mux).
+Removed top 1 bits (of 4) from port B of cell test1.$procmux$357_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell test1.$procmux$358_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell test1.$procmux$359_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell test1.$procmux$360_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell test1.$procmux$361_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell test1.$procmux$362_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell test1.$procmux$363_CMP0 ($eq).
+Removed top 3 bits (of 4) from wire test1.$procmux$22_Y.
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+5.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 79 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+5.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+5.13.4. Finished fast OPT passes.
+
+5.14. Executing SORT pass.
+
+5.15. Printing statistics.
+
+=== test1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      102 wires
+      967 wire bits
+       44 public wires
+      507 public wire bits
+       23 ports
+      285 port bits
+       79 cells
+        2   $adff
+       19   $dff
+       15   $eq
+        1   $logic_not
+       38   $mux
+        3   $pmux
+        1   $reduce_or
+
+5.16. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+6. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~156 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~342 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1580 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1523 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1495 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1491 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1490 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~270 debug messages>
+Removed a total of 90 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1490 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $auto$ff.cc:337:slice$2725 ($_DFF_P_) from module test1 (D = \I0 [6], Q = \i0 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2883 ($_DFF_P_) from module test1 (D = \Q5 [8], Q = \q5 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2882 ($_DFF_P_) from module test1 (D = \Q5 [7], Q = \q5 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2914 ($_DFF_P_) from module test1 (D = \Q7 [15], Q = \q7 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2902 ($_DFF_P_) from module test1 (D = \Q6 [15], Q = \q6 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2890 ($_DFF_P_) from module test1 (D = \Q5 [15], Q = \q5 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2878 ($_DFF_P_) from module test1 (D = \Q4 [15], Q = \q4 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2866 ($_DFF_P_) from module test1 (D = \Q3 [15], Q = \q3 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2854 ($_DFF_P_) from module test1 (D = \Q2 [15], Q = \q2 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2842 ($_DFF_P_) from module test1 (D = \Q1 [15], Q = \q1 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2830 ($_DFF_P_) from module test1 (D = \Q0 [15], Q = \q0 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2818 ($_DFF_P_) from module test1 (D = \I7 [15], Q = \i7 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2806 ($_DFF_P_) from module test1 (D = \I6 [15], Q = \i6 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2794 ($_DFF_P_) from module test1 (D = \I5 [15], Q = \i5 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2782 ($_DFF_P_) from module test1 (D = \I4 [15], Q = \i4 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2770 ($_DFF_P_) from module test1 (D = \I3 [15], Q = \i3 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2758 ($_DFF_P_) from module test1 (D = \I2 [15], Q = \i2 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2746 ($_DFF_P_) from module test1 (D = \I1 [15], Q = \i1 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2734 ($_DFF_P_) from module test1 (D = \I0 [15], Q = \i0 [11]).
+Adding EN signal on $auto$ff.cc:337:slice$2722 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [11], Q = \inter0009 [11]).
+Adding SRST signal on $auto$ff.cc:337:slice$3150 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1815, Q = \inter0009 [11], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2710 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [11], Q = \inter0008 [11]).
+Adding SRST signal on $auto$ff.cc:337:slice$3152 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2458, Q = \inter0008 [11], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2697 ($_DFF_P_) from module test1 (D = $0\por6[0:0], Q = \por6).
+Adding EN signal on $auto$ff.cc:337:slice$2726 ($_DFF_P_) from module test1 (D = \I0 [7], Q = \i0 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2727 ($_DFF_P_) from module test1 (D = \I0 [8], Q = \i0 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2728 ($_DFF_P_) from module test1 (D = \I0 [9], Q = \i0 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2729 ($_DFF_P_) from module test1 (D = \I0 [10], Q = \i0 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2730 ($_DFF_P_) from module test1 (D = \I0 [11], Q = \i0 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2731 ($_DFF_P_) from module test1 (D = \I0 [12], Q = \i0 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2732 ($_DFF_P_) from module test1 (D = \I0 [13], Q = \i0 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2733 ($_DFF_P_) from module test1 (D = \I0 [14], Q = \i0 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2735 ($_DFF_P_) from module test1 (D = \I1 [4], Q = \i1 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2786 ($_DFF_P_) from module test1 (D = \I5 [7], Q = \i5 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2788 ($_DFF_P_) from module test1 (D = \I5 [9], Q = \i5 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2790 ($_DFF_P_) from module test1 (D = \I5 [11], Q = \i5 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2791 ($_DFF_P_) from module test1 (D = \I5 [12], Q = \i5 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2793 ($_DFF_P_) from module test1 (D = \I5 [14], Q = \i5 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2795 ($_DFF_P_) from module test1 (D = \I6 [4], Q = \i6 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2797 ($_DFF_P_) from module test1 (D = \I6 [6], Q = \i6 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2798 ($_DFF_P_) from module test1 (D = \I6 [7], Q = \i6 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2800 ($_DFF_P_) from module test1 (D = \I6 [9], Q = \i6 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2801 ($_DFF_P_) from module test1 (D = \I6 [10], Q = \i6 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2803 ($_DFF_P_) from module test1 (D = \I6 [12], Q = \i6 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2804 ($_DFF_P_) from module test1 (D = \I6 [13], Q = \i6 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2808 ($_DFF_P_) from module test1 (D = \I7 [5], Q = \i7 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2809 ($_DFF_P_) from module test1 (D = \I7 [6], Q = \i7 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2805 ($_DFF_P_) from module test1 (D = \I6 [14], Q = \i6 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2787 ($_DFF_P_) from module test1 (D = \I5 [8], Q = \i5 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2789 ($_DFF_P_) from module test1 (D = \I5 [10], Q = \i5 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2792 ($_DFF_P_) from module test1 (D = \I5 [13], Q = \i5 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2796 ($_DFF_P_) from module test1 (D = \I6 [5], Q = \i6 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2799 ($_DFF_P_) from module test1 (D = \I6 [8], Q = \i6 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2802 ($_DFF_P_) from module test1 (D = \I6 [11], Q = \i6 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2807 ($_DFF_P_) from module test1 (D = \I7 [4], Q = \i7 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2811 ($_DFF_P_) from module test1 (D = \I7 [8], Q = \i7 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2812 ($_DFF_P_) from module test1 (D = \I7 [9], Q = \i7 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2814 ($_DFF_P_) from module test1 (D = \I7 [11], Q = \i7 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2815 ($_DFF_P_) from module test1 (D = \I7 [12], Q = \i7 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2817 ($_DFF_P_) from module test1 (D = \I7 [14], Q = \i7 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2819 ($_DFF_P_) from module test1 (D = \Q0 [4], Q = \q0 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2821 ($_DFF_P_) from module test1 (D = \Q0 [6], Q = \q0 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2822 ($_DFF_P_) from module test1 (D = \Q0 [7], Q = \q0 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2824 ($_DFF_P_) from module test1 (D = \Q0 [9], Q = \q0 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2825 ($_DFF_P_) from module test1 (D = \Q0 [10], Q = \q0 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2827 ($_DFF_P_) from module test1 (D = \Q0 [12], Q = \q0 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2828 ($_DFF_P_) from module test1 (D = \Q0 [13], Q = \q0 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2832 ($_DFF_P_) from module test1 (D = \Q1 [5], Q = \q1 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2833 ($_DFF_P_) from module test1 (D = \Q1 [6], Q = \q1 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2829 ($_DFF_P_) from module test1 (D = \Q0 [14], Q = \q0 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2810 ($_DFF_P_) from module test1 (D = \I7 [7], Q = \i7 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2813 ($_DFF_P_) from module test1 (D = \I7 [10], Q = \i7 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2816 ($_DFF_P_) from module test1 (D = \I7 [13], Q = \i7 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2820 ($_DFF_P_) from module test1 (D = \Q0 [5], Q = \q0 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2823 ($_DFF_P_) from module test1 (D = \Q0 [8], Q = \q0 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2826 ($_DFF_P_) from module test1 (D = \Q0 [11], Q = \q0 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2831 ($_DFF_P_) from module test1 (D = \Q1 [4], Q = \q1 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2836 ($_DFF_P_) from module test1 (D = \Q1 [9], Q = \q1 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2837 ($_DFF_P_) from module test1 (D = \Q1 [10], Q = \q1 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2839 ($_DFF_P_) from module test1 (D = \Q1 [12], Q = \q1 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2840 ($_DFF_P_) from module test1 (D = \Q1 [13], Q = \q1 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2841 ($_DFF_P_) from module test1 (D = \Q1 [14], Q = \q1 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2843 ($_DFF_P_) from module test1 (D = \Q2 [4], Q = \q2 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2845 ($_DFF_P_) from module test1 (D = \Q2 [6], Q = \q2 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2846 ($_DFF_P_) from module test1 (D = \Q2 [7], Q = \q2 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2849 ($_DFF_P_) from module test1 (D = \Q2 [10], Q = \q2 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2850 ($_DFF_P_) from module test1 (D = \Q2 [11], Q = \q2 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2852 ($_DFF_P_) from module test1 (D = \Q2 [13], Q = \q2 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2853 ($_DFF_P_) from module test1 (D = \Q2 [14], Q = \q2 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2856 ($_DFF_P_) from module test1 (D = \Q3 [5], Q = \q3 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2857 ($_DFF_P_) from module test1 (D = \Q3 [6], Q = \q3 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2855 ($_DFF_P_) from module test1 (D = \Q3 [4], Q = \q3 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2835 ($_DFF_P_) from module test1 (D = \Q1 [8], Q = \q1 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2838 ($_DFF_P_) from module test1 (D = \Q1 [11], Q = \q1 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2736 ($_DFF_P_) from module test1 (D = \I1 [5], Q = \i1 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2844 ($_DFF_P_) from module test1 (D = \Q2 [5], Q = \q2 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2848 ($_DFF_P_) from module test1 (D = \Q2 [9], Q = \q2 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2851 ($_DFF_P_) from module test1 (D = \Q2 [12], Q = \q2 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2737 ($_DFF_P_) from module test1 (D = \I1 [6], Q = \i1 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2834 ($_DFF_P_) from module test1 (D = \Q1 [7], Q = \q1 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2847 ($_DFF_P_) from module test1 (D = \Q2 [8], Q = \q2 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2699 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [0], Q = \inter0008 [0]).
+Adding SRST signal on $auto$ff.cc:337:slice$3848 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1886, Q = \inter0008 [0], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2861 ($_DFF_P_) from module test1 (D = \Q3 [10], Q = \q3 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2862 ($_DFF_P_) from module test1 (D = \Q3 [11], Q = \q3 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2864 ($_DFF_P_) from module test1 (D = \Q3 [13], Q = \q3 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2865 ($_DFF_P_) from module test1 (D = \Q3 [14], Q = \q3 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2869 ($_DFF_P_) from module test1 (D = \Q4 [6], Q = \q4 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2870 ($_DFF_P_) from module test1 (D = \Q4 [7], Q = \q4 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2872 ($_DFF_P_) from module test1 (D = \Q4 [9], Q = \q4 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2873 ($_DFF_P_) from module test1 (D = \Q4 [10], Q = \q4 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2874 ($_DFF_P_) from module test1 (D = \Q4 [11], Q = \q4 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2875 ($_DFF_P_) from module test1 (D = \Q4 [12], Q = \q4 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2876 ($_DFF_P_) from module test1 (D = \Q4 [13], Q = \q4 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2877 ($_DFF_P_) from module test1 (D = \Q4 [14], Q = \q4 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2880 ($_DFF_P_) from module test1 (D = \Q5 [5], Q = \q5 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2881 ($_DFF_P_) from module test1 (D = \Q5 [6], Q = \q5 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2879 ($_DFF_P_) from module test1 (D = \Q5 [4], Q = \q5 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2860 ($_DFF_P_) from module test1 (D = \Q3 [9], Q = \q3 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2863 ($_DFF_P_) from module test1 (D = \Q3 [12], Q = \q3 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2868 ($_DFF_P_) from module test1 (D = \Q4 [5], Q = \q4 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2871 ($_DFF_P_) from module test1 (D = \Q4 [8], Q = \q4 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2738 ($_DFF_P_) from module test1 (D = \I1 [7], Q = \i1 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2739 ($_DFF_P_) from module test1 (D = \I1 [8], Q = \i1 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2740 ($_DFF_P_) from module test1 (D = \I1 [9], Q = \i1 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2859 ($_DFF_P_) from module test1 (D = \Q3 [8], Q = \q3 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2867 ($_DFF_P_) from module test1 (D = \Q4 [4], Q = \q4 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2700 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [1], Q = \inter0008 [1]).
+Adding SRST signal on $auto$ff.cc:337:slice$4066 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1938, Q = \inter0008 [1], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2858 ($_DFF_P_) from module test1 (D = \Q3 [7], Q = \q3 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2741 ($_DFF_P_) from module test1 (D = \I1 [10], Q = \i1 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2742 ($_DFF_P_) from module test1 (D = \I1 [11], Q = \i1 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2743 ($_DFF_P_) from module test1 (D = \I1 [12], Q = \i1 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2744 ($_DFF_P_) from module test1 (D = \I1 [13], Q = \i1 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2745 ($_DFF_P_) from module test1 (D = \I1 [14], Q = \i1 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2747 ($_DFF_P_) from module test1 (D = \I2 [4], Q = \i2 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2748 ($_DFF_P_) from module test1 (D = \I2 [5], Q = \i2 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2749 ($_DFF_P_) from module test1 (D = \I2 [6], Q = \i2 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2701 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [2], Q = \inter0008 [2]).
+Adding SRST signal on $auto$ff.cc:337:slice$4149 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1990, Q = \inter0008 [2], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2702 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [3], Q = \inter0008 [3]).
+Adding SRST signal on $auto$ff.cc:337:slice$4151 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2042, Q = \inter0008 [3], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2703 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [4], Q = \inter0008 [4]).
+Adding SRST signal on $auto$ff.cc:337:slice$4153 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2094, Q = \inter0008 [4], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2704 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [5], Q = \inter0008 [5]).
+Adding SRST signal on $auto$ff.cc:337:slice$4155 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2146, Q = \inter0008 [5], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2750 ($_DFF_P_) from module test1 (D = \I2 [7], Q = \i2 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2751 ($_DFF_P_) from module test1 (D = \I2 [8], Q = \i2 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2752 ($_DFF_P_) from module test1 (D = \I2 [9], Q = \i2 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2753 ($_DFF_P_) from module test1 (D = \I2 [10], Q = \i2 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2705 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [6], Q = \inter0008 [6]).
+Adding SRST signal on $auto$ff.cc:337:slice$4193 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2198, Q = \inter0008 [6], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2706 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [7], Q = \inter0008 [7]).
+Adding SRST signal on $auto$ff.cc:337:slice$4195 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2250, Q = \inter0008 [7], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2754 ($_DFF_P_) from module test1 (D = \I2 [11], Q = \i2 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2884 ($_DFF_P_) from module test1 (D = \Q5 [9], Q = \q5 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2755 ($_DFF_P_) from module test1 (D = \I2 [12], Q = \i2 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2756 ($_DFF_P_) from module test1 (D = \I2 [13], Q = \i2 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2707 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [8], Q = \inter0008 [8]).
+Adding SRST signal on $auto$ff.cc:337:slice$4233 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2302, Q = \inter0008 [8], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2708 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [9], Q = \inter0008 [9]).
+Adding SRST signal on $auto$ff.cc:337:slice$4235 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2354, Q = \inter0008 [9], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2757 ($_DFF_P_) from module test1 (D = \I2 [14], Q = \i2 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2759 ($_DFF_P_) from module test1 (D = \I3 [4], Q = \i3 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2885 ($_DFF_P_) from module test1 (D = \Q5 [10], Q = \q5 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2760 ($_DFF_P_) from module test1 (D = \I3 [5], Q = \i3 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2709 ($_DFF_P_) from module test1 (D = $0\inter0008[11:0] [10], Q = \inter0008 [10]).
+Adding SRST signal on $auto$ff.cc:337:slice$4273 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$2406, Q = \inter0008 [10], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2711 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [0], Q = \inter0009 [0]).
+Adding SRST signal on $auto$ff.cc:337:slice$4275 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1243, Q = \inter0009 [0], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2761 ($_DFF_P_) from module test1 (D = \I3 [6], Q = \i3 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2886 ($_DFF_P_) from module test1 (D = \Q5 [11], Q = \q5 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2887 ($_DFF_P_) from module test1 (D = \Q5 [12], Q = \q5 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2762 ($_DFF_P_) from module test1 (D = \I3 [7], Q = \i3 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2763 ($_DFF_P_) from module test1 (D = \I3 [8], Q = \i3 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2764 ($_DFF_P_) from module test1 (D = \I3 [9], Q = \i3 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2765 ($_DFF_P_) from module test1 (D = \I3 [10], Q = \i3 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2766 ($_DFF_P_) from module test1 (D = \I3 [11], Q = \i3 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2888 ($_DFF_P_) from module test1 (D = \Q5 [13], Q = \q5 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2712 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [1], Q = \inter0009 [1]).
+Adding SRST signal on $auto$ff.cc:337:slice$4358 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1295, Q = \inter0009 [1], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2713 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [2], Q = \inter0009 [2]).
+Adding SRST signal on $auto$ff.cc:337:slice$4360 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1347, Q = \inter0009 [2], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2767 ($_DFF_P_) from module test1 (D = \I3 [12], Q = \i3 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2889 ($_DFF_P_) from module test1 (D = \Q5 [14], Q = \q5 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2768 ($_DFF_P_) from module test1 (D = \I3 [13], Q = \i3 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2891 ($_DFF_P_) from module test1 (D = \Q6 [4], Q = \q6 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2714 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [3], Q = \inter0009 [3]).
+Adding SRST signal on $auto$ff.cc:337:slice$4398 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1399, Q = \inter0009 [3], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2715 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [4], Q = \inter0009 [4]).
+Adding SRST signal on $auto$ff.cc:337:slice$4400 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1451, Q = \inter0009 [4], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2769 ($_DFF_P_) from module test1 (D = \I3 [14], Q = \i3 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2771 ($_DFF_P_) from module test1 (D = \I4 [4], Q = \i4 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2892 ($_DFF_P_) from module test1 (D = \Q6 [5], Q = \q6 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2893 ($_DFF_P_) from module test1 (D = \Q6 [6], Q = \q6 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2716 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [5], Q = \inter0009 [5]).
+Adding SRST signal on $auto$ff.cc:337:slice$4438 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1503, Q = \inter0009 [5], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2717 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [6], Q = \inter0009 [6]).
+Adding SRST signal on $auto$ff.cc:337:slice$4440 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1555, Q = \inter0009 [6], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2894 ($_DFF_P_) from module test1 (D = \Q6 [7], Q = \q6 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2895 ($_DFF_P_) from module test1 (D = \Q6 [8], Q = \q6 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2896 ($_DFF_P_) from module test1 (D = \Q6 [9], Q = \q6 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2772 ($_DFF_P_) from module test1 (D = \I4 [5], Q = \i4 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2897 ($_DFF_P_) from module test1 (D = \Q6 [10], Q = \q6 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2773 ($_DFF_P_) from module test1 (D = \I4 [6], Q = \i4 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2774 ($_DFF_P_) from module test1 (D = \I4 [7], Q = \i4 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2775 ($_DFF_P_) from module test1 (D = \I4 [8], Q = \i4 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2718 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [7], Q = \inter0009 [7]).
+Adding SRST signal on $auto$ff.cc:337:slice$4514 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1607, Q = \inter0009 [7], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2719 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [8], Q = \inter0009 [8]).
+Adding SRST signal on $auto$ff.cc:337:slice$4516 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1659, Q = \inter0009 [8], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2899 ($_DFF_P_) from module test1 (D = \Q6 [12], Q = \q6 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2898 ($_DFF_P_) from module test1 (D = \Q6 [11], Q = \q6 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2776 ($_DFF_P_) from module test1 (D = \I4 [9], Q = \i4 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2777 ($_DFF_P_) from module test1 (D = \I4 [10], Q = \i4 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2720 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [9], Q = \inter0009 [9]).
+Adding SRST signal on $auto$ff.cc:337:slice$4554 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1711, Q = \inter0009 [9], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2721 ($_DFF_P_) from module test1 (D = $0\inter0009[11:0] [10], Q = \inter0009 [10]).
+Adding SRST signal on $auto$ff.cc:337:slice$4556 ($_DFFE_PN_) from module test1 (D = $auto$simplemap.cc:189:logic_reduce$1763, Q = \inter0009 [10], rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2901 ($_DFF_P_) from module test1 (D = \Q6 [14], Q = \q6 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2778 ($_DFF_P_) from module test1 (D = \I4 [11], Q = \i4 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2900 ($_DFF_P_) from module test1 (D = \Q6 [13], Q = \q6 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2779 ($_DFF_P_) from module test1 (D = \I4 [12], Q = \i4 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2723 ($_DFF_P_) from module test1 (D = \I0 [4], Q = \i0 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2724 ($_DFF_P_) from module test1 (D = \I0 [5], Q = \i0 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2905 ($_DFF_P_) from module test1 (D = \Q7 [6], Q = \q7 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2903 ($_DFF_P_) from module test1 (D = \Q7 [4], Q = \q7 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2904 ($_DFF_P_) from module test1 (D = \Q7 [5], Q = \q7 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2780 ($_DFF_P_) from module test1 (D = \I4 [13], Q = \i4 [9]).
+Adding EN signal on $auto$ff.cc:337:slice$2907 ($_DFF_P_) from module test1 (D = \Q7 [8], Q = \q7 [4]).
+Adding EN signal on $auto$ff.cc:337:slice$2781 ($_DFF_P_) from module test1 (D = \I4 [14], Q = \i4 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2783 ($_DFF_P_) from module test1 (D = \I5 [4], Q = \i5 [0]).
+Adding EN signal on $auto$ff.cc:337:slice$2906 ($_DFF_P_) from module test1 (D = \Q7 [7], Q = \q7 [3]).
+Adding EN signal on $auto$ff.cc:337:slice$2784 ($_DFF_P_) from module test1 (D = \I5 [5], Q = \i5 [1]).
+Adding EN signal on $auto$ff.cc:337:slice$2910 ($_DFF_P_) from module test1 (D = \Q7 [11], Q = \q7 [7]).
+Adding EN signal on $auto$ff.cc:337:slice$2908 ($_DFF_P_) from module test1 (D = \Q7 [9], Q = \q7 [5]).
+Adding EN signal on $auto$ff.cc:337:slice$2909 ($_DFF_P_) from module test1 (D = \Q7 [10], Q = \q7 [6]).
+Adding EN signal on $auto$ff.cc:337:slice$2785 ($_DFF_P_) from module test1 (D = \I5 [6], Q = \i5 [2]).
+Adding EN signal on $auto$ff.cc:337:slice$2913 ($_DFF_P_) from module test1 (D = \Q7 [14], Q = \q7 [10]).
+Adding EN signal on $auto$ff.cc:337:slice$2911 ($_DFF_P_) from module test1 (D = \Q7 [12], Q = \q7 [8]).
+Adding EN signal on $auto$ff.cc:337:slice$2912 ($_DFF_P_) from module test1 (D = \Q7 [13], Q = \q7 [9]).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 433 unused cells and 380 unused wires.
+<suppressed ~434 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1633 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1250 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1059 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~1722 debug messages>
+Removed a total of 574 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 574 unused wires.
+<suppressed ~1 debug messages>
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+8.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+8.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1059 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+8.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+8.23. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+9.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing test1.$auto$ff.cc:337:slice$4156 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2146, Q=\inter0008 [5]
+Replacing test1.$auto$ff.cc:337:slice$4154 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2094, Q=\inter0008 [4]
+Replacing test1.$auto$ff.cc:337:slice$4152 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2042, Q=\inter0008 [3]
+Replacing test1.$auto$ff.cc:337:slice$4150 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1990, Q=\inter0008 [2]
+Replacing test1.$auto$ff.cc:337:slice$4140 ($_DFFE_PP_): CLK=\clock, D=\I2 [6], Q=\i2 [2]
+Replacing test1.$auto$ff.cc:337:slice$4131 ($_DFFE_PP_): CLK=\clock, D=\I2 [5], Q=\i2 [1]
+Replacing test1.$auto$ff.cc:337:slice$4122 ($_DFFE_PP_): CLK=\clock, D=\I2 [4], Q=\i2 [0]
+Replacing test1.$auto$ff.cc:337:slice$4113 ($_DFFE_PP_): CLK=\clock, D=\I1 [14], Q=\i1 [10]
+Replacing test1.$auto$ff.cc:337:slice$4104 ($_DFFE_PP_): CLK=\clock, D=\I1 [13], Q=\i1 [9]
+Replacing test1.$auto$ff.cc:337:slice$4095 ($_DFFE_PP_): CLK=\clock, D=\I1 [12], Q=\i1 [8]
+Replacing test1.$auto$ff.cc:337:slice$4086 ($_DFFE_PP_): CLK=\clock, D=\I1 [11], Q=\i1 [7]
+Replacing test1.$auto$ff.cc:337:slice$4077 ($_DFFE_PP_): CLK=\clock, D=\I1 [10], Q=\i1 [6]
+Replacing test1.$auto$ff.cc:337:slice$4747 ($_DFFE_PP_): CLK=\clock, D=\Q7 [13], Q=\q7 [9]
+Replacing test1.$auto$ff.cc:337:slice$4738 ($_DFFE_PP_): CLK=\clock, D=\Q7 [12], Q=\q7 [8]
+Replacing test1.$auto$ff.cc:337:slice$4729 ($_DFFE_PP_): CLK=\clock, D=\Q7 [14], Q=\q7 [10]
+Replacing test1.$auto$ff.cc:337:slice$4720 ($_DFFE_PP_): CLK=\clock, D=\I5 [6], Q=\i5 [2]
+Replacing test1.$auto$ff.cc:337:slice$4711 ($_DFFE_PP_): CLK=\clock, D=\Q7 [10], Q=\q7 [6]
+Replacing test1.$auto$ff.cc:337:slice$4702 ($_DFFE_PP_): CLK=\clock, D=\Q7 [9], Q=\q7 [5]
+Replacing test1.$auto$ff.cc:337:slice$4693 ($_DFFE_PP_): CLK=\clock, D=\Q7 [11], Q=\q7 [7]
+Replacing test1.$auto$ff.cc:337:slice$4684 ($_DFFE_PP_): CLK=\clock, D=\I5 [5], Q=\i5 [1]
+Replacing test1.$auto$ff.cc:337:slice$4675 ($_DFFE_PP_): CLK=\clock, D=\Q7 [7], Q=\q7 [3]
+Replacing test1.$auto$ff.cc:337:slice$4666 ($_DFFE_PP_): CLK=\clock, D=\I5 [4], Q=\i5 [0]
+Replacing test1.$auto$ff.cc:337:slice$4657 ($_DFFE_PP_): CLK=\clock, D=\I4 [14], Q=\i4 [10]
+Replacing test1.$auto$ff.cc:337:slice$4648 ($_DFFE_PP_): CLK=\clock, D=\Q7 [8], Q=\q7 [4]
+Replacing test1.$auto$ff.cc:337:slice$4639 ($_DFFE_PP_): CLK=\clock, D=\I4 [13], Q=\i4 [9]
+Replacing test1.$auto$ff.cc:337:slice$4630 ($_DFFE_PP_): CLK=\clock, D=\Q7 [5], Q=\q7 [1]
+Replacing test1.$auto$ff.cc:337:slice$4621 ($_DFFE_PP_): CLK=\clock, D=\Q7 [4], Q=\q7 [0]
+Replacing test1.$auto$ff.cc:337:slice$4612 ($_DFFE_PP_): CLK=\clock, D=\Q7 [6], Q=\q7 [2]
+Replacing test1.$auto$ff.cc:337:slice$4603 ($_DFFE_PP_): CLK=\clock, D=\I0 [5], Q=\i0 [1]
+Replacing test1.$auto$ff.cc:337:slice$4594 ($_DFFE_PP_): CLK=\clock, D=\I0 [4], Q=\i0 [0]
+Replacing test1.$auto$ff.cc:337:slice$4585 ($_DFFE_PP_): CLK=\clock, D=\I4 [12], Q=\i4 [8]
+Replacing test1.$auto$ff.cc:337:slice$4576 ($_DFFE_PP_): CLK=\clock, D=\Q6 [13], Q=\q6 [9]
+Replacing test1.$auto$ff.cc:337:slice$4567 ($_DFFE_PP_): CLK=\clock, D=\I4 [11], Q=\i4 [7]
+Replacing test1.$auto$ff.cc:337:slice$4558 ($_DFFE_PP_): CLK=\clock, D=\Q6 [14], Q=\q6 [10]
+Replacing test1.$auto$ff.cc:337:slice$4557 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1763, Q=\inter0009 [10]
+Replacing test1.$auto$ff.cc:337:slice$4555 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1711, Q=\inter0009 [9]
+Replacing test1.$auto$ff.cc:337:slice$4545 ($_DFFE_PP_): CLK=\clock, D=\I4 [10], Q=\i4 [6]
+Replacing test1.$auto$ff.cc:337:slice$4536 ($_DFFE_PP_): CLK=\clock, D=\I4 [9], Q=\i4 [5]
+Replacing test1.$auto$ff.cc:337:slice$4527 ($_DFFE_PP_): CLK=\clock, D=\Q6 [11], Q=\q6 [7]
+Replacing test1.$auto$ff.cc:337:slice$4518 ($_DFFE_PP_): CLK=\clock, D=\Q6 [12], Q=\q6 [8]
+Replacing test1.$auto$ff.cc:337:slice$4517 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1659, Q=\inter0009 [8]
+Replacing test1.$auto$ff.cc:337:slice$4515 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1607, Q=\inter0009 [7]
+Replacing test1.$auto$ff.cc:337:slice$4505 ($_DFFE_PP_): CLK=\clock, D=\I4 [8], Q=\i4 [4]
+Replacing test1.$auto$ff.cc:337:slice$4496 ($_DFFE_PP_): CLK=\clock, D=\I4 [7], Q=\i4 [3]
+Replacing test1.$auto$ff.cc:337:slice$4487 ($_DFFE_PP_): CLK=\clock, D=\I4 [6], Q=\i4 [2]
+Replacing test1.$auto$ff.cc:337:slice$4478 ($_DFFE_PP_): CLK=\clock, D=\Q6 [10], Q=\q6 [6]
+Replacing test1.$auto$ff.cc:337:slice$4469 ($_DFFE_PP_): CLK=\clock, D=\I4 [5], Q=\i4 [1]
+Replacing test1.$auto$ff.cc:337:slice$4460 ($_DFFE_PP_): CLK=\clock, D=\Q6 [9], Q=\q6 [5]
+Replacing test1.$auto$ff.cc:337:slice$4451 ($_DFFE_PP_): CLK=\clock, D=\Q6 [8], Q=\q6 [4]
+Replacing test1.$auto$ff.cc:337:slice$4442 ($_DFFE_PP_): CLK=\clock, D=\Q6 [7], Q=\q6 [3]
+Replacing test1.$auto$ff.cc:337:slice$4441 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1555, Q=\inter0009 [6]
+Replacing test1.$auto$ff.cc:337:slice$4439 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1503, Q=\inter0009 [5]
+Replacing test1.$auto$ff.cc:337:slice$4429 ($_DFFE_PP_): CLK=\clock, D=\Q6 [6], Q=\q6 [2]
+Replacing test1.$auto$ff.cc:337:slice$4420 ($_DFFE_PP_): CLK=\clock, D=\Q6 [5], Q=\q6 [1]
+Replacing test1.$auto$ff.cc:337:slice$4411 ($_DFFE_PP_): CLK=\clock, D=\I4 [4], Q=\i4 [0]
+Replacing test1.$auto$ff.cc:337:slice$4402 ($_DFFE_PP_): CLK=\clock, D=\I3 [14], Q=\i3 [10]
+Replacing test1.$auto$ff.cc:337:slice$4401 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1451, Q=\inter0009 [4]
+Replacing test1.$auto$ff.cc:337:slice$4399 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1399, Q=\inter0009 [3]
+Replacing test1.$auto$ff.cc:337:slice$4389 ($_DFFE_PP_): CLK=\clock, D=\Q6 [4], Q=\q6 [0]
+Replacing test1.$auto$ff.cc:337:slice$4380 ($_DFFE_PP_): CLK=\clock, D=\I3 [13], Q=\i3 [9]
+Replacing test1.$auto$ff.cc:337:slice$4371 ($_DFFE_PP_): CLK=\clock, D=\Q5 [14], Q=\q5 [10]
+Replacing test1.$auto$ff.cc:337:slice$4362 ($_DFFE_PP_): CLK=\clock, D=\I3 [12], Q=\i3 [8]
+Replacing test1.$auto$ff.cc:337:slice$4361 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1347, Q=\inter0009 [2]
+Replacing test1.$auto$ff.cc:337:slice$4359 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1295, Q=\inter0009 [1]
+Replacing test1.$auto$ff.cc:337:slice$4349 ($_DFFE_PP_): CLK=\clock, D=\Q5 [13], Q=\q5 [9]
+Replacing test1.$auto$ff.cc:337:slice$4340 ($_DFFE_PP_): CLK=\clock, D=\I3 [11], Q=\i3 [7]
+Replacing test1.$auto$ff.cc:337:slice$4331 ($_DFFE_PP_): CLK=\clock, D=\I3 [10], Q=\i3 [6]
+Replacing test1.$auto$ff.cc:337:slice$4322 ($_DFFE_PP_): CLK=\clock, D=\I3 [9], Q=\i3 [5]
+Replacing test1.$auto$ff.cc:337:slice$4313 ($_DFFE_PP_): CLK=\clock, D=\I3 [8], Q=\i3 [4]
+Replacing test1.$auto$ff.cc:337:slice$4304 ($_DFFE_PP_): CLK=\clock, D=\I3 [7], Q=\i3 [3]
+Replacing test1.$auto$ff.cc:337:slice$4295 ($_DFFE_PP_): CLK=\clock, D=\Q5 [12], Q=\q5 [8]
+Replacing test1.$auto$ff.cc:337:slice$4286 ($_DFFE_PP_): CLK=\clock, D=\Q5 [11], Q=\q5 [7]
+Replacing test1.$auto$ff.cc:337:slice$4277 ($_DFFE_PP_): CLK=\clock, D=\I3 [6], Q=\i3 [2]
+Replacing test1.$auto$ff.cc:337:slice$4276 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1243, Q=\inter0009 [0]
+Replacing test1.$auto$ff.cc:337:slice$4274 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2406, Q=\inter0008 [10]
+Replacing test1.$auto$ff.cc:337:slice$4264 ($_DFFE_PP_): CLK=\clock, D=\I3 [5], Q=\i3 [1]
+Replacing test1.$auto$ff.cc:337:slice$4255 ($_DFFE_PP_): CLK=\clock, D=\Q5 [10], Q=\q5 [6]
+Replacing test1.$auto$ff.cc:337:slice$4246 ($_DFFE_PP_): CLK=\clock, D=\I3 [4], Q=\i3 [0]
+Replacing test1.$auto$ff.cc:337:slice$4237 ($_DFFE_PP_): CLK=\clock, D=\I2 [14], Q=\i2 [10]
+Replacing test1.$auto$ff.cc:337:slice$4236 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2354, Q=\inter0008 [9]
+Replacing test1.$auto$ff.cc:337:slice$4234 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2302, Q=\inter0008 [8]
+Replacing test1.$auto$ff.cc:337:slice$4224 ($_DFFE_PP_): CLK=\clock, D=\I2 [13], Q=\i2 [9]
+Replacing test1.$auto$ff.cc:337:slice$4215 ($_DFFE_PP_): CLK=\clock, D=\I2 [12], Q=\i2 [8]
+Replacing test1.$auto$ff.cc:337:slice$4206 ($_DFFE_PP_): CLK=\clock, D=\Q5 [9], Q=\q5 [5]
+Replacing test1.$auto$ff.cc:337:slice$4197 ($_DFFE_PP_): CLK=\clock, D=\I2 [11], Q=\i2 [7]
+Replacing test1.$auto$ff.cc:337:slice$4068 ($_DFFE_PP_): CLK=\clock, D=\Q3 [7], Q=\q3 [3]
+Replacing test1.$auto$ff.cc:337:slice$4067 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1938, Q=\inter0008 [1]
+Replacing test1.$auto$ff.cc:337:slice$4057 ($_DFFE_PP_): CLK=\clock, D=\Q4 [4], Q=\q4 [0]
+Replacing test1.$auto$ff.cc:337:slice$4048 ($_DFFE_PP_): CLK=\clock, D=\Q3 [8], Q=\q3 [4]
+Replacing test1.$auto$ff.cc:337:slice$4039 ($_DFFE_PP_): CLK=\clock, D=\I1 [9], Q=\i1 [5]
+Replacing test1.$auto$ff.cc:337:slice$4030 ($_DFFE_PP_): CLK=\clock, D=\I1 [8], Q=\i1 [4]
+Replacing test1.$auto$ff.cc:337:slice$4021 ($_DFFE_PP_): CLK=\clock, D=\I1 [7], Q=\i1 [3]
+Replacing test1.$auto$ff.cc:337:slice$4012 ($_DFFE_PP_): CLK=\clock, D=\Q4 [8], Q=\q4 [4]
+Replacing test1.$auto$ff.cc:337:slice$4003 ($_DFFE_PP_): CLK=\clock, D=\Q4 [5], Q=\q4 [1]
+Replacing test1.$auto$ff.cc:337:slice$3994 ($_DFFE_PP_): CLK=\clock, D=\Q3 [12], Q=\q3 [8]
+Replacing test1.$auto$ff.cc:337:slice$3985 ($_DFFE_PP_): CLK=\clock, D=\Q3 [9], Q=\q3 [5]
+Replacing test1.$auto$ff.cc:337:slice$3976 ($_DFFE_PP_): CLK=\clock, D=\Q5 [4], Q=\q5 [0]
+Replacing test1.$auto$ff.cc:337:slice$3967 ($_DFFE_PP_): CLK=\clock, D=\Q5 [6], Q=\q5 [2]
+Replacing test1.$auto$ff.cc:337:slice$3958 ($_DFFE_PP_): CLK=\clock, D=\Q5 [5], Q=\q5 [1]
+Replacing test1.$auto$ff.cc:337:slice$3949 ($_DFFE_PP_): CLK=\clock, D=\Q4 [14], Q=\q4 [10]
+Replacing test1.$auto$ff.cc:337:slice$3940 ($_DFFE_PP_): CLK=\clock, D=\Q4 [13], Q=\q4 [9]
+Replacing test1.$auto$ff.cc:337:slice$3931 ($_DFFE_PP_): CLK=\clock, D=\Q4 [12], Q=\q4 [8]
+Replacing test1.$auto$ff.cc:337:slice$3922 ($_DFFE_PP_): CLK=\clock, D=\Q4 [11], Q=\q4 [7]
+Replacing test1.$auto$ff.cc:337:slice$3913 ($_DFFE_PP_): CLK=\clock, D=\Q4 [10], Q=\q4 [6]
+Replacing test1.$auto$ff.cc:337:slice$3904 ($_DFFE_PP_): CLK=\clock, D=\Q4 [9], Q=\q4 [5]
+Replacing test1.$auto$ff.cc:337:slice$3895 ($_DFFE_PP_): CLK=\clock, D=\Q4 [7], Q=\q4 [3]
+Replacing test1.$auto$ff.cc:337:slice$3886 ($_DFFE_PP_): CLK=\clock, D=\Q4 [6], Q=\q4 [2]
+Replacing test1.$auto$ff.cc:337:slice$3877 ($_DFFE_PP_): CLK=\clock, D=\Q3 [14], Q=\q3 [10]
+Replacing test1.$auto$ff.cc:337:slice$3868 ($_DFFE_PP_): CLK=\clock, D=\Q3 [13], Q=\q3 [9]
+Replacing test1.$auto$ff.cc:337:slice$3859 ($_DFFE_PP_): CLK=\clock, D=\Q3 [11], Q=\q3 [7]
+Replacing test1.$auto$ff.cc:337:slice$3850 ($_DFFE_PP_): CLK=\clock, D=\Q3 [10], Q=\q3 [6]
+Replacing test1.$auto$ff.cc:337:slice$3849 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1886, Q=\inter0008 [0]
+Replacing test1.$auto$ff.cc:337:slice$3839 ($_DFFE_PP_): CLK=\clock, D=\Q2 [8], Q=\q2 [4]
+Replacing test1.$auto$ff.cc:337:slice$3830 ($_DFFE_PP_): CLK=\clock, D=\Q1 [7], Q=\q1 [3]
+Replacing test1.$auto$ff.cc:337:slice$3821 ($_DFFE_PP_): CLK=\clock, D=\I1 [6], Q=\i1 [2]
+Replacing test1.$auto$ff.cc:337:slice$3812 ($_DFFE_PP_): CLK=\clock, D=\Q2 [12], Q=\q2 [8]
+Replacing test1.$auto$ff.cc:337:slice$3803 ($_DFFE_PP_): CLK=\clock, D=\Q2 [9], Q=\q2 [5]
+Replacing test1.$auto$ff.cc:337:slice$3794 ($_DFFE_PP_): CLK=\clock, D=\Q2 [5], Q=\q2 [1]
+Replacing test1.$auto$ff.cc:337:slice$3785 ($_DFFE_PP_): CLK=\clock, D=\I1 [5], Q=\i1 [1]
+Replacing test1.$auto$ff.cc:337:slice$3776 ($_DFFE_PP_): CLK=\clock, D=\Q1 [11], Q=\q1 [7]
+Replacing test1.$auto$ff.cc:337:slice$3767 ($_DFFE_PP_): CLK=\clock, D=\Q1 [8], Q=\q1 [4]
+Replacing test1.$auto$ff.cc:337:slice$3758 ($_DFFE_PP_): CLK=\clock, D=\Q3 [4], Q=\q3 [0]
+Replacing test1.$auto$ff.cc:337:slice$3749 ($_DFFE_PP_): CLK=\clock, D=\Q3 [6], Q=\q3 [2]
+Replacing test1.$auto$ff.cc:337:slice$3740 ($_DFFE_PP_): CLK=\clock, D=\Q3 [5], Q=\q3 [1]
+Replacing test1.$auto$ff.cc:337:slice$3731 ($_DFFE_PP_): CLK=\clock, D=\Q2 [14], Q=\q2 [10]
+Replacing test1.$auto$ff.cc:337:slice$3722 ($_DFFE_PP_): CLK=\clock, D=\Q2 [13], Q=\q2 [9]
+Replacing test1.$auto$ff.cc:337:slice$3713 ($_DFFE_PP_): CLK=\clock, D=\Q2 [11], Q=\q2 [7]
+Replacing test1.$auto$ff.cc:337:slice$3704 ($_DFFE_PP_): CLK=\clock, D=\Q2 [10], Q=\q2 [6]
+Replacing test1.$auto$ff.cc:337:slice$3695 ($_DFFE_PP_): CLK=\clock, D=\Q2 [7], Q=\q2 [3]
+Replacing test1.$auto$ff.cc:337:slice$3686 ($_DFFE_PP_): CLK=\clock, D=\Q2 [6], Q=\q2 [2]
+Replacing test1.$auto$ff.cc:337:slice$3677 ($_DFFE_PP_): CLK=\clock, D=\Q2 [4], Q=\q2 [0]
+Replacing test1.$auto$ff.cc:337:slice$3668 ($_DFFE_PP_): CLK=\clock, D=\Q1 [14], Q=\q1 [10]
+Replacing test1.$auto$ff.cc:337:slice$3659 ($_DFFE_PP_): CLK=\clock, D=\Q1 [13], Q=\q1 [9]
+Replacing test1.$auto$ff.cc:337:slice$3650 ($_DFFE_PP_): CLK=\clock, D=\Q1 [12], Q=\q1 [8]
+Replacing test1.$auto$ff.cc:337:slice$3641 ($_DFFE_PP_): CLK=\clock, D=\Q1 [10], Q=\q1 [6]
+Replacing test1.$auto$ff.cc:337:slice$3632 ($_DFFE_PP_): CLK=\clock, D=\Q1 [9], Q=\q1 [5]
+Replacing test1.$auto$ff.cc:337:slice$3623 ($_DFFE_PP_): CLK=\clock, D=\Q1 [4], Q=\q1 [0]
+Replacing test1.$auto$ff.cc:337:slice$3614 ($_DFFE_PP_): CLK=\clock, D=\Q0 [11], Q=\q0 [7]
+Replacing test1.$auto$ff.cc:337:slice$3605 ($_DFFE_PP_): CLK=\clock, D=\Q0 [8], Q=\q0 [4]
+Replacing test1.$auto$ff.cc:337:slice$3596 ($_DFFE_PP_): CLK=\clock, D=\Q0 [5], Q=\q0 [1]
+Replacing test1.$auto$ff.cc:337:slice$3587 ($_DFFE_PP_): CLK=\clock, D=\I7 [13], Q=\i7 [9]
+Replacing test1.$auto$ff.cc:337:slice$3578 ($_DFFE_PP_): CLK=\clock, D=\I7 [10], Q=\i7 [6]
+Replacing test1.$auto$ff.cc:337:slice$3569 ($_DFFE_PP_): CLK=\clock, D=\I7 [7], Q=\i7 [3]
+Replacing test1.$auto$ff.cc:337:slice$3560 ($_DFFE_PP_): CLK=\clock, D=\Q0 [14], Q=\q0 [10]
+Replacing test1.$auto$ff.cc:337:slice$3551 ($_DFFE_PP_): CLK=\clock, D=\Q1 [6], Q=\q1 [2]
+Replacing test1.$auto$ff.cc:337:slice$3542 ($_DFFE_PP_): CLK=\clock, D=\Q1 [5], Q=\q1 [1]
+Replacing test1.$auto$ff.cc:337:slice$3533 ($_DFFE_PP_): CLK=\clock, D=\Q0 [13], Q=\q0 [9]
+Replacing test1.$auto$ff.cc:337:slice$3524 ($_DFFE_PP_): CLK=\clock, D=\Q0 [12], Q=\q0 [8]
+Replacing test1.$auto$ff.cc:337:slice$3515 ($_DFFE_PP_): CLK=\clock, D=\Q0 [10], Q=\q0 [6]
+Replacing test1.$auto$ff.cc:337:slice$3506 ($_DFFE_PP_): CLK=\clock, D=\Q0 [9], Q=\q0 [5]
+Replacing test1.$auto$ff.cc:337:slice$3497 ($_DFFE_PP_): CLK=\clock, D=\Q0 [7], Q=\q0 [3]
+Replacing test1.$auto$ff.cc:337:slice$3488 ($_DFFE_PP_): CLK=\clock, D=\Q0 [6], Q=\q0 [2]
+Replacing test1.$auto$ff.cc:337:slice$3479 ($_DFFE_PP_): CLK=\clock, D=\Q0 [4], Q=\q0 [0]
+Replacing test1.$auto$ff.cc:337:slice$3470 ($_DFFE_PP_): CLK=\clock, D=\I7 [14], Q=\i7 [10]
+Replacing test1.$auto$ff.cc:337:slice$3461 ($_DFFE_PP_): CLK=\clock, D=\I7 [12], Q=\i7 [8]
+Replacing test1.$auto$ff.cc:337:slice$3452 ($_DFFE_PP_): CLK=\clock, D=\I7 [11], Q=\i7 [7]
+Replacing test1.$auto$ff.cc:337:slice$3443 ($_DFFE_PP_): CLK=\clock, D=\I7 [9], Q=\i7 [5]
+Replacing test1.$auto$ff.cc:337:slice$3434 ($_DFFE_PP_): CLK=\clock, D=\I7 [8], Q=\i7 [4]
+Replacing test1.$auto$ff.cc:337:slice$3425 ($_DFFE_PP_): CLK=\clock, D=\I7 [4], Q=\i7 [0]
+Replacing test1.$auto$ff.cc:337:slice$3416 ($_DFFE_PP_): CLK=\clock, D=\I6 [11], Q=\i6 [7]
+Replacing test1.$auto$ff.cc:337:slice$3407 ($_DFFE_PP_): CLK=\clock, D=\I6 [8], Q=\i6 [4]
+Replacing test1.$auto$ff.cc:337:slice$3398 ($_DFFE_PP_): CLK=\clock, D=\I6 [5], Q=\i6 [1]
+Replacing test1.$auto$ff.cc:337:slice$3389 ($_DFFE_PP_): CLK=\clock, D=\I5 [13], Q=\i5 [9]
+Replacing test1.$auto$ff.cc:337:slice$3380 ($_DFFE_PP_): CLK=\clock, D=\I5 [10], Q=\i5 [6]
+Replacing test1.$auto$ff.cc:337:slice$3371 ($_DFFE_PP_): CLK=\clock, D=\I5 [8], Q=\i5 [4]
+Replacing test1.$auto$ff.cc:337:slice$3362 ($_DFFE_PP_): CLK=\clock, D=\I6 [14], Q=\i6 [10]
+Replacing test1.$auto$ff.cc:337:slice$3353 ($_DFFE_PP_): CLK=\clock, D=\I7 [6], Q=\i7 [2]
+Replacing test1.$auto$ff.cc:337:slice$3344 ($_DFFE_PP_): CLK=\clock, D=\I7 [5], Q=\i7 [1]
+Replacing test1.$auto$ff.cc:337:slice$3335 ($_DFFE_PP_): CLK=\clock, D=\I6 [13], Q=\i6 [9]
+Replacing test1.$auto$ff.cc:337:slice$3326 ($_DFFE_PP_): CLK=\clock, D=\I6 [12], Q=\i6 [8]
+Replacing test1.$auto$ff.cc:337:slice$3317 ($_DFFE_PP_): CLK=\clock, D=\I6 [10], Q=\i6 [6]
+Replacing test1.$auto$ff.cc:337:slice$3308 ($_DFFE_PP_): CLK=\clock, D=\I6 [9], Q=\i6 [5]
+Replacing test1.$auto$ff.cc:337:slice$3299 ($_DFFE_PP_): CLK=\clock, D=\I6 [7], Q=\i6 [3]
+Replacing test1.$auto$ff.cc:337:slice$3290 ($_DFFE_PP_): CLK=\clock, D=\I6 [6], Q=\i6 [2]
+Replacing test1.$auto$ff.cc:337:slice$3281 ($_DFFE_PP_): CLK=\clock, D=\I6 [4], Q=\i6 [0]
+Replacing test1.$auto$ff.cc:337:slice$3272 ($_DFFE_PP_): CLK=\clock, D=\I5 [14], Q=\i5 [10]
+Replacing test1.$auto$ff.cc:337:slice$3263 ($_DFFE_PP_): CLK=\clock, D=\I5 [12], Q=\i5 [8]
+Replacing test1.$auto$ff.cc:337:slice$3254 ($_DFFE_PP_): CLK=\clock, D=\I5 [11], Q=\i5 [7]
+Replacing test1.$auto$ff.cc:337:slice$3245 ($_DFFE_PP_): CLK=\clock, D=\I5 [9], Q=\i5 [5]
+Replacing test1.$auto$ff.cc:337:slice$3236 ($_DFFE_PP_): CLK=\clock, D=\I5 [7], Q=\i5 [3]
+Replacing test1.$auto$ff.cc:337:slice$2695 ($_DFF_PP0_): CLK=\clock, D=$0\state[3:0] [2], Q=\state [2]
+Replacing test1.$auto$ff.cc:337:slice$2694 ($_DFF_PP0_): CLK=\clock, D=$0\state[3:0] [1], Q=\state [1]
+Replacing test1.$auto$ff.cc:337:slice$2693 ($_DFF_PP0_): CLK=\clock, D=$0\state[3:0] [0], Q=\state [0]
+Replacing test1.$auto$ff.cc:337:slice$3227 ($_DFFE_PP_): CLK=\clock, D=\I1 [4], Q=\i1 [0]
+Replacing test1.$auto$ff.cc:337:slice$3218 ($_DFFE_PP_): CLK=\clock, D=\I0 [14], Q=\i0 [10]
+Replacing test1.$auto$ff.cc:337:slice$3209 ($_DFFE_PP_): CLK=\clock, D=\I0 [13], Q=\i0 [9]
+Replacing test1.$auto$ff.cc:337:slice$3200 ($_DFFE_PP_): CLK=\clock, D=\I0 [12], Q=\i0 [8]
+Replacing test1.$auto$ff.cc:337:slice$3191 ($_DFFE_PP_): CLK=\clock, D=\I0 [11], Q=\i0 [7]
+Replacing test1.$auto$ff.cc:337:slice$3182 ($_DFFE_PP_): CLK=\clock, D=\I0 [10], Q=\i0 [6]
+Replacing test1.$auto$ff.cc:337:slice$3173 ($_DFFE_PP_): CLK=\clock, D=\I0 [9], Q=\i0 [5]
+Replacing test1.$auto$ff.cc:337:slice$4196 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2250, Q=\inter0008 [7]
+Replacing test1.$auto$ff.cc:337:slice$4194 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2198, Q=\inter0008 [6]
+Replacing test1.$auto$ff.cc:337:slice$4184 ($_DFFE_PP_): CLK=\clock, D=\I2 [10], Q=\i2 [6]
+Replacing test1.$auto$ff.cc:337:slice$4175 ($_DFFE_PP_): CLK=\clock, D=\I2 [9], Q=\i2 [5]
+Replacing test1.$auto$ff.cc:337:slice$4166 ($_DFFE_PP_): CLK=\clock, D=\I2 [8], Q=\i2 [4]
+Replacing test1.$auto$ff.cc:337:slice$4157 ($_DFFE_PP_): CLK=\clock, D=\I2 [7], Q=\i2 [3]
+Replacing test1.$auto$ff.cc:337:slice$3164 ($_DFFE_PP_): CLK=\clock, D=\I0 [8], Q=\i0 [4]
+Replacing test1.$auto$ff.cc:337:slice$3155 ($_DFFE_PP_): CLK=\clock, D=\I0 [7], Q=\i0 [3]
+Replacing test1.$auto$ff.cc:337:slice$2696 ($_DFF_PP0_): CLK=\clock, D=$0\state[3:0] [3], Q=\state [3]
+Replacing test1.$auto$ff.cc:337:slice$3154 ($_DFFE_PN_): CLK=\clock, D=$0\por6[0:0], Q=\por6
+Replacing test1.$auto$ff.cc:337:slice$2698 ($_DFF_PP1_): CLK=\clock, D=$0\inter0007[0:0], Q=\inter0007
+Replacing test1.$auto$ff.cc:337:slice$3153 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$2458, Q=\inter0008 [11]
+Replacing test1.$auto$ff.cc:337:slice$3151 ($_SDFFCE_PN0N_): CLK=\clock, D=$auto$simplemap.cc:189:logic_reduce$1815, Q=\inter0009 [11]
+Replacing test1.$auto$ff.cc:337:slice$3141 ($_DFFE_PP_): CLK=\clock, D=\I0 [15], Q=\i0 [11]
+Replacing test1.$auto$ff.cc:337:slice$3132 ($_DFFE_PP_): CLK=\clock, D=\I1 [15], Q=\i1 [11]
+Replacing test1.$auto$ff.cc:337:slice$3123 ($_DFFE_PP_): CLK=\clock, D=\I2 [15], Q=\i2 [11]
+Replacing test1.$auto$ff.cc:337:slice$3114 ($_DFFE_PP_): CLK=\clock, D=\I3 [15], Q=\i3 [11]
+Replacing test1.$auto$ff.cc:337:slice$3105 ($_DFFE_PP_): CLK=\clock, D=\I4 [15], Q=\i4 [11]
+Replacing test1.$auto$ff.cc:337:slice$3096 ($_DFFE_PP_): CLK=\clock, D=\I5 [15], Q=\i5 [11]
+Replacing test1.$auto$ff.cc:337:slice$3087 ($_DFFE_PP_): CLK=\clock, D=\I6 [15], Q=\i6 [11]
+Replacing test1.$auto$ff.cc:337:slice$3078 ($_DFFE_PP_): CLK=\clock, D=\I7 [15], Q=\i7 [11]
+Replacing test1.$auto$ff.cc:337:slice$3069 ($_DFFE_PP_): CLK=\clock, D=\Q0 [15], Q=\q0 [11]
+Replacing test1.$auto$ff.cc:337:slice$3060 ($_DFFE_PP_): CLK=\clock, D=\Q1 [15], Q=\q1 [11]
+Replacing test1.$auto$ff.cc:337:slice$3051 ($_DFFE_PP_): CLK=\clock, D=\Q2 [15], Q=\q2 [11]
+Replacing test1.$auto$ff.cc:337:slice$3042 ($_DFFE_PP_): CLK=\clock, D=\Q3 [15], Q=\q3 [11]
+Replacing test1.$auto$ff.cc:337:slice$3033 ($_DFFE_PP_): CLK=\clock, D=\Q4 [15], Q=\q4 [11]
+Replacing test1.$auto$ff.cc:337:slice$3024 ($_DFFE_PP_): CLK=\clock, D=\Q5 [15], Q=\q5 [11]
+Replacing test1.$auto$ff.cc:337:slice$3015 ($_DFFE_PP_): CLK=\clock, D=\Q6 [15], Q=\q6 [11]
+Replacing test1.$auto$ff.cc:337:slice$3006 ($_DFFE_PP_): CLK=\clock, D=\Q7 [15], Q=\q7 [11]
+Replacing test1.$auto$ff.cc:337:slice$2997 ($_DFFE_PP_): CLK=\clock, D=\Q5 [7], Q=\q5 [3]
+Replacing test1.$auto$ff.cc:337:slice$2988 ($_DFFE_PP_): CLK=\clock, D=\Q5 [8], Q=\q5 [4]
+Replacing test1.$auto$ff.cc:337:slice$2979 ($_DFFE_PP_): CLK=\clock, D=\I0 [6], Q=\i0 [2]
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 222 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_baseline_rtl_boundary/run/gold.il
+
+End of script. Logfile hash: 47f4a70f1c, time: 0.09s, user: 0.06s, system: 0.02s, MEM: 22.31 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 24% 10x opt_clean (0 sec), 14% 11x opt_expr (0 sec), ...

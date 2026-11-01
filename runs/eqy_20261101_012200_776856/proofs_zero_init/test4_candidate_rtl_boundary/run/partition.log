@@ -1,0 +1,620 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.test4/$auto$insbuf.cc:97:execute$1133: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$686 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1134: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$686 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1135: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$686 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1136: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$686 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1137: \ena_$lut_A_Y_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$686 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1138: $auto$simplemap.cc:370:simplemap_lut$686 [4] -> $auto$simplemap.cc:370:simplemap_lut$686 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1139: $auto$simplemap.cc:370:simplemap_lut$686 [5] -> $auto$simplemap.cc:370:simplemap_lut$686 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1140: $auto$simplemap.cc:370:simplemap_lut$657 [1] -> $auto$simplemap.cc:370:simplemap_lut$657 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1141: $auto$simplemap.cc:370:simplemap_lut$448 [1] -> $auto$simplemap.cc:370:simplemap_lut$657 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1142: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$724 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1143: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$724 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1144: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$724 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1145: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$724 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1146: $auto$simplemap.cc:370:simplemap_lut$724 [4] -> $auto$simplemap.cc:370:simplemap_lut$724 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1147: 1'1 -> $auto$simplemap.cc:370:simplemap_lut$724 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1148: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$724 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1149: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$781 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1150: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$781 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1151: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$781 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1152: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$781 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1153: $auto$simplemap.cc:370:simplemap_lut$781 [4] -> $auto$simplemap.cc:370:simplemap_lut$781 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1154: $auto$simplemap.cc:370:simplemap_lut$781 [5] -> $auto$simplemap.cc:370:simplemap_lut$781 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1155: \ena_$lut_A_Y_$lut_Y_2_A -> $auto$simplemap.cc:370:simplemap_lut$781 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1156: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$790 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1157: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$790 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1158: $auto$simplemap.cc:370:simplemap_lut$781 [6] -> $auto$simplemap.cc:370:simplemap_lut$790 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1159: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$795 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1160: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$733 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1161: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$733 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1162: $auto$simplemap.cc:370:simplemap_lut$724 [5] -> $auto$simplemap.cc:370:simplemap_lut$733 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1163: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$738 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1164: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$638 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1165: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$638 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1166: \datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$638 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1167: $auto$simplemap.cc:370:simplemap_lut$719 [0] -> $auto$simplemap.cc:370:simplemap_lut$814 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1168: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$529 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1169: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$629 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1170: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$629 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1171: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$629 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1172: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$629 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1173: $auto$simplemap.cc:370:simplemap_lut$638 [2] -> $auto$simplemap.cc:370:simplemap_lut$629 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1174: $auto$simplemap.cc:370:simplemap_lut$629 [4] -> $auto$simplemap.cc:370:simplemap_lut$629 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1175: $auto$simplemap.cc:370:simplemap_lut$629 [5] -> $auto$simplemap.cc:370:simplemap_lut$629 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1176: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$819 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1177: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$819 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1178: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$819 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1179: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$819 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1180: $auto$simplemap.cc:370:simplemap_lut$819 [4] -> $auto$simplemap.cc:370:simplemap_lut$819 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1181: \ena_$lut_A_Y_$lut_Y_3_A -> $auto$simplemap.cc:370:simplemap_lut$819 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1182: $auto$simplemap.cc:370:simplemap_lut$819 [5] -> $auto$simplemap.cc:370:simplemap_lut$819 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1183: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$828 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1184: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$828 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1185: $auto$simplemap.cc:370:simplemap_lut$819 [7] -> $auto$simplemap.cc:370:simplemap_lut$828 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1186: $auto$simplemap.cc:370:simplemap_lut$429 [1] -> $auto$simplemap.cc:370:simplemap_lut$505 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1187: $auto$simplemap.cc:370:simplemap_lut$505 [0] -> $auto$simplemap.cc:370:simplemap_lut$505 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1188: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$833 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1189: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$700 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1190: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$838 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1191: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$838 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1192: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$838 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1193: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$838 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1194: \ena_$lut_A_Y_$lut_Y_4_A -> $auto$simplemap.cc:370:simplemap_lut$838 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1195: $auto$simplemap.cc:370:simplemap_lut$838 [4] -> $auto$simplemap.cc:370:simplemap_lut$838 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1196: $auto$simplemap.cc:370:simplemap_lut$838 [5] -> $auto$simplemap.cc:370:simplemap_lut$838 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1197: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$847 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1198: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$847 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1199: $auto$simplemap.cc:370:simplemap_lut$838 [7] -> $auto$simplemap.cc:370:simplemap_lut$847 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1200: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$852 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1201: $auto$simplemap.cc:370:simplemap_lut$510 [1] -> $auto$simplemap.cc:370:simplemap_lut$624 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1202: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$472 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1203: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$467 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1204: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$467 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1205: $auto$simplemap.cc:370:simplemap_lut$458 [4] -> $auto$simplemap.cc:370:simplemap_lut$467 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1206: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$458 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1207: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$458 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1208: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$458 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1209: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$458 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1210: $auto$simplemap.cc:370:simplemap_lut$467 [2] -> $auto$simplemap.cc:370:simplemap_lut$458 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1211: \ena_$lut_A_A -> $auto$simplemap.cc:370:simplemap_lut$458 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1212: $auto$simplemap.cc:370:simplemap_lut$458 [5] -> $auto$simplemap.cc:370:simplemap_lut$458 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1213: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$857 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1214: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$857 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1215: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$857 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1216: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$857 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1217: \data_dn_dffeas_q_d_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$857 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1218: $auto$simplemap.cc:370:simplemap_lut$857 [4] -> $auto$simplemap.cc:370:simplemap_lut$857 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1219: $auto$simplemap.cc:370:simplemap_lut$857 [5] -> $auto$simplemap.cc:370:simplemap_lut$857 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1220: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$448 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1221: $auto$simplemap.cc:370:simplemap_lut$657 [3] -> $auto$simplemap.cc:370:simplemap_lut$448 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1222: $auto$simplemap.cc:370:simplemap_lut$448 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1223: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1224: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$439 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1225: $auto$simplemap.cc:370:simplemap_lut$439 [2] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1226: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$439 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1227: 1'1 -> $auto$simplemap.cc:370:simplemap_lut$439 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1228: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$439 [7]
+Add gate.test4/$auto$insbuf.cc:97:execute$1229: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$866 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1230: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$866 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1231: $auto$simplemap.cc:370:simplemap_lut$857 [6] -> $auto$simplemap.cc:370:simplemap_lut$866 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1232: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$434 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1233: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$429 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1234: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$429 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1235: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$429 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1236: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$871 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1237: $auto$simplemap.cc:370:simplemap_lut$505 [2] -> $auto$simplemap.cc:370:simplemap_lut$619 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1238: $auto$simplemap.cc:370:simplemap_lut$505 [3] -> $auto$simplemap.cc:370:simplemap_lut$619 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1239: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$695 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1240: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$695 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1241: $auto$simplemap.cc:370:simplemap_lut$686 [7] -> $auto$simplemap.cc:370:simplemap_lut$695 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1242: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$605 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1243: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$600 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1244: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$600 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1245: \only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$600 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1246: \data_dn_dffeas_q.q -> \data_dn
+Add gate.test4/$auto$insbuf.cc:97:execute$1247: 1'0 -> \data_dn_dffeas_q.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1248: 1'0 -> \data_dn_dffeas_q.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1249: \clk -> \data_dn_dffeas_q.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1250: \reset_n -> \data_dn_dffeas_q.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1251: \data_dn_dffeas_q_d -> \data_dn_dffeas_q.d
+Add gate.test4/$auto$insbuf.cc:97:execute$1252: 1'1 -> \data_dn_dffeas_q.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1253: 1'1 -> \data_dn_dffeas_q.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1254: 1'0 -> \data_dn_dffeas_q.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1255: 1'0 -> \data_dn_dffeas_q.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1256: \data_dp_dffeas_q.q -> \data_dp
+Add gate.test4/$auto$insbuf.cc:97:execute$1257: 1'0 -> \data_dp_dffeas_q.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1258: 1'0 -> \data_dp_dffeas_q.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1259: \data_dn_dffeas_q.clk -> \data_dp_dffeas_q.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1260: \data_dn_dffeas_q.clrn -> \data_dp_dffeas_q.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1261: \data_dp_dffeas_q_d -> \data_dp_dffeas_q.d
+Add gate.test4/$auto$insbuf.cc:97:execute$1262: 1'1 -> \data_dp_dffeas_q.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1263: 1'1 -> \data_dp_dffeas_q.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1264: 1'0 -> \data_dp_dffeas_q.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1265: 1'0 -> \data_dp_dffeas_q.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1266: \datain_5bis7_dffeas_q.q -> \datain_5bis7
+Add gate.test4/$auto$insbuf.cc:97:execute$1267: 1'0 -> \datain_5bis7_dffeas_q.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1268: 1'0 -> \datain_5bis7_dffeas_q.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1269: \data_dp_dffeas_q.clk -> \datain_5bis7_dffeas_q.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1270: 1'1 -> \datain_5bis7_dffeas_q.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1271: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$591 [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1272: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$591 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1273: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$591 [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1274: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$591 [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1275: $auto$simplemap.cc:370:simplemap_lut$600 [2] -> $auto$simplemap.cc:370:simplemap_lut$591 [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1276: $auto$simplemap.cc:370:simplemap_lut$591 [4] -> $auto$simplemap.cc:370:simplemap_lut$591 [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1277: $auto$simplemap.cc:370:simplemap_lut$591 [5] -> $auto$simplemap.cc:370:simplemap_lut$591 [6]
+Add gate.test4/$auto$insbuf.cc:97:execute$1278: \data_dp_dffeas_q.clrn -> \datain_5bis7_dffeas_q.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1279: 1'1 -> \datain_5bis7_dffeas_q.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1280: 1'0 -> \datain_5bis7_dffeas_q.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1281: 1'0 -> \datain_5bis7_dffeas_q.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1282: $auto$simplemap.cc:370:simplemap_lut$624 [1] -> $auto$simplemap.cc:370:simplemap_lut$719 [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1283: \dataout_dffeas_q.q -> \dataout [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1284: \dataout_dffeas_q_5.q -> \dataout [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1285: \dataout_dffeas_q_1.q -> \dataout [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1286: \dataout_dffeas_q_2.q -> \dataout [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1287: \dataout_dffeas_q_3.q -> \dataout [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1288: \dataout_dffeas_q_4.q -> \dataout [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1289: 1'0 -> \dataout_dffeas_q.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1290: 1'0 -> \dataout_dffeas_q.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1291: \datain_5bis7_dffeas_q.clk -> \dataout_dffeas_q.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1292: \datain_5bis7_dffeas_q.ena -> \dataout_dffeas_q.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1293: 1'1 -> \dataout_dffeas_q.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1294: 1'1 -> \dataout_dffeas_q.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1295: 1'0 -> \dataout_dffeas_q.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1296: 1'0 -> \dataout_dffeas_q.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1297: 1'0 -> \dataout_dffeas_q_1.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1298: 1'0 -> \dataout_dffeas_q_1.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1299: \dataout_dffeas_q.clk -> \dataout_dffeas_q_1.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1300: \dataout_dffeas_q.clrn -> \dataout_dffeas_q_1.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1301: 1'1 -> \dataout_dffeas_q_1.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1302: 1'1 -> \dataout_dffeas_q_1.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1303: 1'0 -> \dataout_dffeas_q_1.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1304: 1'0 -> \dataout_dffeas_q_1.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1305: 1'0 -> \dataout_dffeas_q_2.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1306: 1'0 -> \dataout_dffeas_q_2.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1307: \dataout_dffeas_q_1.clk -> \dataout_dffeas_q_2.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1308: \dataout_dffeas_q_1.clrn -> \dataout_dffeas_q_2.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1309: 1'1 -> \dataout_dffeas_q_2.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1310: 1'1 -> \dataout_dffeas_q_2.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1311: 1'0 -> \dataout_dffeas_q_2.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1312: 1'0 -> \dataout_dffeas_q_2.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1313: 1'0 -> \dataout_dffeas_q_3.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1314: 1'0 -> \dataout_dffeas_q_3.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1315: \dataout_dffeas_q_2.clk -> \dataout_dffeas_q_3.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1316: \dataout_dffeas_q_2.clrn -> \dataout_dffeas_q_3.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1317: 1'1 -> \dataout_dffeas_q_3.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1318: 1'1 -> \dataout_dffeas_q_3.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1319: 1'0 -> \dataout_dffeas_q_3.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1320: 1'0 -> \dataout_dffeas_q_3.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1321: 1'0 -> \dataout_dffeas_q_4.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1322: 1'0 -> \dataout_dffeas_q_4.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1323: \dataout_dffeas_q_3.clk -> \dataout_dffeas_q_4.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1324: \dataout_dffeas_q_3.clrn -> \dataout_dffeas_q_4.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1325: 1'1 -> \dataout_dffeas_q_4.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1326: 1'1 -> \dataout_dffeas_q_4.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1327: 1'0 -> \dataout_dffeas_q_4.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1328: 1'0 -> \dataout_dffeas_q_4.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1329: 1'0 -> \dataout_dffeas_q_5.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1330: 1'0 -> \dataout_dffeas_q_5.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1331: \dataout_dffeas_q_4.clk -> \dataout_dffeas_q_5.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1332: \dataout_dffeas_q_4.clrn -> \dataout_dffeas_q_5.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1333: 1'1 -> \dataout_dffeas_q_5.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1334: 1'1 -> \dataout_dffeas_q_5.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1335: 1'0 -> \dataout_dffeas_q_5.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1336: 1'0 -> \dataout_dffeas_q_5.sload
+Add gate.test4/$auto$insbuf.cc:97:execute$1337: \dataout_dffeas_q.d -> \ena_$lut_A_Y [0]
+Add gate.test4/$auto$insbuf.cc:97:execute$1338: \dataout_dffeas_q_5.d -> \ena_$lut_A_Y [1]
+Add gate.test4/$auto$insbuf.cc:97:execute$1339: \dataout_dffeas_q_1.d -> \ena_$lut_A_Y [2]
+Add gate.test4/$auto$insbuf.cc:97:execute$1340: \dataout_dffeas_q_2.d -> \ena_$lut_A_Y [3]
+Add gate.test4/$auto$insbuf.cc:97:execute$1341: \dataout_dffeas_q_3.d -> \ena_$lut_A_Y [4]
+Add gate.test4/$auto$insbuf.cc:97:execute$1342: \dataout_dffeas_q_4.d -> \ena_$lut_A_Y [5]
+Add gate.test4/$auto$insbuf.cc:97:execute$1343: \only_5b_$lut_Y_A_dffeas_q.q -> \only_5b_$lut_Y_A
+Add gate.test4/$auto$insbuf.cc:97:execute$1344: 1'0 -> \only_5b_$lut_Y_A_dffeas_q.aload
+Add gate.test4/$auto$insbuf.cc:97:execute$1345: 1'0 -> \only_5b_$lut_Y_A_dffeas_q.asdata
+Add gate.test4/$auto$insbuf.cc:97:execute$1346: \dataout_dffeas_q_5.clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Add gate.test4/$auto$insbuf.cc:97:execute$1347: \dataout_dffeas_q_5.clrn -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Add gate.test4/$auto$insbuf.cc:97:execute$1348: \only_5b_$lut_Y_A_dffeas_q_d -> \only_5b_$lut_Y_A_dffeas_q.d
+Add gate.test4/$auto$insbuf.cc:97:execute$1349: 1'1 -> \only_5b_$lut_Y_A_dffeas_q.ena
+Add gate.test4/$auto$insbuf.cc:97:execute$1350: 1'1 -> \only_5b_$lut_Y_A_dffeas_q.prn
+Add gate.test4/$auto$insbuf.cc:97:execute$1351: 1'0 -> \only_5b_$lut_Y_A_dffeas_q.sclr
+Add gate.test4/$auto$insbuf.cc:97:execute$1352: 1'0 -> \only_5b_$lut_Y_A_dffeas_q.sload
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$1076/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$1072/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1070 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1070 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$1071/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1069/D: \only_5b_$lut_Y_A_dffeas_q_d -> \only_5b_$lut_Y_A_dffeas_q.d
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1067/D: \only_5b_$lut_Y_A_dffeas_q.q -> \only_5b_$lut_Y_A
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$1058/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$1054/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1052 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1052 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$1053/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1051/D: \dataout_dffeas_q_5.d -> \ena_$lut_A_Y [1]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1049/D: \dataout_dffeas_q_5.q -> \dataout [1]
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$1040/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$1036/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1034 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1034 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$1035/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1033/D: \dataout_dffeas_q_4.d -> \ena_$lut_A_Y [5]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1031/D: \dataout_dffeas_q_4.q -> \dataout [5]
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$1022/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$1018/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1016 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1016 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$1017/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1015/D: \dataout_dffeas_q_3.d -> \ena_$lut_A_Y [4]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$1013/D: \dataout_dffeas_q_3.q -> \dataout [4]
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$1004/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$1000/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$998 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$998 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$999/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$997/D: \dataout_dffeas_q_2.d -> \ena_$lut_A_Y [3]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$995/D: \dataout_dffeas_q_2.q -> \dataout [3]
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$986/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$982/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$980 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$980 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$981/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$979/D: \dataout_dffeas_q_1.d -> \ena_$lut_A_Y [2]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$977/D: \dataout_dffeas_q_1.q -> \dataout [2]
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$968/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$964/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$962 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$962 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$963/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$961/D: \dataout_dffeas_q.d -> \ena_$lut_A_Y [0]
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$959/D: \dataout_dffeas_q.q -> \dataout [0]
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$954/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$952 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$952 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$953/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$949/D: \datain_5bis7_dffeas_q.q -> \datain_5bis7
+Rewrite gate.test4/$auto$ff.cc:597:unmap_ce$946/S: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$ff.cc:597:unmap_ce$946/A: \datain_5bis7_dffeas_q.q -> \datain_5bis7
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$936/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$932/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$930 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$930 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$931/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$929/D: \data_dp_dffeas_q_d -> \data_dp_dffeas_q.d
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$927/D: \data_dp_dffeas_q.q -> \data_dp
+Rewrite gate.test4/$auto$clk2fflogic.cc:69:sample_control$918/A: \reset_n -> \only_5b_$lut_Y_A_dffeas_q.clrn
+Rewrite gate.test4/$auto$clk2fflogic.cc:93:sample_control_edge$914/A: { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$912 \clk } -> { $auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$912 \only_5b_$lut_Y_A_dffeas_q.clk }
+Rewrite gate.test4/$auto$clk2fflogic.cc:90:sample_control_edge$913/D: \clk -> \only_5b_$lut_Y_A_dffeas_q.clk
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$911/D: \data_dn_dffeas_q_d -> \data_dn_dffeas_q.d
+Rewrite gate.test4/$auto$clk2fflogic.cc:106:sample_data$909/D: \data_dn_dffeas_q.q -> \data_dn
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$797/A: $auto$simplemap.cc:370:simplemap_lut$781 [4] -> $auto$simplemap.cc:370:simplemap_lut$790 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$835/A: $auto$simplemap.cc:370:simplemap_lut$819 [4] -> $auto$simplemap.cc:370:simplemap_lut$828 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$663/B: $auto$simplemap.cc:370:simplemap_lut$657 [1] -> $auto$simplemap.cc:370:simplemap_lut$657 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$659/B: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$599/A: \only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$591 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$717/A: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$455/A: $auto$simplemap.cc:370:simplemap_lut$448 [1] -> $auto$simplemap.cc:370:simplemap_lut$448 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$454/B: $auto$simplemap.cc:370:simplemap_lut$448 [1] -> $auto$simplemap.cc:370:simplemap_lut$448 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$454/A: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$451/A: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$566/B: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$566/A: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$664/B: $auto$simplemap.cc:370:simplemap_lut$448 [1] -> $auto$simplemap.cc:370:simplemap_lut$448 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$664/A: $auto$simplemap.cc:370:simplemap_lut$657 [1] -> $auto$simplemap.cc:370:simplemap_lut$657 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$565/B: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$720/A: $auto$simplemap.cc:370:simplemap_lut$429 [1] -> $auto$simplemap.cc:370:simplemap_lut$619 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$693/A: \ena_$lut_A_Y_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$695 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$607/A: \only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$591 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$740/A: $auto$simplemap.cc:370:simplemap_lut$724 [4] -> $auto$simplemap.cc:370:simplemap_lut$733 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$865/A: \data_dn_dffeas_q_d_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$866 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$649/A: \datain [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [4]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$827/A: \ena_$lut_A_Y_$lut_Y_3_A -> $auto$simplemap.cc:370:simplemap_lut$819 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$435/B: $auto$simplemap.cc:370:simplemap_lut$429 [1] -> $auto$simplemap.cc:370:simplemap_lut$619 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$642/S: \datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$629 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$642/A: \datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$629 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$637/A: \datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$629 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$794/S: \ena_$lut_A_Y_$lut_Y_2_A -> $auto$simplemap.cc:370:simplemap_lut$781 [7]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$794/B: \ena_$lut_A_Y_$lut_Y_2_A -> $auto$simplemap.cc:370:simplemap_lut$781 [7]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$794/A: $auto$simplemap.cc:370:simplemap_lut$781 [4] -> $auto$simplemap.cc:370:simplemap_lut$790 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$854/A: \ena_$lut_A_Y_$lut_Y_4_A -> $auto$simplemap.cc:370:simplemap_lut$847 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$471/B: $auto$simplemap.cc:370:simplemap_lut$458 [4] -> $auto$simplemap.cc:370:simplemap_lut$458 [7]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$471/A: \ena_$lut_A_A -> $auto$simplemap.cc:370:simplemap_lut$458 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$845/A: \ena_$lut_A_Y_$lut_Y_4_A -> $auto$simplemap.cc:370:simplemap_lut$847 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$658/A: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$587/A: $auto$simplemap.cc:370:simplemap_lut$505 [0] -> $auto$simplemap.cc:370:simplemap_lut$619 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$466/A: \ena_$lut_A_A -> $auto$simplemap.cc:370:simplemap_lut$458 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$759/B: $auto$simplemap.cc:370:simplemap_lut$505 [0] -> $auto$simplemap.cc:370:simplemap_lut$619 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$759/A: $auto$simplemap.cc:370:simplemap_lut$429 [1] -> $auto$simplemap.cc:370:simplemap_lut$619 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$873/A: \data_dn_dffeas_q_d_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$866 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$409/A: \only_5b_$lut_Y_A_dffeas_q.q -> \only_5b_$lut_Y_A
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$702/A: \ena_$lut_A_Y_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$695 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$682/A: $auto$simplemap.cc:370:simplemap_lut$505 [0] -> $auto$simplemap.cc:370:simplemap_lut$619 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$775/B: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$851/B: \ena_$lut_A_Y_$lut_Y_4_A -> $auto$simplemap.cc:370:simplemap_lut$847 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$812/A: $auto$simplemap.cc:370:simplemap_lut$439 [0] -> $auto$simplemap.cc:370:simplemap_lut$439 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$786/A: \ena_$lut_A_Y_$lut_Y_2_A -> $auto$simplemap.cc:370:simplemap_lut$781 [7]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$604/A: \only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$591 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$474/A: $auto$simplemap.cc:370:simplemap_lut$458 [4] -> $auto$simplemap.cc:370:simplemap_lut$458 [7]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$571/B: $auto$simplemap.cc:370:simplemap_lut$510 [1] -> $auto$simplemap.cc:370:simplemap_lut$624 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$832/B: $auto$simplemap.cc:370:simplemap_lut$819 [4] -> $auto$simplemap.cc:370:simplemap_lut$828 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$832/A: \ena_$lut_A_Y_$lut_Y_3_A -> $auto$simplemap.cc:370:simplemap_lut$819 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$645/A: \datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$629 [6]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$894/A: $auto$simplemap.cc:370:simplemap_lut$719 [0] -> $auto$simplemap.cc:370:simplemap_lut$814 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$761/B: $auto$simplemap.cc:370:simplemap_lut$510 [1] -> $auto$simplemap.cc:370:simplemap_lut$624 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$723/B: $auto$simplemap.cc:370:simplemap_lut$624 [1] -> $auto$simplemap.cc:370:simplemap_lut$719 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$723/A: $auto$simplemap.cc:370:simplemap_lut$719 [0] -> $auto$simplemap.cc:370:simplemap_lut$814 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$818/A: $auto$simplemap.cc:370:simplemap_lut$719 [0] -> $auto$simplemap.cc:370:simplemap_lut$814 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$699/B: \ena_$lut_A_Y_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$695 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$870/S: \data_dn_dffeas_q_d_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$866 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$870/A: \data_dn_dffeas_q_d_$lut_Y_A -> $auto$simplemap.cc:370:simplemap_lut$866 [2]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$628/B: $auto$simplemap.cc:370:simplemap_lut$624 [1] -> $auto$simplemap.cc:370:simplemap_lut$719 [1]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$628/A: $auto$simplemap.cc:370:simplemap_lut$510 [1] -> $auto$simplemap.cc:370:simplemap_lut$624 [0]
+Rewrite gate.test4/$auto$simplemap.cc:372:simplemap_lut$514/B: $auto$simplemap.cc:370:simplemap_lut$510 [1] -> $auto$simplemap.cc:370:simplemap_lut$624 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1353: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1354: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1355: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1356: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1357: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [4]
+Add gold.test4/$auto$insbuf.cc:97:execute$1358: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1359: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1360: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [7]
+Add gold.test4/$auto$insbuf.cc:97:execute$1361: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [9]
+Add gold.test4/$auto$insbuf.cc:97:execute$1362: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1363: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1364: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1365: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1366: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [4] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1367: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1368: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [7]
+Add gold.test4/$auto$insbuf.cc:97:execute$1369: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Add gold.test4/$auto$insbuf.cc:97:execute$1370: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1371: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1372: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1373: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1374: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Add gold.test4/$auto$insbuf.cc:97:execute$1375: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1376: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1377: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [8]
+Add gold.test4/$auto$insbuf.cc:97:execute$1378: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1379: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1380: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1381: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [4]
+Add gold.test4/$auto$insbuf.cc:97:execute$1382: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [8]
+Add gold.test4/$auto$insbuf.cc:97:execute$1383: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1384: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1385: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1386: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1387: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1388: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1389: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Add gold.test4/$auto$insbuf.cc:97:execute$1390: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1391: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1392: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1393: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [4]
+Add gold.test4/$auto$insbuf.cc:97:execute$1394: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1395: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1396: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [8] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [8]
+Add gold.test4/$auto$insbuf.cc:97:execute$1397: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [8] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [9]
+Add gold.test4/$auto$insbuf.cc:97:execute$1398: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1399: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1400: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1401: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1402: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1403: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1404: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$49 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1405: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$49 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1406: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$49 [5]
+Add gold.test4/$auto$insbuf.cc:97:execute$1407: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$48 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1408: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [0]
+Add gold.test4/$auto$insbuf.cc:97:execute$1409: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [1]
+Add gold.test4/$auto$insbuf.cc:97:execute$1410: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1411: 1'0 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [3]
+Add gold.test4/$auto$insbuf.cc:97:execute$1412: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [4]
+Add gold.test4/$auto$insbuf.cc:97:execute$1413: 1'1 -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [6]
+Add gold.test4/$auto$insbuf.cc:97:execute$1414: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [7]
+Add gold.test4/$auto$insbuf.cc:97:execute$1415: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Add gold.test4/$auto$insbuf.cc:97:execute$1416: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Add gold.test4/$auto$insbuf.cc:97:execute$1417: 1'x -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$48 [2]
+Add gold.test4/$auto$insbuf.cc:97:execute$1418: 1'x -> $auto$proc_rom.cc:154:do_switch$4 [2]
+Rewrite gold.test4/$auto$ff.cc:617:unmap_srst$678/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [5]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$328/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$328/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$336/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$336/B: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$336/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$240/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$240/B: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$240/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$239/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$239/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$239/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$238/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$290/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [8] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$236/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$236/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$235/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$235/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$318/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$318/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$257/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$257/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$257/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$229/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$229/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$288/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$380/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$380/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$256/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$256/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$255/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$255/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$255/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$287/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [5]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$223/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$223/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$223/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$220/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$220/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$285/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$285/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [0]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$254/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$254/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$216/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$216/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [2]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$216/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [6]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$253/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$253/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$322/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$322/B: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$282/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [0]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$251/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$251/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [2]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$398/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$269/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [8] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$268/B: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$267/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$346/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$346/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$265/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51 [6] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [4]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$264/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$264/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$320/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$320/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$371/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$371/B: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$341/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$341/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$262/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54 [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$221/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$221/B: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$365/S: \datain [1] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$365/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [5] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [9]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$365/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$241/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$258/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$258/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [9] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$270/A: \datain [0] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69 [8]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$252/S: \datain [2] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55 [7]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$252/B: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [7] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [3]
+Rewrite gold.test4/$auto$simplemap.cc:298:simplemap_mux$252/A: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57 [3] -> $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58 [2]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.test4 / gate.test4.
+
+3.1.1. Processing matched IDs for module test4.
+
+3.1.2. Create fragment partitions for module test4.
+Adding output bit \data_dn to partition 0.
+Adding output bit \data_dp to partition 0.
+Adding output bit \datain_5bis7 to partition 0.
+Adding output bit \dataout [0] to partition 0.
+Adding output bit \dataout [1] to partition 0.
+Adding output bit \dataout [2] to partition 0.
+Adding output bit \dataout [3] to partition 0.
+Adding output bit \dataout [4] to partition 0.
+Adding output bit \dataout [5] to partition 0.
+Adding output bit \only_5b to partition 0.
+
+Final list of fragment partitions:
+  0 \only_5b \dataout [5] \dataout [4] \dataout [3] \dataout [2] \dataout [1] \dataout [0] \datain_5bis7 \data_dp \data_dn <= \datain [0] \datain [1] \datain [2] \datain [3] \datain [4] \ena \clk \reset_n
+
+3.1.3. Execute partitioning commands for module test4.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'data_dn' using a PO name: data_dn
+
+Partition Summary:
+  Fragments:
+       0: \dataout, \data_dn, \data_dp, \only_5b, \datain_5bis7
+  Partitions:
+       0: data_dn
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  data_dn
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module test4.
+Adding non-output bit \reset_n to partition 1.
+Adding output bit \only_5b to partition 1.
+Adding non-output bit \ena to partition 1.
+Adding output bit \dataout [5] to partition 1.
+Adding output bit \dataout [4] to partition 1.
+Adding output bit \dataout [3] to partition 1.
+Adding output bit \dataout [2] to partition 1.
+Adding output bit \dataout [1] to partition 1.
+Adding output bit \dataout [0] to partition 1.
+Adding output bit \datain_5bis7 to partition 1.
+Adding non-output bit \datain [4] to partition 1.
+Adding non-output bit \datain [3] to partition 1.
+Adding non-output bit \datain [2] to partition 1.
+Adding non-output bit \datain [1] to partition 1.
+Adding non-output bit \datain [0] to partition 1.
+Adding output bit \data_dp to partition 1.
+Adding output bit \data_dn to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as test4.data_dn.
+  partition pi bit 0: \datain [0] <-> \datain [0]
+  partition pi bit 1: \datain [1] <-> \datain [1]
+  partition pi bit 2: \datain [2] <-> \datain [2]
+  partition pi bit 3: \datain [3] <-> \datain [3]
+  partition pi bit 4: \datain [4] <-> \datain [4]
+  partition pi bit 5: \ena <-> \ena
+  partition pi bit 6: \clk <-> \clk
+  partition pi bit 7: \reset_n <-> \reset_n
+  partition po bit 0: \only_5b <-> \only_5b
+  partition po bit 1: \dataout [5] <-> \dataout [5]
+  partition po bit 2: \dataout [4] <-> \dataout [4]
+  partition po bit 3: \dataout [3] <-> \dataout [3]
+  partition po bit 4: \dataout [2] <-> \dataout [2]
+  partition po bit 5: \dataout [1] <-> \dataout [1]
+  partition po bit 6: \dataout [0] <-> \dataout [0]
+  partition po bit 7: \datain_5bis7 <-> \datain_5bis7
+  partition po bit 8: \data_dp <-> \data_dp
+  partition po bit 9: \data_dn <-> \data_dn
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/test4.data_dn.il
+<suppressed ~4877 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.test4.data_dn...
+Checking module gold.test4.data_dn...
+Found and reported 0 problems.
+
+Writing partition 1 as test4.
+  partition pi bit 0: \datain [0] <-> \datain [0]
+  partition pi bit 1: \datain [1] <-> \datain [1]
+  partition pi bit 2: \datain [2] <-> \datain [2]
+  partition pi bit 3: \datain [3] <-> \datain [3]
+  partition pi bit 4: \datain [4] <-> \datain [4]
+  partition pi bit 5: \ena <-> \ena
+  partition pi bit 6: \clk <-> \clk
+  partition pi bit 7: \reset_n <-> \reset_n
+  partition po bit 0: \data_dn <-> \data_dn
+  partition po bit 1: \data_dp <-> \data_dp
+  partition po bit 2: \datain_5bis7 <-> \datain_5bis7
+  partition po bit 3: \dataout [0] <-> \dataout [0]
+  partition po bit 4: \dataout [1] <-> \dataout [1]
+  partition po bit 5: \dataout [2] <-> \dataout [2]
+  partition po bit 6: \dataout [3] <-> \dataout [3]
+  partition po bit 7: \dataout [4] <-> \dataout [4]
+  partition po bit 8: \dataout [5] <-> \dataout [5]
+  partition po bit 9: \only_5b <-> \only_5b
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/test4.il
+<suppressed ~2428 debug messages>
+
+End of script. Logfile hash: f93cf4d7f5, time: 0.01s, user: 0.00s, system: 0.01s, MEM: 18.75 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 56% 1x eqy_partition (0 sec), 13% 1x insbuf (0 sec), ...

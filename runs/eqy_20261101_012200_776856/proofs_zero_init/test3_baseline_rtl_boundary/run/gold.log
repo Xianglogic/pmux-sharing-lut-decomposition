@@ -1,0 +1,467 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_rtl_boundary/run/gold.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test3/test3/test3.v
+Parsing SystemVerilog input from `inputs/test3/test3/test3.v' to AST representation.
+Generating RTLIL representation for module `\test3'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test3
+
+2.2. Analyzing design hierarchy..
+Top module:  \test3
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/test3/test3/test3.v:28$1 in module test3.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~4 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test3.$proc$inputs/test3/test3/test3.v:28$1'.
+     1/6: $0\gpioout[7:0] [3:1]
+     2/6: $0\gpioout[7:0] [0]
+     3/6: $0\gpioout[7:0] [7:4]
+     4/6: $0\sr[7:0] [0]
+     5/6: $0\sr[7:0] [7:1]
+     6/6: $0\sr_out[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test3.\sr_out' using process `\test3.$proc$inputs/test3/test3/test3.v:28$1'.
+  created $dff cell `$procdff$37' with positive edge clock.
+Creating register for signal `\test3.\gpioout' using process `\test3.$proc$inputs/test3/test3/test3.v:28$1'.
+  created $dff cell `$procdff$38' with positive edge clock.
+Creating register for signal `\test3.\sr' using process `\test3.$proc$inputs/test3/test3/test3.v:28$1'.
+  created $dff cell `$procdff$39' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `\test3.$proc$inputs/test3/test3/test3.v:28$1'.
+Removing empty process `test3.$proc$inputs/test3/test3/test3.v:28$1'.
+Cleaned up 4 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+<suppressed ~6 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing PREP pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \test3
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \test3
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.3. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+5.4. Executing FLATTEN pass (flatten design).
+
+5.5. Executing FUTURE pass.
+
+5.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.7. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+5.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 1 unused cells and 18 unused wires.
+<suppressed ~2 debug messages>
+
+5.9. Executing OPT pass (performing simple optimizations).
+
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 22 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 18 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $procmux$15: { \sr [7] \sr [3] \gpioout [0] } -> { 1'1 \sr [3] \gpioout [0] }
+      Replacing known input bits on port B of cell $procmux$24: { \sr [0] \sr [1] \sr [2] \sr [3] \sr [4] \sr [5] \sr [6] \sr [7] } -> { \sr [0] \sr [1] \sr [2] \sr [3] \sr [4] \sr [5] \sr [6] 1'1 }
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test3.
+Performed a total of 0 changes.
+
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 18 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Removed a total of 0 cells.
+
+5.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+5.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+5.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test3.
+Performed a total of 0 changes.
+
+5.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 18 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Removed a total of 0 cells.
+
+5.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+
+5.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+5.10. Executing WREDUCE pass (reducing word size of cells).
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+
+5.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 18 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Removed a total of 0 cells.
+
+5.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+
+5.13.4. Finished fast OPT passes.
+
+5.14. Executing SORT pass.
+
+5.15. Printing statistics.
+
+=== test3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+       57 wire bits
+        7 public wires
+       21 public wire bits
+        5 ports
+       12 port bits
+       18 cells
+        3   $dff
+        3   $eq
+        9   $mux
+        3   $pmux
+
+5.16. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+6. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~95 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+<suppressed ~26 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 121 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 110 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 106 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 105 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+<suppressed ~48 debug messages>
+Removed a total of 16 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test3.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 105 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $auto$ff.cc:337:slice$292 ($_DFF_P_) from module test3 (D = \sr [6], Q = \sr [7]).
+Adding EN signal on $auto$ff.cc:337:slice$284 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$232, Q = \gpioout [7]).
+Adding EN signal on $auto$ff.cc:337:slice$276 ($_DFF_P_) from module test3 (D = \sr [7], Q = \sr_out).
+Adding EN signal on $auto$ff.cc:337:slice$285 ($_DFF_P_) from module test3 (D = \sr_in, Q = \sr [0]).
+Adding EN signal on $auto$ff.cc:337:slice$277 ($_DFF_P_) from module test3 (D = $procmux$15_Y, Q = \gpioout [0]).
+Adding EN signal on $auto$ff.cc:337:slice$278 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$117, Q = \gpioout [1]).
+Adding EN signal on $auto$ff.cc:337:slice$279 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$124, Q = \gpioout [2]).
+Adding EN signal on $auto$ff.cc:337:slice$280 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$131, Q = \gpioout [3]).
+Adding EN signal on $auto$ff.cc:337:slice$287 ($_DFF_P_) from module test3 (D = \sr [1], Q = \sr [2]).
+Adding EN signal on $auto$ff.cc:337:slice$281 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$211, Q = \gpioout [4]).
+Adding EN signal on $auto$ff.cc:337:slice$282 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$218, Q = \gpioout [5]).
+Adding EN signal on $auto$ff.cc:337:slice$283 ($_DFF_P_) from module test3 (D = $auto$simplemap.cc:189:logic_reduce$225, Q = \gpioout [6]).
+Adding EN signal on $auto$ff.cc:337:slice$286 ($_DFF_P_) from module test3 (D = \sr [0], Q = \sr [1]).
+Adding EN signal on $auto$ff.cc:337:slice$288 ($_DFF_P_) from module test3 (D = \sr [2], Q = \sr [3]).
+Adding EN signal on $auto$ff.cc:337:slice$289 ($_DFF_P_) from module test3 (D = \sr [3], Q = \sr [4]).
+Adding EN signal on $auto$ff.cc:337:slice$290 ($_DFF_P_) from module test3 (D = \sr [4], Q = \sr [5]).
+Adding EN signal on $auto$ff.cc:337:slice$291 ($_DFF_P_) from module test3 (D = \sr [5], Q = \sr [6]).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 32 unused cells and 35 unused wires.
+<suppressed ~33 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test3.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 88 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 83 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Computing hashes of 78 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+8.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test3.
+Performed a total of 0 changes.
+
+8.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test3'.
+Computing hashes of 78 cells of `\test3'.
+Finding duplicate cells in `\test3'.
+Removed a total of 0 cells.
+
+8.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+
+8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test3.
+
+8.23. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+9.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing test3.$auto$ff.cc:337:slice$389 ($_DFFE_PN_): CLK=\clk, D=\sr [0], Q=\sr [1]
+Replacing test3.$auto$ff.cc:337:slice$382 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$225, Q=\gpioout [6]
+Replacing test3.$auto$ff.cc:337:slice$375 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$218, Q=\gpioout [5]
+Replacing test3.$auto$ff.cc:337:slice$368 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$211, Q=\gpioout [4]
+Replacing test3.$auto$ff.cc:337:slice$367 ($_DFFE_PN_): CLK=\clk, D=\sr [1], Q=\sr [2]
+Replacing test3.$auto$ff.cc:337:slice$360 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$131, Q=\gpioout [3]
+Replacing test3.$auto$ff.cc:337:slice$353 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$124, Q=\gpioout [2]
+Replacing test3.$auto$ff.cc:337:slice$346 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$117, Q=\gpioout [1]
+Replacing test3.$auto$ff.cc:337:slice$341 ($_DFFE_PP_): CLK=\clk, D=$procmux$15_Y, Q=\gpioout [0]
+Replacing test3.$auto$ff.cc:337:slice$340 ($_DFFE_PN_): CLK=\clk, D=\sr_in, Q=\sr [0]
+Replacing test3.$auto$ff.cc:337:slice$393 ($_DFFE_PN_): CLK=\clk, D=\sr [5], Q=\sr [6]
+Replacing test3.$auto$ff.cc:337:slice$392 ($_DFFE_PN_): CLK=\clk, D=\sr [4], Q=\sr [5]
+Replacing test3.$auto$ff.cc:337:slice$390 ($_DFFE_PN_): CLK=\clk, D=\sr [2], Q=\sr [3]
+Replacing test3.$auto$ff.cc:337:slice$339 ($_DFFE_PN_): CLK=\clk, D=\sr [7], Q=\sr_out
+Replacing test3.$auto$ff.cc:337:slice$332 ($_DFFE_PP_): CLK=\clk, D=$auto$simplemap.cc:189:logic_reduce$232, Q=\gpioout [7]
+Replacing test3.$auto$ff.cc:337:slice$331 ($_DFFE_PN_): CLK=\clk, D=\sr [6], Q=\sr [7]
+Replacing test3.$auto$ff.cc:337:slice$391 ($_DFFE_PN_): CLK=\clk, D=\sr [3], Q=\sr [4]
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_rtl_boundary/run/gold.il
+
+End of script. Logfile hash: 3aaa3f50ff, time: 0.02s, user: 0.01s, system: 0.01s, MEM: 20.44 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 48% 3x read_verilog (0 sec), 12% 10x opt_clean (0 sec), ...

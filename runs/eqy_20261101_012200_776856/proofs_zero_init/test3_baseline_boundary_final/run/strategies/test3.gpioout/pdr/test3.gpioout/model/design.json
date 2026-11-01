@@ -1,0 +1,3893 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "miter",
+        "cell_sorts": [
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2555",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2555"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2562",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2562"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2569",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2569"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2557",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2564",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2571",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$xnor",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2599",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2607",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2615",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2623",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2631",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2639",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2647",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2655",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2663",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2601",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2609",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2617",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2625",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2633",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2641",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2649",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2657",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2665",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2578",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2585",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2592",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2580",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2587",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2594",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2603",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2611",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2619",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2627",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2635",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2643",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2651",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2659",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2667",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$_NOT_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1297",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1357",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1553",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$815",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$832",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$896",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2582",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2589",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2596",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assert_flatten___po_gpioout__assert__assert________________partitions_test3_gpioout_sv_73_2540",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_flatten___po_gpioout__assert__assert________________partitions_test3_gpioout_sv_73_2540",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "../../../../../partitions/test3.gpioout.sv:73.37-73.49"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assert_flatten___po_sr_out__assert__assert________________partitions_test3_gpioout_sv_73_2505",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_flatten___po_sr_out__assert__assert________________partitions_test3_gpioout_sv_73_2505",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "../../../../../partitions/test3.gpioout.sv:73.37-73.49"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2514",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2518",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2522",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2526",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2530",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2534",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_and$../../../../../partitions/test3.gpioout.sv:70$2538",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.14-70.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2556",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2563",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2570",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2576",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2583",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2590",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2597",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2605",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2613",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2621",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2629",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2637",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2645",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2653",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2661",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2669",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2671",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2673",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2675",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2509",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2513",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2517",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2521",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2525",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2529",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2533",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2537",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_sr_out__assert.$logic_or$../../../../../partitions/test3.gpioout.sv:70$2502",
+                  "attributes": {
+                    "src": "../../../../../partitions/test3.gpioout.sv:70.23-70.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2508",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2512",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2516",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2520",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2524",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2528",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2532",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_gpioout__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2536",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_sr_out__assert.$eqx$../../../../../partitions/test3.gpioout.sv:70$2501",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1620",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1632",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1644",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1656",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1668",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1682",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1694",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1706",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1718",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1730",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1742",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1754",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1766",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1778",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1790",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1802",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:93:sample_control_edge$1814",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1011",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1023",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1035",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1047",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1061",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1073",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1085",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1097",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1109",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1121",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1133",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1145",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1157",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1169",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1181",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1193",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:93:sample_control_edge$1207",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$_FF_",
+            "ports": [
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1615",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1617",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1627",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1629",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1639",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1641",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1651",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1653",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1663",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1665",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1677",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1679",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1689",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1691",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1701",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1703",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1713",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1715",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1725",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1727",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1737",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1739",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1749",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1751",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1761",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1763",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1773",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1775",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1785",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1787",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1797",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1799",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1809",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:106:sample_data$1811",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1619",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1631",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1643",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1655",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1667",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1681",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1693",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1705",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1717",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1729",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1741",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1753",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1765",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1777",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1789",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1801",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:90:sample_control_edge$1813",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1006",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1008",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1018",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1020",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1030",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1032",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1042",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1044",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1056",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1058",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1068",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1070",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1080",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1082",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1092",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1094",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1104",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1106",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1116",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1118",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1128",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1130",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1140",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1142",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1152",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1154",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1164",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1166",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1176",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1178",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1188",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1190",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1202",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:106:sample_data$1204",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1010",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1022",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1034",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1046",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1060",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1072",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1084",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1096",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1108",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1120",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1132",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1144",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1156",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1168",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1180",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1192",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:90:sample_control_edge$1206",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$_MUX_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1622",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1634",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1646",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1658",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1670",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1684",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1696",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1708",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1720",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1732",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1744",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1756",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1768",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1780",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1792",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1804",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$clk2fflogic.cc:121:mux$1816",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1612",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1624",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1636",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1648",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1660",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1674",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1686",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:597:unmap_ce$1806",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1698",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1710",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1722",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1734",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1746",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1758",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1770",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1782",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:599:unmap_ce$1794",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:617:unmap_srst$1610",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$ff.cc:619:unmap_srst$1672",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1007",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1039",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1059",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1079",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1111",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1131",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1175",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1215",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1235",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1251",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1271",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1311",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1319",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1335",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1367",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1387",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1399",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1439",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1459",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1463",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1503",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1527",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1567",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1583",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1013",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1025",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1037",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1049",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1063",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1075",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1087",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1099",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1111",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1123",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1135",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1147",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1159",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1171",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1183",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1195",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$clk2fflogic.cc:121:mux$1209",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1003",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1015",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1027",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1039",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1053",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1065",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1173",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:597:unmap_ce$1199",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1077",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1089",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1101",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1113",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1125",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1137",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1149",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1161",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:599:unmap_ce$1185",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:617:unmap_srst$1197",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$ff.cc:619:unmap_srst$1051",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$796",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$800",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$803",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$808",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$821",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$825",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$827",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$839",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$843",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$846",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$865",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$868",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$870",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$887",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$889",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$902",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$906",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$908",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$915",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$918",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$928",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$942",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$945",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$947",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$scopeinfo",
+            "ports": [
+
+            ],
+            "cells": [
+                {
+                  "name": "__po_gpioout__assert",
+                  "attributes": {
+                    "cell_src": "../../../../../partitions/test3.gpioout.sv:43.33-43.99",
+                    "module": "$paramod$a769009af63a4a765f4b4241ea056b727873f867\\miter_cmp_prop",
+                    "module_dynports": "00000000000000000000000000000001",
+                    "module_hdlname": "miter_cmp_prop",
+                    "module_keep": "00000000000000000000000000000001",
+                    "module_src": "../../../../../partitions/test3.gpioout.sv:64.1-77.10"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                },
+                {
+                  "name": "__po_sr_out__assert",
+                  "attributes": {
+                    "cell_src": "../../../../../partitions/test3.gpioout.sv:44.33-44.96",
+                    "module": "$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\\miter_cmp_prop",
+                    "module_dynports": "00000000000000000000000000000001",
+                    "module_hdlname": "miter_cmp_prop",
+                    "module_keep": "00000000000000000000000000000001",
+                    "module_src": "../../../../../partitions/test3.gpioout.sv:64.1-77.10"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                },
+                {
+                  "name": "gate",
+                  "attributes": {
+                    "cell_module_not_derived": "00000000000000000000000000000001",
+                    "cell_src": "../../../../../partitions/test3.gpioout.sv:23.23-32.4",
+                    "module": "gate.test3.gpioout"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                },
+                {
+                  "name": "gold",
+                  "attributes": {
+                    "cell_module_not_derived": "00000000000000000000000000000001",
+                    "cell_src": "../../../../../partitions/test3.gpioout.sv:13.23-22.4",
+                    "module": "gold.test3.gpioout"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "../../../../../partitions/test3.gpioout.sv:1.1-63.10"
+        }
+      }
+  ]
+}

@@ -1,0 +1,631 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `miter'. Setting top module to miter.
+
+2.1. Analyzing design hierarchy..
+Top module:  \miter
+
+2.2. Analyzing design hierarchy..
+Top module:  \miter
+Removed 0 unused modules.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~317 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2341 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2320 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~63 debug messages>
+Removed a total of 21 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2320 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10030 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10028
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10027
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10073 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10071
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10070
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10232 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10230
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10229
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10323 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10321
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10320
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10481 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10479
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10478
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10698 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10696
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10695
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10722 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10720
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10719
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10741 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10739
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10738
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10789 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10787
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10786
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10984 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10982
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$10981
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11004 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11002
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11001
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11138 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11136
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11135
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11176 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11174
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11173
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11200 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11198
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11197
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11238 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11236
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11235
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11262 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11260
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11259
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11286 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11284
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11283
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11362 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11360
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11359
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11568 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11566
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11565
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11707 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11705
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11704
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11717 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11715
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11714
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11800 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11798
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11797
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11905 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11903
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11902
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11943 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11941
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11940
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12064 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12062
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12061
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12083 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12081
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12080
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12141 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12139
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12138
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12160 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12158
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12157
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12208 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12206
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12205
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12415 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12413
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12412
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12453 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12451
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12450
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12491 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12489
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12488
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12553 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12551
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12550
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12592 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12590
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12589
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12670 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12668
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12667
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12689 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12687
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12686
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12708 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12706
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12705
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12718 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12716
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12715
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12776 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12774
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12773
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12876 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12874
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12873
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12952 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12950
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$12949
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13077 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13075
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13074
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13150 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13148
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13147
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13198 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13196
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13195
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13217 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13215
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13214
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13289 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13287
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13286
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13564 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13562
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13561
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13698 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13696
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13695
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13752 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13750
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$13749
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8327 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8325
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8324
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8365 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8363
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8362
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8384 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8382
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8381
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8457 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8455
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8454
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8472 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8470
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8469
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8558 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8556
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8555
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8665 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8663
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8662
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8800 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8798
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8797
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8844 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8842
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8841
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8974 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8972
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$8971
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9079 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9077
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9076
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9127 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9125
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9124
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9246 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9244
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9243
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9289 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9287
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9286
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9323 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9321
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9320
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9352 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9350
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9349
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9371 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9369
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9368
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9743 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9741
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9740
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9762 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9760
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9759
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9878 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9876
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$9875
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 72 unused wires.
+<suppressed ~1 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~69 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~138 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2251 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $auto$opt_share.cc:244:merge_operators$15610 in front of them:
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11233
+        $flatten\gate.$auto$simplemap.cc:372:simplemap_lut$11231
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 70 unused wires.
+<suppressed ~1 debug messages>
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~1 debug messages>
+
+6.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~138 debug messages>
+
+6.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2250 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.22. Executing OPT_SHARE pass.
+
+6.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+6.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+6.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~138 debug messages>
+
+6.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2250 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.30. Executing OPT_SHARE pass.
+
+6.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+6.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+6.34. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~180 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~200 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 2312 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 2263 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~145 debug messages>
+Removed a total of 49 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 13 unused cells and 79 unused wires.
+<suppressed ~14 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing AIGMAP pass (map logic to AIG).
+Module miter: replaced 1433 cells with 9086 new cells, skipped 817 cells.
+  replaced 3 cell types:
+     921 $_MUX_
+     315 $_OR_
+     197 $_XOR_
+  not replaced 7 cell types:
+     609 $_AND_
+      49 $_FF_
+     153 $_NOT_
+       1 $anyseq
+       1 $assert
+       1 $assume
+       3 $scopeinfo
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 943 unused wires.
+<suppressed ~1 debug messages>
+
+15. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     9820 wires
+    10990 wire bits
+      482 public wires
+     1018 public wire bits
+        5 ports
+       61 port bits
+     9903 cells
+     4278   $_AND_
+       49   $_FF_
+     5570   $_NOT_
+        1   $anyseq
+        1   $assert
+        1   $assume
+        3   $scopeinfo
+
+16. Executing AIGER backend.
+Warning: Treating undriven bit miter.\__pi_rst like $anyseq.
+Warning: Treating undriven bit miter.\__pi_en like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [12] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [13] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [14] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [15] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [16] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [17] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [18] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [19] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [20] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [21] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [22] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [23] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [24] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [25] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [26] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [27] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [28] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [29] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [30] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [31] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [32] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [33] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [34] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [35] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [36] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [37] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [38] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [39] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [40] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [41] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [42] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [43] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [44] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [45] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [46] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_data_in [47] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_ctrl_in__9_0 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_clk like $anyseq.
+Warning: Treating a total of 61 undriven bits in miter like $anyseq.
+
+Warnings: 62 unique messages, 62 total
+End of script. Logfile hash: 9f5361dfc6, time: 0.12s, user: 0.13s, system: 0.01s, MEM: 31.50 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 32% 6x opt_clean (0 sec), 29% 6x opt_expr (0 sec), ...

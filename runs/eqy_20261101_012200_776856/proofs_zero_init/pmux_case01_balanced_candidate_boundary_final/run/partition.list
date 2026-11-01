@@ -1,0 +1,1 @@
+pmux_case01_balanced pmux_case01_balanced.data_out xbits : data_out[11:0]

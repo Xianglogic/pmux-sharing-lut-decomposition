@@ -1,0 +1,16 @@
+read_verilog -sv "inputs/pmux_case01_balanced/pmux_case01_balanced.v"
+hierarchy -check -top pmux_case01_balanced
+proc
+setundef -init -params -zero
+delete t:$print
+prep -top pmux_case01_balanced -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case01_balanced_candidate_rtl_boundary/run/gold.il

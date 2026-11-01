@@ -1,0 +1,2395 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "miter",
+        "cell_sorts": [
+          {
+            "type": "$scopeinfo",
+            "ports": [
+
+            ],
+            "cells": [
+                {
+                  "name": "__po_out__assert",
+                  "attributes": {
+                    "cell_src": "../../../../../partitions/test2.out.sv:59.33-59.87",
+                    "module": "$paramod$364b7ff17874d1f1a0e0c9435489136686baa64f\\miter_cmp_prop",
+                    "module_dynports": "00000000000000000000000000000001",
+                    "module_hdlname": "miter_cmp_prop",
+                    "module_keep": "00000000000000000000000000000001",
+                    "module_src": "../../../../../partitions/test2.out.sv:77.1-90.10"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                },
+                {
+                  "name": "gate",
+                  "attributes": {
+                    "cell_module_not_derived": "00000000000000000000000000000001",
+                    "cell_src": "../../../../../partitions/test2.out.sv:30.19-43.4",
+                    "module": "gate.test2.out"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                },
+                {
+                  "name": "gold",
+                  "attributes": {
+                    "cell_module_not_derived": "00000000000000000000000000000001",
+                    "cell_src": "../../../../../partitions/test2.out.sv:16.19-29.4",
+                    "module": "gold.test2.out"
+                  },
+                  "parameters": {
+                    "TYPE": "module"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$_MUX_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1009",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1041",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1057",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1089",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1105",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1137",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1173",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1177",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1193",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1225",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1249",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1281",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1297",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1329",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1365",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1377",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1409",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1417",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1433",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1465",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1489",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1521",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1557",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1569",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1593",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1617",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1649",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1657",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1673",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1705",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1729",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1761",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1769",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1785",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1817",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$645",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$673",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$705",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$721",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$753",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$769",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$801",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$817",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$849",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$865",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$897",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$905",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$921",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$953",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$997",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$486",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$491",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$494",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$501",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$504",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$515",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$520",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$523",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$528",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$533",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$544",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$549",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$552",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$557",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$564",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$567",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$574",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$577",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$584",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$587",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$594",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$597",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$608",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$613",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$616",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$623",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$626",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$631",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$638",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$641",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$648",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$651",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$658",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$661",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$668",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$671",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$678",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$681",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$688",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$691",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$702",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$707",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$710",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$717",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$720",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$727",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$730",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$737",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$740",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$745",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_or$../../../../../partitions/test2.out.sv:83$2475",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.23-83.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_or$../../../../../partitions/test2.out.sv:83$2479",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.23-83.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_or$../../../../../partitions/test2.out.sv:83$2483",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.23-83.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_or$../../../../../partitions/test2.out.sv:83$2487",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.23-83.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_or$../../../../../partitions/test2.out.sv:83$2491",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.23-83.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_and$../../../../../partitions/test2.out.sv:83$2480",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.14-83.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_and$../../../../../partitions/test2.out.sv:83$2484",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.14-83.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_and$../../../../../partitions/test2.out.sv:83$2488",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.14-83.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$logic_and$../../../../../partitions/test2.out.sv:83$2492",
+                  "attributes": {
+                    "src": "../../../../../partitions/test2.out.sv:83.14-83.72"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2503",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2503"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2510",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2510"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2517",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2517"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2524",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2524"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2531",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2531"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2538",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2538"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2545",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2545"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "_witness_.assume_auto_xprop_cc_1237_execute_2552",
+                  "attributes": {
+                    "hdlname": "_witness_ assume_auto_xprop_cc_1237_execute_2552"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.assert_flatten___po_out__assert__assert________________partitions_test2_out_sv_86_2494",
+                  "attributes": {
+                    "hdlname": "_witness_ assert_flatten___po_out__assert__assert________________partitions_test2_out_sv_86_2494",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "../../../../../partitions/test2.out.sv:86.37-86.49"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$_NOT_",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1123",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1395",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1507",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$1579",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gate.$auto$simplemap.cc:298:simplemap_mux$739",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$580",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$634",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$664",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$684",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "$flatten\\gold.$auto$simplemap.cc:372:simplemap_lut$733",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$flatten\\__po_out__assert.$eqx$../../../../../partitions/test2.out.sv:83$2474",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$eqx$../../../../../partitions/test2.out.sv:83$2478",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$eqx$../../../../../partitions/test2.out.sv:83$2482",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$eqx$../../../../../partitions/test2.out.sv:83$2486",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$flatten\\__po_out__assert.$eqx$../../../../../partitions/test2.out.sv:83$2490",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2621",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2629",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2637",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2645",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:688:process_cell$2653",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [5, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [5, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [5, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2565",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2572",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2579",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2586",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2593",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2600",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2607",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:709:process_cell$2614",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$xnor",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2617",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2625",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2633",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2641",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:685:process_cell$2649",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2619",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2627",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2635",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2643",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:686:process_cell$2651",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2561",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2568",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2575",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2582",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2589",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2596",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2603",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:707:process_cell$2610",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2563",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2570",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2577",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2584",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2591",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2598",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2605",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:708:process_cell$2612",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2505",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2512",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2519",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2526",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2533",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2540",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2547",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2554",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2504",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2511",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2518",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2525",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2532",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2539",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2546",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:1237:execute$2553",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2559",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2566",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2573",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2580",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2587",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2594",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2601",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2608",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2615",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2623",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2631",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2639",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2647",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2655",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                },
+                {
+                  "name": "$auto$xprop.cc:201:encoded$2657",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000101"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "../../../../../partitions/test2.out.sv:1.1-76.10"
+        }
+      }
+  ]
+}

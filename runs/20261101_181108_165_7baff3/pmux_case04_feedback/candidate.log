@@ -1,0 +1,980 @@
+
+-- Executing script file `runs/20261101_181108_165_7baff3/pmux_case04_feedback/synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/pmux_case04_feedback/pmux_case04_feedback.v
+Parsing SystemVerilog input from `inputs/pmux_case04_feedback/pmux_case04_feedback.v' to AST representation.
+Generating RTLIL representation for module `\pmux_case04_feedback'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5 in module pmux_case04_feedback.
+Marked 1 switch rules as full_case in process $proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1 in module pmux_case04_feedback.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 8 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Found async reset \rst in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+     1/1: $0\lane[1].q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+     1/1: $1\lane[1].next_q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+     1/1: $1\lane[1].x2[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+     1/1: $1\lane[1].x1[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+     1/1: $1\lane[1].x0[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+     1/1: $0\lane[0].q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+     1/1: $1\lane[0].next_q[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+     1/1: $1\lane[0].x2[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+     1/1: $1\lane[0].x1[7:0]
+Creating decoders for process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+     1/1: $1\lane[0].x0[7:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].next_q' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x2' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x1' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[1].x0' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].next_q' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x2' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x1' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+No latch inferred for signal `\pmux_case04_feedback.\lane[0].x0' from process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmux_case04_feedback.\lane[1].q' using process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+  created $adff cell `$procdff$75' with positive edge clock and positive level reset.
+Creating register for signal `\pmux_case04_feedback.\lane[0].q' using process `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+  created $adff cell `$procdff$78' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$27'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$25'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$22'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$19'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$15'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:56$13'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:48$11'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:40$8'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:32$5'.
+Found and cleaned up 1 empty switch in `\pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+Removing empty process `pmux_case04_feedback.$proc$inputs/pmux_case04_feedback/pmux_case04_feedback.v:24$1'.
+Cleaned up 10 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+<suppressed ~10 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+Warning: Feature 'synth_intel' is experimental.
+
+5. Executing SYNTH_INTEL pass.
+
+5.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+5.2. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/m9k_bb.v
+Parsing SystemVerilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/m9k_bb.v' to AST representation.
+Generating RTLIL representation for module `\altsyncram'.
+Successfully finished Verilog frontend.
+
+5.3. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/altpll_bb.v
+Parsing SystemVerilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.4. Executing HIERARCHY pass (managing design hierarchy).
+
+5.4.1. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+
+5.4.2. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+Removed 0 unused modules.
+
+5.5. Executing PROC pass (convert processes to netlists).
+
+5.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case04_feedback...
+Found and reported 0 problems.
+
+5.7. Executing FLATTEN pass (flatten design).
+
+5.8. Executing TRIBUF pass.
+
+5.9. Executing DEMINOUT pass (demote inout ports to input or output).
+
+5.10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~1 debug messages>
+
+5.12. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case04_feedback...
+Found and reported 0 problems.
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 54 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Computing hashes of 52 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+5.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+5.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 52 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+5.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+5.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 52 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5.14. Executing FSM pass (extract and optimize FSM).
+
+5.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.14.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.14.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.14.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+5.15. Executing OPT pass (performing simple optimizations).
+
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 52 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 52 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$78 ($adff) from module pmux_case04_feedback (D = \lane[0].next_q, Q = \lane[0].q).
+Adding EN signal on $procdff$75 ($adff) from module pmux_case04_feedback (D = \lane[1].next_q, Q = \lane[1].q).
+
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~28 debug messages>
+
+5.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 50 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.15.16. Finished fast OPT passes. (There is nothing left to do.)
+pmux_nested_addsub: shared 4 branch-constrained arithmetic pairs.
+pmux_addsub_share: shared 0 mutually exclusive add/sub pairs.
+pmux_pair_cut: decomposed 6 decoded four-way PMUXes.
+
+5.16. Executing PMUX_OPT pass (factor decoded PMUXes).
+pmux_opt: examined 2 selected $pmux cell(s), rewrote 0 into 0 shared $mux cell(s).
+pmux_opt: selector-coalescing rewrote 0 $pmux cell(s).
+
+5.17. Executing PMUX_CROSS_SHARE pass.
+pmux_cross_share: rewrote 0 crossed tree pairs.
+
+5.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+Removed 18 unused cells and 26 unused wires.
+<suppressed ~19 debug messages>
+
+5.19. Executing PMUX_SHARED_READ pass.
+pmux_shared_read: examined 4 muxes, rewrote 0 eight-way trees.
+
+5.20. Executing PRIORITY_PMUX_OPT pass.
+priority_pmux_opt: examined 4 muxes; rewrote 0 constant-default priority chains.
+
+5.21. Executing PMUX_COMPARE_CONST pass.
+pmux_compare_const: changed 0 arms and 0 data bits.
+pmux_compare_const: projected 0 decoded data bits.
+pmux_compare_const: removed 0 conditionally redundant arms.
+V47 power-up preservation: retained 0 newly constant-one FF bits with original Intel default low.
+eq_prefix_share: rewrote 0 equality pairs; built 0 shared prefix LUTs.
+
+5.22. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell pmux_case04_feedback.$procmux$34_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell pmux_case04_feedback.$procmux$56_CMP0 ($eq).
+
+5.23. Executing PEEPOPT pass (run peephole optimizers).
+
+5.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.25. Executing TECHMAP pass (map to technology primitives).
+
+5.25.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\cmp2lut.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+5.25.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+5.26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+<suppressed ~2 debug messages>
+
+5.27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.28. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module pmux_case04_feedback:
+  creating $macc model for $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$20 ($add).
+  creating $macc model for $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$6 ($add).
+  creating $alu model for $macc $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$6.
+  creating $alu model for $macc $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$20.
+  creating $alu cell for $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$20: $auto$alumacc.cc:548:replace_alu$119
+  creating $alu cell for $add$inputs/pmux_case04_feedback/pmux_case04_feedback.v:35$6: $auto$alumacc.cc:548:replace_alu$122
+  created 2 $alu and 0 $macc cells.
+
+5.29. Executing OPT pass (performing simple optimizations).
+
+5.29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 34 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.29.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+5.29.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.29.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 34 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.29.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.29.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.29.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.29.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.30. Executing MEMORY pass.
+
+5.30.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.30.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.30.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.30.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.30.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.30.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.30.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.30.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.30.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.30.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.32. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+5.33. Executing TECHMAP pass (map to technology primitives).
+
+5.33.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/brams_map_m9k.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/brams_map_m9k.v' to AST representation.
+Generating RTLIL representation for module `$__M9K_ALTSYNCRAM_SINGLEPORT_FULL'.
+Successfully finished Verilog frontend.
+
+5.33.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+5.34. Executing OPT pass (performing simple optimizations).
+
+5.34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 34 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.34.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.34.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.34.5. Finished fast OPT passes.
+
+5.35. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5.36. Executing OPT pass (performing simple optimizations).
+
+5.36.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.36.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 34 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.36.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+5.36.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.36.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 34 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.36.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.36.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.36.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.36.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.37. Executing TECHMAP pass (map to technology primitives).
+
+5.37.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\techmap.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.37.2. Continuing TECHMAP pass.
+Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_not.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~465 debug messages>
+
+5.38. Executing OPT pass (performing simple optimizations).
+
+5.38.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+<suppressed ~196 debug messages>
+
+5.38.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 592 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Computing hashes of 576 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+<suppressed ~48 debug messages>
+Removed a total of 16 cells.
+
+5.38.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.38.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.38.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 576 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.38.6. Executing OPT_SHARE pass.
+
+5.38.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.38.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+Removed 54 unused cells and 272 unused wires.
+<suppressed ~55 debug messages>
+
+5.38.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.38.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.38.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case04_feedback..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.38.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case04_feedback.
+Performed a total of 0 changes.
+
+5.38.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 522 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.38.14. Executing OPT_SHARE pass.
+
+5.38.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.38.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.38.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.38.18. Finished fast OPT passes. (There is nothing left to do.)
+Removed 0 unused cells and 12 unused wires.
+
+5.39. Executing SETUNDEF pass (replace undef values with defined constants).
+pmux_sync_clear: mapped 0 zero-reset FFs without changing FF count or reset/enable priority.
+
+5.40. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+5.41. Executing TECHMAP pass (map to technology primitives).
+
+5.41.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/ff_map.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/common/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_PN0P_'.
+Successfully finished Verilog frontend.
+
+5.41.2. Continuing TECHMAP pass.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~28 debug messages>
+pmux_ff_input_mux: absorbed 16 unique data gates into existing FF synchronous-load muxes.
+pmux_pair_finish: emitted 96 exact LUT4 cuts.
+pmux_priority_finish: emitted 0 priority LUT planes.
+pmux_small_cones: exactly mapped 0 scalar gates; all accepted roots have at most four boundary inputs.
+
+5.42. Executing ABC9 pass.
+
+5.42.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.42.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.42.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module pmux_case04_feedback.
+Found 0 SCCs.
+
+5.42.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.42.5. Executing TECHMAP pass (map to technology primitives).
+
+5.42.5.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\techmap.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.42.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~86 debug messages>
+
+5.42.6. Executing OPT pass (performing simple optimizations).
+
+5.42.6.1. Executing OPT_EXPR pass (perform const folding).
+
+5.42.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.42.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+5.42.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+5.42.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+5.42.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.42.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+5.42.6.8. Executing OPT_EXPR pass (perform const folding).
+
+5.42.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5.42.7. Executing TECHMAP pass (map to technology primitives).
+
+5.42.7.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_map.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5.42.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+5.42.8. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_model.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+5.42.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.42.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+5.42.11. Executing AIGMAP pass (map logic to AIG).
+Module pmux_case04_feedback: replaced 284 cells with 1706 new cells, skipped 328 cells.
+  replaced 3 cell types:
+      64 $_MUX_
+      94 $_OR_
+     126 $_XOR_
+  not replaced 4 cell types:
+     156 $_AND_
+      60 $_NOT_
+      96 $lut
+      16 dffeas
+
+5.42.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+5.42.11.2. Executing XAIGER backend.
+<suppressed ~5 debug messages>
+Extracted 820 AND gates and 2233 wires from module `pmux_case04_feedback' to a netlist network with 211 inputs and 212 outputs.
+
+5.42.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+5.42.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    211/    212  and =     750  lev =   16 (   2.94)  mem = 0.02 MB  box = 0  bb = 0
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dc2 
+ABC: + &if -a -C 8 -F 2 -A 4 -W 300 
+ABC: + &put 
+ABC: + lutpack -s -N 3 -Q 1 -S 2 -L 1 
+ABC: + &get -m 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    211/    212  and =    1102  lev =   23 (   3.46)  mem = 0.02 MB
+ABC: Mapping (K=4)  :  lut =    184  edge =     606  lev =    8 (1.27)  mem = 0.01 MB
+ABC: LUT = 184 : 2=42 22.8 %  3=46 25.0 %  4=96 52.2 %  Ave = 3.29
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.03 sec
+ABC: + time 
+ABC: elapse: 0.11 seconds, total: 0.11 seconds
+
+5.42.11.5. Executing AIGER frontend.
+<suppressed ~3 debug messages>
+Removed 1984 unused cells and 2296 unused wires.
+
+5.42.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:      185
+ABC RESULTS:           input signals:        7
+ABC RESULTS:          output signals:      101
+<suppressed ~846 debug messages>
+Removing temp directory.
+
+5.42.12. Executing TECHMAP pass (map to technology primitives).
+
+5.42.12.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_unmap.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+5.42.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+Removed 98 unused cells and 2547 unused wires.
+
+5.43. Executing OPT pass (performing simple optimizations).
+
+5.43.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case04_feedback.
+
+5.43.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case04_feedback'.
+Computing hashes of 297 cells of `\pmux_case04_feedback'.
+Finding duplicate cells in `\pmux_case04_feedback'.
+Removed a total of 0 cells.
+
+5.43.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.43.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case04_feedback..
+
+5.43.5. Finished fast OPT passes.
+
+5.44. Executing AUTONAME pass.
+Renamed 462 objects in module pmux_case04_feedback.
+<suppressed ~462 debug messages>
+
+5.45. Executing TECHMAP pass (map to technology primitives).
+
+5.45.1. Executing Verilog-2005 frontend: D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/cycloneiv/cells_map.v
+Parsing Verilog input from `D:\the_work\2026FPGA\reports\v53_nopost_submission_20261101\staging\V53H_NoPost\runtime\candidate\share\intel/cycloneiv/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__inpad'.
+Generating RTLIL representation for module `$__outpad'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+5.45.2. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011000 for cells of type $lut.
+Using template $paramod$eec7b6149d667d896126f2b00148f2d0773efd2c$lut for cells of type $lut.
+Using template $paramod$e87c652d68339e0a13e8ac3dd39fd0a21e0079b7$lut for cells of type $lut.
+Using template $paramod$f0083b520d5af45a41e816343205666abe8da6c9$lut for cells of type $lut.
+Using template $paramod$4282def8dbd6df3d1248ad282c629bee684502c2$lut for cells of type $lut.
+Using template $paramod$c99909b0661e592bb9701b15671a24d993e3be48$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$d869c3f5f7c6b5df24a4ff1deff4e05d26e086cf$lut for cells of type $lut.
+Using template $paramod$bb71bff1269f21262324e9e77ea2b51236b5cf06$lut for cells of type $lut.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879$lut for cells of type $lut.
+Using template $paramod$c01d1f1a2c22a23f58c65a92a9c94eaeebcde834$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101001 for cells of type $lut.
+Using template $paramod$cd32cfde602a94b80aa21c2c24adfaee74ee23f3$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0111 for cells of type $lut.
+Using template $paramod$950d0d4b872eae04fa78083fe6f6e8989c1634a6$lut for cells of type $lut.
+Using template $paramod$bdb7f9ed72fd4f5c7ad81c376f2d8a5c72a0098d$lut for cells of type $lut.
+Using template $paramod$db08fd84fb3c4d6a41eaec6adfffe445fb7eb17f$lut for cells of type $lut.
+Using template $paramod$5502a85110dbca29ac631107f0b0635e7fade476$lut for cells of type $lut.
+Using template $paramod$4c8de682f2508054a5f7f13444038e3331866a9d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+No more expansions possible.
+<suppressed ~561 debug messages>
+Removed 0 unused cells and 563 unused wires.
+
+5.46. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pmux_case04_feedback'. Setting top module to pmux_case04_feedback.
+
+5.46.1. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+
+5.46.2. Analyzing design hierarchy..
+Top module:  \pmux_case04_feedback
+Removed 0 unused modules.
+
+5.47. Printing statistics.
+
+=== pmux_case04_feedback ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      177 wires
+      412 wire bits
+      177 public wires
+      412 public wire bits
+        6 ports
+      115 port bits
+      297 cells
+        1   $not
+      280   cycloneiv_lcell_comb
+       16   dffeas
+
+5.48. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case04_feedback...
+Found and reported 0 problems.
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case04_feedback...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: runs/20261101_181108_165_7baff3/pmux_case04_feedback/output.il
+
+8. Executing JSON backend.

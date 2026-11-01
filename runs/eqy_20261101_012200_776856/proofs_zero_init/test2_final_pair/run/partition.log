@@ -1,0 +1,1164 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.test2/$auto$insbuf.cc:97:execute$1847: \out_$lut_Y_1_A_$lut_Y.datac -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1848: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1849: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1850: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [0] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$1851: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1852: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [1] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1853: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1854: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [3] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1855: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [4] -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [8]
+Add gate.test2/$auto$insbuf.cc:97:execute$1856: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1857: \out_$lut_Y.datac -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1858: $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12] -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1859: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1860: $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1861: $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12] -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1862: $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1863: $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1864: $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12] -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1865: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [6] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1866: \a -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1867: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1868: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [5] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1869: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [6] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [8]
+Add gate.test2/$auto$insbuf.cc:97:execute$1870: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [1] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$1871: $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [8] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$1872: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [3] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1873: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [4] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1874: $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1875: $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12] -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1876: 1'0 -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1877: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [7] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$1878: 1'0 -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1879: 1'0 -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1880: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [1] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1881: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [8] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1882: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [5] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1883: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [6] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [8]
+Add gate.test2/$auto$insbuf.cc:97:execute$1884: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [7] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$1885: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [8] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$1886: 1'0 -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1887: 1'0 -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1888: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [9] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$1889: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [10] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$1890: \out_$lut_Y_1_A_$lut_Y.datad -> \a_$lut_A.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1891: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [13] -> \a_$lut_A.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1892: \b -> \a_$lut_A.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1893: \c -> \a_$lut_A.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1894: \d -> \a_$lut_A.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1895: $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [6] -> \a_$lut_A_1.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1896: \a_$lut_A.dataa -> \a_$lut_A_1.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1897: \a_$lut_A.datab -> \a_$lut_A_1.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1898: \a_$lut_A.datac -> \a_$lut_A_1.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1899: \a_$lut_A.datad -> \a_$lut_A_1.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1900: \a_$lut_A_1.combout -> \a_$lut_A_1_Y
+Add gate.test2/$auto$insbuf.cc:97:execute$1901: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [0] -> \a_$lut_A_2.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1902: \a_$lut_A_1.dataa -> \a_$lut_A_2.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1903: \a_$lut_A_1.datab -> \a_$lut_A_2.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1904: \a_$lut_A_1.datac -> \a_$lut_A_2.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1905: \a_$lut_A_1.datad -> \a_$lut_A_2.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1906: \a_$lut_A_2.combout -> \a_$lut_A_2_Y
+Add gate.test2/$auto$insbuf.cc:97:execute$1907: \a_$lut_A.combout -> \a_$lut_A_Y
+Add gate.test2/$auto$insbuf.cc:97:execute$1908: \out_$lut_Y_1.combout -> \out [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$1909: \out_$lut_Y_2.combout -> \out [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$1910: \out_$lut_Y_3.combout -> \out [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$1911: \out_$lut_Y_4.combout -> \out [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1912: \out_$lut_Y.combout -> \out [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1913: \dataa [4] -> \out_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1914: \datac [4] -> \out_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1915: \dataa [0] -> \out_$lut_Y_1.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1916: \datac [0] -> \out_$lut_Y_1.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1917: \a_$lut_A_1_Y -> \out_$lut_Y_1.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1918: \out_$lut_Y_1.datad -> \out_$lut_Y_1_A
+Add gate.test2/$auto$insbuf.cc:97:execute$1919: \out_$lut_Y_1_A -> \out_$lut_Y_1_A_$lut_Y.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1920: \datab [0] -> \out_$lut_Y_1_A_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1921: \datad [0] -> \out_$lut_Y_1_A_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1922: \dataa [1] -> \out_$lut_Y_2.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1923: \datac [1] -> \out_$lut_Y_2.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1924: \out_$lut_Y_1.datac -> \out_$lut_Y_2.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1925: \out_$lut_Y_2.datad -> \out_$lut_Y_2_A
+Add gate.test2/$auto$insbuf.cc:97:execute$1926: \out_$lut_Y_2_A -> \out_$lut_Y_2_A_$lut_Y.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1927: \datab [1] -> \out_$lut_Y_2_A_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1928: \datad [1] -> \out_$lut_Y_2_A_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1929: \a_$lut_A_2_Y -> \out_$lut_Y_2_A_$lut_Y.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1930: \a_$lut_A_Y -> \out_$lut_Y_2_A_$lut_Y.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1931: \dataa [2] -> \out_$lut_Y_3.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1932: \datac [2] -> \out_$lut_Y_3.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1933: \out_$lut_Y_2.datac -> \out_$lut_Y_3.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1934: \out_$lut_Y_3.datad -> \out_$lut_Y_3_A
+Add gate.test2/$auto$insbuf.cc:97:execute$1935: \out_$lut_Y_3_A -> \out_$lut_Y_3_A_$lut_Y.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1936: \datab [2] -> \out_$lut_Y_3_A_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1937: \datad [2] -> \out_$lut_Y_3_A_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1938: \out_$lut_Y_2_A_$lut_Y.datac -> \out_$lut_Y_3_A_$lut_Y.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1939: \out_$lut_Y_2_A_$lut_Y.datad -> \out_$lut_Y_3_A_$lut_Y.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1940: \dataa [3] -> \out_$lut_Y_4.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1941: \datac [3] -> \out_$lut_Y_4.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1942: \out_$lut_Y_3.datac -> \out_$lut_Y_4.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1943: \out_$lut_Y_4.datad -> \out_$lut_Y_4_A
+Add gate.test2/$auto$insbuf.cc:97:execute$1944: \out_$lut_Y_4_A -> \out_$lut_Y_4_A_$lut_Y.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1945: \datab [3] -> \out_$lut_Y_4_A_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1946: \datad [3] -> \out_$lut_Y_4_A_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1947: \out_$lut_Y_3_A_$lut_Y.datac -> \out_$lut_Y_4_A_$lut_Y.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1948: \out_$lut_Y_3_A_$lut_Y.datad -> \out_$lut_Y_4_A_$lut_Y.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1949: \out_$lut_Y.datad -> \out_$lut_Y_A
+Add gate.test2/$auto$insbuf.cc:97:execute$1950: \out_$lut_Y_A -> \out_$lut_Y_A_$lut_Y.combout
+Add gate.test2/$auto$insbuf.cc:97:execute$1951: \datab [4] -> \out_$lut_Y_A_$lut_Y.dataa
+Add gate.test2/$auto$insbuf.cc:97:execute$1952: \datad [4] -> \out_$lut_Y_A_$lut_Y.datab
+Add gate.test2/$auto$insbuf.cc:97:execute$1953: \out_$lut_Y_4_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Add gate.test2/$auto$insbuf.cc:97:execute$1954: \out_$lut_Y_4_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Add gate.test2/$auto$insbuf.cc:97:execute$1955: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$1956: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$1957: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$1958: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1959: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1960: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1961: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1962: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1963: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1964: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$1965: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$1966: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1967: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1968: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$1969: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$1970: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$1971: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$1972: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$1973: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1974: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1975: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1976: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1977: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1978: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1979: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$1980: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$1981: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1982: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1983: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$1984: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$1985: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$1986: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$1987: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$1988: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$1989: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$1990: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1991: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$1992: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$1993: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$1994: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$1995: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$1996: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$1997: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$1998: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$1999: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2000: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2001: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2002: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2003: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2004: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2005: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2006: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2007: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2008: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2009: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$2010: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2011: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2012: 1'x -> $techmap$flatten\a_$lut_A_2.$shiftx$evidence/formal_primitives.v:5$210.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2013: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2014: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2015: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2016: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2017: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2018: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$2019: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2020: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2021: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2022: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2023: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2024: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$2025: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2026: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2027: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2028: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2029: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2030: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2031: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2032: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2033: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2034: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2035: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2036: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2037: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2038: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2039: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2040: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$2041: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2042: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2043: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2044: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2045: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2046: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2047: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2048: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2049: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$2050: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2051: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2052: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2053: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2054: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2055: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [12]
+Add gate.test2/$auto$insbuf.cc:97:execute$2056: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2057: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2058: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$208.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2059: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2060: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2061: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2062: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2063: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2064: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2065: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2066: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2067: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2068: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2069: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2070: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2071: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2072: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2073: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2074: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2075: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2076: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2077: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2078: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2079: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2080: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2081: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2082: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2083: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2084: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2085: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2086: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2087: 1'x -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [15]
+Add gate.test2/$auto$insbuf.cc:97:execute$2088: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$2089: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$2090: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$2091: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$2092: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$2093: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$2094: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2095: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [9]
+Add gate.test2/$auto$insbuf.cc:97:execute$2096: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [10]
+Add gate.test2/$auto$insbuf.cc:97:execute$2097: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [11]
+Add gate.test2/$auto$insbuf.cc:97:execute$2098: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [13]
+Add gate.test2/$auto$insbuf.cc:97:execute$2099: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [14]
+Add gate.test2/$auto$insbuf.cc:97:execute$2100: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$206.$6\buffer[15:0] [15]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$619/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$619/A: \datac [3] -> \out_$lut_Y_4.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$555/S: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$555/B: \datad [3] -> \out_$lut_Y_4_A_$lut_Y.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$555/A: \datab [3] -> \out_$lut_Y_4_A_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$899/S: \out_$lut_Y_1_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$899/A: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$875/S: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$875/B: \datad [2] -> \out_$lut_Y_3_A_$lut_Y.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$875/A: \datab [2] -> \out_$lut_Y_3_A_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1003/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1003/A: \datac [1] -> \out_$lut_Y_2.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$939/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$939/A: \datac [0] -> \out_$lut_Y_1.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1027/S: \out_$lut_Y_2.datad -> \out_$lut_Y_2_A_$lut_Y.combout
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1091/S: \out_$lut_Y_3.datad -> \out_$lut_Y_3_A_$lut_Y.combout
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$683/S: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$683/B: \datad [4] -> \out_$lut_Y_A_$lut_Y.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$683/A: \datab [4] -> \out_$lut_Y_A_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1059/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1059/A: \dataa [2] -> \out_$lut_Y_3.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$995/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$995/A: \dataa [1] -> \out_$lut_Y_2.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$513/A: \a -> \a_$lut_A_2.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$931/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$931/A: \dataa [0] -> \out_$lut_Y_1.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1123/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1123/A: \dataa [4] -> \out_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$747/S: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$747/B: \datad [0] -> \out_$lut_Y_1_A_$lut_Y.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$747/A: \datab [0] -> \out_$lut_Y_1_A_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$419/S: \d -> \a_$lut_A_2.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$419/B: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$419/A: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [0] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [12]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1155/S: \out_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.combout
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$523/S: \c -> \a_$lut_A_2.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$523/B: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [0] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [12]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$523/A: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [14]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$643/S: \out_$lut_Y_4.datad -> \out_$lut_Y_4_A_$lut_Y.combout
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$707/S: \out_$lut_Y_1_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$707/A: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$835/S: \out_$lut_Y_1_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$835/A: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$387/S: \c -> \a_$lut_A_2.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$387/B: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [10]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$963/S: \out_$lut_Y_1.datad -> \out_$lut_Y_1_A_$lut_Y.combout
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$611/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$611/A: \dataa [3] -> \out_$lut_Y_4.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$541/S: \b -> \a_$lut_A_2.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$541/A: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [14]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$771/S: \out_$lut_Y_1_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$771/A: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$579/S: \out_$lut_Y_1_A_$lut_Y.datad -> \out_$lut_Y_A_$lut_Y.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$579/A: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1067/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1067/A: \datac [2] -> \out_$lut_Y_3.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$355/S: \d -> \a_$lut_A_2.datad
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$355/B: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$4\buffer[15:0] [10]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$543/S: \b -> \a_$lut_A_2.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$543/B: $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [2] -> $techmap$flatten\a_$lut_A.$shiftx$evidence/formal_primitives.v:5$214.$2\buffer[15:0] [14]
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$811/S: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$811/B: \datad [1] -> \out_$lut_Y_2_A_$lut_Y.datab
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$811/A: \datab [1] -> \out_$lut_Y_2_A_$lut_Y.dataa
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1131/S: \out_$lut_Y.datac -> \out_$lut_Y_4.datac
+Rewrite gate.test2/$auto$simplemap.cc:298:simplemap_mux$1131/A: \datac [4] -> \out_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2101: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2102: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2103: 1'1 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2104: 1'1 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2105: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2106: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2107: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2108: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2109: \datac [3] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2110: 1'1 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2111: 1'1 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2112: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2113: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2114: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2115: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2116: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2117: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2118: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2119: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2120: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2121: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2122: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2123: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2124: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2125: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2126: 1'1 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2127: 1'1 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2128: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2129: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2130: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2131: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2132: \datac [1] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2133: 1'1 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2134: 1'1 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2135: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2136: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2137: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2138: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2139: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2140: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2141: \b -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2142: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2143: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2144: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2145: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2146: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2147: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2148: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2149: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2150: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2151: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2152: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2153: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2154: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2155: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2156: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2157: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2158: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2159: \c -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2160: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2161: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2162: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2163: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2164: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2165: \out_$lut_Y_3.dataa -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2166: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2167: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2168: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2169: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2170: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2171: 1'1 -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2172: 1'1 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2173: 1'1 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2174: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2175: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2176: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2177: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2178: \datac [4] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2179: 1'1 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2180: 1'1 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2181: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2182: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2183: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2184: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2185: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2186: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2187: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2188: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2189: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2190: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2191: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2192: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2193: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2194: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2195: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2196: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2197: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2198: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2199: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2200: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2201: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2202: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2203: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2204: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2205: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2206: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2207: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2208: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2209: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2210: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2211: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2212: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2213: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2214: 1'0 -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2215: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2216: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2217: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2218: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2219: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2220: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2221: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2222: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2223: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2224: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2225: \out_$lut_Y_4.dataa -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2226: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2227: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2228: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2229: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2230: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2231: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2232: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2233: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2234: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2235: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2236: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2237: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2238: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2239: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2240: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2241: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2242: 1'1 -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2243: 1'0 -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2244: 1'0 -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2245: 1'0 -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2246: 1'0 -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2247: $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2248: $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2249: $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2250: $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2251: 1'0 -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2252: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2253: 1'1 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2254: 1'1 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2255: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2256: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2257: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2258: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2259: \datac [2] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2260: 1'1 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2261: 1'1 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2262: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2263: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2264: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2265: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2266: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2267: \out_$lut_Y_2.dataa -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2268: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2269: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2270: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2271: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2272: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2273: 1'1 -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2274: \out_$lut_Y_1.dataa -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2275: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2276: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2277: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2278: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2279: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2280: 1'1 -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2281: 1'0 -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2282: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2283: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2284: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2285: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2286: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2287: 1'0 -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2288: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2289: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2290: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2291: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2292: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2293: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2294: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2295: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2296: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2297: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2298: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2299: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2300: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2301: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2302: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2303: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2304: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2305: 1'0 -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2306: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2307: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2308: 1'1 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2309: 1'1 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2310: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2311: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2312: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2313: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2314: \datac [0] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2315: 1'1 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2316: 1'1 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2317: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2318: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2319: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2320: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2321: 1'0 -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2322: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2323: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2324: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2325: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2326: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2327: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2328: 1'0 -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2329: \out_$lut_Y.dataa -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2330: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2331: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2332: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2333: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2334: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2335: 1'1 -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2336: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2337: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2338: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2339: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Add gold.test2/$auto$insbuf.cc:97:execute$2340: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2341: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2342: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2343: 1'0 -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2344: \out_$lut_Y_4.combout -> \out [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$2345: \out_$lut_Y_3.combout -> \out [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2346: \out_$lut_Y_2.combout -> \out [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2347: \out_$lut_Y_1.combout -> \out [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2348: \out_$lut_Y.combout -> \out [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2349: \out_$lut_Y_1.datac -> \out_$lut_Y_1_A
+Add gold.test2/$auto$insbuf.cc:97:execute$2350: \out_$lut_Y_1_A -> \out_$lut_Y_1_A_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2351: \datad [3] -> \out_$lut_Y_1_A_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2352: \d -> \out_$lut_Y_1_A_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2353: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [6] -> \out_$lut_Y_1_A_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2354: 1'1 -> \out_$lut_Y_1_A_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2355: $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4] -> \out_$lut_Y_1_A_1
+Add gold.test2/$auto$insbuf.cc:97:execute$2356: \out_$lut_Y_1_A_1 -> \out_$lut_Y_1_A_1_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2357: \datab [3] -> \out_$lut_Y_1_A_1_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2358: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [6] -> \out_$lut_Y_1_A_1_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2359: \a -> \out_$lut_Y_1_A_1_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2360: 1'1 -> \out_$lut_Y_1_A_1_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2361: \out_$lut_Y_1.datab -> \out_$lut_Y_1_A_2
+Add gold.test2/$auto$insbuf.cc:97:execute$2362: \out_$lut_Y_1_A_2 -> \out_$lut_Y_1_A_2_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2363: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7] -> \out_$lut_Y_1_A_2_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2364: \out_$lut_Y_1_A_$lut_Y.datac -> \out_$lut_Y_1_A_2_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2365: \out_$lut_Y_1_A_1_$lut_Y.datab -> \out_$lut_Y_1_A_2_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2366: 1'1 -> \out_$lut_Y_1_A_2_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2367: \out_$lut_Y_1.datad -> \out_$lut_Y_1_A_3
+Add gold.test2/$auto$insbuf.cc:97:execute$2368: \out_$lut_Y_1_A_3 -> \out_$lut_Y_1_A_3_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2369: \dataa [3] -> \out_$lut_Y_1_A_3_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2370: \out_$lut_Y_1_A_1_$lut_Y.datac -> \out_$lut_Y_1_A_3_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2371: 1'1 -> \out_$lut_Y_1_A_3_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2372: 1'1 -> \out_$lut_Y_1_A_3_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2373: \out_$lut_Y_2.datac -> \out_$lut_Y_2_A
+Add gold.test2/$auto$insbuf.cc:97:execute$2374: \out_$lut_Y_2_A -> \out_$lut_Y_2_A_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2375: \datad [2] -> \out_$lut_Y_2_A_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2376: \out_$lut_Y_1_A_$lut_Y.datab -> \out_$lut_Y_2_A_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2377: \out_$lut_Y_1_A_2_$lut_Y.datab -> \out_$lut_Y_2_A_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2378: 1'1 -> \out_$lut_Y_2_A_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2379: $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4] -> \out_$lut_Y_2_A_1
+Add gold.test2/$auto$insbuf.cc:97:execute$2380: \out_$lut_Y_2_A_1 -> \out_$lut_Y_2_A_1_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2381: \datab [2] -> \out_$lut_Y_2_A_1_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2382: \out_$lut_Y_1_A_2_$lut_Y.datac -> \out_$lut_Y_2_A_1_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2383: \out_$lut_Y_1_A_3_$lut_Y.datab -> \out_$lut_Y_2_A_1_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2384: 1'1 -> \out_$lut_Y_2_A_1_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2385: \out_$lut_Y_2.datab -> \out_$lut_Y_2_A_2
+Add gold.test2/$auto$insbuf.cc:97:execute$2386: \out_$lut_Y_2_A_2 -> \out_$lut_Y_2_A_2_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2387: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7] -> \out_$lut_Y_2_A_2_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2388: \out_$lut_Y_2_A_$lut_Y.datac -> \out_$lut_Y_2_A_2_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2389: \out_$lut_Y_2_A_1_$lut_Y.datab -> \out_$lut_Y_2_A_2_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2390: 1'1 -> \out_$lut_Y_2_A_2_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2391: \out_$lut_Y_2.datad -> \out_$lut_Y_2_A_3
+Add gold.test2/$auto$insbuf.cc:97:execute$2392: \out_$lut_Y_2_A_3 -> \out_$lut_Y_2_A_3_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2393: \dataa [2] -> \out_$lut_Y_2_A_3_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2394: \out_$lut_Y_2_A_1_$lut_Y.datac -> \out_$lut_Y_2_A_3_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2395: 1'1 -> \out_$lut_Y_2_A_3_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2396: 1'1 -> \out_$lut_Y_2_A_3_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2397: \out_$lut_Y_3.datac -> \out_$lut_Y_3_A
+Add gold.test2/$auto$insbuf.cc:97:execute$2398: \out_$lut_Y_3_A -> \out_$lut_Y_3_A_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2399: \datad [1] -> \out_$lut_Y_3_A_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2400: \out_$lut_Y_2_A_$lut_Y.datab -> \out_$lut_Y_3_A_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2401: \out_$lut_Y_2_A_2_$lut_Y.datab -> \out_$lut_Y_3_A_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2402: 1'1 -> \out_$lut_Y_3_A_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2403: \out_$lut_Y_3.datad -> \out_$lut_Y_3_A_1
+Add gold.test2/$auto$insbuf.cc:97:execute$2404: \out_$lut_Y_3_A_1 -> \out_$lut_Y_3_A_1_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2405: \dataa [1] -> \out_$lut_Y_3_A_1_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2406: \out_$lut_Y_2_A_3_$lut_Y.datab -> \out_$lut_Y_3_A_1_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2407: 1'1 -> \out_$lut_Y_3_A_1_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2408: 1'1 -> \out_$lut_Y_3_A_1_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2409: \out_$lut_Y_3.datab -> \out_$lut_Y_3_A_2
+Add gold.test2/$auto$insbuf.cc:97:execute$2410: \out_$lut_Y_3_A_2 -> \out_$lut_Y_3_A_2_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2411: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7] -> \out_$lut_Y_3_A_2_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2412: \out_$lut_Y_3_A_$lut_Y.datac -> \out_$lut_Y_3_A_2_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2413: \out_$lut_Y_2_A_2_$lut_Y.datac -> \out_$lut_Y_3_A_2_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2414: 1'1 -> \out_$lut_Y_3_A_2_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2415: $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4] -> \out_$lut_Y_3_A_3
+Add gold.test2/$auto$insbuf.cc:97:execute$2416: \out_$lut_Y_3_A_3 -> \out_$lut_Y_3_A_3_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2417: \datab [1] -> \out_$lut_Y_3_A_3_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2418: \out_$lut_Y_3_A_2_$lut_Y.datac -> \out_$lut_Y_3_A_3_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2419: \out_$lut_Y_3_A_1_$lut_Y.datab -> \out_$lut_Y_3_A_3_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2420: 1'1 -> \out_$lut_Y_3_A_3_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2421: $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4] -> \out_$lut_Y_4_A
+Add gold.test2/$auto$insbuf.cc:97:execute$2422: \out_$lut_Y_4_A -> \out_$lut_Y_4_A_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2423: \datab [0] -> \out_$lut_Y_4_A_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2424: \out_$lut_Y_3_A_3_$lut_Y.datab -> \out_$lut_Y_4_A_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2425: \out_$lut_Y_3_A_3_$lut_Y.datac -> \out_$lut_Y_4_A_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2426: 1'1 -> \out_$lut_Y_4_A_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2427: \out_$lut_Y_4.datab -> \out_$lut_Y_4_A_1
+Add gold.test2/$auto$insbuf.cc:97:execute$2428: \out_$lut_Y_4_A_1 -> \out_$lut_Y_4_A_1_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2429: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7] -> \out_$lut_Y_4_A_1_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2430: \out_$lut_Y_3_A_2_$lut_Y.datab -> \out_$lut_Y_4_A_1_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2431: \out_$lut_Y_4_A_$lut_Y.datab -> \out_$lut_Y_4_A_1_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2432: 1'1 -> \out_$lut_Y_4_A_1_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2433: \out_$lut_Y_4.datac -> \out_$lut_Y_4_A_2
+Add gold.test2/$auto$insbuf.cc:97:execute$2434: \out_$lut_Y_4_A_2 -> \out_$lut_Y_4_A_2_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2435: \datad [0] -> \out_$lut_Y_4_A_2_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2436: \out_$lut_Y_3_A_$lut_Y.datab -> \out_$lut_Y_4_A_2_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2437: \out_$lut_Y_4_A_1_$lut_Y.datab -> \out_$lut_Y_4_A_2_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2438: 1'1 -> \out_$lut_Y_4_A_2_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2439: \out_$lut_Y_4.datad -> \out_$lut_Y_4_A_3
+Add gold.test2/$auto$insbuf.cc:97:execute$2440: \out_$lut_Y_4_A_3 -> \out_$lut_Y_4_A_3_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2441: \dataa [0] -> \out_$lut_Y_4_A_3_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2442: \out_$lut_Y_4_A_$lut_Y.datac -> \out_$lut_Y_4_A_3_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2443: 1'1 -> \out_$lut_Y_4_A_3_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2444: 1'1 -> \out_$lut_Y_4_A_3_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2445: $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [4] -> \out_$lut_Y_A
+Add gold.test2/$auto$insbuf.cc:97:execute$2446: \out_$lut_Y_A -> \out_$lut_Y_A_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2447: \datab [4] -> \out_$lut_Y_A_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2448: \out_$lut_Y_4_A_1_$lut_Y.datac -> \out_$lut_Y_A_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2449: \out_$lut_Y_4_A_3_$lut_Y.datab -> \out_$lut_Y_A_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2450: 1'1 -> \out_$lut_Y_A_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2451: \out_$lut_Y.datab -> \out_$lut_Y_A_1
+Add gold.test2/$auto$insbuf.cc:97:execute$2452: \out_$lut_Y_A_1 -> \out_$lut_Y_A_1_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2453: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [7] -> \out_$lut_Y_A_1_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2454: \out_$lut_Y_4_A_2_$lut_Y.datac -> \out_$lut_Y_A_1_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2455: \out_$lut_Y_A_$lut_Y.datab -> \out_$lut_Y_A_1_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2456: 1'1 -> \out_$lut_Y_A_1_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2457: \out_$lut_Y.datac -> \out_$lut_Y_A_2
+Add gold.test2/$auto$insbuf.cc:97:execute$2458: \out_$lut_Y_A_2 -> \out_$lut_Y_A_2_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2459: \datad [4] -> \out_$lut_Y_A_2_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2460: \out_$lut_Y_4_A_2_$lut_Y.datab -> \out_$lut_Y_A_2_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2461: \out_$lut_Y_A_1_$lut_Y.datab -> \out_$lut_Y_A_2_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2462: 1'1 -> \out_$lut_Y_A_2_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2463: \out_$lut_Y.datad -> \out_$lut_Y_A_3
+Add gold.test2/$auto$insbuf.cc:97:execute$2464: \out_$lut_Y_A_3 -> \out_$lut_Y_A_3_$lut_Y.combout
+Add gold.test2/$auto$insbuf.cc:97:execute$2465: \dataa [4] -> \out_$lut_Y_A_3_$lut_Y.dataa
+Add gold.test2/$auto$insbuf.cc:97:execute$2466: \out_$lut_Y_A_$lut_Y.datac -> \out_$lut_Y_A_3_$lut_Y.datab
+Add gold.test2/$auto$insbuf.cc:97:execute$2467: 1'1 -> \out_$lut_Y_A_3_$lut_Y.datac
+Add gold.test2/$auto$insbuf.cc:97:execute$2468: 1'1 -> \out_$lut_Y_A_3_$lut_Y.datad
+Add gold.test2/$auto$insbuf.cc:97:execute$2469: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2470: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2471: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2472: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2473: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2474: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2475: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2476: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2477: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2478: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2479: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2480: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2481: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2482: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2483: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2484: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2485: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2486: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2487: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2488: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2489: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2490: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2491: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2492: 1'x -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2493: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2494: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2495: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2496: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2497: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2498: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2499: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2500: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2501: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2502: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2503: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2504: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2505: 1'x -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2506: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2507: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2508: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2509: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2510: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2511: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2512: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2513: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2514: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2515: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2516: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2517: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2518: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2519: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2520: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2521: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2522: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2523: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2524: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2525: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2526: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2527: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2528: 1'x -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2529: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2530: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2531: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2532: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2533: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2534: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2535: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2536: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2537: 1'x -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2538: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2539: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2540: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2541: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2542: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2543: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2544: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2545: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2546: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2547: 1'x -> $techmap$flatten\out_$lut_Y_3.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2548: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2549: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2550: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2551: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2552: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2553: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2554: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2555: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2556: 1'x -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2557: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2558: 1'x -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2559: 1'x -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2560: 1'x -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2561: 1'x -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2562: 1'x -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2563: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2564: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2565: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2566: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2567: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2568: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2569: 1'x -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2570: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2571: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2572: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2573: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2574: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2575: 1'x -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2576: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2577: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2578: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2579: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2580: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2581: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2582: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2583: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2584: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2585: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2586: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2587: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2588: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2589: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2590: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2591: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2592: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2593: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2594: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2595: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2596: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2597: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2598: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2599: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2600: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2601: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2602: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2603: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2604: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2605: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2606: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2607: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2608: 1'x -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2609: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2610: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2611: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2612: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2613: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [4]
+Add gold.test2/$auto$insbuf.cc:97:execute$2614: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2615: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2616: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [9]
+Add gold.test2/$auto$insbuf.cc:97:execute$2617: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [10]
+Add gold.test2/$auto$insbuf.cc:97:execute$2618: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2619: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [12]
+Add gold.test2/$auto$insbuf.cc:97:execute$2620: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2621: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2622: 1'x -> $techmap$flatten\out_$lut_Y_4.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2623: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [11]
+Add gold.test2/$auto$insbuf.cc:97:execute$2624: 1'x -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2625: 1'x -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2626: 1'x -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2627: 1'x -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2628: 1'x -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2629: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2630: 1'x -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2631: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2632: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2633: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2634: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2635: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2636: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2637: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2638: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2639: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2640: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2641: 1'x -> $techmap$flatten\out_$lut_Y_2.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2642: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2643: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2644: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2645: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2646: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2647: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2648: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [6]
+Add gold.test2/$auto$insbuf.cc:97:execute$2649: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2650: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2651: 1'x -> $techmap$flatten\out_$lut_Y_1.$shiftx$evidence/formal_primitives.v:5$430.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2652: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2653: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2654: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2655: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$2656: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2657: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2658: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2659: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2660: 1'x -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2661: 1'x -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$2662: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2663: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2664: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2665: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2666: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2667: 1'x -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2668: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2669: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$2670: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [5]
+Add gold.test2/$auto$insbuf.cc:97:execute$2671: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [7]
+Add gold.test2/$auto$insbuf.cc:97:execute$2672: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [13]
+Add gold.test2/$auto$insbuf.cc:97:execute$2673: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [14]
+Add gold.test2/$auto$insbuf.cc:97:execute$2674: 1'x -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [15]
+Add gold.test2/$auto$insbuf.cc:97:execute$2675: 1'x -> $techmap$flatten\out_$lut_Y.$shiftx$evidence/formal_primitives.v:5$430.$6\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$739/A: \datac [0] -> \out_$lut_Y_4_A_1_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$921/S: \out_$lut_Y_4.datac -> \out_$lut_Y_4_A_2_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$921/B: \out_$lut_Y_4.dataa -> \out_$lut_Y_4_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1041/S: \d -> \out_$lut_Y_A_2_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1041/B: \datad [3] -> \out_$lut_Y_1_A_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1433/S: \out_$lut_Y_2.datac -> \out_$lut_Y_2_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1433/B: \out_$lut_Y_2.dataa -> \out_$lut_Y_2_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$897/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$897/A: $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$705/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$705/A: $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$865/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$865/B: \datab [4] -> \out_$lut_Y_A_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1649/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1649/B: \datab [1] -> \out_$lut_Y_3_A_3_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1193/S: \out_$lut_Y_1.datac -> \out_$lut_Y_1_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1193/B: \out_$lut_Y_1.dataa -> \out_$lut_Y_1_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$673/S: \d -> \out_$lut_Y_A_2_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$673/B: \datad [0] -> \out_$lut_Y_4_A_2_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$801/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$801/A: $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1557/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1557/B: \dataa [4] -> \out_$lut_Y_A_3_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1673/S: \out_$lut_Y_3.datac -> \out_$lut_Y_3_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1673/B: \out_$lut_Y_3.dataa -> \out_$lut_Y_3_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$769/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$769/B: \datab [0] -> \out_$lut_Y_4_A_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1569/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1569/A: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1579/A: \datac [4] -> \out_$lut_Y_A_1_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1617/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1617/A: $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_3_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1249/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1249/A: $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1225/S: \out_$lut_Y_1.datad -> \out_$lut_Y_1_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1817/S: \out_$lut_Y.datad -> \out_$lut_Y_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1089/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1089/B: \datab [3] -> \out_$lut_Y_1_A_1_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1365/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1365/B: \dataa [2] -> \out_$lut_Y_2_A_3_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$645/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$645/B: \dataa [0] -> \out_$lut_Y_4_A_3_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1297/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1297/A: $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1105/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1105/A: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1395/A: \datac [2] -> \out_$lut_Y_2_A_2_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$953/S: \out_$lut_Y_4.datad -> \out_$lut_Y_4_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1769/S: \out_$lut_Y.datab -> \out_$lut_Y_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1769/A: \out_$lut_Y.dataa -> \out_$lut_Y_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$905/S: \out_$lut_Y_4.datab -> \out_$lut_Y_4_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$905/A: \out_$lut_Y_4.dataa -> \out_$lut_Y_4_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$849/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$849/A: $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1173/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1173/B: \dataa [3] -> \out_$lut_Y_1_A_3_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1507/A: \datac [1] -> \out_$lut_Y_3_A_2_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1417/S: \out_$lut_Y_2.datab -> \out_$lut_Y_2_A_2_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1417/A: \out_$lut_Y_2.dataa -> \out_$lut_Y_2_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1657/S: \out_$lut_Y_3.datab -> \out_$lut_Y_3_A_2_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1657/A: \out_$lut_Y_3.dataa -> \out_$lut_Y_3_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1377/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1377/A: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1177/S: \out_$lut_Y_1.datab -> \out_$lut_Y_1_A_2_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1177/A: \out_$lut_Y_1.dataa -> \out_$lut_Y_1_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$997/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$997/B: \dataa [1] -> \out_$lut_Y_3_A_1_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$721/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$721/B: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1465/S: \out_$lut_Y_2.datad -> \out_$lut_Y_2_A_3_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1137/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1137/B: $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_1_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1123/A: \datac [3] -> \out_$lut_Y_1_A_2_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1729/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1729/A: $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1593/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1593/B: $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$817/S: \d -> \out_$lut_Y_A_2_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$817/B: \datad [1] -> \out_$lut_Y_3_A_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1057/S: \a -> \out_$lut_Y_A_3_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1057/A: $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$438.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1705/S: \out_$lut_Y_3.datad -> \out_$lut_Y_3_A_1_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1761/S: \d -> \out_$lut_Y_A_2_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1761/B: \datad [4] -> \out_$lut_Y_A_2_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1785/S: \out_$lut_Y.datac -> \out_$lut_Y_A_2_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1785/B: \out_$lut_Y.dataa -> \out_$lut_Y_A_$lut_Y.combout
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1489/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1489/A: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1009/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1009/A: $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_1_A_$lut_Y.$shiftx$evidence/formal_primitives.v:5$432.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1409/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1409/B: $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_2_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1329/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1329/B: \datab [2] -> \out_$lut_Y_2_A_1_$lut_Y.dataa
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$753/S: \b -> \out_$lut_Y_A_1_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$753/A: $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [0] -> $techmap$flatten\out_$lut_Y_4_A_1_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$4\buffer[15:0] [8]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1521/S: \c -> \out_$lut_Y_A_2_$lut_Y.datac
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1521/B: $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [2] -> $techmap$flatten\out_$lut_Y_3_A_2_$lut_Y.$shiftx$evidence/formal_primitives.v:5$436.$2\buffer[15:0] [10]
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1281/S: \d -> \out_$lut_Y_A_2_$lut_Y.datab
+Rewrite gold.test2/$auto$simplemap.cc:298:simplemap_mux$1281/B: \datad [2] -> \out_$lut_Y_2_A_$lut_Y.dataa
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.test2 / gate.test2.
+
+3.1.1. Processing matched IDs for module test2.
+
+3.1.2. Create fragment partitions for module test2.
+Adding output bit \out [4] to partition 0.
+Adding output bit \out [0] to partition 0.
+Adding output bit \out [1] to partition 0.
+Adding output bit \out [2] to partition 0.
+Adding output bit \out [3] to partition 0.
+
+Final list of fragment partitions:
+  0 \out [3] \out [2] \out [1] \out [0] \out [4] <= \dataa [3] \datac [3] \datab [3] \datad [3] \dataa [2] \datac [2] \datab [2] \datad [2] \dataa [1] \datac [1] \datab [1] \datad [1] \dataa [0] \datac [0] \datab [0] \datad [0] \dataa [4] \datac [4] \datab [4] \datad [4] \a \b \c \d
+
+3.1.3. Execute partitioning commands for module test2.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'out' using a PO name: out
+
+Partition Summary:
+  Fragments:
+       0: \out
+  Partitions:
+       0: out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module test2.
+Adding output bit \out [4] to partition 1.
+Adding output bit \out [3] to partition 1.
+Adding output bit \out [2] to partition 1.
+Adding output bit \out [1] to partition 1.
+Adding output bit \out [0] to partition 1.
+Adding non-output bit \datad [4] to partition 1.
+Adding non-output bit \datad [3] to partition 1.
+Adding non-output bit \datad [2] to partition 1.
+Adding non-output bit \datad [1] to partition 1.
+Adding non-output bit \datad [0] to partition 1.
+Adding non-output bit \datac [4] to partition 1.
+Adding non-output bit \datac [3] to partition 1.
+Adding non-output bit \datac [2] to partition 1.
+Adding non-output bit \datac [1] to partition 1.
+Adding non-output bit \datac [0] to partition 1.
+Adding non-output bit \datab [4] to partition 1.
+Adding non-output bit \datab [3] to partition 1.
+Adding non-output bit \datab [2] to partition 1.
+Adding non-output bit \datab [1] to partition 1.
+Adding non-output bit \datab [0] to partition 1.
+Adding non-output bit \dataa [4] to partition 1.
+Adding non-output bit \dataa [3] to partition 1.
+Adding non-output bit \dataa [2] to partition 1.
+Adding non-output bit \dataa [1] to partition 1.
+Adding non-output bit \dataa [0] to partition 1.
+Adding non-output bit \d to partition 1.
+Adding non-output bit \clk to partition 1.
+Adding non-output bit \c to partition 1.
+Adding non-output bit \b to partition 1.
+Adding non-output bit \a to partition 1.
+Writing partition 0 as test2.out.
+  partition pi bit 0: \dataa [3] <-> \dataa [3]
+  partition pi bit 1: \datac [3] <-> \datac [3]
+  partition pi bit 2: \datab [3] <-> \datab [3]
+  partition pi bit 3: \datad [3] <-> \datad [3]
+  partition pi bit 4: \dataa [2] <-> \dataa [2]
+  partition pi bit 5: \datac [2] <-> \datac [2]
+  partition pi bit 6: \datab [2] <-> \datab [2]
+  partition pi bit 7: \datad [2] <-> \datad [2]
+  partition pi bit 8: \dataa [1] <-> \dataa [1]
+  partition pi bit 9: \datac [1] <-> \datac [1]
+  partition pi bit 10: \datab [1] <-> \datab [1]
+  partition pi bit 11: \datad [1] <-> \datad [1]
+  partition pi bit 12: \dataa [0] <-> \dataa [0]
+  partition pi bit 13: \datac [0] <-> \datac [0]
+  partition pi bit 14: \datab [0] <-> \datab [0]
+  partition pi bit 15: \datad [0] <-> \datad [0]
+  partition pi bit 16: \dataa [4] <-> \dataa [4]
+  partition pi bit 17: \datac [4] <-> \datac [4]
+  partition pi bit 18: \datab [4] <-> \datab [4]
+  partition pi bit 19: \datad [4] <-> \datad [4]
+  partition pi bit 20: \a <-> \a
+  partition pi bit 21: \b <-> \b
+  partition pi bit 22: \c <-> \c
+  partition pi bit 23: \d <-> \d
+  partition po bit 0: \out [3] <-> \out [3]
+  partition po bit 1: \out [2] <-> \out [2]
+  partition po bit 2: \out [1] <-> \out [1]
+  partition po bit 3: \out [0] <-> \out [0]
+  partition po bit 4: \out [4] <-> \out [4]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/test2.out.il
+<suppressed ~3425 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.test2.out...
+Checking module gold.test2.out...
+Found and reported 0 problems.
+
+Writing partition 1 as test2.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \dataa [0] <-> \dataa [0]
+  partition pi bit 2: \datac [0] <-> \datac [0]
+  partition pi bit 3: \datab [0] <-> \datab [0]
+  partition pi bit 4: \datad [0] <-> \datad [0]
+  partition pi bit 5: \dataa [1] <-> \dataa [1]
+  partition pi bit 6: \datac [1] <-> \datac [1]
+  partition pi bit 7: \datab [1] <-> \datab [1]
+  partition pi bit 8: \datad [1] <-> \datad [1]
+  partition pi bit 9: \dataa [2] <-> \dataa [2]
+  partition pi bit 10: \datac [2] <-> \datac [2]
+  partition pi bit 11: \datab [2] <-> \datab [2]
+  partition pi bit 12: \datad [2] <-> \datad [2]
+  partition pi bit 13: \dataa [3] <-> \dataa [3]
+  partition pi bit 14: \datac [3] <-> \datac [3]
+  partition pi bit 15: \datab [3] <-> \datab [3]
+  partition pi bit 16: \datad [3] <-> \datad [3]
+  partition pi bit 17: \dataa [4] <-> \dataa [4]
+  partition pi bit 18: \datac [4] <-> \datac [4]
+  partition pi bit 19: \datab [4] <-> \datab [4]
+  partition pi bit 20: \datad [4] <-> \datad [4]
+  partition pi bit 21: \a <-> \a
+  partition pi bit 22: \b <-> \b
+  partition pi bit 23: \c <-> \c
+  partition pi bit 24: \d <-> \d
+  partition po bit 0: \out [0] <-> \out [0]
+  partition po bit 1: \out [1] <-> \out [1]
+  partition po bit 2: \out [2] <-> \out [2]
+  partition po bit 3: \out [3] <-> \out [3]
+  partition po bit 4: \out [4] <-> \out [4]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/test2.il
+<suppressed ~1756 debug messages>
+
+End of script. Logfile hash: b96496409b, time: 0.01s, user: 0.00s, system: 0.01s, MEM: 18.94 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 55% 1x eqy_partition (0 sec), 19% 1x insbuf (0 sec), ...

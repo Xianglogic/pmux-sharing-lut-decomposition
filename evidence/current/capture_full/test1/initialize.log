@@ -1,0 +1,138 @@
+
+-- Executing script file `D:\FPGA\demo\algorithms\V53H_NoPost_20261101\evidence\current\capture_full\test1\initialize.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test1/test1/test1.v
+Parsing SystemVerilog input from `inputs/test1/test1/test1.v' to AST representation.
+Generating RTLIL representation for module `\test1'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test1
+
+2.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$inputs/test1/test1/test1.v:79$1 in module test1.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\test1.$proc$inputs/test1/test1/test1.v:67$4'.
+  Set init value: \state = 4'0000
+  Set init value: \por6 = 1'0
+  Set init value: \inter0007 = 1'1
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test1.$proc$inputs/test1/test1/test1.v:67$4'.
+Creating decoders for process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+     1/21: $0\state[3:0]
+     2/21: $0\inter0007[0:0]
+     3/21: $0\q7[11:0]
+     4/21: $0\q6[11:0]
+     5/21: $0\q5[11:0]
+     6/21: $0\q4[11:0]
+     7/21: $0\q3[11:0]
+     8/21: $0\q2[11:0]
+     9/21: $0\q1[11:0]
+    10/21: $0\q0[11:0]
+    11/21: $0\i7[11:0]
+    12/21: $0\i6[11:0]
+    13/21: $0\i5[11:0]
+    14/21: $0\i4[11:0]
+    15/21: $0\i3[11:0]
+    16/21: $0\i2[11:0]
+    17/21: $0\i1[11:0]
+    18/21: $0\i0[11:0]
+    19/21: $0\inter0009[11:0]
+    20/21: $0\inter0008[11:0]
+    21/21: $0\por6[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test1.\state' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $adff cell `$procdff$367' with positive edge clock and positive level reset.
+Creating register for signal `\test1.\por6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$372' with positive edge clock.
+Creating register for signal `\test1.\inter0007' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $adff cell `$procdff$375' with positive edge clock and positive level reset.
+Creating register for signal `\test1.\inter0008' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$380' with positive edge clock.
+Creating register for signal `\test1.\inter0009' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$385' with positive edge clock.
+Creating register for signal `\test1.\i0' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$390' with positive edge clock.
+Creating register for signal `\test1.\i1' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$395' with positive edge clock.
+Creating register for signal `\test1.\i2' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$400' with positive edge clock.
+Creating register for signal `\test1.\i3' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$405' with positive edge clock.
+Creating register for signal `\test1.\i4' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$410' with positive edge clock.
+Creating register for signal `\test1.\i5' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$415' with positive edge clock.
+Creating register for signal `\test1.\i6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$420' with positive edge clock.
+Creating register for signal `\test1.\i7' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$425' with positive edge clock.
+Creating register for signal `\test1.\q0' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$430' with positive edge clock.
+Creating register for signal `\test1.\q1' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$435' with positive edge clock.
+Creating register for signal `\test1.\q2' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$440' with positive edge clock.
+Creating register for signal `\test1.\q3' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$445' with positive edge clock.
+Creating register for signal `\test1.\q4' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$450' with positive edge clock.
+Creating register for signal `\test1.\q5' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$455' with positive edge clock.
+Creating register for signal `\test1.\q6' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$460' with positive edge clock.
+Creating register for signal `\test1.\q7' using process `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+  created $dff cell `$procdff$465' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `test1.$proc$inputs/test1/test1/test1.v:67$4'.
+Found and cleaned up 2 empty switches in `\test1.$proc$inputs/test1/test1/test1.v:79$1'.
+Removing empty process `test1.$proc$inputs/test1/test1/test1.v:79$1'.
+Cleaned up 2 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~44 debug messages>
+
+4. Executing JSON backend.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+7. Executing RTLIL backend.
+Output filename: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/evidence/current/capture_full/test1/initialized.il
+
+8. Executing JSON backend.

@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "CMAKE_BUILD_TYPE": "Release",
+    "CMAKE_CXX_COMPILER": "D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+    "CMAKE_C_COMPILER": "D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+    "CMAKE_CXX_FLAGS": "/DWIN32 /D_WINDOWS /EHsc",
+    "CMAKE_C_FLAGS": "/DWIN32 /D_WINDOWS",
+    "CMAKE_CXX_FLAGS_RELEASE": "/O2 /Ob2 /DNDEBUG",
+    "CMAKE_C_FLAGS_RELEASE": "/O2 /Ob2 /DNDEBUG",
+    "BUILD_SHARED_LIBS": "OFF",
+    "YOSYS_WITHOUT_READLINE": "ON",
+    "YOSYS_WITHOUT_TCL": "ON",
+    "YOSYS_WITHOUT_LIBFFI": "ON",
+    "YOSYS_WITHOUT_SLANG": "ON",
+    "YOSYS_WITHOUT_ZLIB": "ON",
+    "YOSYS_ENABLE_UNIT_TESTS": "OFF",
+    "YOSYS_USE_BUNDLED_LIBS": "ON",
+    "FLEX_EXECUTABLE": "D:/FPGA/demo/windows_flow_v30/deps/winflexbison/win_flex.exe",
+    "BISON_EXECUTABLE": "D:/FPGA/demo/windows_flow_v30/deps/winflexbison/win_bison.exe",
+    "CMAKE_EXE_LINKER_FLAGS": "/machine:x64",
+    "CMAKE_EXE_LINKER_FLAGS_RELEASE": "/INCREMENTAL:NO",
+    "CMAKE_GENERATOR": "Ninja"
+  },
+  "matched": 20,
+  "commit": "9f75ca1f9834a39a863915b5dae0c7b1e33533bc"
+}

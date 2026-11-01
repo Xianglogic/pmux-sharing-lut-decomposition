@@ -1,0 +1,59 @@
+SBY  1:22:16 [test3.gpioout] Removing directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_baseline_boundary_final/run/strategies/test3.gpioout/pdr/test3.gpioout'.
+SBY  1:22:16 [test3.gpioout] engine_0: abc pdr
+SBY  1:22:16 [test3.gpioout] base: starting process "cd test3.gpioout/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  1:22:16 [test3.gpioout] base: finished (returncode=0)
+SBY  1:22:16 [test3.gpioout] prep: starting process "cd test3.gpioout/model; yosys -ql design_prep.log design_prep.ys"
+SBY  1:22:16 [test3.gpioout] prep: finished (returncode=0)
+SBY  1:22:16 [test3.gpioout] aig: starting process "cd test3.gpioout/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY  1:22:16 [test3.gpioout] aig: Warning: Treating undriven bit miter.\__pi_sr_in like $anyseq.
+SBY  1:22:16 [test3.gpioout] aig: Warning: Treating undriven bit miter.\__pi_cs like $anyseq.
+SBY  1:22:16 [test3.gpioout] aig: Warning: Treating undriven bit miter.\__pi_clk like $anyseq.
+SBY  1:22:16 [test3.gpioout] aig: Warning: Treating a total of 3 undriven bits in miter like $anyseq.
+SBY  1:22:16 [test3.gpioout] aig: finished (returncode=0)
+SBY  1:22:16 [test3.gpioout] engine_0: starting process "cd test3.gpioout; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw'"
+SBY  1:22:16 [test3.gpioout] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw"
+SBY  1:22:16 [test3.gpioout] engine_0: Warning: The last output is interpreted as a constraint.
+SBY  1:22:16 [test3.gpioout] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 139. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY  1:22:16 [test3.gpioout] engine_0: Frame Clauses                                                     Max Queue Flops Time
+SBY  1:22:16 [test3.gpioout] engine_0: 1 : 0 36                                                                1    36      0.00 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 2 : 0 26 45                                                             4    50      0.01 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 3 : 0 7 9 37 ~4                                                          1    50      0.01 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 4 : 0 8 12 25 42 ~4                                                      5    54      0.01 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 5 : 0 9 13 23 23 44 ~4                                                  10    63      0.02 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 6 : 0 5 7 9 8 17 38 ~4                                                   1    63      0.02 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 7 : 0 8 8 11 11 26 28 54 ~4                                             11    67      0.02 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 8 : 0 11 8 14 13 18 17 27 52 ~8                                         15    69      0.03 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 8 : 0 11 8 14 13 18 17 30 68 ~8                                         15    69      0.03 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 9 : 0 4 2 5 3 6 3 6 5 51 ~16                                             0    69      0.04 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 10 : 0 4 2 4 2 4 2 4 4 4 43 ~16                                           0    69      0.04 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 11 : 0 4 2 4 2 4 2 4 4 4 3 40 ~16                                         0    69      0.04 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 12 : 0 4 2 4 2 4 2 4 4 4 3 12 37 ~16                                      1    69      0.04 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 13 : 0 4 2 4 2 4 2 4 5 8 8 18 19 45 ~14                                  11    69      0.05 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 14 : 0 4 2 4 2 4 2 4 2 4 2 4 5 13 35 ~20                                  1    69      0.05 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 15 : 0 4 2 4 2 4 2 4 2 4 3 5 8 19 24 42 ~20                               9    69      0.05 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 16 : 0 4 2 4 2 4 2 4 2 4 2 4 2 5 13 22 39 ~26                             4    69      0.06 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 17 : 0 4 2 4 2 4 2 4 2 4 2 4 2 4 2 20 19 36 ~30                           2    69      0.06 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: 18 : 0 4 2 4 2 4 2 4 2 4 2 4 2 4 2 20 18 18 35 ~31                        1    69      0.07 sec  T/O =  0  PRV =  0
+SBY  1:22:16 [test3.gpioout] engine_0: Proved output 0 in frame 18.
+SBY  1:22:16 [test3.gpioout] engine_0: Proved output 1 in frame 18.
+SBY  1:22:16 [test3.gpioout] engine_0: 19 : 0 4 2 4 2 4 2 4 2 4 2 4 2 4 2 20 18 18 0 -3 ~68              0    69      0.07 sec  T/O =  0  PRV =  2
+SBY  1:22:16 [test3.gpioout] engine_0: Block =  204  Oblig =   603  Clause =   490  Call =  3945 (sat=53.8%)  Cex =   0  Start =   4
+SBY  1:22:16 [test3.gpioout] engine_0: SAT solving =     0.03 sec ( 38.47 %)
+SBY  1:22:16 [test3.gpioout] engine_0: unsat     =     0.00 sec (  4.81 %)
+SBY  1:22:16 [test3.gpioout] engine_0: sat       =     0.02 sec ( 33.66 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Generalize  =     0.01 sec ( 16.72 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Push clause =     0.01 sec ( 17.76 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Ternary sim =     0.00 sec (  1.49 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Containment =     0.00 sec (  0.14 %)
+SBY  1:22:16 [test3.gpioout] engine_0: CNF compute =     0.00 sec (  2.01 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY  1:22:16 [test3.gpioout] engine_0: TOTAL       =     0.07 sec (100.00 %)
+SBY  1:22:16 [test3.gpioout] engine_0: Property proved.  Time =     0.08 sec
+SBY  1:22:16 [test3.gpioout] engine_0: Counter-example is not available.
+SBY  1:22:16 [test3.gpioout] engine_0: finished (returncode=0)
+SBY  1:22:16 [test3.gpioout] engine_0: Status returned by engine: PASS
+SBY  1:22:16 [test3.gpioout] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:16 [test3.gpioout] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:16 [test3.gpioout] summary: engine_0 (abc pdr) returned PASS
+SBY  1:22:16 [test3.gpioout] summary: engine_0 did not produce any traces
+SBY  1:22:16 [test3.gpioout] DONE (PASS, rc=0)

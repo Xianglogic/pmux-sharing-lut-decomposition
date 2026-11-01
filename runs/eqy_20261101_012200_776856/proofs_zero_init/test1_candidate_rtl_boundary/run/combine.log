@@ -1,0 +1,51 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/run/combine.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/run/gold.il
+
+2. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test1'. Setting top module to test1.
+
+3.1. Analyzing design hierarchy..
+Top module:  \test1
+
+3.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+4. Executing RTLIL frontend.
+Input filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/run/gate_recoded.il
+
+5. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test1'. Setting top module to test1.
+
+6.1. Analyzing design hierarchy..
+Top module:  \test1
+
+6.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+7. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold.test1" and gate cell "gate.test1".
+
+8. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test1_candidate_rtl_boundary/run/combined.il
+
+End of script. Logfile hash: 1ed249ff41, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 27.24 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 32% 4x read_rtlil (0 sec), 20% 2x write_rtlil (0 sec), ...

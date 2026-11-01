@@ -1,0 +1,28 @@
+{
+  "upstream_core_commit": "9f75ca1f9834a39a863915b5dae0c7b1e33533bc",
+  "abc_gitlink": "a51bf4a7bb38ce06ea3a544b1463b40832213917",
+  "core_source": "git archive of pinned commit; 15 frozen release files overlaid",
+  "vendored_sources": "local build snapshots, all file hashes in VENDORED_SOURCE_HASHES.json",
+  "disabled_unpopulated_submodules": [
+    "frontends/slang/lib",
+    "libs/slang"
+  ],
+  "build_setting": "YOSYS_WITHOUT_SLANG=ON",
+  "release_source_sha256": {
+    "CMakeLists.txt": "579995d8d5bf6a3926ad68731ac403443fdd7ae599b444d879096abebca47366",
+    "eq_prefix_share.cc": "898238931db43a09a58e20082916e1c1fac3a7469cfe62741ab03f339af961eb",
+    "guarded_reg_reuse.cc": "ec50b989d5e86a4bef95e54003a730d9cd947fc2aad98eaf667cde04ba62f322",
+    "lut4_cone_fold.cc": "34bc3f66b6699004f9a32db64cf049569a966b74c36d09a8047dbc63e055b8b0",
+    "lut4_resub.cc": "80df222f0c517ec1cb8c7b056d4fbd204f92a23a793ce87f34b01e6ea4ff5190",
+    "pmux_cofactor_share.cc": "9e35709ea4d1309ccbb6ff52538ba210207e16b06fbcc7c72907e7290040d9aa",
+    "pmux_compare_const.cc": "1eed7105055a6b53b5ae354a4e8505f35a1b0585ef0d648512f30d3755638c7c",
+    "pmux_cross_share.cc": "a9dc2f996860eebf840904a795abce39cb5617ccb7b8cbc08021aa08e99c9e97",
+    "pmux_opt.cc": "9c1e028d9e0912436b8c3880790d7d29f7f25cfa2ad5c6e6411b2e31035f7938",
+    "pmux_shared_read.cc": "8683090c179cdae280a8d8e554b81dfcc4c2a58d2ce5384547e66c0f8b24d9b7",
+    "priority_pmux_opt.cc": "37cad202ce1f1f64845b06ada0d18a0727f46230d3d67247a2e60d49bbaa8c7d",
+    "rom_cofactor_opt.cc": "5c6aa23cea7515216a0e4ecbb3d35634dbe2f6fba6e88246da657e7c9582a290",
+    "synth_intel.cc": "2c3b122501e6b9043082d60076532246fb50be59ce9754da8a346aadf64ed45e",
+    "abc9.cc": "2242d232843dd9d782408fb3dc201c4ae170baa2d5af97d9e7e8d65128bdb08d",
+    "abc9_exe.cc": "f68b95e6d7766e8b37f51148fae84ce5546445661a8ea21ae2ac42721bf1896d"
+  }
+}

@@ -1,0 +1,266 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `miter'. Setting top module to miter.
+
+2.1. Analyzing design hierarchy..
+Top module:  \miter
+
+2.2. Analyzing design hierarchy..
+Top module:  \miter
+Removed 0 unused modules.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~32 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 176 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 176 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$578 in front of them:
+        $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$845
+        $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$610
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$786 in front of them:
+        $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$826
+        $flatten\gate.$auto$simplemap.cc:298:simplemap_mux$818
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$464 in front of them:
+        $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$462
+        $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$461
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$483 in front of them:
+        $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$481
+        $flatten\gold.$auto$simplemap.cc:372:simplemap_lut$480
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~4 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 172 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+6.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+6.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 172 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.22. Executing OPT_SHARE pass.
+
+6.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+6.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+6.26. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~95 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~30 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 180 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 1 unused cells and 9 unused wires.
+<suppressed ~2 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing AIGMAP pass (map logic to AIG).
+Module miter: replaced 79 cells with 526 new cells, skipped 100 cells.
+  replaced 3 cell types:
+      64 $_MUX_
+       9 $_OR_
+       6 $_XOR_
+  not replaced 6 cell types:
+      27 $_AND_
+      57 $_FF_
+       9 $_NOT_
+       2 $assert
+       1 $assume
+       4 $scopeinfo
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 79 unused wires.
+<suppressed ~1 debug messages>
+
+15. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      772 wires
+     1108 wire bits
+      195 public wires
+      355 public wire bits
+        3 ports
+        3 port bits
+      626 cells
+      246   $_AND_
+       57   $_FF_
+      316   $_NOT_
+        2   $assert
+        1   $assume
+        4   $scopeinfo
+
+16. Executing AIGER backend.
+Warning: Treating undriven bit miter.\__pi_sr_in like $anyseq.
+Warning: Treating undriven bit miter.\__pi_cs like $anyseq.
+Warning: Treating undriven bit miter.\__pi_clk like $anyseq.
+Warning: Treating a total of 3 undriven bits in miter like $anyseq.
+
+Warnings: 4 unique messages, 4 total
+End of script. Logfile hash: e192d12808, time: 0.01s, user: 0.01s, system: 0.01s, MEM: 20.81 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 34% 1x read_verilog (0 sec), 23% 5x opt_clean (0 sec), ...

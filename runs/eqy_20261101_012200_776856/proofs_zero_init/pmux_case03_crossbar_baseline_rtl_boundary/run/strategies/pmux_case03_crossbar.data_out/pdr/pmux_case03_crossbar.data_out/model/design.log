@@ -1,0 +1,149 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../../../partitions/pmux_case03_crossbar.data_out.sv
+Parsing SystemVerilog input from `../../../../../partitions/pmux_case03_crossbar.data_out.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.pmux_case03_crossbar.data_out'.
+Generating RTLIL representation for module `\gate.pmux_case03_crossbar.data_out'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../../../partitions/pmux_case03_crossbar.data_out.il
+Replacing existing blackbox module \gold.pmux_case03_crossbar.data_out.
+Replacing existing blackbox module \gate.pmux_case03_crossbar.data_out.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+Parameter 1 (\WIDTH) = 10
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 10
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_data_out__assert ($paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:78$16510'.
+Creating decoders for process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:72$16469'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.\i' from process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:72$16469'.
+No latch inferred for signal `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.\okay' from process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:72$16469'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:78$16510'.
+Removing empty process `$paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.$proc$../../../../../partitions/pmux_case03_crossbar.data_out.sv:72$16469'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.pmux_case03_crossbar.data_out.
+Optimizing module $paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.pmux_case03_crossbar.data_out.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.pmux_case03_crossbar.data_out.
+Deleting now unused module $paramod$235b22934b4cf163ebe165c8f68516bd2df29a36\miter_cmp_prop.
+Deleting now unused module gate.pmux_case03_crossbar.data_out.
+<suppressed ~3 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~1 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 1 unused cells and 7 unused wires.
+<suppressed ~326 debug messages>
+
+12. Executing XPROP pass.
+
+12.1. Executing BMUXMAP pass.
+
+12.2. Executing DEMUXMAP pass.
+<suppressed ~5 debug messages>
+
+13. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `miter'. Setting top module to miter.
+
+13.1. Analyzing design hierarchy..
+Top module:  \miter
+
+13.2. Analyzing design hierarchy..
+Top module:  \miter
+Removed 0 unused modules.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+14. Executing jny backend.
+
+15. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 6356afe3cc, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 24.75 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 24% 2x opt_expr (0 sec), 18% 1x opt_clean (0 sec), ...

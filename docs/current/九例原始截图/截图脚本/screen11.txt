@@ -1,0 +1,23 @@
+WINDOWS | V53H-NoPost | full elapsed time and physical peak working set
+SOURCE: JUDGMENTS.json, DECISIONS.json, RUNS.json | 2026-11-01
+At start: 10 baseline warmups per case; then 10 full nine-case groups.
+Initial >5% and both <=10s: five additional pairs; initial records retained.
+Group  Initial time  Judged time  Memory   Worst time%   Worst memory%
+  1       8/9          9/9        9/9        +0.6508        +1.4929
+  2       9/9          9/9        9/9        +1.6623        +0.6570
+  3       9/9          9/9        9/9        +1.5335        +0.9501
+  4       9/9          9/9        9/9        +0.8092        +1.8231
+  5       9/9          9/9        9/9        -2.2897        +3.1582
+  6       9/9          9/9        9/9        +3.1195        +1.1435
+  7       9/9          9/9        9/9        -0.8227        +1.3598
+  8       8/9          9/9        9/9        -0.4287        +1.3602
+  9       9/9          9/9        9/9        +1.7021        +0.5941
+ 10       9/9          9/9        9/9        +3.3017        +1.1931
+
+Initial time 88/90; judged time 90/90; memory 90/90.
+Runs 290: warmups 90; initial pairs 90; additional pairs 10.
+All raw pairs memory <=1.05: 100/100.
+Worst judged elapsed-time overhead: +3.3017%.
+Worst physical peak WS overhead: +3.1582%.
+Maximum optimized elapsed 0.3381665s; physical peak 21.0000 MiB.
+Final LUT+NOT mean 31.764225%; weighted supplement 28.726062%.

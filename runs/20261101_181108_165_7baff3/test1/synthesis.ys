@@ -1,0 +1,1 @@
+read_verilog -sv  "inputs/test1/test1/test1.v"; hierarchy -check -top test1; proc; setundef -init -params -zero; synth_intel -family cycloneiv -top test1; check -assert; write_rtlil "runs/20261101_181108_165_7baff3/test1/output.il"; write_json "runs/20261101_181108_165_7baff3/test1/output.json"

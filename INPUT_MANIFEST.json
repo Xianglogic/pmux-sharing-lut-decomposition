@@ -1,0 +1,148 @@
+{
+  "cases": [
+    {
+      "case_id": "test1",
+      "top": "test1",
+      "sources": [
+        "test1/test1/test1.v"
+      ],
+      "sha256": {
+        "test1/test1/test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+      },
+      "include_dirs": [],
+      "parameters": {},
+      "size_scope": "bounded",
+      "group": "original4"
+    },
+    {
+      "case_id": "test2",
+      "top": "test2",
+      "sources": [
+        "test2/test2/test2.v"
+      ],
+      "sha256": {
+        "test2/test2/test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+      },
+      "include_dirs": [],
+      "parameters": {},
+      "size_scope": "bounded",
+      "group": "original4"
+    },
+    {
+      "case_id": "test3",
+      "top": "test3",
+      "sources": [
+        "test3/test3/test3.v"
+      ],
+      "sha256": {
+        "test3/test3/test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+      },
+      "include_dirs": [],
+      "parameters": {},
+      "size_scope": "bounded",
+      "group": "original4"
+    },
+    {
+      "case_id": "test4",
+      "top": "test4",
+      "sources": [
+        "test4/test4/test4.v"
+      ],
+      "sha256": {
+        "test4/test4/test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+      },
+      "include_dirs": [],
+      "parameters": {},
+      "size_scope": "bounded",
+      "group": "original4"
+    },
+    {
+      "case_id": "pmux_case01_balanced",
+      "top": "pmux_case01_balanced",
+      "sources": [
+        "pmux_case01_balanced/pmux_case01_balanced.v"
+      ],
+      "sha256": {
+        "pmux_case01_balanced/pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+      },
+      "parameters": {},
+      "rtl_default_parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "group": "added5",
+      "include_dirs": []
+    },
+    {
+      "case_id": "pmux_case02_pipeline",
+      "top": "pmux_case02_pipeline",
+      "sources": [
+        "pmux_case02_pipeline/pmux_case02_pipeline.v"
+      ],
+      "sha256": {
+        "pmux_case02_pipeline/pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+      },
+      "parameters": {},
+      "rtl_default_parameters": {
+        "LANES": 4,
+        "WIDTH": 3
+      },
+      "group": "added5",
+      "include_dirs": []
+    },
+    {
+      "case_id": "pmux_case03_crossbar",
+      "top": "pmux_case03_crossbar",
+      "sources": [
+        "pmux_case03_crossbar/pmux_case03_crossbar.v"
+      ],
+      "sha256": {
+        "pmux_case03_crossbar/pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+      },
+      "parameters": {},
+      "rtl_default_parameters": {
+        "LANES": 2,
+        "WIDTH": 5
+      },
+      "group": "added5",
+      "include_dirs": []
+    },
+    {
+      "case_id": "pmux_case04_feedback",
+      "top": "pmux_case04_feedback",
+      "sources": [
+        "pmux_case04_feedback/pmux_case04_feedback.v"
+      ],
+      "sha256": {
+        "pmux_case04_feedback/pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+      },
+      "parameters": {},
+      "rtl_default_parameters": {
+        "LANES": 2,
+        "WIDTH": 8
+      },
+      "group": "added5",
+      "include_dirs": []
+    },
+    {
+      "case_id": "pmux_case05_nested",
+      "top": "pmux_case05_nested",
+      "sources": [
+        "pmux_case05_nested/pmux_case05_nested.v"
+      ],
+      "sha256": {
+        "pmux_case05_nested/pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+      },
+      "parameters": {},
+      "rtl_default_parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "group": "added5",
+      "include_dirs": []
+    }
+  ],
+  "source_sha256": "edd99dae2d2b90a2ab4fdf0e7937568e8a84303ab98c134881c29c046aa024c1",
+  "official_scope": "original4 + user-confirmed added5, no mixed training denominator",
+  "protocol": "Same default RTL and external script in both arms; full synth_intel cycloneiv; unmodified original baseline; original backend calls restored in candidate."
+}

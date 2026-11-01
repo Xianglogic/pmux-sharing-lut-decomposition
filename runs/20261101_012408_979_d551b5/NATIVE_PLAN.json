@@ -1,0 +1,764 @@
+{
+  "version": "V53H-IDFIX source-zero full flow",
+  "baseline": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runtime\\baseline\\yosys.exe",
+  "candidate": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runtime\\candidate\\yosys.exe",
+  "abc": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runtime\\candidate\\yosys-abc.exe",
+  "cwd": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101",
+  "meter": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\scripts\\NativeMeter.cs",
+  "reference_root": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\evidence\\current",
+  "sessions": [
+    {
+      "policy": "each_case10_once",
+      "root": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5",
+      "warmups": [
+        {
+          "case": "test1",
+          "top": "test1",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test1\\output"
+        },
+        {
+          "case": "test2",
+          "top": "test2",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test2\\output"
+        },
+        {
+          "case": "test3",
+          "top": "test3",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test3\\output"
+        },
+        {
+          "case": "test4",
+          "top": "test4",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\test4\\output"
+        },
+        {
+          "case": "pmux_case01_balanced",
+          "top": "pmux_case01_balanced",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case01_balanced\\output"
+        },
+        {
+          "case": "pmux_case02_pipeline",
+          "top": "pmux_case02_pipeline",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case02_pipeline\\output"
+        },
+        {
+          "case": "pmux_case03_crossbar",
+          "top": "pmux_case03_crossbar",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case03_crossbar\\output"
+        },
+        {
+          "case": "pmux_case04_feedback",
+          "top": "pmux_case04_feedback",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case04_feedback\\output"
+        },
+        {
+          "case": "pmux_case05_nested",
+          "top": "pmux_case05_nested",
+          "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested",
+          "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\synthesis.ys",
+          "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\warmup\\pmux_case05_nested\\output"
+        }
+      ],
+      "warmup_runs": 90,
+      "groups": [
+        {
+          "group": 1,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group01\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 2,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group02\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 3,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group03\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 4,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group04\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 5,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group05\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 6,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group06\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 7,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group07\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 8,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group08\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 9,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group09\\pmux_case05_nested\\output"
+            }
+          ]
+        },
+        {
+          "group": 10,
+          "cases": [
+            {
+              "case": "test1",
+              "top": "test1",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test1",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test1\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test1\\output"
+            },
+            {
+              "case": "test2",
+              "top": "test2",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test2",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test2\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test2\\output"
+            },
+            {
+              "case": "test3",
+              "top": "test3",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test3",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test3\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test3\\output"
+            },
+            {
+              "case": "test4",
+              "top": "test4",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test4",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test4\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\test4\\output"
+            },
+            {
+              "case": "pmux_case01_balanced",
+              "top": "pmux_case01_balanced",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case01_balanced",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case01_balanced\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case01_balanced\\output"
+            },
+            {
+              "case": "pmux_case02_pipeline",
+              "top": "pmux_case02_pipeline",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case02_pipeline",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case02_pipeline\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case02_pipeline\\output"
+            },
+            {
+              "case": "pmux_case03_crossbar",
+              "top": "pmux_case03_crossbar",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case03_crossbar",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case03_crossbar\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case03_crossbar\\output"
+            },
+            {
+              "case": "pmux_case04_feedback",
+              "top": "pmux_case04_feedback",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case04_feedback",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case04_feedback\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case04_feedback\\output"
+            },
+            {
+              "case": "pmux_case05_nested",
+              "top": "pmux_case05_nested",
+              "folder": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case05_nested",
+              "script": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case05_nested\\synthesis.ys",
+              "output_prefix": "D:\\FPGA\\demo\\algorithms\\V53H_NoPost_20261101\\runs\\20261101_012408_979_d551b5\\group10\\pmux_case05_nested\\output"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "protocol": "At session start 10 original warmups per case, once. Original then candidate. Initial >5% and both <=10s: five fresh pairs, initial retained. Main physical peak WS; CPU separately reported."
+}

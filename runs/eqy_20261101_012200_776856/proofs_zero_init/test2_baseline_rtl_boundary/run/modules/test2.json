@@ -1,0 +1,144 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "test2",
+    "inbits": {
+      "a": [
+        0
+      ],
+      "b": [
+        0
+      ],
+      "c": [
+        0
+      ],
+      "clk": [
+        0
+      ],
+      "d": [
+        0
+      ],
+      "dataa": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datab": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datac": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datad": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "outbits": {
+      "out": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test2",
+    "internal": {},
+    "unused": {
+      "clk": [
+        0
+      ]
+    },
+    "cellcount": 20,
+    "bitcount": 45
+  },
+  "gate_module": {
+    "name": "gold.test2",
+    "internal": {
+      "out_$lut_Y_1_A": [
+        0
+      ],
+      "out_$lut_Y_1_A_1": [
+        0
+      ],
+      "out_$lut_Y_1_A_2": [
+        0
+      ],
+      "out_$lut_Y_1_A_3": [
+        0
+      ],
+      "out_$lut_Y_2_A": [
+        0
+      ],
+      "out_$lut_Y_2_A_1": [
+        0
+      ],
+      "out_$lut_Y_2_A_2": [
+        0
+      ],
+      "out_$lut_Y_2_A_3": [
+        0
+      ],
+      "out_$lut_Y_3_A": [
+        0
+      ],
+      "out_$lut_Y_3_A_1": [
+        0
+      ],
+      "out_$lut_Y_3_A_2": [
+        0
+      ],
+      "out_$lut_Y_3_A_3": [
+        0
+      ],
+      "out_$lut_Y_4_A": [
+        0
+      ],
+      "out_$lut_Y_4_A_1": [
+        0
+      ],
+      "out_$lut_Y_4_A_2": [
+        0
+      ],
+      "out_$lut_Y_4_A_3": [
+        0
+      ],
+      "out_$lut_Y_A": [
+        0
+      ],
+      "out_$lut_Y_A_1": [
+        0
+      ],
+      "out_$lut_Y_A_2": [
+        0
+      ],
+      "out_$lut_Y_A_3": [
+        0
+      ]
+    },
+    "unused": {
+      "clk": [
+        0
+      ]
+    },
+    "cellcount": 60,
+    "bitcount": 85
+  }
+}

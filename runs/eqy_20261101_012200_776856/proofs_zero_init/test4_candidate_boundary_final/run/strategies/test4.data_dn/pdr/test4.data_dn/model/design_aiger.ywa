@@ -1,0 +1,29 @@
+{
+  "version": "Yosys Witness Aiger map",
+  "gennerator": "Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)",
+  "latch_count": 33,
+  "input_count": 8,
+  "clocks": [],
+  "inputs": [
+    {"input": 0, "offset": 0, "path": ["\\__pi_reset_n"]},
+    {"input": 1, "offset": 0, "path": ["\\__pi_ena"]},
+    {"input": 2, "offset": 0, "path": ["\\__pi_datain"]},
+    {"input": 3, "offset": 1, "path": ["\\__pi_datain"]},
+    {"input": 4, "offset": 2, "path": ["\\__pi_datain"]},
+    {"input": 5, "offset": 3, "path": ["\\__pi_datain"]},
+    {"input": 6, "offset": 4, "path": ["\\__pi_datain"]},
+    {"input": 7, "offset": 0, "path": ["\\__pi_clk"]}
+  ],
+  "seqs": [],
+  "inits": [],
+  "asserts": [
+    ["\\_witness_", "\\assert_flatten___po_data_dn__assert__assert________________partitions_test4_data_dn_sv_98_3423"],
+    ["\\_witness_", "\\assert_flatten___po_data_dp__assert__assert________________partitions_test4_data_dn_sv_98_3423"],
+    ["\\_witness_", "\\assert_flatten___po_datain_5bis7__assert__assert________________partitions_test4_data_dn_sv_98_3423"],
+    ["\\_witness_", "\\assert_flatten___po_dataout__assert__assert________________partitions_test4_data_dn_sv_98_3450"],
+    ["\\_witness_", "\\assert_flatten___po_only_5b__assert__assert________________partitions_test4_data_dn_sv_98_3423"]
+  ],
+  "assumes": [
+    ["\\_witness_", "\\assume_auto_xprop_cc_1237_execute_3468"]
+  ]
+}

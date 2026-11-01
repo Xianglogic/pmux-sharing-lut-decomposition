@@ -1,0 +1,8 @@
+{
+  "groups_declared_before_run": 10,
+  "formal_completed_before_timing": true,
+  "exit": 0,
+  "seconds": 86.46899999980815,
+  "candidate_build": "portable adjacent-ABC lookup, revalidated after failed preliminary packaging",
+  "reproduction_command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/Run9.ps1 -Mode Measure -Groups 10"
+}

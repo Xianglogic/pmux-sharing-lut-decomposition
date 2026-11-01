@@ -1,0 +1,48 @@
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gold: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/gold.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/gold.ys"
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gold: finished (returncode=0)
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/gate.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/gate.ys"
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\only_5b_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\data_dp_dffeas_q_d_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\datain_5bis7_dffeas_q_d_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\only_5b_$lut_Y_A_dffeas_q_d_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\data_dn_dffeas_q_d_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\data_dn_dffeas_q_d_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\data_dp_dffeas_q_d_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_1.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_2.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_3.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_Y_$lut_Y_4.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: Warning: Wire test4.\ena_$lut_A_A_$lut_Y.cin is used but has no driver.
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] read_gate: finished (returncode=0)
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] combine: starting process "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/combine.log /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run/combine.ys"
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] combine: finished (returncode=0)
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] partition: starting process "cd /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run; /tmp/pmux_nopost_sc3wldoo/tools/bin/yosys -ql partition.log partition.ys"
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] partition: finished (returncode=0)
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: starting process "make -j1 -C /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run -f strategies.mk"
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: make: Entering directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run'
+EQY  1:22:18 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: Running strategy 'pdr' on 'test4.data_dn'..
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: Proved equivalence of partition 'test4.data_dn' using strategy 'pdr'
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: make -f strategies.mk summary
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: make[1]: Entering directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run'
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: make[1]: Leaving directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run'
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: make: Leaving directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run'
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] run: finished (returncode=0)
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] Successfully proved equivalence of partition test4.data_dn
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] Successfully proved designs equivalent
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+EQY  1:22:19 [/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test4_candidate_boundary_final/run] DONE (PASS, rc=0)

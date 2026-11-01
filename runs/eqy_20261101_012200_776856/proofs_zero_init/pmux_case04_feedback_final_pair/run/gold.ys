@@ -1,0 +1,16 @@
+read_rtlil "evidence/current/capture_full/pmux_case04_feedback/baseline.final.formal.il"
+delete =A:blackbox
+delete =A:whitebox
+read_verilog -overwrite "evidence/formal_primitives.v"
+delete t:$print
+prep -top pmux_case04_feedback -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case04_feedback_final_pair/run/gold.il

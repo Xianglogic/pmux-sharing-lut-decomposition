@@ -1,0 +1,17 @@
+{
+  "CMakeLists.txt": "passes/opt/CMakeLists.txt",
+  "eq_prefix_share.cc": "passes/opt/eq_prefix_share.cc",
+  "guarded_reg_reuse.cc": "passes/opt/guarded_reg_reuse.cc",
+  "lut4_cone_fold.cc": "passes/opt/lut4_cone_fold.cc",
+  "lut4_resub.cc": "passes/opt/lut4_resub.cc",
+  "pmux_cofactor_share.cc": "passes/opt/pmux_cofactor_share.cc",
+  "pmux_compare_const.cc": "passes/opt/pmux_compare_const.cc",
+  "pmux_cross_share.cc": "passes/opt/pmux_cross_share.cc",
+  "pmux_opt.cc": "passes/opt/pmux_opt.cc",
+  "pmux_shared_read.cc": "passes/opt/pmux_shared_read.cc",
+  "priority_pmux_opt.cc": "passes/opt/priority_pmux_opt.cc",
+  "rom_cofactor_opt.cc": "passes/opt/rom_cofactor_opt.cc",
+  "synth_intel.cc": "techlibs/intel/synth_intel.cc",
+  "abc9.cc": "passes/techmap/abc9.cc",
+  "abc9_exe.cc": "passes/techmap/abc9_exe.cc"
+}

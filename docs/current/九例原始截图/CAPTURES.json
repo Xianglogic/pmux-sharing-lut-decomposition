@@ -1,0 +1,134 @@
+[
+  {
+    "file": "01_test1_原版与优化版综合结果.png",
+    "sha256": "d043c51e121f9eb4afabb9c8790d21229edc29b394fe593348264e30a2bb890d",
+    "size": [
+      1767,
+      1082
+    ],
+    "console_title": "PMUX-NoPost-1-test1-20261101",
+    "rows": 45,
+    "capture_time": "2026-11-01T18:02:03.5948279+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "02_test2_原版与优化版综合结果.png",
+    "sha256": "2ad39adf2bdff681f8a6384a7ed589f9283b26edb342ef2bfc984b29cffd5568",
+    "size": [
+      1767,
+      990
+    ],
+    "console_title": "PMUX-NoPost-2-test2-20261101",
+    "rows": 41,
+    "capture_time": "2026-11-01T18:05:34.7625521+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "03_test3_原版与优化版综合结果.png",
+    "sha256": "c28b4f5e5a199404c0db0e9c0c69ea1142fc5cd46f2428f830462e80b04e4a66",
+    "size": [
+      1767,
+      1059
+    ],
+    "console_title": "PMUX-NoPost-3-test3-20261101",
+    "rows": 44,
+    "capture_time": "2026-11-01T18:05:37.2427206+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "04_test4_原版与优化版综合结果.png",
+    "sha256": "93be34639488dac52d60f040764c8978f3ff5fe348523de92cf2d97aece07e70",
+    "size": [
+      1767,
+      1059
+    ],
+    "console_title": "PMUX-NoPost-4-test4-20261101",
+    "rows": 44,
+    "capture_time": "2026-11-01T18:05:39.5278615+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "05_pmux_case01_balanced_原版与优化版综合结果.png",
+    "sha256": "842647ec30e07d6eb806121c134a88ce4ee33485b9efc18724fd3428a9a13d43",
+    "size": [
+      1767,
+      1036
+    ],
+    "console_title": "PMUX-NoPost-5-pmux_case01_balanced-20261101",
+    "rows": 43,
+    "capture_time": "2026-11-01T18:05:42.4345456+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "06_pmux_case02_pipeline_原版与优化版综合结果.png",
+    "sha256": "313f714ec80662475968114ce405e017da712226ed59771349a90933bdb3760d",
+    "size": [
+      1767,
+      1036
+    ],
+    "console_title": "PMUX-NoPost-6-pmux_case02_pipeline-20261101",
+    "rows": 43,
+    "capture_time": "2026-11-01T18:05:45.0541398+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "07_pmux_case03_crossbar_原版与优化版综合结果.png",
+    "sha256": "0c74694f494705a0859fb6ca84c1d1a19ab0cc17256894a1f2cd55896e4b3846",
+    "size": [
+      1767,
+      1036
+    ],
+    "console_title": "PMUX-NoPost-7-pmux_case03_crossbar-20261101",
+    "rows": 43,
+    "capture_time": "2026-11-01T18:05:47.6543752+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "08_pmux_case04_feedback_原版与优化版综合结果.png",
+    "sha256": "34f40ca1294aca6d5d40e6c05ffbcc7de80b929f728796fa98a3eae5f59abe87",
+    "size": [
+      1767,
+      1082
+    ],
+    "console_title": "PMUX-NoPost-8-pmux_case04_feedback-20261101",
+    "rows": 45,
+    "capture_time": "2026-11-01T18:05:50.1881904+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "09_pmux_case05_nested_原版与优化版综合结果.png",
+    "sha256": "06f511d897701305354864bbdd1ef14239ea0b7fc1fa3589dab6b52e0cbbcc72",
+    "size": [
+      1767,
+      1036
+    ],
+    "console_title": "PMUX-NoPost-9-pmux_case05_nested-20261101",
+    "rows": 43,
+    "capture_time": "2026-11-01T18:05:52.7550842+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "10_EQY九例验证记录.png",
+    "sha256": "a5e38f7757c58cef6163e116f0d191a991c1e8e8b1aba2a3026c61216bff8bff",
+    "size": [
+      1767,
+      875
+    ],
+    "console_title": "PMUX-NoPost-10-EQY-20261101",
+    "rows": 36,
+    "capture_time": "2026-11-01T18:05:55.3013789+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  },
+  {
+    "file": "11_十组九例效率测量记录.png",
+    "sha256": "c60e7137a3ed73291bd6db67e4fbb625040c262899b7f61cfe6991dc0cd8671c",
+    "size": [
+      1767,
+      622
+    ],
+    "console_title": "PMUX-NoPost-11-EFFICIENCY-20261101",
+    "rows": 25,
+    "capture_time": "2026-11-01T18:05:57.8260638+08:00",
+    "method": "Windows Console Host / PrintWindow"
+  }
+]

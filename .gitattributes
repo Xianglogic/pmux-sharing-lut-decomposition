@@ -1,0 +1,5 @@
+# Preserve archived source, runtime and evidence bytes exactly.
+* -text
+
+# Preserve archived project bytes in Git checkouts.
+* -text -eol -filter -ident -export-subst

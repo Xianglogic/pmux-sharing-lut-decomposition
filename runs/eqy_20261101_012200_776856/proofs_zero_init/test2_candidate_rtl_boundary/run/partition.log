@@ -1,0 +1,211 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.test2/$auto$insbuf.cc:97:execute$525: $auto$simplemap.cc:370:simplemap_lut$330 [0] -> $auto$simplemap.cc:370:simplemap_lut$330 [1]
+Add gate.test2/$auto$insbuf.cc:97:execute$526: $auto$simplemap.cc:370:simplemap_lut$321 [1] -> $auto$simplemap.cc:370:simplemap_lut$330 [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$527: $auto$simplemap.cc:370:simplemap_lut$330 [1] -> $auto$simplemap.cc:370:simplemap_lut$330 [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$528: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$321 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$529: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$321 [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$530: $auto$simplemap.cc:370:simplemap_lut$330 [2] -> $auto$simplemap.cc:370:simplemap_lut$321 [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$531: $auto$simplemap.cc:370:simplemap_lut$321 [3] -> $auto$simplemap.cc:370:simplemap_lut$321 [4]
+Add gate.test2/$auto$insbuf.cc:97:execute$532: $auto$simplemap.cc:370:simplemap_lut$321 [4] -> $auto$simplemap.cc:370:simplemap_lut$321 [5]
+Add gate.test2/$auto$insbuf.cc:97:execute$533: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$321 [6]
+Add gate.test2/$auto$insbuf.cc:97:execute$534: $auto$simplemap.cc:370:simplemap_lut$321 [5] -> $auto$simplemap.cc:370:simplemap_lut$321 [7]
+Add gate.test2/$auto$insbuf.cc:97:execute$535: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$430 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$536: $auto$simplemap.cc:370:simplemap_lut$430 [0] -> $auto$simplemap.cc:370:simplemap_lut$316 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$537: $auto$simplemap.cc:370:simplemap_lut$316 [0] -> $auto$simplemap.cc:370:simplemap_lut$392 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$538: $auto$simplemap.cc:370:simplemap_lut$392 [0] -> $auto$simplemap.cc:370:simplemap_lut$373 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$539: $auto$simplemap.cc:370:simplemap_lut$373 [0] -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$540: 1'0 -> $auto$simplemap.cc:370:simplemap_lut$501 [0]
+Add gate.test2/$auto$insbuf.cc:97:execute$541: $auto$simplemap.cc:370:simplemap_lut$501 [1] -> $auto$simplemap.cc:370:simplemap_lut$501 [2]
+Add gate.test2/$auto$insbuf.cc:97:execute$542: $auto$simplemap.cc:370:simplemap_lut$501 [2] -> $auto$simplemap.cc:370:simplemap_lut$501 [3]
+Add gate.test2/$auto$insbuf.cc:97:execute$543: $auto$simplemap.cc:370:simplemap_lut$501 [3] -> $auto$simplemap.cc:370:simplemap_lut$506 [1]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$318/S: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$503/A: $auto$simplemap.cc:370:simplemap_lut$321 [1] -> $auto$simplemap.cc:370:simplemap_lut$321 [7]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$432/S: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$413/S: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$394/S: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$353/B: $auto$simplemap.cc:370:simplemap_lut$321 [1] -> $auto$simplemap.cc:370:simplemap_lut$321 [7]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$375/S: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$507/B: $auto$simplemap.cc:370:simplemap_lut$501 [1] -> $auto$simplemap.cc:370:simplemap_lut$506 [1]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$339/A: $auto$simplemap.cc:370:simplemap_lut$330 [0] -> $auto$simplemap.cc:370:simplemap_lut$330 [3]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$356/B: $auto$simplemap.cc:370:simplemap_lut$330 [0] -> $auto$simplemap.cc:370:simplemap_lut$330 [3]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$356/A: $auto$simplemap.cc:370:simplemap_lut$321 [1] -> $auto$simplemap.cc:370:simplemap_lut$321 [7]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$510/B: $auto$simplemap.cc:370:simplemap_lut$501 [1] -> $auto$simplemap.cc:370:simplemap_lut$506 [1]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$396/A: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$415/A: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$434/A: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$320/A: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Rewrite gate.test2/$auto$simplemap.cc:372:simplemap_lut$377/A: \a_$lut_A_2_Y -> $auto$simplemap.cc:370:simplemap_lut$411 [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$544: \out [0] -> \temp [0]
+Add gold.test2/$auto$insbuf.cc:97:execute$545: \out [1] -> \temp [1]
+Add gold.test2/$auto$insbuf.cc:97:execute$546: \out [2] -> \temp [2]
+Add gold.test2/$auto$insbuf.cc:97:execute$547: \out [3] -> \temp [3]
+Add gold.test2/$auto$insbuf.cc:97:execute$548: \out [4] -> \temp [4]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.test2 / gate.test2.
+
+3.1.1. Processing matched IDs for module test2.
+
+3.1.2. Create fragment partitions for module test2.
+Adding output bit \out [4] to partition 0.
+Adding output bit \out [0] to partition 0.
+Adding output bit \out [1] to partition 0.
+Adding output bit \out [2] to partition 0.
+Adding output bit \out [3] to partition 0.
+
+Final list of fragment partitions:
+  0 \out [3] \out [2] \out [1] \out [0] \out [4] <= \dataa [3] \datac [3] \datab [3] \datad [3] \dataa [2] \datac [2] \datab [2] \datad [2] \dataa [1] \datac [1] \datab [1] \datad [1] \dataa [0] \datac [0] \datab [0] \datad [0] \dataa [4] \datac [4] \datab [4] \datad [4] \a \b \c \d
+
+3.1.3. Execute partitioning commands for module test2.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'out' using a PO name: out
+
+Partition Summary:
+  Fragments:
+       0: \out
+  Partitions:
+       0: out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module test2.
+Adding output bit \out [4] to partition 1.
+Adding output bit \out [3] to partition 1.
+Adding output bit \out [2] to partition 1.
+Adding output bit \out [1] to partition 1.
+Adding output bit \out [0] to partition 1.
+Adding non-output bit \datad [4] to partition 1.
+Adding non-output bit \datad [3] to partition 1.
+Adding non-output bit \datad [2] to partition 1.
+Adding non-output bit \datad [1] to partition 1.
+Adding non-output bit \datad [0] to partition 1.
+Adding non-output bit \datac [4] to partition 1.
+Adding non-output bit \datac [3] to partition 1.
+Adding non-output bit \datac [2] to partition 1.
+Adding non-output bit \datac [1] to partition 1.
+Adding non-output bit \datac [0] to partition 1.
+Adding non-output bit \datab [4] to partition 1.
+Adding non-output bit \datab [3] to partition 1.
+Adding non-output bit \datab [2] to partition 1.
+Adding non-output bit \datab [1] to partition 1.
+Adding non-output bit \datab [0] to partition 1.
+Adding non-output bit \dataa [4] to partition 1.
+Adding non-output bit \dataa [3] to partition 1.
+Adding non-output bit \dataa [2] to partition 1.
+Adding non-output bit \dataa [1] to partition 1.
+Adding non-output bit \dataa [0] to partition 1.
+Adding non-output bit \d to partition 1.
+Adding non-output bit \clk to partition 1.
+Adding non-output bit \c to partition 1.
+Adding non-output bit \b to partition 1.
+Adding non-output bit \a to partition 1.
+Writing partition 0 as test2.out.
+  partition pi bit 0: \dataa [3] <-> \dataa [3]
+  partition pi bit 1: \datac [3] <-> \datac [3]
+  partition pi bit 2: \datab [3] <-> \datab [3]
+  partition pi bit 3: \datad [3] <-> \datad [3]
+  partition pi bit 4: \dataa [2] <-> \dataa [2]
+  partition pi bit 5: \datac [2] <-> \datac [2]
+  partition pi bit 6: \datab [2] <-> \datab [2]
+  partition pi bit 7: \datad [2] <-> \datad [2]
+  partition pi bit 8: \dataa [1] <-> \dataa [1]
+  partition pi bit 9: \datac [1] <-> \datac [1]
+  partition pi bit 10: \datab [1] <-> \datab [1]
+  partition pi bit 11: \datad [1] <-> \datad [1]
+  partition pi bit 12: \dataa [0] <-> \dataa [0]
+  partition pi bit 13: \datac [0] <-> \datac [0]
+  partition pi bit 14: \datab [0] <-> \datab [0]
+  partition pi bit 15: \datad [0] <-> \datad [0]
+  partition pi bit 16: \dataa [4] <-> \dataa [4]
+  partition pi bit 17: \datac [4] <-> \datac [4]
+  partition pi bit 18: \datab [4] <-> \datab [4]
+  partition pi bit 19: \datad [4] <-> \datad [4]
+  partition pi bit 20: \a <-> \a
+  partition pi bit 21: \b <-> \b
+  partition pi bit 22: \c <-> \c
+  partition pi bit 23: \d <-> \d
+  partition po bit 0: \out [3] <-> \out [3]
+  partition po bit 1: \out [2] <-> \out [2]
+  partition po bit 2: \out [1] <-> \out [1]
+  partition po bit 3: \out [0] <-> \out [0]
+  partition po bit 4: \out [4] <-> \out [4]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/test2.out.il
+<suppressed ~1074 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.test2.out...
+Checking module gold.test2.out...
+Found and reported 0 problems.
+
+Writing partition 1 as test2.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \dataa [0] <-> \dataa [0]
+  partition pi bit 2: \datac [0] <-> \datac [0]
+  partition pi bit 3: \datab [0] <-> \datab [0]
+  partition pi bit 4: \datad [0] <-> \datad [0]
+  partition pi bit 5: \dataa [1] <-> \dataa [1]
+  partition pi bit 6: \datac [1] <-> \datac [1]
+  partition pi bit 7: \datab [1] <-> \datab [1]
+  partition pi bit 8: \datad [1] <-> \datad [1]
+  partition pi bit 9: \dataa [2] <-> \dataa [2]
+  partition pi bit 10: \datac [2] <-> \datac [2]
+  partition pi bit 11: \datab [2] <-> \datab [2]
+  partition pi bit 12: \datad [2] <-> \datad [2]
+  partition pi bit 13: \dataa [3] <-> \dataa [3]
+  partition pi bit 14: \datac [3] <-> \datac [3]
+  partition pi bit 15: \datab [3] <-> \datab [3]
+  partition pi bit 16: \datad [3] <-> \datad [3]
+  partition pi bit 17: \dataa [4] <-> \dataa [4]
+  partition pi bit 18: \datac [4] <-> \datac [4]
+  partition pi bit 19: \datab [4] <-> \datab [4]
+  partition pi bit 20: \datad [4] <-> \datad [4]
+  partition pi bit 21: \a <-> \a
+  partition pi bit 22: \b <-> \b
+  partition pi bit 23: \c <-> \c
+  partition pi bit 24: \d <-> \d
+  partition po bit 0: \out [0] <-> \out [0]
+  partition po bit 1: \out [1] <-> \out [1]
+  partition po bit 2: \out [2] <-> \out [2]
+  partition po bit 3: \out [3] <-> \out [3]
+  partition po bit 4: \out [4] <-> \out [4]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/test2.il
+<suppressed ~465 debug messages>
+
+End of script. Logfile hash: d638db1017, time: 0.00s, user: 0.01s, system: 0.00s, MEM: 17.81 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 70% 1x eqy_partition (0 sec), 8% 2x read_rtlil (0 sec), ...

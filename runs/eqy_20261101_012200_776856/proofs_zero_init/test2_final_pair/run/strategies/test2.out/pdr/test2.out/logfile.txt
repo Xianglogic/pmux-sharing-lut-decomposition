@@ -1,0 +1,62 @@
+SBY  1:22:15 [test2.out] Removing directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_final_pair/run/strategies/test2.out/pdr/test2.out'.
+SBY  1:22:15 [test2.out] engine_0: abc pdr
+SBY  1:22:15 [test2.out] base: starting process "cd test2.out/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  1:22:15 [test2.out] base: finished (returncode=0)
+SBY  1:22:15 [test2.out] prep: starting process "cd test2.out/model; yosys -ql design_prep.log design_prep.ys"
+SBY  1:22:15 [test2.out] prep: finished (returncode=0)
+SBY  1:22:15 [test2.out] aig: starting process "cd test2.out/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datad [0] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datad [1] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datad [2] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datad [3] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datad [4] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datac [0] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datac [1] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datac [2] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datac [3] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datac [4] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datab [0] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datab [1] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datab [2] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datab [3] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_datab [4] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_dataa [0] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_dataa [1] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_dataa [2] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_dataa [3] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_dataa [4] like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_d like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_c like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_b like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating undriven bit miter.\__pi_a like $anyseq.
+SBY  1:22:15 [test2.out] aig: Warning: Treating a total of 24 undriven bits in miter like $anyseq.
+SBY  1:22:15 [test2.out] aig: finished (returncode=0)
+SBY  1:22:15 [test2.out] engine_0: starting process "cd test2.out; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw'"
+SBY  1:22:15 [test2.out] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw"
+SBY  1:22:15 [test2.out] engine_0: Warning: The last output is interpreted as a constraint.
+SBY  1:22:15 [test2.out] engine_0: Warning: The network is combinational.
+SBY  1:22:15 [test2.out] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 119. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY  1:22:15 [test2.out] engine_0: Frame Clauses                                                     Max Queue Flops Time
+SBY  1:22:15 [test2.out] engine_0: 1 : 0 0                                                                 0     0      0.00 sec  T/O =  0  PRV =  0
+SBY  1:22:15 [test2.out] engine_0: 2 : 0 0 0                                                               0     0      0.00 sec  T/O =  0  PRV =  0
+SBY  1:22:15 [test2.out] engine_0: Proved output 0 in frame 1 (converged).
+SBY  1:22:15 [test2.out] engine_0: Block =    0  Oblig =     0  Clause =     0  Call =     2 (sat=0.0%)  Cex =   0  Start =   0
+SBY  1:22:15 [test2.out] engine_0: SAT solving =     0.00 sec (  2.16 %)
+SBY  1:22:15 [test2.out] engine_0: unsat     =     0.00 sec (  2.16 %)
+SBY  1:22:15 [test2.out] engine_0: sat       =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: Generalize  =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: Push clause =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: Ternary sim =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: Containment =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: CNF compute =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY  1:22:15 [test2.out] engine_0: TOTAL       =     0.01 sec (100.00 %)
+SBY  1:22:15 [test2.out] engine_0: Property proved.  Time =     0.01 sec
+SBY  1:22:15 [test2.out] engine_0: Counter-example is not available.
+SBY  1:22:15 [test2.out] engine_0: finished (returncode=0)
+SBY  1:22:15 [test2.out] engine_0: Status returned by engine: PASS
+SBY  1:22:15 [test2.out] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:15 [test2.out] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:15 [test2.out] summary: engine_0 (abc pdr) returned PASS
+SBY  1:22:15 [test2.out] summary: engine_0 did not produce any traces
+SBY  1:22:15 [test2.out] DONE (PASS, rc=0)

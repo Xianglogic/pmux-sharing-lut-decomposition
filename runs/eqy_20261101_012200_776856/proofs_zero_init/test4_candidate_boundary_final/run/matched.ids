@@ -1,0 +1,18 @@
+# [*] gold-match clk
+test4 clk clk
+# [*] gold-match reset_n
+test4 reset_n reset_n
+# [*] gold-match ena
+test4 ena ena
+# [*] gold-match datain
+test4 datain datain
+# [*] gold-match dataout
+test4 dataout dataout
+# [*] gold-match only_5b
+test4 only_5b only_5b
+# [*] gold-match datain_5bis7
+test4 datain_5bis7 datain_5bis7
+# [*] gold-match data_dp
+test4 data_dp data_dp
+# [*] gold-match data_dn
+test4 data_dn data_dn

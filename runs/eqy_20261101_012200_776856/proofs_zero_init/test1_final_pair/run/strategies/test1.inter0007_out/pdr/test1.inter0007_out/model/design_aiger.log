@@ -1,0 +1,418 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `miter'. Setting top module to miter.
+
+2.1. Analyzing design hierarchy..
+Top module:  \miter
+
+2.2. Analyzing design hierarchy..
+Top module:  \miter
+Removed 0 unused modules.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~123 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 11828 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 11828 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 29 unused cells and 44 unused wires.
+<suppressed ~71 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~2 debug messages>
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \miter..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \miter.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 11799 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+6.18. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $xnor.
+No more expansions possible.
+<suppressed ~9573 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~789 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 11912 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 11679 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~683 debug messages>
+Removed a total of 233 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 400 unused wires.
+<suppressed ~1 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing AIGMAP pass (map logic to AIG).
+Module miter: replaced 5914 cells with 26084 new cells, skipped 5765 cells.
+  replaced 3 cell types:
+     740 $_MUX_
+    5122 $_OR_
+      52 $_XNOR_
+  not replaced 6 cell types:
+    2764 $_AND_
+    1294 $_FF_
+    1696 $_NOT_
+       4 $assert
+       1 $assume
+       6 $scopeinfo
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 0 unused cells and 5911 unused wires.
+<suppressed ~1 debug messages>
+
+15. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    33495 wires
+    37288 wire bits
+     2254 public wires
+     3756 public wire bits
+       19 ports
+      195 port bits
+    31849 cells
+    10262   $_AND_
+     1294   $_FF_
+    20282   $_NOT_
+        4   $assert
+        1   $assume
+        6   $scopeinfo
+
+16. Executing AIGER backend.
+Warning: Treating undriven bit miter.\__pi_valid like $anyseq.
+Warning: Treating undriven bit miter.\__pi_reset like $anyseq.
+Warning: Treating undriven bit miter.\__pi_clock like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q7__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q6__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q5__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q4__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q3__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q2__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q1__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_Q0__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I7__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I6__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I5__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I4__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I3__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I2__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I1__15_4 [11] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [0] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [1] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [2] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [3] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [4] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [5] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [6] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [7] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [8] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [9] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [10] like $anyseq.
+Warning: Treating undriven bit miter.\__pi_I0__15_4 [11] like $anyseq.
+Warning: Treating a total of 195 undriven bits in miter like $anyseq.
+
+Warnings: 196 unique messages, 196 total
+End of script. Logfile hash: 0c519ac803, time: 0.48s, user: 0.58s, system: 0.09s, MEM: 65.38 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 36% 4x opt_clean (0 sec), 28% 4x opt_expr (0 sec), ...

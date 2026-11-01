@@ -1,0 +1,288 @@
+{
+  "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, MSVC D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe 19.51.36246.0) [/home/lenovo/.local/state/pmux_v069_base at HEAD]",
+  "modules": {
+    "test2": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "inputs/test2/test2/test2.v:2.1-33.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "a": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "c": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "dataa": {
+          "direction": "input",
+          "bits": [ 7, 8, 9, 10, 11 ]
+        },
+        "datab": {
+          "direction": "input",
+          "bits": [ 12, 13, 14, 15, 16 ]
+        },
+        "datac": {
+          "direction": "input",
+          "bits": [ 17, 18, 19, 20, 21 ]
+        },
+        "datad": {
+          "direction": "input",
+          "bits": [ 22, 23, 24, 25, 26 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 27, 28, 29, 30, 31 ]
+        }
+      },
+      "cells": {
+        "$procmux$3": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "inputs/test2/test2/test2.v:25.17-25.17|inputs/test2/test2/test2.v:19.5-29.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0" ],
+            "B": [ 22, 23, 24, 25, 26 ],
+            "S": [ 6 ],
+            "Y": [ 32, 33, 34, 35, 36 ]
+          }
+        },
+        "$procmux$5": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "inputs/test2/test2/test2.v:23.17-23.17|inputs/test2/test2/test2.v:19.5-29.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32, 33, 34, 35, 36 ],
+            "B": [ 17, 18, 19, 20, 21 ],
+            "S": [ 5 ],
+            "Y": [ 37, 38, 39, 40, 41 ]
+          }
+        },
+        "$procmux$7": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "inputs/test2/test2/test2.v:21.17-21.17|inputs/test2/test2/test2.v:19.5-29.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37, 38, 39, 40, 41 ],
+            "B": [ 12, 13, 14, 15, 16 ],
+            "S": [ 4 ],
+            "Y": [ 42, 43, 44, 45, 46 ]
+          }
+        },
+        "$procmux$9": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "inputs/test2/test2/test2.v:19.16-19.16|inputs/test2/test2/test2.v:19.5-29.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42, 43, 44, 45, 46 ],
+            "B": [ 7, 8, 9, 10, 11 ],
+            "S": [ 3 ],
+            "Y": [ 27, 28, 29, 30, 31 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\temp[4:0]": {
+          "hide_name": 1,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:16.1-30.6"
+          }
+        },
+        "$1\\temp[4:0]": {
+          "hide_name": 1,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:16.1-30.6"
+          }
+        },
+        "$procmux$10_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$3_Y": {
+          "hide_name": 1,
+          "bits": [ 32, 33, 34, 35, 36 ],
+          "attributes": {
+          }
+        },
+        "$procmux$4_CMP": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "$procmux$5_Y": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41 ],
+          "attributes": {
+          }
+        },
+        "$procmux$6_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$7_Y": {
+          "hide_name": 1,
+          "bits": [ 42, 43, 44, 45, 46 ],
+          "attributes": {
+          }
+        },
+        "$procmux$8_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$9_Y": {
+          "hide_name": 1,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:4.7-4.8"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:5.7-5.8"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:6.7-6.8"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:8.7-8.10"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:7.7-7.8"
+          }
+        },
+        "dataa": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:9.14-9.19"
+          }
+        },
+        "datab": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:10.14-10.19"
+          }
+        },
+        "datac": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:11.14-11.19"
+          }
+        },
+        "datad": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:12.14-12.19"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:13.13-13.16"
+          }
+        },
+        "temp": {
+          "hide_name": 0,
+          "bits": [ 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "inputs/test2/test2/test2.v:14.9-14.13"
+          }
+        }
+      }
+    }
+  }
+}

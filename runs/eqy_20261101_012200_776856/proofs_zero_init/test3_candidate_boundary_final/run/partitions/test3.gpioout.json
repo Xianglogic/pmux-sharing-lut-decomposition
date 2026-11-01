@@ -1,0 +1,519 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "test3.gpioout",
+    "inbits": {
+      "clk": [
+        0
+      ],
+      "cs": [
+        0
+      ],
+      "sr_in": [
+        0
+      ]
+    },
+    "outbits": {
+      "gpioout": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_out": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test3.gpioout",
+    "internal": {
+      "gpioout_dffeas_q.clk": [
+        0
+      ],
+      "gpioout_dffeas_q.ena": [
+        0
+      ],
+      "gpioout_dffeas_q.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_1.d": [
+        0
+      ],
+      "gpioout_dffeas_q_1.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_1.q": [
+        0
+      ],
+      "gpioout_dffeas_q_2.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_2.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_2.q": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_3.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3.q": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_4.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_4.d": [
+        0
+      ],
+      "gpioout_dffeas_q_4.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_4.q": [
+        0
+      ],
+      "gpioout_dffeas_q_ena": [
+        0
+      ],
+      "rw": [
+        0
+      ],
+      "rw_dffeas_q.clk": [
+        0
+      ],
+      "rw_dffeas_q.d": [
+        0
+      ],
+      "rw_dffeas_q.q": [
+        0
+      ],
+      "sr": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_dffeas_q.clk": [
+        0
+      ],
+      "sr_dffeas_q.d": [
+        0
+      ],
+      "sr_dffeas_q.q": [
+        0
+      ],
+      "sr_dffeas_q_1.clk": [
+        0
+      ],
+      "sr_dffeas_q_1.d": [
+        0
+      ],
+      "sr_dffeas_q_1.q": [
+        0
+      ],
+      "sr_dffeas_q_2.clk": [
+        0
+      ],
+      "sr_dffeas_q_2.d": [
+        0
+      ],
+      "sr_dffeas_q_2.q": [
+        0
+      ],
+      "sr_dffeas_q_3.clk": [
+        0
+      ],
+      "sr_dffeas_q_3.d": [
+        0
+      ],
+      "sr_dffeas_q_3.q": [
+        0
+      ],
+      "sr_dffeas_q_4.clk": [
+        0
+      ],
+      "sr_dffeas_q_4.d": [
+        0
+      ],
+      "sr_dffeas_q_4.q": [
+        0
+      ],
+      "sr_dffeas_q_5.clk": [
+        0
+      ],
+      "sr_dffeas_q_5.d": [
+        0
+      ],
+      "sr_dffeas_q_5.q": [
+        0
+      ],
+      "sr_dffeas_q_6.clk": [
+        0
+      ],
+      "sr_dffeas_q_6.d": [
+        0
+      ],
+      "sr_dffeas_q_6.q": [
+        0
+      ],
+      "sr_out_dffeas_q.clk": [
+        0
+      ],
+      "sr_out_dffeas_q.d": [
+        0
+      ],
+      "sr_out_dffeas_q.q": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 169,
+    "bitcount": 172
+  },
+  "gate_module": {
+    "name": "gold.test3.gpioout",
+    "internal": {
+      "cs_$lut_A.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q.clk": [
+        0
+      ],
+      "gpioout_dffeas_q.ena": [
+        0
+      ],
+      "gpioout_dffeas_q.q": [
+        0
+      ],
+      "gpioout_dffeas_q_1.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_1.d": [
+        0
+      ],
+      "gpioout_dffeas_q_1.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_1.q": [
+        0
+      ],
+      "gpioout_dffeas_q_2.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_2.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_2.q": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_2_ena_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_3.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3.q": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_combout.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_3_d_$lut_Y_A_cycloneiv_lcell_comb_combout_dataa_cycloneiv_lcell_comb_dataa_combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_3_ena_$lut_Y.datad": [
+        0
+      ],
+      "gpioout_dffeas_q_4.clk": [
+        0
+      ],
+      "gpioout_dffeas_q_4.d": [
+        0
+      ],
+      "gpioout_dffeas_q_4.ena": [
+        0
+      ],
+      "gpioout_dffeas_q_4.q": [
+        0
+      ],
+      "gpioout_dffeas_q_ena": [
+        0
+      ],
+      "gpioout_dffeas_q_ena_$lut_Y.combout": [
+        0
+      ],
+      "gpioout_dffeas_q_ena_$lut_Y.dataa": [
+        0
+      ],
+      "gpioout_dffeas_q_ena_$lut_Y.datab": [
+        0
+      ],
+      "gpioout_dffeas_q_ena_$lut_Y.datac": [
+        0
+      ],
+      "gpioout_dffeas_q_ena_$lut_Y.datad": [
+        0
+      ],
+      "rw": [
+        0
+      ],
+      "rw_dffeas_q.clk": [
+        0
+      ],
+      "rw_dffeas_q.d": [
+        0
+      ],
+      "rw_dffeas_q.q": [
+        0
+      ],
+      "sr": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sr_dffeas_q.clk": [
+        0
+      ],
+      "sr_dffeas_q.d": [
+        0
+      ],
+      "sr_dffeas_q.q": [
+        0
+      ],
+      "sr_dffeas_q_1.clk": [
+        0
+      ],
+      "sr_dffeas_q_1.d": [
+        0
+      ],
+      "sr_dffeas_q_1.q": [
+        0
+      ],
+      "sr_dffeas_q_2.clk": [
+        0
+      ],
+      "sr_dffeas_q_2.d": [
+        0
+      ],
+      "sr_dffeas_q_2.q": [
+        0
+      ],
+      "sr_dffeas_q_3.clk": [
+        0
+      ],
+      "sr_dffeas_q_3.d": [
+        0
+      ],
+      "sr_dffeas_q_3.q": [
+        0
+      ],
+      "sr_dffeas_q_4.clk": [
+        0
+      ],
+      "sr_dffeas_q_4.d": [
+        0
+      ],
+      "sr_dffeas_q_4.q": [
+        0
+      ],
+      "sr_dffeas_q_5.clk": [
+        0
+      ],
+      "sr_dffeas_q_5.d": [
+        0
+      ],
+      "sr_dffeas_q_5.q": [
+        0
+      ],
+      "sr_dffeas_q_6.clk": [
+        0
+      ],
+      "sr_dffeas_q_6.d": [
+        0
+      ],
+      "sr_dffeas_q_6.q": [
+        0
+      ],
+      "sr_out_dffeas_q.clk": [
+        0
+      ],
+      "sr_out_dffeas_q.d": [
+        0
+      ],
+      "sr_out_dffeas_q.q": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 193,
+    "bitcount": 196
+  }
+}

@@ -1,0 +1,29 @@
+pmux_case03_crossbar . A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:2.1-73.10" A:top=1 A:dynports=1
+pmux_case03_crossbar rst w=0:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:7.16-7.19" P=I
+pmux_case03_crossbar lane[1].x3 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.37-23.39"
+pmux_case03_crossbar lane[1].x2 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.33-23.35"
+pmux_case03_crossbar lane[1].x1 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.29-23.31"
+pmux_case03_crossbar lane[1].x0 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.25-23.27"
+pmux_case03_crossbar lane[1].s w=15:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:20.21-20.22"
+pmux_case03_crossbar lane[1].q w=4:0 A:keep=1 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:21.25-21.26"
+pmux_case03_crossbar lane[1].next_q w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.41-23.47"
+pmux_case03_crossbar lane[1].d w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:19.26-19.27"
+pmux_case03_crossbar lane[1].c w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:18.26-18.27"
+pmux_case03_crossbar lane[1].b w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:17.26-17.27"
+pmux_case03_crossbar lane[1].a w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:16.26-16.27"
+pmux_case03_crossbar lane[0].x3 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.37-23.39"
+pmux_case03_crossbar lane[0].x2 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.33-23.35"
+pmux_case03_crossbar lane[0].x1 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.29-23.31"
+pmux_case03_crossbar lane[0].x0 w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.25-23.27"
+pmux_case03_crossbar lane[0].s w=15:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:20.21-20.22"
+pmux_case03_crossbar lane[0].q w=4:0 A:keep=1 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:21.25-21.26"
+pmux_case03_crossbar lane[0].next_q w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:23.41-23.47"
+pmux_case03_crossbar lane[0].d w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:19.26-19.27"
+pmux_case03_crossbar lane[0].c w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:18.26-18.27"
+pmux_case03_crossbar lane[0].b w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:17.26-17.27"
+pmux_case03_crossbar lane[0].a w=4:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:16.26-16.27"
+pmux_case03_crossbar en w=0:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:8.16-8.18" P=I
+pmux_case03_crossbar data_out w=9:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:11.35-11.43" P=O
+pmux_case03_crossbar data_in w=39:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:9.36-9.43" P=I
+pmux_case03_crossbar ctrl_in w=31:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:10.31-10.38" P=I
+pmux_case03_crossbar clk w=0:0 A:src="inputs/pmux_case03_crossbar/pmux_case03_crossbar.v:6.16-6.19" P=I

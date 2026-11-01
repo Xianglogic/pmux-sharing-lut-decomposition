@@ -1,0 +1,316 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_rtl_boundary/run/gold.ys' --
+
+1. Executing Verilog-2005 frontend: inputs/test2/test2/test2.v
+Parsing SystemVerilog input from `inputs/test2/test2/test2.v' to AST representation.
+Generating RTLIL representation for module `\test2'.
+Note: Assuming pure combinatorial block at inputs/test2/test2/test2.v:16.1-30.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test2
+
+2.2. Analyzing design hierarchy..
+Top module:  \test2
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$inputs/test2/test2/test2.v:16$1 in module test2.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test2.$proc$inputs/test2/test2/test2.v:16$1'.
+     1/1: $1\temp[4:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\test2.\temp' from process `\test2.$proc$inputs/test2/test2/test2.v:16$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\test2.$proc$inputs/test2/test2/test2.v:16$1'.
+Removing empty process `test2.$proc$inputs/test2/test2/test2.v:16$1'.
+Cleaned up 1 empty switch.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+<suppressed ~4 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing PREP pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \test2
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \test2
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+5.3. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+5.4. Executing FLATTEN pass (flatten design).
+
+5.5. Executing FUTURE pass.
+
+5.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+5.7. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+5.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+5.9. Executing OPT pass (performing simple optimizations).
+
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 4 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test2.
+Performed a total of 0 changes.
+
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 4 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+5.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+5.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+5.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+5.10. Executing WREDUCE pass (reducing word size of cells).
+
+5.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+5.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.13. Executing OPT pass (performing simple optimizations).
+
+5.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+5.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 4 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+5.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+5.13.4. Finished fast OPT passes.
+
+5.14. Executing SORT pass.
+
+5.15. Printing statistics.
+
+=== test2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+       50 wire bits
+       11 public wires
+       35 public wire bits
+       10 ports
+       30 port bits
+        4 cells
+        4   $mux
+
+5.16. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+6. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~81 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 20 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test2.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 20 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+9.1. Executing PEEPOPT pass (run peephole optimizers).
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+11. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test2_baseline_rtl_boundary/run/gold.il
+
+End of script. Logfile hash: 0d4877c7de, time: 0.02s, user: 0.01s, system: 0.00s, MEM: 20.44 MB peak
+Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 71% 3x read_verilog (0 sec), 5% 5x opt_merge (0 sec), ...

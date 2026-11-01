@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-11-01T01:22:27" hostname="LAPTOP-3QQKRJRA" package="pmux_case02_pipeline.data_out" id="0" name="default" tests="1" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS, FAIL, UNKNOWN, TIMEOUT"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+</testcase>
+<system-out>SBY  1:22:26 [pmux_case02_pipeline.data_out] Removing directory '/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_rtl_boundary/run/strategies/pmux_case02_pipeline.data_out/pdr/pmux_case02_pipeline.data_out'.
+SBY  1:22:26 [pmux_case02_pipeline.data_out] engine_0: abc pdr
+SBY  1:22:26 [pmux_case02_pipeline.data_out] base: starting process &quot;cd pmux_case02_pipeline.data_out/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  1:22:26 [pmux_case02_pipeline.data_out] base: finished (returncode=0)
+SBY  1:22:26 [pmux_case02_pipeline.data_out] prep: starting process &quot;cd pmux_case02_pipeline.data_out/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  1:22:27 [pmux_case02_pipeline.data_out] prep: finished (returncode=0)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: starting process &quot;cd pmux_case02_pipeline.data_out/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_rst like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_en like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [0] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [1] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [2] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [3] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [4] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [5] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [6] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [7] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [8] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [9] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [10] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [11] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [12] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [13] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [14] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [15] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [16] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [17] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [18] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [19] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [20] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [21] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [22] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [23] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [24] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [25] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [26] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [27] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [28] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [29] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [30] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [31] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [32] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [33] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [34] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [35] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [36] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [37] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [38] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [39] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [40] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [41] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [42] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [43] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [44] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [45] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [46] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_data_in [47] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [0] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [1] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [2] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [3] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [4] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [5] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [6] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [7] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [8] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [9] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [10] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__59_48 [11] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [0] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [1] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [2] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [3] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [4] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [5] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [6] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [7] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [8] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [9] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [10] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__43_32 [11] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [0] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [1] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [2] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [3] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [4] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [5] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [6] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [7] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [8] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [9] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [10] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__27_16 [11] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [0] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [1] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [2] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [3] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [4] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [5] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [6] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [7] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [8] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [9] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [10] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_ctrl_in__11_0 [11] like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating undriven bit miter.\__pi_clk like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: Warning: Treating a total of 99 undriven bits in miter like $anyseq.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] aig: finished (returncode=0)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: starting process &quot;cd pmux_case02_pipeline.data_out; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw'&quot;
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: ======== ABC command line &quot;read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw&quot;
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Warning: The last output is interpreted as a constraint.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 119. MonoCNF = no. SkipGen = no. SolveAll = no.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Frame Clauses                                                     Max Queue Flops Time
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: 1 : 0 48                                                                1    48      0.01 sec  T/O =  0  PRV =  0
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: 2 : 0 72 86                                                             3    97      0.04 sec  T/O =  0  PRV =  0
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: 3 : 0 59 21 96                                                          3    97      0.08 sec  T/O =  0  PRV =  0
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Proved output 0 in frame 3.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: 4 : 0 43 0 0 6 ~96                                                       0    97      0.11 sec  T/O =  0  PRV =  1
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Block =  112  Oblig =   237  Clause =   189  Call =  1037 (sat=56.3%)  Cex =   0  Start =   1
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: SAT solving =     0.07 sec ( 59.34 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: unsat     =     0.04 sec ( 34.60 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: sat       =     0.03 sec ( 24.74 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Generalize  =     0.04 sec ( 30.13 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Push clause =     0.03 sec ( 24.16 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Ternary sim =     0.00 sec (  1.08 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Containment =     0.00 sec (  0.03 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: CNF compute =     0.00 sec (  2.28 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Refinement  =     0.00 sec (  0.00 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: TOTAL       =     0.12 sec (100.00 %)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Property proved.  Time =     0.12 sec
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Counter-example is not available.
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: finished (returncode=0)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] engine_0: Status returned by engine: PASS
+SBY  1:22:27 [pmux_case02_pipeline.data_out] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:22:27 [pmux_case02_pipeline.data_out] summary: engine_0 (abc pdr) returned PASS
+SBY  1:22:27 [pmux_case02_pipeline.data_out] summary: engine_0 did not produce any traces
+SBY  1:22:27 [pmux_case02_pipeline.data_out] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,16 @@
+read_verilog -sv "inputs/pmux_case02_pipeline/pmux_case02_pipeline.v"
+hierarchy -check -top pmux_case02_pipeline
+proc
+setundef -init -params -zero
+delete t:$print
+prep -top pmux_case02_pipeline -flatten
+memory_map
+techmap
+opt
+clk2fflogic
+opt_clean
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_rtl_boundary/run/gold.il

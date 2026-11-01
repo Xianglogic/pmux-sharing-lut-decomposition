@@ -1,0 +1,51 @@
+{
+  "candidate": "V53H-NoPost",
+  "input_archive_sha256": "044a750503335aaec604f3b2fdb1eb5842def762761809c1027ad77a5cb487ed",
+  "excluded_report_files": [
+    "docs/current/多路选择器优化算法设计报告.docx",
+    "docs/current/多路选择器优化算法设计报告.pdf",
+    "docs/current/公式源文件/formulas.tex",
+    "docs/current/公式源文件/FORMULA_MAP.json",
+    "docs/current/图片源文件/figure_01.png",
+    "docs/current/图片源文件/figure_01.svg",
+    "docs/current/图片源文件/figure_02.png",
+    "docs/current/图片源文件/figure_02.svg",
+    "docs/current/图片源文件/figure_03.png",
+    "docs/current/图片源文件/figure_04.png",
+    "docs/current/图片源文件/figure_05.png",
+    "docs/current/图片源文件/figure_06.png",
+    "docs/current/图片源文件/figure_07.png",
+    "docs/current/图片源文件/figure_07.svg",
+    "docs/current/图片源文件/figure_08.html",
+    "docs/current/图片源文件/figure_08.png",
+    "docs/current/图片源文件/figure_08.txt",
+    "docs/current/图片源文件/figure_09.html",
+    "docs/current/图片源文件/figure_09.png",
+    "docs/current/图片源文件/figure_10.html",
+    "docs/current/图片源文件/figure_10.png",
+    "docs/current/图片源文件/figure_10.txt",
+    "docs/current/图片源文件/figure_11.png",
+    "docs/current/图片源文件/figure_11.svg",
+    "docs/current/图片源文件/figure_12.png",
+    "docs/current/图片源文件/figure_13.html",
+    "docs/current/图片源文件/figure_13.png",
+    "docs/current/图片源文件/figure_13.txt",
+    "docs/current/图片源文件/使用说明.md"
+  ],
+  "modified_navigation_files": [
+    "README.md",
+    "REPORT.md",
+    "提交说明.md",
+    "RESULTS.html"
+  ],
+  "preserved_files_verified": 11033,
+  "algorithm_changed": false,
+  "original_archive_modified": false,
+  "git_attribute_adaptations": [
+    ".gitattributes",
+    "source/yosys/.gitattributes",
+    "source/yosys/abc/.gitattributes",
+    "source/yosys/libs/boost_regex/.gitattributes",
+    "source/yosys/libs/tomlplusplus/.gitattributes"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "V53H-NoPost",
+  "packaging_date": "2026-11-01",
+  "input_case_count": 9,
+  "algorithm_source_and_runtime_preserved": true,
+  "current_results": "RESULTS.json",
+  "latest_report": "docs/current/多路选择器优化算法设计报告.docx",
+  "latest_report_pdf": "docs/current/多路选择器优化算法设计报告.pdf",
+  "report_revision": "N+3",
+  "report_pages": 25,
+  "report_native_editable_equations": 36,
+  "latest_screenshots": "docs/current/九例原始截图/",
+  "report_formula_sources": "docs/current/公式源文件/",
+  "measured_campaign": "runs/20261101_012408_979_d551b5",
+  "formal_campaign": "runs/eqy_20261101_012200_776856",
+  "packaging_check_is_new_efficiency_measurement": false
+}

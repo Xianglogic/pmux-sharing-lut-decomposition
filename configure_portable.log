@@ -1,0 +1,98 @@
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- 
+-- The following packages have been found:
+
+ * FLEX (required version >= 2.6), The Fast Lexical Analyzer, <https://github.com/westes/flex>
+   Compiling the Verilog lexer
+ * BISON (required version >= 3.6), The Yacc-compatible Parser Generator, <https://www.gnu.org/software/bison/>
+   Compiling the Verilog parser
+ * Python3 (required version >= 3.7), Dynamic programming language (Interpreter), <https://www.python.org/>
+   Generating data files
+   Running external SMT2 solvers
+ * GTest, C++ testing and mocking framework by Google, <https://google.github.io/googletest/>
+   Running unit tests
+
+-- The following packages have not been found:
+
+ * PkgConfig, Library metadata manager, <https://www.freedesktop.org/wiki/Software/pkg-config/>
+   Discovering dependencies
+ * zlib, A massively spiffy yet delicately unobtrusive compression library, <https://github.com/madler/zlib>
+   Handling Gzip and FST file formats
+ * libffi, A Portable Foreign Function Interface Library, <https://sourceware.org/libffi/>
+   Implementing Verilog DPI-C
+ * editline, Line editing and history library (BSD), <https://www.thrysoee.dk/editline/>
+   Enhancing the command prompt
+ * readline, Line editing and history library (GPL), <https://tiswww.case.edu/php/chet/readline/rltop.html>
+   Enhancing the command prompt
+ * tcl, Dynamic programming language, <https://www.tcl-lang.org/>
+   Parsing SDC constraint files
+   Binding Yosys API
+
+-- The following features have been enabled:
+
+ * have_spawn, Passes that invoke external tools
+ * have_plugins, Dynamically loadable binary plugins
+ * with_abc, Production-quality logic synthesis flow
+
+-- The following features have been disabled:
+
+ * have_glob, Glob expansion in filenames
+ * have_threads, Multithreaded netlist operations
+ * with_zlib, Transparent Gzip decompression and FST file format support
+ * with_libffi, Verilog DPI-C foreign function interface
+ * with_readline, Using readline for prompt editing and history
+ * with_editline, Using editline for prompt editing and history
+ * with_tcl, Tcl scripting and SDC parsing
+ * with_python, Python scripting and embedding
+ * with_verific, Verific frontend integration
+
+-- Configuring Yosys 0.69+post
+-- Git commit 9f75ca1f9-V53H-NoPost
+-- Building ABC: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/install/bin/yosys-abc.exe
+-- {fmt} version: 12.2.1
+-- Build type: Release
+-- C++ modules support is disabled. Enable with -DTOMLPLUSPLUS_BUILD_MODULES=ON
+-- Found Threads: TRUE
+-- Performing Test HAVE_C_-fpermissive
+-- Performing Test HAVE_C_-fpermissive - Failed
+-- Performing Test HAVE_C_-fno-exceptions
+-- Performing Test HAVE_C_-fno-exceptions - Failed
+-- Performing Test HAVE_C_-Wno-write-strings
+-- Performing Test HAVE_C_-Wno-write-strings - Failed
+-- Performing Test HAVE_C_-Wno-changes-meaning
+-- Performing Test HAVE_C_-Wno-changes-meaning - Failed
+-- Performing Test HAVE_C_-Wno-attributes
+-- Performing Test HAVE_C_-Wno-attributes - Failed
+-- Performing Test HAVE_C_-Wno-deprecated-declarations
+-- Performing Test HAVE_C_-Wno-deprecated-declarations - Failed
+-- Performing Test HAVE_C_-Wno-deprecated-comma-subscript
+-- Performing Test HAVE_C_-Wno-deprecated-comma-subscript - Failed
+-- Performing Test HAVE_C_-Wno-format
+-- Performing Test HAVE_C_-Wno-format - Failed
+-- Performing Test HAVE_C_-Wno-constant-logical-operand
+-- Performing Test HAVE_C_-Wno-constant-logical-operand - Failed
+-- Performing Test HAVE_C_-Wno-sizeof-pointer-memaccess
+-- Performing Test HAVE_C_-Wno-sizeof-pointer-memaccess - Failed
+-- Performing Test HAVE_CXX_-fpermissive
+-- Performing Test HAVE_CXX_-fpermissive - Failed
+-- Performing Test HAVE_CXX_-fno-exceptions
+-- Performing Test HAVE_CXX_-fno-exceptions - Failed
+-- Performing Test HAVE_CXX_-Wno-write-strings
+-- Performing Test HAVE_CXX_-Wno-write-strings - Failed
+-- Performing Test HAVE_CXX_-Wno-changes-meaning
+-- Performing Test HAVE_CXX_-Wno-changes-meaning - Failed
+-- Performing Test HAVE_CXX_-Wno-attributes
+-- Performing Test HAVE_CXX_-Wno-attributes - Failed
+-- Performing Test HAVE_CXX_-Wno-deprecated-declarations
+-- Performing Test HAVE_CXX_-Wno-deprecated-declarations - Failed
+-- Performing Test HAVE_CXX_-Wno-deprecated-comma-subscript
+-- Performing Test HAVE_CXX_-Wno-deprecated-comma-subscript - Failed
+-- Performing Test HAVE_CXX_-Wno-format
+-- Performing Test HAVE_CXX_-Wno-format - Failed
+-- Performing Test HAVE_CXX_-Wno-constant-logical-operand
+-- Performing Test HAVE_CXX_-Wno-constant-logical-operand - Failed
+-- Performing Test HAVE_CXX_-Wno-sizeof-pointer-memaccess
+-- Performing Test HAVE_CXX_-Wno-sizeof-pointer-memaccess - Failed
+-- Configuring done (6.1s)
+-- Generating done (0.9s)
+-- Build files have been written to: D:/FPGA/demo/algorithms/V53H_NoPost_20261101/build

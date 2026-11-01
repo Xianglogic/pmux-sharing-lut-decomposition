@@ -1,0 +1,153 @@
+{
+  "version": "V53H-NoPost",
+  "experiment_date": "2026-11-01",
+  "method": "Windows Console Host PrintWindow; archived original log excerpts shown read-only",
+  "cases": [
+    {
+      "index": 1,
+      "case": "test1",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/test1/baseline.full.log",
+          "sha256": "35ec71d14684efe176beb22d86e579739f1661b816328005c2d2d9a613989873",
+          "archive_path": "evidence/current/capture_full/test1/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/test1/candidate.full.log",
+          "sha256": "c2102a3f38e698b666be8f3150455bc576ca8fb7d1607e83cc34fa0be8d83ac7",
+          "archive_path": "evidence/current/capture_full/test1/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "case": "test2",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/test2/baseline.full.log",
+          "sha256": "a630295ae975b8e11d7c17033d8ea24b12ede7ae9c21c759bf7cd3367f4bd0c0",
+          "archive_path": "evidence/current/capture_full/test2/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/test2/candidate.full.log",
+          "sha256": "0afc52b14f3ab21d3380ffc51bb59e115f47c16a897a468aeee12edb7198d16f",
+          "archive_path": "evidence/current/capture_full/test2/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "case": "test3",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/test3/baseline.full.log",
+          "sha256": "ce9db8019e87f9d6f310684f78d261c8ad31a710824b75cb6c4cc78e7d33ea7c",
+          "archive_path": "evidence/current/capture_full/test3/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/test3/candidate.full.log",
+          "sha256": "178d1b205fcb23a57e2fbbb54d976a51d653f08acd1c860039a527a4d465181d",
+          "archive_path": "evidence/current/capture_full/test3/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "case": "test4",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/test4/baseline.full.log",
+          "sha256": "d82e5affab05c859c7236f783737f61b8729e0d120eb65fb106863ee5ec4d4d8",
+          "archive_path": "evidence/current/capture_full/test4/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/test4/candidate.full.log",
+          "sha256": "be416379400f4c01f54cba2bbf85bd347300b9dafd59ab4cf0952fc084c576c6",
+          "archive_path": "evidence/current/capture_full/test4/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "case": "pmux_case01_balanced",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/pmux_case01_balanced/baseline.full.log",
+          "sha256": "695933b97f3949bcb572e39c3e9b8c9b91fb18ec78d32faea9dca436bc22bdcc",
+          "archive_path": "evidence/current/capture_full/pmux_case01_balanced/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/pmux_case01_balanced/candidate.full.log",
+          "sha256": "56f5657ad03c92f8dd9cbfed65cac5c965992fb183243f1d7993940ab92c8d4c",
+          "archive_path": "evidence/current/capture_full/pmux_case01_balanced/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "case": "pmux_case02_pipeline",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/pmux_case02_pipeline/baseline.full.log",
+          "sha256": "c3fcabf6e214fde23cafcf8bb537379dd52b97cbd5cdf89176b0dcc7c6f8e91e",
+          "archive_path": "evidence/current/capture_full/pmux_case02_pipeline/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/pmux_case02_pipeline/candidate.full.log",
+          "sha256": "14f98eb5560edcaa332d7f0da42ce1ab83a78a7ea61716769816e542c3672c9d",
+          "archive_path": "evidence/current/capture_full/pmux_case02_pipeline/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 7,
+      "case": "pmux_case03_crossbar",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/pmux_case03_crossbar/baseline.full.log",
+          "sha256": "df28e8cb33b7469726e5cbb184c2f826b6b1d8f61224ab1603e77c98fde532c1",
+          "archive_path": "evidence/current/capture_full/pmux_case03_crossbar/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/pmux_case03_crossbar/candidate.full.log",
+          "sha256": "523fca64dcad5eb5d0452f08ba16b94f4a4ec64e0f4a5016283f03557d4f019b",
+          "archive_path": "evidence/current/capture_full/pmux_case03_crossbar/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "case": "pmux_case04_feedback",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/pmux_case04_feedback/baseline.full.log",
+          "sha256": "250f6bd94328b46b594a5ca56f6af21601a60cb644a8ded66681d36fb263cfc2",
+          "archive_path": "evidence/current/capture_full/pmux_case04_feedback/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/pmux_case04_feedback/candidate.full.log",
+          "sha256": "004a251d699b668d395d3479ed7f16884ada44d1d7f41c2473bcd9a53417b073",
+          "archive_path": "evidence/current/capture_full/pmux_case04_feedback/candidate.full.log"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "case": "pmux_case05_nested",
+      "logs": {
+        "baseline": {
+          "path": "原始日志/综合/pmux_case05_nested/baseline.full.log",
+          "sha256": "10dc28edd6f6ab7a25924b3be7752bb6608b78c35264b202b4a60ed6f4a76687",
+          "archive_path": "evidence/current/capture_full/pmux_case05_nested/baseline.full.log"
+        },
+        "candidate": {
+          "path": "原始日志/综合/pmux_case05_nested/candidate.full.log",
+          "sha256": "b9bab111f200184e4b29cd6ea3e7b6052c0b957984e182fb7adc8ca067131af7",
+          "archive_path": "evidence/current/capture_full/pmux_case05_nested/candidate.full.log"
+        }
+      }
+    }
+  ],
+  "proof_summary": "原始日志/PROOFS_FULL_LF.json",
+  "efficiency_summary": "原始日志/JUDGMENTS.json"
+}

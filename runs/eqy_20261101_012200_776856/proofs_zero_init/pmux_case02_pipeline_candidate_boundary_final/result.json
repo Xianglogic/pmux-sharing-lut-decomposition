@@ -1,0 +1,36 @@
+{
+  "key": "pmux_case02_pipeline_candidate_boundary_final",
+  "case": "pmux_case02_pipeline",
+  "kind": "boundary_to_final",
+  "expected": "PASS",
+  "input_sha256": {
+    "evidence/current/capture_full/pmux_case02_pipeline/candidate.boundary.formal.il": "35f595601729e234765ea0a422cee0596099c277ad0ff610708f3286f7cb2589",
+    "evidence/formal_primitives.v": "62725e099169316c5d3bf31b7ded363156cf35425b380d8c8730079c9e665eca",
+    "evidence/current/capture_full/pmux_case02_pipeline/candidate.final.formal.il": "10a307c05fd8627930732aeb2530f4a52f15c7933237b188eacf4b3c4a829661"
+  },
+  "config": "proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/pair.eqy",
+  "config_sha256": "05c8e473fe6f090d79f8842883bd194623b14b92027b0a264d224a3a584f42bc",
+  "command": [
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/eqy",
+    "--yosys",
+    "/tmp/pmux_nopost_sc3wldoo/tools/bin/yosys",
+    "-j",
+    "1",
+    "-d",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/run",
+    "/tmp/pmux_nopost_sc3wldoo/proofs_zero_init/pmux_case02_pipeline_candidate_boundary_final/pair.eqy"
+  ],
+  "status": "PASS",
+  "passed": true,
+  "timeout": false,
+  "exit": 0,
+  "coverage": {
+    "all_outputs_covered": true,
+    "proof_dependencies_closed": true,
+    "missing_output_bits": {},
+    "unclosed_cutpoint_bits": {},
+    "non_primary_partition_inputs": {}
+  },
+  "ignored_boxed_modules": false,
+  "seconds": 1.519519561996276
+}

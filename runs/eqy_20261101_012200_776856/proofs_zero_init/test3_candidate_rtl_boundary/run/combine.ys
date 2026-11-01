@@ -1,0 +1,11 @@
+plugin -i /home/lenovo/.local/opt/pmux/20260918/oss-cad-suite/libexec/../share/yosys/plugins/eqy_combine.so
+read_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run/gold.il
+uniquify
+hierarchy
+design -stash gold
+read_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run/gate_recoded.il
+uniquify
+hierarchy
+design -stash gate
+eqy_combine -gold_ids /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run/gold.ids -gate_ids /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run/gate_recoded.ids
+write_rtlil /tmp/pmux_nopost_sc3wldoo/proofs_zero_init/test3_candidate_rtl_boundary/run/combined.il

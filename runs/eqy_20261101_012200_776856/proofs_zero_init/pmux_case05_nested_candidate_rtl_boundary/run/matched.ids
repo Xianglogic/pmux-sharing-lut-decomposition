@@ -1,0 +1,12 @@
+# [*] gold-match clk
+pmux_case05_nested clk clk
+# [*] gold-match rst
+pmux_case05_nested rst rst
+# [*] gold-match en
+pmux_case05_nested en en
+# [*] gold-match data_in
+pmux_case05_nested data_in data_in
+# [*] gold-match ctrl_in
+pmux_case05_nested ctrl_in ctrl_in
+# [*] gold-match data_out
+pmux_case05_nested data_out data_out

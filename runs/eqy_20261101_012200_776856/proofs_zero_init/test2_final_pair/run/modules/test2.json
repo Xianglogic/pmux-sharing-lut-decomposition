@@ -1,0 +1,664 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "test2",
+    "inbits": {
+      "a": [
+        0
+      ],
+      "b": [
+        0
+      ],
+      "c": [
+        0
+      ],
+      "clk": [
+        0
+      ],
+      "d": [
+        0
+      ],
+      "dataa": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datab": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datac": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datad": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "outbits": {
+      "out": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test2",
+    "internal": {
+      "out_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_1.combout": [
+        0
+      ],
+      "out_$lut_Y_1.dataa": [
+        0
+      ],
+      "out_$lut_Y_1.datab": [
+        0
+      ],
+      "out_$lut_Y_1.datac": [
+        0
+      ],
+      "out_$lut_Y_1.datad": [
+        0
+      ],
+      "out_$lut_Y_1_A": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_1_A_1": [
+        0
+      ],
+      "out_$lut_Y_1_A_1_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_1_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_1_A_1_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_1_A_1_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_1_A_2": [
+        0
+      ],
+      "out_$lut_Y_1_A_2_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_1_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_1_A_2_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_1_A_2_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_1_A_3": [
+        0
+      ],
+      "out_$lut_Y_1_A_3_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_1_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_1_A_3_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_2.combout": [
+        0
+      ],
+      "out_$lut_Y_2.dataa": [
+        0
+      ],
+      "out_$lut_Y_2.datab": [
+        0
+      ],
+      "out_$lut_Y_2.datac": [
+        0
+      ],
+      "out_$lut_Y_2.datad": [
+        0
+      ],
+      "out_$lut_Y_2_A": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_2_A_1": [
+        0
+      ],
+      "out_$lut_Y_2_A_1_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_2_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_2_A_1_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_2_A_1_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_2_A_2": [
+        0
+      ],
+      "out_$lut_Y_2_A_2_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_2_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_2_A_2_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_2_A_2_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_2_A_3": [
+        0
+      ],
+      "out_$lut_Y_2_A_3_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_2_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_2_A_3_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3.combout": [
+        0
+      ],
+      "out_$lut_Y_3.dataa": [
+        0
+      ],
+      "out_$lut_Y_3.datab": [
+        0
+      ],
+      "out_$lut_Y_3.datac": [
+        0
+      ],
+      "out_$lut_Y_3.datad": [
+        0
+      ],
+      "out_$lut_Y_3_A": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_3_A_1": [
+        0
+      ],
+      "out_$lut_Y_3_A_1_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_3_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_3_A_1_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3_A_2": [
+        0
+      ],
+      "out_$lut_Y_3_A_2_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_3_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_3_A_2_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3_A_2_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_3_A_3": [
+        0
+      ],
+      "out_$lut_Y_3_A_3_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_3_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_3_A_3_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3_A_3_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_4.combout": [
+        0
+      ],
+      "out_$lut_Y_4.dataa": [
+        0
+      ],
+      "out_$lut_Y_4.datab": [
+        0
+      ],
+      "out_$lut_Y_4.datac": [
+        0
+      ],
+      "out_$lut_Y_4.datad": [
+        0
+      ],
+      "out_$lut_Y_4_A": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_4_A_1": [
+        0
+      ],
+      "out_$lut_Y_4_A_1_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_4_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_4_A_1_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_4_A_1_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_4_A_2": [
+        0
+      ],
+      "out_$lut_Y_4_A_2_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_4_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_4_A_2_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_4_A_2_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_4_A_3": [
+        0
+      ],
+      "out_$lut_Y_4_A_3_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_4_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_4_A_3_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_A": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_A_1": [
+        0
+      ],
+      "out_$lut_Y_A_1_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_A_1_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_A_1_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_A_1_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_A_2": [
+        0
+      ],
+      "out_$lut_Y_A_2_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_A_2_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_A_2_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_A_2_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_A_3": [
+        0
+      ],
+      "out_$lut_Y_A_3_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_A_3_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_A_3_$lut_Y.datab": [
+        0
+      ]
+    },
+    "unused": {
+      "clk": [
+        0
+      ]
+    },
+    "cellcount": 195,
+    "bitcount": 220
+  },
+  "gate_module": {
+    "name": "gold.test2",
+    "internal": {
+      "a_$lut_A.combout": [
+        0
+      ],
+      "a_$lut_A.dataa": [
+        0
+      ],
+      "a_$lut_A.datab": [
+        0
+      ],
+      "a_$lut_A.datac": [
+        0
+      ],
+      "a_$lut_A.datad": [
+        0
+      ],
+      "a_$lut_A_1.combout": [
+        0
+      ],
+      "a_$lut_A_1.dataa": [
+        0
+      ],
+      "a_$lut_A_1.datab": [
+        0
+      ],
+      "a_$lut_A_1.datac": [
+        0
+      ],
+      "a_$lut_A_1.datad": [
+        0
+      ],
+      "a_$lut_A_1_Y": [
+        0
+      ],
+      "a_$lut_A_2.combout": [
+        0
+      ],
+      "a_$lut_A_2.dataa": [
+        0
+      ],
+      "a_$lut_A_2.datab": [
+        0
+      ],
+      "a_$lut_A_2.datac": [
+        0
+      ],
+      "a_$lut_A_2.datad": [
+        0
+      ],
+      "a_$lut_A_2_Y": [
+        0
+      ],
+      "a_$lut_A_Y": [
+        0
+      ],
+      "out_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_1.combout": [
+        0
+      ],
+      "out_$lut_Y_1.dataa": [
+        0
+      ],
+      "out_$lut_Y_1.datab": [
+        0
+      ],
+      "out_$lut_Y_1.datac": [
+        0
+      ],
+      "out_$lut_Y_1.datad": [
+        0
+      ],
+      "out_$lut_Y_1_A": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_1_A_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_2.combout": [
+        0
+      ],
+      "out_$lut_Y_2.dataa": [
+        0
+      ],
+      "out_$lut_Y_2.datab": [
+        0
+      ],
+      "out_$lut_Y_2.datac": [
+        0
+      ],
+      "out_$lut_Y_2.datad": [
+        0
+      ],
+      "out_$lut_Y_2_A": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_2_A_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_3.combout": [
+        0
+      ],
+      "out_$lut_Y_3.dataa": [
+        0
+      ],
+      "out_$lut_Y_3.datab": [
+        0
+      ],
+      "out_$lut_Y_3.datac": [
+        0
+      ],
+      "out_$lut_Y_3.datad": [
+        0
+      ],
+      "out_$lut_Y_3_A": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_3_A_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_4.combout": [
+        0
+      ],
+      "out_$lut_Y_4.dataa": [
+        0
+      ],
+      "out_$lut_Y_4.datab": [
+        0
+      ],
+      "out_$lut_Y_4.datac": [
+        0
+      ],
+      "out_$lut_Y_4.datad": [
+        0
+      ],
+      "out_$lut_Y_4_A": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_4_A_$lut_Y.datad": [
+        0
+      ],
+      "out_$lut_Y_A": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.combout": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.dataa": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.datab": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.datac": [
+        0
+      ],
+      "out_$lut_Y_A_$lut_Y.datad": [
+        0
+      ]
+    },
+    "unused": {
+      "clk": [
+        0
+      ]
+    },
+    "cellcount": 127,
+    "bitcount": 152
+  }
+}
