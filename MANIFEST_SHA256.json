@@ -1,6 +1,6 @@
 {
   "candidate": "PMUX多输出共享与查找表优化分解",
-  "date": "2026-11-01",
+  "date": "2026-11-03",
   "files": {
     ".gitattributes": "48e793038874b38ed2dd59f5168149eb0ae002fc14329d23b689fed07348b413",
     ".gitignore": "9f2027298397c9ab6a75ccb5dd438cb8d4f6734227dd4ba987dd94bec1049b35",
@@ -15,7 +15,7 @@
     "PER_CASE.csv": "58cfba9b8ec432fb08adfe7f91b671dea33eb1222d0a4d2d07379c4cd53d39d6",
     "PMUX_STRUCTURE_OPTIMIZATION.patch": "86dc49233eb76703ba2d63896b4141d0da84b238b2dabe59cca9516ccd22a540",
     "PROOF_TEMPLATE_INDEX.json": "2956d1bdecc7bebee00fd9bc9eae2a14587ba4f24a4e3eb14a082699031a520f",
-    "README.md": "daf617cd7d6e447edfbced6a4d28258dbf6c14b86c5d5493989cc94d2cf5cecc",
+    "README.md": "a2c5652377e1050082e6fe24566aae0838e04e786d5fb0769b40b77365f90d4f",
     "REPORT.md": "d6980309e2fbd26db373f03bc284507caa67f991c72f9443c65d511ad7da92c2",
     "RESULTS.html": "796dd4f098156a2fc0d267f8e1bba94b7d6aec72df3933352701abe60637028f",
     "RESULTS.json": "56486209c58d9d6425a3143789b71f397d683299c0a4332ed73c370d86fe7c2d",
@@ -11041,6 +11041,7 @@
     "tools/winflexbison/data/xslt/xml2text.xsl": "20d5a491fb73dd6f9a96e3a1167c115a6f544c0c7a50245d6cc4f488ac5fe961",
     "tools/winflexbison/data/xslt/xml2xhtml.xsl": "e8da37276ae95942de9d260f3f90c7efc3cfc3e5677796f183edd534f66d05d7",
     "tools/winflexbison/win_bison.exe": "db9602d654ac90d8cdaea7e03e82a82ac6cfe13077eb7d1ca13fc788dd97712a",
-    "tools/winflexbison/win_flex.exe": "14c3741650bf31f1fa24213eabfaf0a84806346e4b6f257d16fb99b7a7966668"
+    "tools/winflexbison/win_flex.exe": "14c3741650bf31f1fa24213eabfaf0a84806346e4b6f257d16fb99b7a7966668",
+    "docs/配置与复验说明.md": "87092c17667b14fd1aceaffab03b24c0e2a2fea4166c433269301890a881b935"
   }
 }
