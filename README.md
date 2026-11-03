@@ -4,6 +4,8 @@
 
 工具路径、验证环境及2026年11月3日新增的预热要求见[配置与复验说明](docs/配置与复验说明.md)。已提交程序和归档评测记录保留原样。
 
+项目文件与外部工具的路径写法见[路径约定](docs/路径约定.md)。新生成的运行目录和本机配置不纳入日常提交，原始归档保持不变。
+
 ## 运行九例综合
 
 Windows x64环境下，在项目根目录双击START.cmd。命令行可运行START.cmd --no-pause。普通综合支持Windows PowerShell 5.1或PowerShell 7，无需Python、编译器或WSL。保留runtime内的ABC程序、DLL及share器件库。
@@ -44,10 +46,10 @@ pwsh -NoProfile -File scripts/Run9.ps1 -Mode Measure -Groups 10
 
 ## 形式等价验证
 
-Windows入口使用Windows版OSS CAD Suite、GNU Make和Git Bash，无需WSL，也无需另装Python。依赖与故障处理见[Windows形式验证](docs/Windows形式验证.md)。路径换成实际安装位置：
+Windows入口使用Windows版OSS CAD Suite、GNU Make和Git Bash，无需WSL，也无需另装Python。先激活套件环境，并使GNU Make和Git可从PATH找到，再执行。其他配置方法见[Windows形式验证](docs/Windows形式验证.md)。
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot 'D:/Tools/oss-cad-suite' -MakeBin 'D:/msys64/mingw64/bin' -Jobs 2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Jobs 2
 ```
 
 Linux/WSL入口仍使用对应平台的OSS CAD Suite：

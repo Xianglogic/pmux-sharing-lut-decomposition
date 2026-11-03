@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "files": {
     ".gitattributes": "48e793038874b38ed2dd59f5168149eb0ae002fc14329d23b689fed07348b413",
-    ".gitignore": "a612cb538489da42025a8d3ae4394c944f1be741abed33952e9e0d50269e5380",
+    ".gitignore": "ab5227112861e9b7007749961d8cb6a5b7572d0a2cbe3277351ea1ec77124702",
     "ALL_PAIRS.csv": "ebad454bfd9a35761fa0495245176eea5916922d75cb015f32cf9ee344fd58ab",
     "ANTIVIRUS_STATUS.json": "4084b543054ab4dd4aaf57ad4d0d695e2234218445d26883425596e077ae9bf7",
     "BUILD.json": "1e7ff64bf8b5edb4e335e409ae2be563d60522f9e20db9f72c597a93333a0ef1",
@@ -15,7 +15,7 @@
     "PER_CASE.csv": "58cfba9b8ec432fb08adfe7f91b671dea33eb1222d0a4d2d07379c4cd53d39d6",
     "PMUX_STRUCTURE_OPTIMIZATION.patch": "86dc49233eb76703ba2d63896b4141d0da84b238b2dabe59cca9516ccd22a540",
     "PROOF_TEMPLATE_INDEX.json": "2956d1bdecc7bebee00fd9bc9eae2a14587ba4f24a4e3eb14a082699031a520f",
-    "README.md": "66941863703b70f9c8ce77b0b89538e4be8a70b546acefaa191940222c77e3de",
+    "README.md": "bd178391a8228b480a3fc83b66435b1bc3f1b0215f7b8cc7c6d579e9858261ea",
     "REPORT.md": "d6980309e2fbd26db373f03bc284507caa67f991c72f9443c65d511ad7da92c2",
     "RESULTS.html": "796dd4f098156a2fc0d267f8e1bba94b7d6aec72df3933352701abe60637028f",
     "RESULTS.json": "56486209c58d9d6425a3143789b71f397d683299c0a4332ed73c370d86fe7c2d",
@@ -11043,7 +11043,7 @@
     "tools/winflexbison/win_bison.exe": "db9602d654ac90d8cdaea7e03e82a82ac6cfe13077eb7d1ca13fc788dd97712a",
     "tools/winflexbison/win_flex.exe": "14c3741650bf31f1fa24213eabfaf0a84806346e4b6f257d16fb99b7a7966668",
     "docs/配置与复验说明.md": "a6b77b40771a4d07762126a5d103c7ebee623897239abdd5822a73d150e2d305",
-    "docs/Windows形式验证.md": "12204535825f8579b5d14593b2ef2c43df49e33f89bdbb0e71fdbc893f3a63ad",
+    "docs/Windows形式验证.md": "a1a4b86b00d8fddf9ed85aac285cbdeb7ea1a1232e9cdd896c3799ac730e33f1",
     "scripts/Reprove-Windows.ps1": "0bc9a1a980c2dbc75c5ea309793c485bf517c3fa53e8d5ca2a965b89fe53b132",
     "scripts/WindowsJob.py": "4819e9db27b43f3a505befdb9e5a9255796566f26d2fc7650685da2d59cc10ca",
     "scripts/eqy_windows_lf.py": "86bcc50a871dadfd86e66ea7b733393b65dca70bb24df6ec9830263a42d159d8",
@@ -11098,6 +11098,8 @@
     "evidence/windows/p44.log": "8bb19d77795a6a7750fc3e2da25bbb86a9d9f64715d6e84d9273698bba4d91cb",
     "evidence/windows/PROOFS.json": "2c20c5732c6159a45045758591f6171e5c497e921ae6516e2cc84cf3020fe5a3",
     "evidence/windows/TOOLS.json": "4ca7966b69816d1d7fbd345b62b90005a93d59e3a276b2454b8704a518e07d79",
-    "evidence/windows/VALIDATION.json": "110ccfdd3fc0265a550e787c7b41566f9ef9ed80b1beff08509848a1ffe9d2f0"
+    "evidence/windows/VALIDATION.json": "110ccfdd3fc0265a550e787c7b41566f9ef9ed80b1beff08509848a1ffe9d2f0",
+    "docs/路径约定.md": "ba722c91e92bc44c1eb637e280af9120441349e18096305f0df11e8e3187c4f9",
+    "scripts/Check-RepositoryPaths.py": "270ac25497435568dafa99987668cfec3c7f95bb9981ebe4a2eb16cc5b1c941d"
   }
 }
