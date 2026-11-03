@@ -13,19 +13,19 @@ Windows版EQY可以运行。本工程增加Reprove-Windows.ps1入口，使用Win
 
 ## 运行
 
-在项目根目录执行，路径换成实际安装位置：
+先按OSS CAD Suite说明激活环境；YOSYSHQ_ROOT由套件的环境脚本设置。GNU Make和Git已加入当前进程PATH时，在项目根目录执行：
 
 ```powershell
 # 全部九例
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot 'D:/Tools/oss-cad-suite' -MakeBin 'D:/msys64/mingw64/bin' -Jobs 2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Jobs 2
 
-# 指定单例；需要时显式指定Git Bash目录
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot 'D:/Tools/oss-cad-suite' -MakeBin 'D:/msys64/mingw64/bin' -ShellBin 'C:/Program Files/Git/usr/bin' -Case test2 -Jobs 2
+# 指定单例
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Case test2 -Jobs 2
 ```
 
-make.exe已在PATH中时可以省略-MakeBin。如果只有mingw32-make.exe，入口会在本次临时目录中建立同一程序的make.exe副本，不改安装目录。
+外部工具未加入PATH时，用-OssRoot、-MakeBin、-ShellBin传入实际安装目录。这些位置只属于本机配置，不写回仓库。make.exe或mingw32-make.exe已在PATH中时可以省略-MakeBin。如果只有mingw32-make.exe，入口会在本次临时目录中建立同一程序的make.exe副本，不改安装目录。
 
-默认在系统临时目录建立验证工作区。该工作区需要英文路径且不含空格；系统临时目录不符合时，使用-WorkRoot指定短路径，例如D:/eqy_work。项目输入按原相对路径复制到工作区，验证结束后完整记录复制至runs/eqy_windows_时间戳/work/。工作区保留，便于检查失败。
+默认在系统临时目录建立验证工作区。该工作区需要英文路径且不含空格；系统临时目录不符合时，使用-WorkRoot指定本机可用的英文短路径。项目输入按原相对路径复制到工作区，验证结束后完整记录复制至runs/eqy_windows_时间戳/work/。工作区保留，便于检查失败。
 
 ## 验证内容
 

@@ -4,6 +4,12 @@ __pycache__/
 /rebuild/
 /build/
 /runs/eqy_windows_*/
+/runs/
+/work/
+/*.log
+/.env
+/config/*.local.*
+/evidence/windows/*.log
 Thumbs.db
 .DS_Store
 ~$*
