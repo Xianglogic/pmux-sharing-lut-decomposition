@@ -1,0 +1,22 @@
+EQY 18:46:06 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] read_gold: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/gold.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/gold.ys"
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] read_gold: finished (returncode=0)
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] read_gate: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/gate.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/gate.ys"
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] read_gate: finished (returncode=0)
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] combine: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/combine.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11/combine.ys"
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] combine: finished (returncode=0)
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] partition: starting process "cd C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11& yosys -ql partition.log partition.ys"
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] partition: finished (returncode=0)
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: starting process "make -j1 -C C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11 -f strategies.mk"
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: make: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11'
+EQY 18:46:07 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: Running strategy 'pdr' on 'test3.gpioout'..
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: Proved equivalence of partition 'test3.gpioout' using strategy 'pdr'
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: make -f strategies.mk summary
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: make[1]: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11'
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: make[1]: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11'
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: make: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11'
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] run: finished (returncode=0)
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] Successfully proved equivalence of partition test3.gpioout
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] Successfully proved designs equivalent
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] summary: Elapsed process time unvailable on Windows
+EQY 18:46:08 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p11] DONE (PASS, rc=0)

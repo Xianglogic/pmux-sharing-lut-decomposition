@@ -1,0 +1,28 @@
+{
+  "eqy": {
+    "exit": 0,
+    "version": "EQY v0.69-1-g7a92d84",
+    "sha256": "10b4b2df89688fc2b44aa771db030cb43ca929761b7397f8519ed256884075a3"
+  },
+  "yosys": {
+    "exit": 0,
+    "version": "Yosys 0.69+73 (git sha1 2e7d8006d-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+    "sha256": "3a1ba615ef097790e91e9eb0dfa3875286d4481f9bc4149dc6859833a64c373d"
+  },
+  "sby": {
+    "exit": 0,
+    "version": "SBY v0.69",
+    "sha256": "10b4b2df89688fc2b44aa771db030cb43ca929761b7397f8519ed256884075a3"
+  },
+  "make": {
+    "exit": 0,
+    "version": "GNU Make 4.4.1\nBuilt for x86_64-w64-mingw32\nCopyright (C) 1988-2023 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+    "sha256": "80dd0ec32dfb0fdd06f70e5fb89ea5e0b6ad340e10e2775eabb782ad2c93a441"
+  },
+  "bash": {
+    "exit": 0,
+    "version": "GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)\nCopyright (C) 2022 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+    "sha256": "fc362aae1f217d34d02237d99527839dd6cf85b37c7a0277109400bfa0faa594"
+  },
+  "eqy_script_sha256": "d02fc6d95e847682ba9ec9be04f9e0d9b7fed716e6ca1f2f0196a67db36f72c3"
+}

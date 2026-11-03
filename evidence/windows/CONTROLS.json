@@ -1,0 +1,22 @@
+[
+  {
+    "job": "control_good",
+    "status": "PASS",
+    "expected": "PASS",
+    "accepted": true,
+    "exit": 0,
+    "seconds": 1.7970000000000255,
+    "coverage": null,
+    "log": "control_good.log"
+  },
+  {
+    "job": "control_bad",
+    "status": "FAIL",
+    "expected": "FAIL",
+    "accepted": true,
+    "exit": 2,
+    "seconds": 2.405999999999949,
+    "coverage": null,
+    "log": "control_bad.log"
+  }
+]

@@ -1,0 +1,22 @@
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] read_gold: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/gold.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/gold.ys"
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] read_gold: finished (returncode=0)
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] read_gate: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/gate.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/gate.ys"
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] read_gate: finished (returncode=0)
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] combine: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/combine.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad/combine.ys"
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] combine: finished (returncode=0)
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] partition: starting process "cd C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad& yosys -ql partition.log partition.ys"
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] partition: finished (returncode=0)
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: starting process "make -j1 -C C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad -f strategies.mk"
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: make: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad'
+EQY 18:45:24 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: Running strategy 'pdr' on 'control.y'..
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: Could not prove equivalence of partition 'control.y' using strategy 'pdr': partitions not equivalent
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: make -f strategies.mk summary
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: make[1]: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad'
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: make[1]: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad'
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: make: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad'
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] run: finished (returncode=0)
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] Warning: Failed to prove equivalence for 1/1 partitions:
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] Failed to prove equivalence of partition control.y
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] summary: Elapsed process time unvailable on Windows
+EQY 18:45:26 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/control_bad] DONE (FAIL, rc=2)

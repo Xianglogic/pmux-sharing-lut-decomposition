@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-03",
+  "platform": "Windows x64; Windows PowerShell 5.1; Windows OSS CAD Suite; GNU Make; Git Bash; no WSL",
+  "suite_release": "20260918",
+  "project": "V53H-NoPost",
+  "proof_jobs": 45,
+  "proof_passed": 45,
+  "cases": {
+    "test1": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "test2": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "test3": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "test4": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "pmux_case01_balanced": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "pmux_case02_pipeline": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "pmux_case03_crossbar": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "pmux_case04_feedback": {
+      "jobs": 5,
+      "passed": 5
+    },
+    "pmux_case05_nested": {
+      "jobs": 5,
+      "passed": 5
+    }
+  },
+  "positive_control": "PASS",
+  "negative_control": "FAIL (expected; one output bit inverted)",
+  "without_make": "Failed before strategy execution: make is not recognized",
+  "configs_unchanged_and_manifest_checked": true,
+  "proof_inputs_unchanged_and_manifest_checked": true,
+  "all_outputs_covered": true,
+  "proof_dependencies_closed": true,
+  "synthesis_rerun": false,
+  "efficiency_remeasured": false,
+  "submitted_archive_modified": false,
+  "entry": "scripts/Reprove-Windows.ps1",
+  "full_results": "PROOFS.json",
+  "tool_versions": "TOOLS.json",
+  "controls": "CONTROLS.json",
+  "tool_file_changes": "None during this revalidation; generated EQY text is normalized to LF inside its new work directory.",
+  "installed_eqy_note": "The local Windows EQY script already contains four LF-output compatibility changes from the earlier environment setup.",
+  "console_logs_sha256": {
+    "control_bad.log": "4c3e1a228461ed3c6182f26792e0268c8260f9513901c6745570d0f60298aa58",
+    "control_good.log": "c17541eceee95165c62204562f660a97b5efec5601f04f9e29f9054d59b02af9",
+    "p00.log": "4d5b078894a441337e189c9d34c6bfa9d9ac15076d5ee82db59a597179fd2a18",
+    "p01.log": "bc8d62d751445e73cfc7c2a848b82f5b1761183ae31ccfc6c2cb16cfeeb34464",
+    "p02.log": "417f2076f380d82b407f9ac625d88b03511e4ae213542a292a027ddc7276e025",
+    "p03.log": "8b28f6618c5b91348cecd539f2ff9e9365a9edc20bd2cb8803bf9cbbfd3f801d",
+    "p04.log": "083d2fe125b57f07b13354f7b3258b661a1a82c21d17f43513b3e841cd383e60",
+    "p05.log": "e3ff7ca188158f3e959f9b36ff750f547045d4e898e07a6a4ada92f338abe42b",
+    "p06.log": "9272bf20d0b7642146006878dc61dba900f2663ac0934aa671cdbc7269f38c4b",
+    "p07.log": "68da7e1160285749b7c4831354f5125fc897e08be2fd1168d635292097b0ddc4",
+    "p08.log": "581ebb01eb0646ebb1b7945b3e99e4ab5923522ed186536995ddb4a045f7df4f",
+    "p09.log": "351f22057194204ba38cec1875e60ec4045c96231c1347f80015b7adf1e9f4c7",
+    "p10.log": "81ec906cc45a0f9810947d8dda8264fea92eeb1de0ce216bd4ea4a029d1e15f3",
+    "p11.log": "0ef17741ee980e4526b565721e5b02f2d47c1f6566e9160df8834e765c900338",
+    "p12.log": "3a814c3540bc8715b49326ced9187e2629f2864476b92dda2cef5aee892505c3",
+    "p13.log": "26d03deaaeab848c583ed98d0e008055ba2059e15e43298aef49a7dca3302382",
+    "p14.log": "8124cf9548f91256fc0f1c77abd54f64c9d164c56385276e71d3718d622963d9",
+    "p15.log": "798261d44c3d15c67f009b97cefdc31b6551217e646f1d0f2b3863acb3512f79",
+    "p16.log": "c54a91470ac079ac5ccd3317e55d71b430561c87028af05084c7668fbbd26a5e",
+    "p17.log": "261decaf43fe705c047e9482d01d7037734fad86af94e49184ee5d92ec15d86a",
+    "p18.log": "2fa316a29b4b019f2887d352f409d4548e4e6a7c3a639a37bd42c9c8655aa4b1",
+    "p19.log": "bf1419f405c54faf33f2269b047d29f0b1291f2527240e2ba32d5c2b41bd9d26",
+    "p20.log": "46b34adfb4ea863a57e18731225dbc96312cbf29fd1564c601ba73328fd00fba",
+    "p21.log": "1e876cd7abaac36acd45198ddcbdd4731dd846bd1b681b9ed04cda2347e54e58",
+    "p22.log": "ddeb68aaff1d4d847bd9eb2254e114e4bf0bc7b41de1f7be4266cb2a5e962703",
+    "p23.log": "97ac9dff7b579247e51aaf958bb11caebca76370c13c38458f5b9717d45b276b",
+    "p24.log": "5a000aad03e4d76bce56c83f9fc0fc4e1cf740daf771c9452bee1e6f7396fbcc",
+    "p25.log": "ac78df66113e924128a05f3b7fea19c70f3c314ee214d348553be322c1aaa2b5",
+    "p26.log": "d43f13fe60796676c5c29f8baaf3c8f5d8b1577677ca5ea75a4d0136d4a02239",
+    "p27.log": "91708e7c4760c00fd7b7c5ce1663ede0cb0ad5a73de4562398609a321f733c03",
+    "p28.log": "8df01a38d2918b495a3f3982982824872b92cc4d862757afe91492b287f630c0",
+    "p29.log": "9c7838994fdefeff03008487e2b8612008eb387c8bb91b7a5c25d71d1fb9c103",
+    "p30.log": "c972331b075fbb554ea7e2a1b7956c3863e8f36c114b4f5c13304d58f8ee9009",
+    "p31.log": "a317c4393a1f4d04df6d293df42f4fc9a38ecb7c21bbedcf4ef1a10b1d574421",
+    "p32.log": "5c40aadc8546a2d5383a95f493e45ce098d26df4e82a3933101a5fecffb20d70",
+    "p33.log": "2935876c405363ce96b73ecd6621de2b16899b9180a8734db700fe5694a53d3a",
+    "p34.log": "61cbcaffe1f0549804d299e48abe5845335bb15d965e203584a1295eb9943ed8",
+    "p35.log": "81d513c7ac524022a2c802e6b83e1206a5dd6e740fd953dfc9795d88cbca4cfb",
+    "p36.log": "43f44ca99a7fa8aece9fcdeb044cc5af3ece36eb65d9075087a2f7e55e5b3cc7",
+    "p37.log": "9757a45d0dc9b08f1096fa306fc44c2a068e910180f0549d7415883d7d5e31af",
+    "p38.log": "12249a950e5805c78d8b8f2c76363697346481549e8519c439a052300a628c83",
+    "p39.log": "faa3f4bd884d790f5f779e71672177afed22c3b9f2839618f41c34e4f9c3f878",
+    "p40.log": "19d330583f1f19dec6a73471c86deb804ff92b02c4d00c2a2f5ebabd73de570c",
+    "p41.log": "bd36938197f3b82340406caa2aece13fa877c0edba653d035407dc84b7a51a2b",
+    "p42.log": "13bc4fb212da39e4b7b457fe31e2ac56827858e110feec585e9a1a5453ab2b03",
+    "p43.log": "baa6515a87648e98b5f59d24efe49cff21aa8247a09a42148947e22f771d19c6",
+    "p44.log": "8bb19d77795a6a7750fc3e2da25bbb86a9d9f64715d6e84d9273698bba4d91cb"
+  },
+  "make_alias_and_automatic_git_bash_test": {
+    "case": "test2",
+    "jobs": 5,
+    "passed": 5,
+    "positive_control": "PASS",
+    "negative_control": "FAIL (expected)"
+  }
+}

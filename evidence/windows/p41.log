@@ -1,0 +1,22 @@
+EQY 18:47:45 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] read_gold: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/gold.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/gold.ys"
+EQY 18:47:45 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] read_gate: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/gate.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/gate.ys"
+EQY 18:47:45 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] read_gold: finished (returncode=0)
+EQY 18:47:45 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] read_gate: finished (returncode=0)
+EQY 18:47:45 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] combine: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/combine.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41/combine.ys"
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] combine: finished (returncode=0)
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] partition: starting process "cd C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41& yosys -ql partition.log partition.ys"
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] partition: finished (returncode=0)
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: starting process "make -j1 -C C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41 -f strategies.mk"
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: make: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41'
+EQY 18:47:46 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: Running strategy 'pdr' on 'pmux_case05_nested.data_out'..
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: Proved equivalence of partition 'pmux_case05_nested.data_out' using strategy 'pdr'
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: make -f strategies.mk summary
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: make[1]: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41'
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: make[1]: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41'
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: make: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41'
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] run: finished (returncode=0)
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] Successfully proved equivalence of partition pmux_case05_nested.data_out
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] Successfully proved designs equivalent
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] summary: Elapsed process time unvailable on Windows
+EQY 18:47:48 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p41] DONE (PASS, rc=0)
