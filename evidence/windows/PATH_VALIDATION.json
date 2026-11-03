@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-03",
+  "scope": "Repository path/configuration changes; V53H-NoPost algorithm unchanged",
+  "platform": "Windows PowerShell 5.1; native Windows OSS CAD Suite; no WSL",
+  "scenarios": {
+    "outside_working_directory": {
+      "case": "test2",
+      "proofs": 5,
+      "passed": 5,
+      "positive_control": "PASS",
+      "negative_control": "FAIL (expected)",
+      "relative_local_config": true
+    },
+    "chinese_and_space_directory": {
+      "case": "test2",
+      "proofs": 5,
+      "passed": 5,
+      "positive_control": "PASS",
+      "negative_control": "FAIL (expected)",
+      "relative_local_config": true
+    }
+  },
+  "command_line_overrides_local_config": "PASS: explicit nonexistent suite rejected before proving",
+  "synthesis_smoke": {
+    "cases": 9,
+    "runs": 18,
+    "passed": 18,
+    "resources_match_frozen": true
+  },
+  "non_path_build_options_unchanged": true,
+  "original_metadata_in_submitted_archive": {
+    "BUILD.json": true,
+    "BUILD_CONDITIONS.json": true,
+    "CHANGE_SCOPE.json": true
+  },
+  "submitted_archive_unchanged": true,
+  "efficiency_remeasured": false,
+  "original_logs_netlists_and_runtime_unchanged": true,
+  "notes": "Only path/configuration metadata and launch handling changed. Private local settings are excluded from Git."
+}

@@ -16,7 +16,7 @@ def in_scope(name):
         return True
     if path.parent.as_posix() == 'docs' and path.suffix == '.md':
         return True
-    return name in {'README.md', 'REPORT.md'}
+    return name in {'README.md', 'REPORT.md', 'BUILD.json', 'BUILD_CONDITIONS.json', 'CHANGE_SCOPE.json', 'EFFICIENCY_ENTRY.json'}
 
 def main():
     parser = argparse.ArgumentParser()

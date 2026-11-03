@@ -60,6 +60,8 @@ def main():
     env = os.environ.copy()
     shim = work / 'toolbin'
     shim.mkdir()
+    eqy_bootstrap = shim / 'eqy_windows_lf.py'
+    shutil.copy2(ROOT / 'scripts/eqy_windows_lf.py', eqy_bootstrap)
     if make.name.lower() != 'make.exe':
         shutil.copy2(make, shim / 'make.exe')
     env['PATH'] = ';'.join(map(str, [suite / 'bin', suite / 'lib', shim, make_bin, shell_bin])) + ';' + env.get('PATH', '')
@@ -115,7 +117,7 @@ def main():
     def invoke(name, config, ports=None, expected='PASS'):
         job = work / name
         log = work / (name + '.log')
-        arguments = [str(suite / 'lib/python3.exe'), str(ROOT / 'scripts/eqy_windows_lf.py'),
+        arguments = [str(suite / 'lib/python3.exe'), str(eqy_bootstrap),
                      str(suite / 'bin/eqy-script.py'), '-j', '1', '-d', job.as_posix(), config.as_posix()]
         start = time.monotonic()
         with log.open('wb') as output:

@@ -13,17 +13,33 @@ Windows版EQY可以运行。本工程增加Reprove-Windows.ps1入口，使用Win
 
 ## 运行
 
-先按OSS CAD Suite说明激活环境；YOSYSHQ_ROOT由套件的环境脚本设置。GNU Make和Git已加入当前进程PATH时，在项目根目录执行：
+在项目根目录复制配置模板：
+
+```powershell
+Copy-Item config/windows-tools.example.psd1 config/windows-tools.local.psd1
+```
+
+在local文件中填写本机的OssRoot、MakeBin、ShellBin。相对路径从仓库根目录计算；此文件已加入忽略规则，不提交到仓库。已激活OSS CAD Suite、GNU Make和Git可从PATH找到时，也可以不建配置文件。
 
 ```powershell
 # 全部九例
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Jobs 2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -Jobs 2
 
 # 指定单例
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Case test2 -Jobs 2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -Case test2 -Jobs 2
 ```
 
-外部工具未加入PATH时，用-OssRoot、-MakeBin、-ShellBin传入实际安装目录。这些位置只属于本机配置，不写回仓库。make.exe或mingw32-make.exe已在PATH中时可以省略-MakeBin。如果只有mingw32-make.exe，入口会在本次临时目录中建立同一程序的make.exe副本，不改安装目录。
+配置按命令行参数、本地配置文件、套件环境与工具发现的顺序选取。OssRoot留空时先读取YOSYSHQ_ROOT，再尝试从PATH中的yosys.exe定位套件；MakeBin和ShellBin留空时按原有方式查找GNU Make和Git Bash。另有配置文件时，可用-ConfigFile指定。
+
+入口不依赖当前工作目录。项目目录可以包含中文和空格；启动时以UTF-8编码传递路径，EQY兼容脚本在独立的英文临时目录中运行。
+
+需要临时覆盖配置时，也可直接传入参数：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Jobs 2
+```
+
+外部工具位置只属于本机配置，不写回仓库。make.exe或mingw32-make.exe已在PATH中时可以省略-MakeBin。如果只有mingw32-make.exe，入口会在本次临时目录中建立同一程序的make.exe副本，不改安装目录。
 
 默认在系统临时目录建立验证工作区。该工作区需要英文路径且不含空格；系统临时目录不符合时，使用-WorkRoot指定本机可用的英文短路径。项目输入按原相对路径复制到工作区，验证结束后完整记录复制至runs/eqy_windows_时间戳/work/。工作区保留，便于检查失败。
 

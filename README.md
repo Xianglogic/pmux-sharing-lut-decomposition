@@ -46,10 +46,10 @@ pwsh -NoProfile -File scripts/Run9.ps1 -Mode Measure -Groups 10
 
 ## 形式等价验证
 
-Windows入口使用Windows版OSS CAD Suite、GNU Make和Git Bash，无需WSL，也无需另装Python。先激活套件环境，并使GNU Make和Git可从PATH找到，再执行。其他配置方法见[Windows形式验证](docs/Windows形式验证.md)。
+Windows入口使用Windows版OSS CAD Suite、GNU Make和Git Bash，无需WSL，也无需另装Python。可激活套件环境，也可复制config/windows-tools.example.psd1为本机配置并填写工具位置。其他配置方法见[Windows形式验证](docs/Windows形式验证.md)。
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot $env:YOSYSHQ_ROOT -Jobs 2
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -Jobs 2
 ```
 
 Linux/WSL入口仍使用对应平台的OSS CAD Suite：
@@ -70,6 +70,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Build-Windows.ps1 -J
 ```
 
 双方使用MSVC19.51、相同Release参数和相同ABC。核心源码提交为9f75ca1f9834a39a863915b5dae0c7b1e33533bc，构建参数见BUILD_CONDITIONS.json。构建输出位于rebuild目录。
+
+仓库中的构建记录已将编译器位置写为工具名，将随包依赖写为相对路径；版本、非路径编译参数及程序哈希保持不变。原始记录保留在已提交归档中。
 
 ## 第三方组件
 
