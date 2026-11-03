@@ -44,14 +44,20 @@ pwsh -NoProfile -File scripts/Run9.ps1 -Mode Measure -Groups 10
 
 ## 形式等价验证
 
-验证入口使用Linux/WSL，预装OSS CAD Suite并指定安装路径。
+Windows入口使用Windows版OSS CAD Suite、GNU Make和Git Bash，无需WSL，也无需另装Python。依赖与故障处理见[Windows形式验证](docs/Windows形式验证.md)。路径换成实际安装位置：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Reprove-Windows.ps1 -OssRoot 'D:/Tools/oss-cad-suite' -MakeBin 'D:/msys64/mingw64/bin' -Jobs 2
+```
+
+Linux/WSL入口仍使用对应平台的OSS CAD Suite：
 
 ```bash
 python3 scripts/Reprove.py --oss-root /path/to/oss-cad-suite --jobs 2
 python3 scripts/Reprove.py --oss-root /path/to/oss-cad-suite --case test2 --jobs 2
 ```
 
-九例共45项：两版RTL至ABC9后中间网表18项、两版中间至最终网表18项、两版最终网表对照9项。新输出另存runs目录。
+九例共45项：两版RTL至ABC9后中间网表18项、两版中间至最终网表18项、两版最终网表对照9项。Windows入口另含正反对照检查，新输出另存runs目录，不覆盖归档证明。
 
 ## 重新构建
 

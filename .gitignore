@@ -3,6 +3,7 @@ __pycache__/
 .vs/
 /rebuild/
 /build/
+/runs/eqy_windows_*/
 Thumbs.db
 .DS_Store
 ~$*

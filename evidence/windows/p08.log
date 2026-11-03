@@ -1,0 +1,60 @@
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/gold.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/gold.ys"
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_4.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_1_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_1.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_2_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_1_A_3_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_2.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_2_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_A_3_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_3_A_3_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_2_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_3_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_3.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_2_A_2_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_4_A_3_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y_A_2_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: Warning: Wire test2.\out_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/gate.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/gate.ys"
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gold: finished (returncode=0)
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_4.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\a_$lut_A.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\a_$lut_A_1.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\a_$lut_A_2.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_1.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_2.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y_3.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: Warning: Wire test2.\out_$lut_Y.cin is used but has no driver.
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] read_gate: finished (returncode=0)
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] combine: starting process "yosys -ql C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/combine.log C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08/combine.ys"
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] combine: finished (returncode=0)
+EQY 18:46:02 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] partition: starting process "cd C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08& yosys -ql partition.log partition.ys"
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] partition: finished (returncode=0)
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: starting process "make -j1 -C C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08 -f strategies.mk"
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: make: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08'
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: Running strategy 'pdr' on 'test2.out'..
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: Proved equivalence of partition 'test2.out' using strategy 'pdr'
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: make -f strategies.mk summary
+EQY 18:46:03 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: make[1]: Entering directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08'
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: make[1]: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08'
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: make: Leaving directory 'C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08'
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] run: finished (returncode=0)
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] Successfully proved equivalence of partition test2.out
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] Successfully proved designs equivalent
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] summary: Elapsed process time unvailable on Windows
+EQY 18:46:04 [C:/Users/lenovo/AppData/Local/Temp/pmux_eqy_win_hilxjp4e/p08] DONE (PASS, rc=0)
