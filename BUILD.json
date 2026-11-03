@@ -2,7 +2,7 @@
   "candidate": "V53H-NoPost",
   "core_commit": "9f75ca1f9834a39a863915b5dae0c7b1e33533bc",
   "build": "isolated full MSVC Release build; archive source has no .git, therefore CMake emits +post metadata",
-  "version": "Yosys 0.69+post (git sha1 9f75ca1f9-V53H-NoPost, Release, MSVC D:/VS2026/1/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe 19.51.36246.0)\n",
+  "version": "Yosys 0.69+post (git sha1 9f75ca1f9-V53H-NoPost, Release, MSVC cl.exe 19.51.36246.0)\n",
   "exe_sha256": "6cdc900d916fa0093dbf8e0f4196712ae626e9fbb64bc137c26b28da4380abd3",
   "baseline_sha256": "4096266b5ad31531c67a1c81f88066c0a3cdf31008fe111a38c0443c2b04dec7",
   "abc_sha256": "0c578b7c5d67963999bf89b63d658083e60338dcd7449b1a75b1ae283a9587b1",
@@ -25,5 +25,8 @@
   },
   "abc_lookup": "default adjacent runtime program; YOSYS_ABC_EXECUTABLE is empty, matching baseline",
   "final_configure_log": "configure_portable.log",
-  "final_rebuild_log": "build_portable.log"
+  "final_rebuild_log": "build_portable.log",
+  "version_path_normalized": true,
+  "original_record_sha256": "1e7ff64bf8b5edb4e335e409ae2be563d60522f9e20db9f72c597a93333a0ef1",
+  "path_note": "Compiler directory omitted from this repository view. Version, build flags and executable hashes are unchanged; the original record remains in the submitted archive."
 }

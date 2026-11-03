@@ -1,7 +1,7 @@
 {
   "candidate": "V53H-NoPost",
-  "frozen_package": "D:\\FPGA\\demo\\tmp\\submission_env_audit_20261101\\独立解压 含空格\\V53",
-  "archive": "D:/FPGA/demo/deliverables/pmux_v53h_idfix_submission_20261031.rar",
+  "frozen_package": "V53",
+  "archive": "pmux_v53h_idfix_submission_20261031.rar",
   "archive_sha256": "3476c5098a33497c360b0ee22bdf5197f521be6428e1d0f0a81fe5ccf98bb6e3",
   "change": "Remove automatic lut4_cone_fold and lut4_window_rewrite calls after map_cells. All other algorithm source files unchanged.",
   "frozen_candidate_sha256": "dc1cb9b46118ed08ed64b7cb4dbeb9cf1c719e83df85919fd6b7f34ee5e9b4ff",
@@ -9,5 +9,7 @@
   "source_before_sha256": "a69550d195cda1db964ef5c4a4117da8fc972ea3afefd4bc19e36daa97fe218d",
   "source_after_sha256": "b43e60d53688bc1916f360fc0fc755f76ffb82514909b30e78b4ca35941a2633",
   "status": "45 formal checks and ten complete nine-case efficiency groups finished",
-  "candidate_sha256": "6cdc900d916fa0093dbf8e0f4196712ae626e9fbb64bc137c26b28da4380abd3"
+  "candidate_sha256": "6cdc900d916fa0093dbf8e0f4196712ae626e9fbb64bc137c26b28da4380abd3",
+  "original_record_sha256": "93c9c1954b83861316b0820b4f5c2b01e8fed99fdab2ab4d6e4314de5dfeb426",
+  "path_note": "The extraction root and archive fields name the historical input archive entries; they are not paths to files in this checkout."
 }
