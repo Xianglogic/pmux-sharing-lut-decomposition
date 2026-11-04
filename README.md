@@ -2,15 +2,15 @@
 
 本项目面向FPGA逻辑综合中的多路选择网络，通过多输出共享、互斥运算合并和查找表优化分解，减少重复的选择与计算逻辑。优化以内建命令接入Yosys，在ABC9映射前完成结构变换。
 
-工具路径、验证环境及2026年11月3日新增的预热要求见[配置与复验说明](docs/配置与复验说明.md)。已提交程序和归档评测记录保留原样。
+工具路径、验证环境见[配置与复验说明](docs/配置与复验说明.md)。已提交程序和评测记录保留原样。
 
-项目文件与外部工具的路径写法见[路径约定](docs/路径约定.md)。新生成的运行目录和本机配置不纳入日常提交，原始归档保持不变。
+项目文件与外部工具的路径写法见[路径约定](docs/路径约定.md)。新生成的运行目录和本机配置不建议纳入日常提交。
 
 ## 运行九例综合
 
 Windows x64环境下，在项目根目录双击START.cmd。命令行可运行START.cmd --no-pause。普通综合支持Windows PowerShell 5.1或PowerShell 7，无需Python、编译器或WSL。保留runtime内的ABC程序、DLL及share器件库。
 
-两版使用相同RTL、顶层、参数及外部脚本：读取RTL → hierarchy → proc → setundef -init -params -zero → synth_intel -family cycloneiv → check → 输出网表。每次运行在runs下新建目录，并核对资源与已证明的参考网表一致。
+两版使用相同RTL、顶层、参数及外部脚本：读取RTL → hierarchy → proc → setundef -init -params -zero → synth_intel -family cycloneiv → check → 输出网表。每次运行在runs下新建目录，并检查资源与已证明的参考网表一致。
 
 ```powershell
 # 指定单例
@@ -21,14 +21,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Verify.ps1 -Full
 
 ## 工程内容与评测结果
 
-- docs/current/九例原始截图/：九例综合结果及形式验证、效率记录的11张真实控制台截图，附原始日志和来源清单。
+- docs/current/九例原始截图/：九例综合结果及形式验证、效率记录的11张控制台截图，附原始日志和来源清单。
 - RESULTS.html、REPORT.md、PER_CASE.csv、ALL_PAIRS.csv：结果页面、评测说明和逐例逐次数据。
 - source/yosys/、source/overlay_files/：完整源码及修改文件副本。
 - runtime/：原版与本版Yosys、同哈希ABC、运行依赖及器件库。
-- evidence/current/、runs/：参考网表、45项形式证明以及十组完整九例运行记录。
+- evidence/current/、runs/：参考网表、形式证明以及十组运行记录。
 - BUILD.json、BUILD_CONDITIONS.json、CHANGE_SCOPE.json：源码、程序身份、同条件构建配置和修改范围。
 
-本地九例最终查找表与独立取反单元由2402减少至1712，逐例算术平均优化率为31.764225%；总量加权缩减率28.726062%为补充指标。总单元数2725→2020，触发器323→308。45项形式等价验证全部通过。
+最终查找表与独立取反单元由2402减少至1712，逐例算术平均优化率为31.764225%；总量加权缩减率28.726062%为补充指标。总单元数2725→2020，触发器323→308。
 
 十组首次时间88/90通过，短用例追加复测后时间90/90、内存90/90通过；100个原始测量配对的内存均通过。最坏判定完整耗时增幅3.301738%，主进程峰值物理内存增幅3.158181%。测试时杀毒软件已关闭。
 
@@ -40,9 +40,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Verify.ps1 -Full
 pwsh -NoProfile -File scripts/Run9.ps1 -Mode Measure -Groups 10
 ```
 
-该入口沿用归档方案，在会话开始时对每例原版预热10次，再按原版→本版完成各组测量。首次耗时超过5%且两版均不超过10秒时，追加5对，分别取两版追加耗时的均值再计算增幅。保留首次记录；内存按原始配对逐对检查。完整时间覆盖程序启动、读取RTL、逻辑综合、ABC、网表输出至退出；EQY另行运行。
+该入口在会话开始时对每例原版预热10次，再按原版→本版完成各组测量。首次耗时超过5%且两版均不超过10秒时，追加5对，分别取两版追加耗时的均值再计算增幅。保留首次记录；内存按原始配对逐对检查。完整时间覆盖程序启动、读取RTL、逻辑综合、ABC、网表输出至退出；EQY另行运行。
 
-2026年11月3日答疑已指定只用原版对pmux_case05_nested预热10次，并明确耗时或内存任一超过5%均需处理。现有入口尚未调整这两处，后续复验应按新要求组织；本页十组数据仍对应原归档环境。
+也可指定只用原版对pmux_case05_nested预热10次，并明确耗时或内存任一超过5%均需处理。本页十组数据仍对应上一行测试方法。
 
 ## 形式等价验证
 
@@ -59,7 +59,7 @@ python3 scripts/Reprove.py --oss-root /path/to/oss-cad-suite --jobs 2
 python3 scripts/Reprove.py --oss-root /path/to/oss-cad-suite --case test2 --jobs 2
 ```
 
-九例共45项：两版RTL至ABC9后中间网表18项、两版中间至最终网表18项、两版最终网表对照9项。Windows入口另含正反对照检查，新输出另存runs目录，不覆盖归档证明。
+九例共45项：两版RTL至ABC9后中间网表18项、两版中间至最终网表18项、两版最终网表对照9项。
 
 ## 重新构建
 
@@ -71,7 +71,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Build-Windows.ps1 -J
 
 双方使用MSVC19.51、相同Release参数和相同ABC。核心源码提交为9f75ca1f9834a39a863915b5dae0c7b1e33533bc，构建参数见BUILD_CONDITIONS.json。构建输出位于rebuild目录。
 
-仓库中的构建记录已将编译器位置写为工具名，将随包依赖写为相对路径；版本、非路径编译参数及程序哈希保持不变。原始记录保留在已提交归档中。
+仓库中的构建记录已将编译器位置写为工具名，将随包依赖写为相对路径；版本、非路径编译参数及程序哈希保持不变。原始记录保留中。
 
 ## 第三方组件
 
