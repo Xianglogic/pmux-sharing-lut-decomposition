@@ -21,7 +21,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Verify.ps1 -Full
 
 ## 工程内容与评测结果
 
-- docs/current/九例原始截图/：九例综合结果及形式验证、效率记录的11张控制台截图，附原始日志和来源清单。
+- [九例原始截图](docs/current/九例原始截图/)（[压缩包](docs/current/九例综合结果原始截图.zip)）：九例综合结果及形式验证、效率记录的11张控制台截图，附原始日志和来源清单。
 - RESULTS.html、REPORT.md、PER_CASE.csv、ALL_PAIRS.csv：结果页面、评测说明和逐例逐次数据。
 - source/yosys/、source/overlay_files/：完整源码及修改文件副本。
 - runtime/：原版与本版Yosys、同哈希ABC、运行依赖及器件库。
